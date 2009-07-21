@@ -1,0 +1,48 @@
+<% %>
+
+<% title "This section deals with currencies" %>
+
+<% content_for :head do %>
+ <!--%= stylesheet_link_tag 'application' %-->
+<% end %>
+
+<% content_for :side do %>
+ <h4> This is the sidebar </h4>
+ 	<p> This is the sidebar text which repeats until infinite. This is the sidebar text which repeats until infinite. This is the sidebar text which repeats until infinite. This is the sidebar text which repeats until infinite. This is the sidebar text which repeats until infinite</p>
+<% end %>
+
+<h1>Listing currencies</h1>
+
+<table>
+  <tr>
+  </tr>
+
+<% for currency in @currencies %>
+  <tr>
+  	
+  	    <td><%=h currency.Fimis_Identifier %></td>
+  	    <td><%=h currency.Currency_Identifier %></td>
+  	    <td><%=h currency.Currency_Iso_Code %></td>
+  	    <td><%=h currency.Currency_Description %></td>
+  	    <td><%=h currency.Currency_Telekurs_Code %></td>
+  	    <td><%=h currency.Currency_Other_Code %></td>
+  	    <td><%=h currency.Currency_Country %></td>
+        <td><%=h currency.Currency_Factor %></td>
+  	    <td><%=h currency.Currency_Group_1 %></td>
+  	    <td><%=h currency.Currency_Group_Description_1 %></td>
+  	    <td><%=h currency.Currency_Group_2 %></td>
+  	    <td><%=h currency.Currency_Group_Description_2 %></td>
+  	    <td><%=h currency.Currency_Group_3 %></td>
+  	    <td><%=h currency.Currency_Group_Description_3 %></td>
+  	    <td><%=h currency.Entity_Identifier %></td>
+  	
+    <td><%= link_to 'Show', currency %></td>
+    <td><%= link_to 'Edit', edit_currency_path(currency) %></td>
+    <td><%= link_to 'Destroy', currency, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New currency', new_currency_path %>

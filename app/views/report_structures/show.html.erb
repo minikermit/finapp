@@ -1,0 +1,20 @@
+<p>
+  <b>Line:</b>
+  <%=h @report_structure.report_line.line_id %>
+  <%=h @report_structure.report_line.name %>
+</p>
+
+<p>
+  <b>Account plan:</b>
+  <%=h @report_structure.dim_account_plan.account_id %>
+  <%=h @report_structure.dim_account_plan.account_short_description %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%=h @report_structure.comment %>
+</p>
+
+
+<%= link_to 'Edit', edit_report_structure_path(@report_structure) %> |
+<%= link_to 'Back', report_structures_path %>

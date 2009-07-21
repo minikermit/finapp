@@ -1,0 +1,14 @@
+<% form_for(@b2_ta_mapping) do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :group_id %><br />
+    <%= f.text_field :group_id %>
+  </p>
+  <p>
+    <%= f.label :entity_id %><br />
+    <%= f.text_field :entity_id %>
+  </p>
+  <p>
+    <%= f.submit "Submit" %>
+  </p>
+<% end %>

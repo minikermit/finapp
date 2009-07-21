@@ -1,0 +1,8 @@
+var entities = new Array()
+<% for entity in @entities -%>
+ entities.push(new Array(<%= entity.Entity_Identifier %>, '<%=h entity.name %>', <%= entity.Entity_Identifier %));
+<% end -%>
+
+function groupSelected() {
+	Group_id = $()
+}

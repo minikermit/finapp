@@ -1,0 +1,35 @@
+<h1>Listing sources</h1>
+
+<table>
+  <tr>
+  	<th>Name</th>
+  	<th>Description</th>
+  	<th>Frequency</th>
+  </tr>
+
+<div id="menu">
+ Make me flash !
+</div>
+ 
+<% for source in @sources %>
+  <tr>
+  	<td><%=h source.Source_Name %></td>
+    <td><%=h source.Source_Description %></td>
+    <td><%=h source.Source_Frequency %></td>
+    <td><%= link_to 'Show', source %></td>
+    <td><%= link_to 'Edit', edit_source_path(source) %></td>
+    <td><%= link_to 'Destroy', source, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<div id="highlight_link">
+<%= link_to_function "Click me!" do |page| 
+	 page['menu'].visual_effect :highlight 
+	 page['highlight_link'].remove 
+	 end %>
+</div>
+
+<br />
+
+<%= link_to 'New source', new_source_path %>

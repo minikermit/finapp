@@ -1,0 +1,36 @@
+<h1>Editing closing_rate</h1>
+
+<% form_for(@closing_rate) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :Group_id %><br />
+    <%= f.text_field :Group_id %>
+  </p>
+  <p>
+    <%= f.label :Entity_id %><br />
+    <%= f.text_field :Entity_id %>
+  </p>
+  <p>
+    <%= f.label :Downloaddate %><br />
+    <%= f.text_field :Downloaddate %>
+  </p>
+  <p>
+    <%= f.label :Currency_Code %><br />
+    <%= f.text_field :Currency_Code %>
+  </p>
+  <p>
+    <%= f.label :Currency_ISO %><br />
+    <%= f.text_field :Currency_ISO %>
+  </p>
+  <p>
+    <%= f.label :Currency_Rate %><br />
+    <%= f.text_field :Currency_Rate %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @closing_rate %> |
+<%= link_to 'Back', closing_rates_path %>

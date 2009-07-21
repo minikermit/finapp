@@ -1,0 +1,22 @@
+<% form_for(@structure) do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :Group %><br />
+    <%= f.collection_select :Group_Identifier, Structure.all, :Group_Identifier, :Group_Identifier %>
+  </p>
+  <p>
+    <%= f.label :Entity %><br />
+    <%= f.collection_select :Entity_Identifier, Structure.all, :Entity_Identifier, :Entity_Identifier %>
+  </p>
+  <p>
+    <%= f.label :Division %><br />
+    <%= f.text_field :Division_Identifier %>
+  </p>
+  <p>
+    <%= f.label :Description %><br />
+    <%= f.text_field :Division_Description %>
+  </p>
+  <p>
+    <%= f.submit "Submit" %>
+  </p>
+<% end %>

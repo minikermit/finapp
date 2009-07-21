@@ -1,0 +1,19 @@
+<p>
+  <b>Name:</b>
+  <%=h @structure.Group_Identifier %>
+</p>
+
+<p>
+  <b>Entity:</b>
+  <%=h @structure.Entity_Identifier %>
+</p>
+<p>
+  <b>Identifier:</b>
+  <%=h @structure.Division_Identifier %>
+</p>
+<p>
+  <b>Description:</b>
+  <%=h @structure.Division_Description %>
+</p>
+<%= link_to 'Edit', edit_structure_path(@structure) %> |
+<%= link_to 'Back', structures_path %>

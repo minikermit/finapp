@@ -1,0 +1,39 @@
+<h1>Editing report line</h1>
+
+<%= error_messages_for :report_line %>
+
+<% form_for(@report_line) do |f| %>
+  <p>
+    <b>Line</b><br />
+    <%= f.text_field :line_id %>
+  </p>
+
+  <p>
+    <b>Name</b><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <b>Position</b><br />
+    <%= f.text_field :position %>
+  </p>
+
+  <p>
+    <b>Description</b><br />
+    <%= f.text_area :description %>
+  </p>
+
+  <p>
+    <b>Report ID</b><br />
+    <!--%= f.text_field :report_id %-->
+    <%= select("report_line", "report_id", Report.find(:all).collect{ |c| [ c.name, c.id] }) %>
+
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @report_line %> |
+<%= link_to 'Back', report_lines_path %>

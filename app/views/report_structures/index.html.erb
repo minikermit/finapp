@@ -1,0 +1,28 @@
+<h1>Listing report structures</h1>
+<h6>
+<%= link_to  "> Back to report categories" , report_categories_path %>
+<%= link_to  " > Back to reports" , reports_path %> 
+<%= link_to  " > Back to report lines" , report_lines_path %> 
+</h6>
+<table>
+  <tr>
+    <th>Line</th>
+    <th>Account plan</th>
+  </tr>
+
+<% for report_structure in @report_structures %>
+  <tr>
+    <td><%=h report_structure.report_line.line_id %></td>
+    <td><%=h report_structure.report_line.name %></td>
+    <td><%=h report_structure.dim_account_plan.account_id %></td>
+    <td><%=h report_structure.dim_account_plan.account_short_description %></td>
+    <td><%= link_to image_tag('iconmini/search-icon-blue.gif'), report_structure %></td>
+    <td><%= link_to image_tag('iconmini/edit-blue.gif'), edit_report_structure_path(report_structure) %></td>
+    <td><%= link_to image_tag('iconmini/delete-page-blue.gif'), report_structure, :confirm => 'Are you sure you want to delete this mapping ?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New report_structure', new_report_structure_path %>

@@ -1,0 +1,64 @@
+<p>
+  <b>#</b>
+  <%=h @account_plan.FiMIS_Identifier %>
+</p>
+<p>
+  <b>Account Plan</b>
+  <%=h @account_plan.Account_Type_FK %>
+</p>
+<p>
+  <b>Account ID</b>
+  <%=h @account_plan.Account_ID %>
+</p>
+<p>
+  <b>Account Description</b>
+  <%=h @account_plan.Account_Description %>
+</p>
+<p>
+  <b>Account Short Description</b>
+  <%=h @account_plan.Account_Short_Description %>
+</p>
+<p>
+  <b>Account Parent ID</b>
+  <%=h @account_plan.Account_Parent_ID %>
+</p>
+<p>
+  <b>Parent ID</b>
+  <%=h @account_plan.Parent_ID %>
+</p>
+<p>
+  <b>Position</b>
+  <%=h @account_plan.Sequence_ID %>
+</p>
+<p>
+  <b>Lock</b>
+  <%=h @account_plan.Lock_Status %>
+</p>
+<p>
+  <b>Created by</b>
+  <%=h @account_plan.Record_Creator %>
+</p>
+
+<p>
+  <b>Created at</b>
+  <%=h @account_plan.Record_Creation_Date %>
+</p>
+
+<p>
+  <b>Group</b>
+  <%=h @account_plan.Group_Identifier %>
+</p>
+
+<p>
+  <b>Entity</b>
+  <%=h @account_plan.Entity_Identifier %>
+</p>
+
+<p>
+  <b>Unary Operator</b>
+  <%=h @account_plan.Account_UO %>
+</p>
+
+<%= link_to 'Edit', edit_account_plan_path(@account_plan) %> |
+<%= link_to 'Back', account_plans_path %>
+

@@ -1,0 +1,42 @@
+<h1>New report line</h1>
+
+<%= error_messages_for :report_line %>
+
+<% form_for(@report_line) do |f| %>
+  <p>
+    <b>Line</b><br />
+    <%= f.text_field :Line_Id %>
+  </p>
+
+  <p>
+    <b>Name</b><br />
+    <%= f.text_field :Line_Caption %>
+  </p>
+
+  <p>
+    <b>Position</b><br />
+    <%= f.text_field :Order %>
+  </p>
+
+  <p>
+    <b>Morphing</b><br />
+    <%= f.text_field :Line_Morphing %>
+  </p>
+
+  <p>
+    <b>Style</b><br />
+    <%= f.text_field :Line_Style %>
+  </p>
+  
+  <p>
+    <b>Report ID</b><br />
+    <%= select("report_line", "Report_Id", Report.find(:all).collect{ |c| [ c.Report_Name, c.Report_ID] }) %>
+    <!--%= f.text_field :report_id %-->
+  </p>
+
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', report_lines_path %>

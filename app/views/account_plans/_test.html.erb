@@ -1,0 +1,12 @@
+
+
+
+    <li>
+    <%= link_to h(account_plan.name), :controller => 'account_plan', :action => 'show', :id => account_plan.id %>
+    <% if account_plan.children.empty? %>
+      <span>no subcategories</span>
+    <% else %>
+      <ul><%= render :partial => 'test', :collection => account_plan.children %></ul>
+    <% end %>  
+    </li>
+

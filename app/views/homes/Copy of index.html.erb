@@ -1,0 +1,16 @@
+
+<h1>Listing homes</h1>
+
+
+
+<h1>1) Simple DataGrid</h1>
+<%= jqgrid("Football Players", "players", "/homes",
+	[
+		{ :field => "id", :label => "ID", :width => 35, :resizable => false },
+		{ :field => "created_at", :label => "created_at" },
+		{ :field => "updated_at", :label => "updated_at" }
+
+	]
+) %>
+
+<br />

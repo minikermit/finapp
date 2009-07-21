@@ -1,0 +1,24 @@
+<% form_for(@scenario) do |form| %>
+  <%= form.error_messages %>
+  
+  <Fieldset>
+  	<Legend> Header for my form grouping  </legend>
+  	
+  <div>
+    <%= form.label :Code %><br />
+    <%= form.text_field :Category_Code %>
+  </div>
+  <div>
+    <%= form.label :Name %><br />
+    <%= form.text_field :Category_Name %>
+  </div>
+  
+  <br />
+  
+  <div>
+    <%= form.submit "Submit" %>
+  </div>
+  
+  </Fieldset>
+  
+<% end %>

@@ -1,0 +1,30 @@
+<h1>Editing report_structure</h1>
+
+<%= error_messages_for :report_structure %>
+
+<% form_for(@report_structure) do |f| %>
+  <p>
+    <b>Line</b><br />
+    <!--%= f.text_field :report_line_id %-->
+    <%= select("report_structure", "report_line_id", ReportLine.find(:all, :order => "line_id ASC").collect{ |c| [ c.line_id + " - " + c.name , c.id] }) %>
+  </p>
+
+  <p>
+    <b>Account plan</b><br />
+    <!--%= f.text_field :dim_account_plan_id %-->
+    <%= select("report_structure", "dim_account_plan_id", DimAccountPlan.find(:all,:order => "account_id ASC").collect{ |c| [ c.account_id + " - " + c.account_description, c.id] }) %>
+
+  </p>
+
+  <p>
+    <b>Comment</b><br />
+    <%= f.text_area :comment %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @report_structure %> |
+<%= link_to 'Back', report_structures_path %>

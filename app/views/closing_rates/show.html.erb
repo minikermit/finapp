@@ -1,0 +1,27 @@
+<p>
+  <b>Group_id:</b>
+  <%=h @closing_rate.Group_id %>
+</p>
+<p>
+  <b>Entity_id:</b>
+  <%=h @closing_rate.Entity_id %>
+</p>
+<p>
+  <b>Downloaddate:</b>
+  <%=h @closing_rate.Downloaddate %>
+</p>
+<p>
+  <b>Currency_Code:</b>
+  <%=h @closing_rate.Currency_Code %>
+</p>
+<p>
+  <b>Currency_ISO:</b>
+  <%=h @closing_rate.Currency_ISO %>
+</p>
+<p>
+  <b>Currency_Rate:</b>
+  <%=h @closing_rate.Currency_Rate %>
+</p>
+
+<%= link_to 'Edit', edit_closing_rate_path(@closing_rate) %> |
+<%= link_to 'Back', closing_rates_path %>

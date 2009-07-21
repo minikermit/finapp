@@ -1,0 +1,63 @@
+<h1>New account_plan</h1>
+
+<% form_for(@account_plan) do |f| %>
+  <%= f.error_messages %>
+
+ <p>
+    <%= f.label :account_plan_type %><br />
+    <%= f.text_field :Account_Type_FK %>
+  </p>
+  <p>
+    <%= f.label :account %><br />
+    <%= f.text_field :Account_ID %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_field :Account_Description %>
+  </p>
+  <p>
+    <%= f.label :short_name %><br />
+    <%= f.text_field :Account_Short_Description %>
+  </p>
+    <p>
+    <%= f.label :Parent_ID %><br />
+    <%= f.text_field :Account_Parent_ID %>
+  </p>   
+  <p>
+    <%= f.label :parent %><br />
+    <%= f.text_field :Parent_ID %>
+  </p>
+  <p>
+    <%= f.label :order %><br />
+    <%= f.text_field :Sequence_ID %>
+  </p>
+  <p>
+    <%= f.label :lock %><br />
+    <%= f.check_box :Lock_Status %>
+  </p>
+    <p>
+    <%= f.label :Group %><br />
+    <%= f.text_field :Group_Identifier %>
+  </p>
+    <p>
+    <%= f.label :Entity %><br />
+    <%= f.text_field :Entity_Identifier %>
+  </p>
+   <p>
+    <%= f.label :UnaryOperator %><br />
+    <%= f.text_field :Account_UO %>
+  </p>
+  <p>
+    <%= f.label :created_by %><br />
+    <%= f.text_field :Record_Creator %>
+  </p>
+    <p>
+    <%= f.label :created_at %><br />
+    <%= f.text_field :Record_Creation_Date %>
+  </p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', account_plans_path %>

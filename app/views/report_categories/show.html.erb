@@ -1,0 +1,12 @@
+<p>
+  <!--b>ID:</b-->
+ <!--%=h @report_category.id %--> 
+  <b>Type:</b>
+<%=h @report_category.Category_Kind_Description %>
+  <b>Name:</b>
+<%=h @report_category.Category_Type_Description %>
+</p>
+
+
+<%= link_to 'Edit', edit_report_category_path(@report_category) %> |
+<%= link_to 'Back', report_categories_path %>

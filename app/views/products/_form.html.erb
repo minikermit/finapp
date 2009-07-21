@@ -1,0 +1,56 @@
+<% form_for(@product) do |f| %>
+  <%= f.error_messages %>
+  
+  <p>
+    <%= f.label :ID %><br />
+    <%= f.text_field :FiMIS_Identifier %>
+  </p>
+  <p>
+    <%= f.label :Aggregate %><br />
+    <%= f.text_field :DIM_Aggregate %>
+  </p>
+    <p>
+    <%= f.label :Product_Type %><br />
+    <%= f.text_field :Product_Type %>
+  </p>
+  <p>
+    <%= f.label :Product_type_name %><br />
+    <%= f.text_field :Product_type_name %>
+  </p>
+    <p>
+    <%= f.label :Product_Kind %><br />
+    <%= f.text_field :Product_Kind %>
+  </p>
+  <p>
+    <%= f.label :Product_Kind_Name %><br />
+    <%= f.text_field :Product_Kind_Name %>
+  </p>
+    <p>
+    <%= f.label :Product_GroupBy_1 %><br />
+    <%= f.text_field :Product_GroupBy_1 %>
+  </p>
+  <p>
+    <%= f.label :Product_GroupBy_1_name %><br />
+    <%= f.text_field :Product_GroupBy_1_name %>
+  </p>
+    <p>
+    <%= f.label :Product_GroupBy_2 %><br />
+    <%= f.text_field :Product_GroupBy_2 %>
+  </p>
+    <p>
+    <%= f.label :Product_GroupBy_2_name %><br />
+    <%= f.text_field :Product_GroupBy_2_name %>
+  </p>
+  <p>
+    <%= f.label :Product_GroupBy_3 %><br />
+    <%= f.text_field :Product_GroupBy_3 %>
+  </p>
+   <p>
+    <%= f.label :Product_GroupBy_3_name %><br />
+    <%= f.text_field :Product_GroupBy_3_name %>
+  </p>
+  
+  <p>
+    <%= f.submit "Submit" %>
+  </p>
+<% end %>

@@ -1,0 +1,16 @@
+<p>
+  <b>Title:</b>
+  <%=h @portal.title %>
+</p>
+
+<p>
+  <%= image_tag @portal.logo.url %>
+</p>
+ 
+<p>
+  <b>Description:</b>
+  <%=h @portal.description2 %>
+</p>
+
+<%= link_to 'Edit', edit_portal_path(@portal) %> |
+<%= link_to 'Back', portals_path %>

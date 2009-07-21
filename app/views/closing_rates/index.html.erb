@@ -1,0 +1,32 @@
+<h1>Listing closing_rates</h1>
+
+<table>
+  <tr>
+    <th>Group</th>
+    <th>Entity</th>
+    <th>Date</th>
+    <th>Code</th>
+    <th>ISO</th>
+    <th>Rate</th>
+  </tr>
+
+
+
+<% for closing_rate in @closing_rates %>
+  <tr>
+    <td><%=h closing_rate.Group_id %></td>
+    <td><%=h closing_rate.Entity_id %></td>
+    <td><%=h closing_rate.Downloaddate %></td>
+    <td><%=h closing_rate.Currency_Code %></td>
+    <td><%=h closing_rate.Currency_ISO %></td>
+    <td><%=h closing_rate.Currency_Rate %></td>
+    <td><%= link_to 'Show', closing_rate %></td>
+    <td><%= link_to 'Edit', edit_closing_rate_path(closing_rate) %></td>
+    <td><%= link_to 'Destroy', closing_rate, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New closing_rate', new_closing_rate_path %>

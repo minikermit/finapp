@@ -1,0 +1,16 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: Swiss GAAP
+
+two:
+  name: Green Book
+
+three:
+  name: Management reporting
+
+four:
+  name: Luxembourg GAAP
+
+five:
+  name: Singapore GAAP

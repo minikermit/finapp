@@ -1,0 +1,2 @@
+module CounterpartiesHelper
+end

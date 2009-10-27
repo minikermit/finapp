@@ -1,0 +1,101 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id: 1
+  Group_id: MyString
+  Entity_id: MyString
+  Source_id: MyString
+  DownloadDate: 2009-09-08 22:40:53
+  Record_Creation_Date: 2009-09-08 22:40:53
+  Record_Creator: MyString
+  Record_Application: MyString
+  Value_Month: MyString
+  Value_Date: MyString
+  Executing_Date: MyString
+  Type_of_record: MyString
+  Bank_id: MyString
+  Branch_id: MyString
+  Limit_nr: MyString
+  Legacy_Acc_Subtype_Code: MyString
+  Account_id: MyString
+  Count_CIF: MyString
+  Limit_code: MyString
+  Limit_Labeling: MyString
+  Limit_Nom: 9.99
+  Limit_Curr: MyString
+  Limit_Local_Currency: MyString
+  Limit_Local_Amount: 9.99
+  Limit_FX: 9.99
+  Limit_NIS: 9.99
+  Limit_Start: MyString
+  Limit_End: MyString
+  Limit_Tenure: MyString
+  Limit_Comm: MyString
+  Limit_Comm_Resign: MyString
+  Limit_Ref_Date: MyString
+  Used_Credit_Limit_Amt: 9.99
+  Used_Credit_Limit_Amt_Local: 9.99
+  Used_Credit_Limit_Amt_NIS: 9.99
+  UnUsed_Credit_Limit_Amt: 9.99
+  UnUsed_Credit_Limit_Amt_NIS: 9.99
+  UnUsed_Credit_Limit_Amt_Local: 9.99
+  Executing_Bank_Id: MyString
+  Trans_Segment_Code: MyString
+  Trans_Segment_Det: MyString
+  Trans_Sub_Segment_code: MyString
+  Trans_Sub_Segment_Det: MyString
+  Trans_Marking_Past_Due_Code: MyString
+  Trans_Marking_Past_Due_Det: MyString
+  Trans_Markings_Other_code: MyString
+  Trans_Markings_Other_Det: MyString
+  Executing_Branch_Id: 1
+
+two:
+  id: 1
+  Group_id: MyString
+  Entity_id: MyString
+  Source_id: MyString
+  DownloadDate: 2009-09-08 22:40:53
+  Record_Creation_Date: 2009-09-08 22:40:53
+  Record_Creator: MyString
+  Record_Application: MyString
+  Value_Month: MyString
+  Value_Date: MyString
+  Executing_Date: MyString
+  Type_of_record: MyString
+  Bank_id: MyString
+  Branch_id: MyString
+  Limit_nr: MyString
+  Legacy_Acc_Subtype_Code: MyString
+  Account_id: MyString
+  Count_CIF: MyString
+  Limit_code: MyString
+  Limit_Labeling: MyString
+  Limit_Nom: 9.99
+  Limit_Curr: MyString
+  Limit_Local_Currency: MyString
+  Limit_Local_Amount: 9.99
+  Limit_FX: 9.99
+  Limit_NIS: 9.99
+  Limit_Start: MyString
+  Limit_End: MyString
+  Limit_Tenure: MyString
+  Limit_Comm: MyString
+  Limit_Comm_Resign: MyString
+  Limit_Ref_Date: MyString
+  Used_Credit_Limit_Amt: 9.99
+  Used_Credit_Limit_Amt_Local: 9.99
+  Used_Credit_Limit_Amt_NIS: 9.99
+  UnUsed_Credit_Limit_Amt: 9.99
+  UnUsed_Credit_Limit_Amt_NIS: 9.99
+  UnUsed_Credit_Limit_Amt_Local: 9.99
+  Executing_Bank_Id: MyString
+  Trans_Segment_Code: MyString
+  Trans_Segment_Det: MyString
+  Trans_Sub_Segment_code: MyString
+  Trans_Sub_Segment_Det: MyString
+  Trans_Marking_Past_Due_Code: MyString
+  Trans_Marking_Past_Due_Det: MyString
+  Trans_Markings_Other_code: MyString
+  Trans_Markings_Other_Det: MyString
+  Executing_Branch_Id: 1

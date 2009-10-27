@@ -1,0 +1,171 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: GB_FORM_12
+  report_category: two
+  description: Green Book Form 12
+  position: 1
+
+two:
+  name: GB_FORM_11
+  report_category: two
+  description: Green Book Form 11
+  position: 2
+
+three:
+  name: GB_FORM_4
+  report_category: two
+  description: Green Book Form 4
+  position: 3
+
+four:
+  name: GB_FORM_5
+  report_category: two
+  description: Green Book Form 5
+  position: 4
+
+
+five:
+  name: GB_FORM_4A
+  report_category: two
+  description: Green Book Form 4A
+  position: 5
+
+six:
+  name: GB_FORM_4B
+  report_category: two
+  description: Green Book Form 4B
+  position: 6
+
+seven:
+  name: GB_FORM_6
+  report_category: two
+  description: Green Book Form 6
+  position: 7
+
+eight:
+  name: GB_FORM_7
+  report_category: two
+  description: Green Book Form 7
+  position: 8
+
+nine:
+  name: GB_FORM_8
+  report_category: two
+  description: Green Book Form 8
+  position: 9
+
+ten:
+  name: GB_FORM_9
+  report_category: two
+  description: Green Book Form 9
+  position: 10
+
+eleven:
+  name: GB_FORM_10
+  report_category: two
+  description: Green Book Form 10
+  position: 11
+
+twelve:
+  name: GB_FORM_13
+  report_category: two
+  description: Green Book Form 13
+  position: 12
+
+thirteen:
+  name: GB_FORM_14
+  report_category: two
+  description: Green Book Form 14
+  position: 13
+
+fourteen:
+  name: GB_FORM_15
+  report_category: two
+  description: Green Book Form 15
+  position: 14
+
+fifteen:
+  name: GB_FORM_35
+  report_category: two
+  description: Green Book Form 35
+  position: 15
+
+sixteen:
+  name: GB_FORM_8A
+  report_category: two
+  description: Green Book Form 8A
+  position: 16
+
+seventeen:
+  name: CH_BL
+  report_category: one
+  description: Balance sheet (CH GAAP)
+  position: 17
+
+eighteen:
+  name: CH_PNL
+  report_category: one
+  description: Profit & Loss (CH GAAP)
+  position: 18
+
+nineteen:
+  name: GB_FORM_16
+  report_category: one
+  description: Green Book Form 16
+  position: 19
+
+nineteen:
+  name: GB_FORM_17
+  report_category: two
+  description: Green Book Form 17
+  position: 20
+
+twenty:
+  name: GB_FORM_18
+  report_category: two
+  description: Green Book Form 18
+  position: 21
+
+twentyone:
+  name: GB_FORM_19
+  report_category: two
+  description: Green Book Form 19
+  position: 22
+
+twentytwo:
+  name: GB_FORM_20
+  report_category: two
+  description: Green Book Form 20
+  position: 23
+
+twentythree:
+  name: GB_FORM_21
+  report_category: two
+  description: Green Book Form 21
+  position: 24
+
+twentyfour:
+  name: GB_FORM_22
+  report_category: two
+  description: Green Book Form 22
+  position: 25
+
+twentyfive:
+  name: GB_FORM_23
+  report_category: two
+  description: Green Book Form 23
+  position: 26
+
+twentysix:
+  name: MGT_Personnel
+  report_category: three
+  description: Personnel Expenses
+  position: 27
+
+twentyseven:
+  name: MGT_Operating
+  report_category: three
+  description: Operating Expenses
+  position: 28
+

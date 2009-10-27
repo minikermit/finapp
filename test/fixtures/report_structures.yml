@@ -1,0 +1,51 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  report_line: one
+  dim_account_plan: one
+  comment: MyText
+
+two:
+  report_line: two
+  dim_account_plan: two
+  comment: MyText
+
+three:
+  report_line: three
+  dim_account_plan: two
+  comment: MyText
+
+four:
+  report_line: one
+  dim_account_plan: two
+  comment: MyText
+
+five:
+  report_line: one
+  dim_account_plan: two
+  comment: MyText
+
+six:
+  report_line: one
+  dim_account_plan: two
+  comment: MyText
+
+seven:
+  report_line: four
+  dim_account_plan: two
+  comment: MyText
+
+eight:
+  report_line: five
+  dim_account_plan: two
+  comment: MyText
+
+nine:
+  report_line: five
+  dim_account_plan: one
+  comment: MyText
+
+ten:
+  report_line: four
+  dim_account_plan: one
+  comment: MyText

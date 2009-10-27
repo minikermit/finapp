@@ -1,0 +1,100 @@
+<h3>Listing counterparties</h3>
+
+<table>
+  <tr>
+    <th>Entity</th>
+    <th>Source</th>
+    <th>Downloaddate</th>
+    <th>Value month</th>
+    <th>Value date</th>
+    <th>Executing date</th>
+    <th>Type of record</th>
+    <th>Bank</th>
+    <th>Branch</th>
+    <th>Count cif</th>
+    <th>Count group</th>
+    <th>Count group code</th>
+    <th>Count name</th>
+    <th>Count segment bh</th>
+    <th>Count segment det</th>
+    <th>Count segment</th>
+    <th>Count legal</th>
+    <th>Count domicile</th>
+    <th>Count risk</th>
+    <th>Count org bh</th>
+    <th>Count domicile dom</th>
+    <th>Count domicile oecd</th>
+    <th>Count domicile eea</th>
+    <th>Count exp tot</th>
+    <th>Count prov</th>
+    <th>Count ref date</th>
+    <th>Swift address</th>
+    <th>Swift address branch</th>
+    <th>Establish date</th>
+    <th>Global cif</th>
+    <th>Count segment code</th>
+    <th>Count sub segment code</th>
+    <th>Count sub segment det</th>
+    <th>Count income total local</th>
+    <th>Count income total nis</th>
+    <th>Count code</th>
+    <th>Domicile branch code</th>
+  </tr>
+
+<% @counterparties.each do |counterparty| %>
+  <tr>
+    <td><%=h counterparty.Entity_id %></td>
+    <td><%=h counterparty.Source_id %></td>
+    <td><%=h counterparty.DownloadDate %></td>
+    <td><%=h counterparty.Value_Month %></td>
+    <td><%=h counterparty.Value_Date %></td>
+    <td><%=h counterparty.Executing_Date %></td>
+    <td><%=h counterparty.Type_of_record %></td>
+    <td><%=h counterparty.Bank_id %></td>
+    <td><%=h counterparty.Branch_id %></td>
+    <td><%=h counterparty.Count_CIF %></td>
+    <td><%=h counterparty.Count_Group %></td>
+    <td><%=h counterparty.Count_Group_Code %></td>
+    <td><%=h counterparty.Count_Name %></td>
+    <td><%=h counterparty.Count_Segment_BH %></td>
+    <td><%=h counterparty.Count_Segment_Det %></td>
+    <td><%=h counterparty.Count_Segment %></td>
+    <td><%=h counterparty.Count_Legal %></td>
+    <td><%=h counterparty.Count_Domicile %></td>
+    <td><%=h counterparty.Count_Risk %></td>
+    <td><%=h counterparty.Count_Org_BH %></td>
+    <td><%=h counterparty.Count_Domicile_Dom %></td>
+    <td><%=h counterparty.Count_Domicile_OECD %></td>
+    <td><%=h counterparty.Count_Domicile_EEA %></td>
+    <td><%=h counterparty.Count_Exp_Tot %></td>
+    <td><%=h counterparty.Count_Prov %></td>
+    <td><%=h counterparty.Count_Ref_Date %></td>
+    <td><%=h counterparty.Swift_Address %></td>
+    <td><%=h counterparty.Swift_Address_Branch %></td>
+    <td><%=h counterparty.Establish_Date %></td>
+    <td><%=h counterparty.Global_Cif %></td>
+    <td><%=h counterparty.Count_Segment_Code %></td>
+    <td><%=h counterparty.Count_Sub_Segment_Code %></td>
+    <td><%=h counterparty.Count_Sub_Segment_Det %></td>
+    <td><%=h counterparty.Count_Income_Total_Local %></td>
+    <td><%=h counterparty.Count_Income_Total_NIS %></td>
+    <td><%=h counterparty.Count_Code %></td>
+    <td><%=h counterparty.Domicile_Branch_Code %></td>
+    <td><%= link_to 'Show', counterparty %></td>
+    <td><%= link_to 'Edit', edit_counterparty_path(counterparty) %></td>
+    <td><%= link_to 'Destroy', counterparty, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<div class="digg_pagination">
+  <div class="page_info">
+    <%= page_entries_info @counterparties %>
+  </div-->
+    <%= will_paginate @counterparties, :container => false %>
+</div>
+
+
+<%= link_to 'New counterparty', new_counterparty_path %>

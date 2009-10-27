@@ -45,4 +45,12 @@
 
 <br />
 
+
+<div class="digg_pagination">
+  <div class="page_info">
+    <%= page_entries_info @currencies %>
+  </div-->
+    <%= will_paginate @currencies, :container => false %>
+</div>
+
 <%= link_to 'New currency', new_currency_path %>

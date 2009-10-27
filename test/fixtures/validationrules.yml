@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id: 1
+  rule_identification: MyString
+  rule_description: MyString
+  rule_scope: MyString
+  rule_hint: MyString
+  rule_sql_query: MyString
+  created_at: 2009-10-11 00:03:19
+  updated_at: 2009-10-11 00:03:19
+  rule_type: MyString
+
+two:
+  id: 1
+  rule_identification: MyString
+  rule_description: MyString
+  rule_scope: MyString
+  rule_hint: MyString
+  rule_sql_query: MyString
+  created_at: 2009-10-11 00:03:19
+  updated_at: 2009-10-11 00:03:19
+  rule_type: MyString

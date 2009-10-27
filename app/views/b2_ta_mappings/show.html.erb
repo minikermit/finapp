@@ -1,14 +1,7 @@
-<p>
-  <b>Id:</b>
-  <%=h @b2_ta_mappings.id %>
-</p>
+<Div id= "view" class = "span-16">
 <p>
   <b>Group:</b> <%=h @b2_ta_mappings.group_id %> 
-</p>
-<p>
   <b>Entity:</b> <%=h @b2_ta_mappings.entity_id %>
-</p>
-<p>
   <b>Parameter:</b>
   <%=h @b2_ta_mappings.information_mapped %>
 </p>
@@ -49,3 +42,5 @@
 
 <%= link_to 'Edit', edit_b2_ta_mapping_path(@b2_ta_mappings) %> |
 <%= link_to 'Back', b2_ta_mapping_path %>
+
+</div>

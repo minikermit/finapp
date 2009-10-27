@@ -1,0 +1,93 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  report: twentysix
+  line_id: MGTPERS_0
+  name: Personnel Expenses
+  position: 1
+  description: MyText
+
+two:
+  report: twentysix
+  line_id: MGTPERS_1
+  name:   Director's emolument
+  position: 2
+  description: MyText
+
+three:
+  report: twentysix
+  line_id:   MGTPERS_2
+  name:   Salaries staff
+  position: 3
+  description: MyText
+
+four:
+  report: twentysix
+  line_id:   MGTPERS_3
+  name:   Rep. Allowance
+  position: 4
+  description: MyText
+
+five:
+  report: twentysix
+  line_id: MGTPERS_4
+  name:  Salaries personnel agencies
+  position: 5
+  description: MyText
+
+
+six:
+  report: twentysix
+  line_id: MGTPERS_5
+  name: Social charges
+  position: 6
+  description: MyText
+
+seven:
+  report: twentysix
+  line_id: MGTPERS_6
+  name: Children Allowance
+  position: 7
+  description: MyText
+
+eight:
+  report: twentysix
+  line_id: MGTPERS_7
+  name:   Contributions to staff pension funds
+  position: 8
+  description: MyText
+
+nine:
+  report: twentysix
+  line_id: MGTPERS_8
+  name: Meal Allowance
+  position: 9
+  description: MyText
+
+ten:
+  report: twentysix
+  line_id: MGTPERS_9
+  name: Recruiting
+  position: 10
+  description: MyText
+
+eleven:
+  report: twentysix
+  line_id: MGTPERS_10
+  name:   Education
+  position: 11
+  description: MyText
+
+twelve:
+  report: twentysix
+  line_id: MGTPERS_11
+  name:    Insurance
+  position: 12
+  description: MyText
+
+thirteen:
+  report: twentysix
+  line_id: MGTPERS_12
+  name:    Other personnel costs
+  position: 13
+  description: MyText

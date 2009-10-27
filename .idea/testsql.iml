@@ -16,15 +16,20 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="[gem] actionpack (v2.3.2, C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2)" level="application" />
-    <orderEntry type="library" name="[gem] activeresource (v2.3.2, C:/ruby/lib/ruby/gems/1.8/gems/activeresource-2.3.2)" level="application" />
-    <orderEntry type="library" name="[gem] activerecord (v2.3.2, C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2)" level="application" />
-    <orderEntry type="library" name="[gem] rails (v2.3.2, C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2)" level="application" />
-    <orderEntry type="library" name="[gem] actionmailer (v2.3.2, C:/ruby/lib/ruby/gems/1.8/gems/actionmailer-2.3.2)" level="application" />
-    <orderEntry type="library" name="[gem] rake (v0.8.4, C:/ruby/lib/ruby/gems/1.8/gems/rake-0.8.4)" level="application" />
-    <orderEntry type="library" name="[gem] activesupport (v2.3.2, C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2)" level="application" />
     <orderEntry type="library" name="[gem] activerecord-sqlserver-adapter (v1.0.0.9250, C:/ruby/lib/ruby/gems/1.8/gems/activerecord-sqlserver-adapter-1.0.0.9250)" level="application" />
     <orderEntry type="library" name="[gem] mislav-will_paginate (v2.2.3, C:/ruby/lib/ruby/gems/1.8/gems/mislav-will_paginate-2.2.3)" level="application" />
+    <orderEntry type="library" name="[gem] sqlite3-ruby (v1.2.3, C:/ruby/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.2.3-x86-mswin32)" level="application" />
+    <orderEntry type="library" name="[gem] rspec-rails (v1.2.7.1, C:/ruby/lib/ruby/gems/1.8/gems/rspec-rails-1.2.7.1)" level="application" />
+    <orderEntry type="library" name="[gem] rspec (v1.2.8, C:/ruby/lib/ruby/gems/1.8/gems/rspec-1.2.8)" level="application" />
+    <orderEntry type="library" name="[gem] rack (v1.0.0, C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0)" level="application" />
+    <orderEntry type="library" name="[gem] searchlogic (v2.3.3, C:/ruby/lib/ruby/gems/1.8/gems/searchlogic-2.3.3)" level="application" />
+    <orderEntry type="library" name="[gem] activesupport (v2.3.3, C:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.3)" level="application" />
+    <orderEntry type="library" name="[gem] activerecord (v2.3.3, C:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.3)" level="application" />
+    <orderEntry type="library" name="[gem] rake (v0.8.7, C:/ruby/lib/ruby/gems/1.8/gems/rake-0.8.7)" level="application" />
+    <orderEntry type="library" name="[gem] rails (v2.3.3, C:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.3)" level="application" />
+    <orderEntry type="library" name="[gem] actionmailer (v2.3.3, C:/ruby/lib/ruby/gems/1.8/gems/actionmailer-2.3.3)" level="application" />
+    <orderEntry type="library" name="[gem] actionpack (v2.3.3, C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3)" level="application" />
+    <orderEntry type="library" name="[gem] activeresource (v2.3.3, C:/ruby/lib/ruby/gems/1.8/gems/activeresource-2.3.3)" level="application" />
   </component>
   <component name="RModuleSettingsStorage">
     <RMODULE_SETTINGS_STORAGE_ID NAME="NUMBER" VALUE="0" />

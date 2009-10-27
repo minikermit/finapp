@@ -6,764 +6,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/rake/spectask.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/open_id_authentication/init.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/par_mappings/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/failing/pending_example.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/matchers/simple_matcher.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/Rakefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/notes/SecurityFramework.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/spec/rails/matchers/should_change_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/products/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/failing/predicate_example.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/matchers/be_close.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/lib/spec/rails/mocks.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/view_spec/accessor.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/features/mocks/mix_stubs_and_mocks.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/controllers/application.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/runner/options.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/templates/features/step_definitions/ra_navigation_steps.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/lib/spec/rails/extensions/action_controller/rescue.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/blueprint/plugins/link-icons/icons/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/blueprint/plugins/link-icons/icons/doc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/open_id_authentication/tasks/open_id_authentication_tasks.rake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/spec/rails/example/view_example_group_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/open_id_authentication/generators/open_id_authentication_tables/open_id_authentication_tables_generator.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/home.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/exception_notification/views/exception_notifier/_inspect_model.rhtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/License.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/mocks/message_expectation.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/lib/insert_routes.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/generators/rspec/templates/spec_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/view_spec/_partial_used_twice.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/blueprint/src/grid.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/lib/authorization/aasm_roles.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/lib/spec/rails/matchers/assert_select.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/position_types/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/controller_spec/_partial.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/example/example_group_class_definition_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/products/_form.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/matchers/errors.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/lib/spec/rails/example/helper_example_group.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/failing/mocking_with_rr.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/blueprint/plugins/link-icons/screen.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/templates/spec/fixtures/users.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/blueprint/plugins/link-icons/icons/external.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/role_requirement/generators/roles/templates/roles.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/matchers/have.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/templates/features/accounts.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/runner/differs/load-diff-lcs.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/expectations/fail_with_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/autotest/autotest_matchers.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/passing/filtered_formatter.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/authenticated_generator.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/controllers/redirect_spec_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/matchers/be_kind_of_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/lib/spec/rails/example/model_example_group.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/lib/spec/rails/extensions/action_controller/test_response.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/mocks/bug_report_11545_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/blueprint/src/ie.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/expectations.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/interop/test/unit/testresult.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/matchers/wrap_expectation.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/timebands/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/example/example_group.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/client_security_positions/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/open_id_authentication/Rakefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/features/step_definitions/people.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/view_spec/should_not_receive.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/mocks/at_most_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/timebands.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/mocks/bug_report_7805_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/product_categories/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/example/errors.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/role_requirement/generators/roles/templates/role_requirement_system.rb.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/USAGE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/mocks/argument_expectation_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/passing/greeter_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/Rakefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/view_spec/_partial_with_local_variable.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/expectations/extensions/kernel.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/matchers/match.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/view_spec/template_with_partial_with_array.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/example/pending_module_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/account_plan.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/exception_notification/views/exception_notifier/_session.rhtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/dsl/main_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/passing/io_processor.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/example/predicate_matcher_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/blueprint/src/reset.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/matchers/change_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/matchers/method_missing.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/expectations/extensions/object_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/matchers/be_instance_of_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/example/shared_example_group.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/templates/features/step_definitions/user_steps.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/open_id_authentication/lib/open_id_authentication/association.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/spec/rails/matchers/redirect_to_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/failing/syntax_error_example.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/shared/_sidebar.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/lib/trustification.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/Manifest.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/spec/rails/mocks/mock_model_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/report_lines_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/role_requirement/generators/roles/templates/role_requirement_test_helper.rb.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/example/example_proxy.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/bin/spec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/generators/rspec_model/templates/model_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/autotest/rspec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/features/support/env.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/dsl.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/blueprint/plugins/link-icons/icons/feed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/templates/site_keys.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/mocks/bug_report_7611_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/models/thing.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/exception_notification/views/exception_notifier/exception_notification.rhtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/passing/stubbing_example.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/expectations/wrap_expectation_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/homes_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/autotest/rspec_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/spec/rails/example/routing_example_group_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/tag_spec/single_div_with_one_attribute.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/open_id_authentication/lib/open_id_authentication/timeout_fixes.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/interop/test/unit/testsuite_adapter_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/scenarios/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/example/example_group_methods_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/example/before_and_after_hooks.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/exception_notification/README" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/failing/mocking_example.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/failing/spec_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/view_spec/multiple_helpers.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/rjs_spec/replace.js.rjs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/spec/rails/matchers/assert_select_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/matchers/description_generation_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/TODO" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/notes/RailsPlugins.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/failing/partial_mock_example.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/position_type.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/report_categories/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/example/example_group_methods.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/features/interop/rspec_output.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/spec/rails/example/configuration_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/packages_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/generators/rspec_scaffold/templates/index_erb_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/interop/test/unit/resources/testsuite_adapter_spec_with_test_unit.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/report_structures/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/bin/autospec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/interop/test/unit/testsuite_adapter.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/report_structures/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/spec/rails/sample_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/features/transactions/transactions_should_rollback.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/mocks/order_group.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/lib/spec/rails/matchers/include_text.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/matchers/extensions/instance_exec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/.document" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/exception_notification/lib/exception_notifier_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/javascripts_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/generators/rspec_controller/templates/view_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/blueprint/print.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/passing/io_processor_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/view_spec/_partial.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/spec/rails/sample_modified_fixture.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/failing/failure_in_after.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/failing/failing_implicit_docstrings_example.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/account_plans/_test.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/open_id_authentication/lib/open_id_authentication.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/controllers/action_view_base_spec_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec.opts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/mocks/bug_report_10260_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/open_id_authentication/generators/upgrade_open_id_authentication_tables/upgrade_open_id_authentication_tables_generator.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/open_id_authentication/test/test_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/par_mappings/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/matchers/match_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/generators/rspec/templates/script/spec_server" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/example/predicate_matchers.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/matchers.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/blueprint/plugins/buttons/readme.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/example/example_group_proxy.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/mocks/bug_report_496_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/role_requirement/ChangeLog" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/passing/predicate_example.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/client_security_position.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sources/_form.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/blueprint/plugins/buttons/icons/tick.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/dim_dates.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/example/example_methods_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/passing/stack.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/features/runner/specify_line_number.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/matchers/be_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/helpers/view_spec_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/adapters/mock_frameworks/rr.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/runner/heckle_runner.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/features/extensions/custom_example_group.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/portal.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/runner/formatter/silent_formatter.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/matchers/dsl.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/blueprint/plugins/link-icons/icons/visited.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/generators/rspec_controller/USAGE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/packages.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/view_spec/_spacer.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/portals_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/account_plans/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/open_id_authentication/README" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/report_categories_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/features/subject/implicit_subject.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/lib/authentication/by_cookie_token.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/par_mappings_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/notes/AccessControl.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/matchers/respond_to_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/generators/rspec/CHANGES" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/report_categories/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/autotest/discover_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/rjs_spec/hide_div.js.rjs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/deprecation.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/features/subject/explicit_subject.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/application.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/role_requirement/generators/roles/templates/_user_functions.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/homes_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/account_plans/list.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/generators/rspec/templates/rcov.opts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/test/unit.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/passing/multi_threaded_example_group_runner.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/example/helper_method_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/b2_ta_mapping.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/spec/rails/interop/testcase_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/features/matchers/define_diffable_matcher.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/matchers/matcher_methods_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/lib/spec/rails/matchers/redirect_to.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/blueprint/src/print.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/features/support/matchers/smart_match.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/templates/test/functional_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/lib/spec/rails/matchers/ar_be_valid.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/rjs_spec/hide_page_element.js.rjs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/tag_spec/no_tags.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/matchers/be.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/exception_notification/lib/exception_notifiable.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/features-pending/cli/conditional_exclusion.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/matchers/include.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/ruby.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/rspec_suite.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/product_categories.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/templates/test/model_functional_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/mocks/argument_matchers.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/resources/rake/examples.rake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/spec/rails/extensions/action_view_base_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/failing/mocking_with_mocha.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bort.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/passing/helper_method_example.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/features/matchers/define_matcher.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/timeband.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/exception_notification/views/exception_notifier/_environment.rhtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/lib/spec/rails/example/controller_example_group.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/reports/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/templates/authenticated_test_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/example/example_matcher_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/failing/raising_example.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/role_requirement/generators/roles/templates/role_model.rb.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/layouts/simple.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/view_spec/template_with_partial.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/controller_spec/action_with_errors_in_template.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/passing/stack_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/currencies/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/view_spec/template_with_partial_using_collection.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sources/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/structures.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/role_requirement/generators/role_generator_helpers.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/generators/rspec_scaffold/templates/edit_erb_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/runner/formatter/failing_example_groups_formatter.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/products.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/par_mappings/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/generators/rspec_scaffold/templates/show_erb_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/runner/formatter/snippet_extractor.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/role_requirement/test/functional/test_role_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/matchers/has.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/report_structures/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/packages/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/spec/rails/example/cookies_proxy_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/structures/_form.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/spec/rails/matchers/ar_be_valid_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/spec/rails/spec_server_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/ruby1.9.compatibility/access_to_constants_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/cucumber.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/scenarios/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/spec/rails/extensions/active_record_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/generators/rspec/templates/rspec.rake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/templates/spec/controllers/authenticated_system_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/matchers/has_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/report_structure.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/javascripts_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/expectations/handler.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/runner/configuration.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/lib/authorization/stateful_roles.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/features/example_groups/nested_groups.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/lib/spec/rails/interop/testcase.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/models/person.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/templates/login.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/lib/spec/rails/example/routing_example_group.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/generators/rspec/templates/spec.opts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/lib/spec/rails.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/example/example_proxy_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sources/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/dim_dates/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/lib/spec/rails/example/view_example_group.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/lib/spec/rails/example/assigns_hash_proxy.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/render_spec/action_with_alternate_layout.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/resources/rake/examples_with_rcov.rake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/example/nested_example_group_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/blueprint/plugins/link-icons/readme.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/rails_suite.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/spec/rails/spec_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/mocks/space.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/mocks/spec_methods.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/sources.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/blueprint/src/forms.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/packages/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/open_id_authentication/lib/open_id_authentication/nonce.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/runner/formatter/profile_formatter.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/interop/test/unit/resources/spec_with_errors.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/product_categories/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/spec/rails/matchers/errors_on_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/Manifest.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/dsl/main.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/spec_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/Rakefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/passing/spec_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/example/example_group_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/templates/signup_notification.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/tag_spec/single_div_with_no_attributes.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/example/module_reopening_fix.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/dim_dates/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/structures/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/runner/formatter/no_op_method_missing.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/templates/model_helper_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/passing/filtered_formatter_example.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/passing/pending_example.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/lib/autotest/rails_rspec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/failing/team_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/mocks/mock.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/mocks/extensions.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/templates/spec/controllers/users_controller_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/generators/rspec_scaffold/templates/controller_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/rjs_spec/replace_html.js.rjs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/.autotest" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/templates/features/step_definitions/ra_response_steps.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/templates/observer.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/example/example_methods.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/interop/test/unit/resources/test_case_with_errors.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/matchers/satisfy_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/failing/diffing_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/structures/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/generators/rspec_scaffold/templates/new_erb_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/controller_spec/action_with_template.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/open_id_authentication/generators/upgrade_open_id_authentication_tables/templates/migration.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/notes/Trustification.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/passing/simple_matcher_example.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/mocks/bug_report_600_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/mocks/argument_expectation.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/passing/yielding_example.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/matchers/equal_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/lib/spec/rails/spec_server.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/runner/formatter/failing_examples_formatter.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/autotest/autotest_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/expectations/handler_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/interop/test/unit/resources/spec_that_passes.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/controllers/controller_spec_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/runner/formatter/base_text_formatter.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/generators/rspec_model/rspec_model_generator.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/role_requirement/test/test_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/open_id_authentication/lib/open_id_authentication/db_store.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/interop/test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/example/subclassing_example_group_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/blueprint/plugins/rtl/readme.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/features/example_groups/example_group_with_should_methods.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/closing_rates/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/blueprint/ie.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/lib/spec/rails/version.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/interop/test/unit/test_unit_spec_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/role_requirement/test/user_stub.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/autotest/mappings_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/features/step_definitions/running_rspec_steps.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/blueprint/src/typography.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/dim_dates_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/reports_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/resources/rake/failing_examples_with_html.rake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/rails/init.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sources/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/License.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/mocks/methods.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/open_id_authentication/lib/open_id_authentication/request.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/open_id_authentication/CHANGELOG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/generators/rspec/rspec_generator.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/example.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/interop/test/unit/spec_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/account_plans/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/Upgrade.rdoc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/templates/test/mailer_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/rjs_spec/insert_html.js.rjs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/README.textile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/example/subject.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/b2_ta_mappings/_form.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/role_requirement/test/authenticated_system.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/expectations/extensions.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/rake/verify_rcov.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/matchers/operator_matcher_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/currencies/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/helpers/plugin_application_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/interop/test/unit/ui/console/testrunner.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/matchers/generated_descriptions.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/currencies/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/lib/spec/rails/example.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/blueprint/plugins/rtl/screen.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/passing/nested_classes_example.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/templates/migration.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/spec/rails/mocks/stub_model_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/generators/rspec/templates/script/spec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/matchers/matcher_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/blueprint/plugins/buttons/icons/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/templates/spec/models/user_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/homes/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/spec/rails/example/test_unit_assertion_accessibility_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/features/interop/test_case_with_should_methods.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/scenarios/_form.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/open_id_authentication/test/status_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/notes/Authentication.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/mocks/framework.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/generators/rspec_scaffold/templates/helper_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/blueprint/plugins/link-icons/icons/email.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/closing_rates/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/failing/timeout_behaviour.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/mocks/bug_report_15719_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/init.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/example/example_group_hierarchy.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/matchers/compatibility.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/blueprint/plugins/link-icons/icons/pdf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/helpers/explicit_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/failing/mocking_with_flexmock.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/mocks/bug_report_10263_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/mocks/at_least_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/templates/helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/matchers/equal.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/lib/trustification/email_validation.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/product_categories/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/runner/extensions/kernel.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/CHANGELOG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/position_types/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/matchers/match_array.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/lib/authorization.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/resources/rake/verify_rcov.rake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/reports/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/role_requirement/generators/roles/templates/users_admin_fixture_with_roles.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/account_plans/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/position_types/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/templates/features/step_definitions/ra_env.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/structure.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/example/subject_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/passing/custom_matchers.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/client_security_positions_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/view_spec/explicit_helper.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/open_id_authentication/test/normalize_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/runner/reporter.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/matchers/satisfy.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/report_lines/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/product_category.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/currencies/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/mocks/errors.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/report.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/History.rdoc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/passing/stack_spec_with_nested_example_groups.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/render_spec/_a_partial.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/mocks/error_generator.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/packages/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/templates/features/step_definitions/rest_auth_features_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sources/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/view_spec/implicit_helper.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/blueprint/plugins/fancy-type/readme.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/mocks/extensions/object.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/runner/option_parser.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/products/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/role_requirement/README.textile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/lib/spec/rails/example/functional_example_group.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/matchers/exist_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/rjs_spec/visual_effect.js.rjs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/.document" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/matchers/dsl_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/example/shared_example_group_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/role_requirement/generators/roles/roles_generator.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/lib/spec/rails/example/render_observer.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/sources_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/features/manage_reports.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/blueprint/plugins/buttons/screen.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/products/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/autorun.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/closing_rate.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/blueprint/plugins/buttons/icons/cross.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/lib/spec/rails/extensions/action_controller/test_case.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/passing/shared_example_group_example.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/features/interop/examples_and_tests_together.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/features/before_and_after_blocks/before_and_after_blocks.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/matchers/be_kind_of.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/matchers/change.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/features/interop/test_but_not_test_unit.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/templates/model.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/matchers/exist.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/structures/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/interop/test/unit/autorunner.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/products_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/generators/rspec_model/USAGE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/features/mock_framework_integration/use_rr.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/blueprint/screen.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/spec/rails/matchers/include_text_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/interop/test/unit/testcase_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/par_mapping.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/passing/shared_stack_examples.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/open_id_authentication/generators/open_id_authentication_tables/templates/migration.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/reports/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/interop/test/unit/resources/test_case_that_passes.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/spec/rails/example/example_group_factory_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/passing/implicit_docstrings_example.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/view_spec/foo/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/b2_ta_mappings/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/blueprint/plugins/link-icons/icons/im.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/exception_notification/init.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/matchers/eql.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/report_line.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/timebands/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/structures/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/controller_spec/action_setting_flash_after_session_reset.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/version.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/adapters/mock_frameworks/mocha.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/History.rdoc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/render_spec/some_action.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/timebands/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/homes/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/product_categories/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/controllers/rjs_spec_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/passing/dynamic_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/runner/formatter/progress_bar_formatter.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/passing/file_accessor_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/templates/spec/helpers/users_helper_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/notes/SecurityPatterns.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/b2_ta_mappings/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/templates/spec/controllers/access_control_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/runner/backtrace_tweaker.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/exception_notification/views/exception_notifier/_backtrace.rhtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/report_category.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/lib/spec/rails/extensions/active_record/base.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/spec/rails/example/shared_routing_example_group_examples.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/controller_spec/action_setting_flash_before_session_reset.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/homes.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/client_security_positions.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/generators/rspec_scaffold/templates/routing_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/example/example_group_factory_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/spec/rails/example/helper_example_group_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/lib/spec/rails/matchers/have_text.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/features/mock_framework_integration/use_flexmock.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/adapters/mock_frameworks/flexmock.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/report_categories/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/lib/autotest/discover.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/templates/features/sessions.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/view_spec/block_helper.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/layouts/application.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/open_id_authentication/lib/open_id_authentication/mem_cache_store.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/lib/spec/rails/matchers.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/ruby_forker.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/example/args_and_options.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/runner/differs/default.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/runner/spec_parser.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/source.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/lib/spec/rails/story_adapter.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/matchers/matchers_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/role_requirement/generators/roles/templates/001_roles_migration.rb.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/passing/custom_formatter.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/role_requirement/MIT-LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/package.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/generators/rspec_controller/rspec_controller_generator.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/reports/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/templates/activation.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/role_requirement/test/controller_stub.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/generators/rspec/templates/script/autospec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/lib/spec/rails/example/cookies_proxy.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/scenarios_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/example/example_group_factory.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/dim_date.rb" />
-      <change type="NEW" beforePath="" afterPath="C:\ruby\rails_apps\testsql\vendor\plugins\role_requirement\generators\roles\templates\roles_users.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/mocks/any_number_of_times_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/notes/SecurityFramework.graffle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/b2_ta_mappings/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/exception_notification/test/exception_notifier_helper_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/position_types_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/dim_dates/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/scenarios/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/blueprint/plugins/link-icons/icons/xls.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/generators/rspec_controller/templates/controller_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/view_spec/_partial_with_sub_partial.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/runner/command_line.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/templates/controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/role_requirement/init.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/timebands/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/spec/rails/example/model_example_group_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/helpers/addition_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/README.rdoc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/client_security_positions/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/report_categories/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/account_plans_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/currency.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/matchers/throw_symbol.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/templates/model_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/runner/heckle_runner_unsupported.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/mocks/proxy.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/lib/authentication/by_password.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/runner/formatter/nested_text_formatter.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/matchers/throw_symbol_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/templates/signup.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/features/heckle/heckle.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/scenarios/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/lib/spec/rails/extensions.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/closing_rates/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/matchers/have_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/homes/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/open_id_authentication/test/mem_cache_store_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/generators/rspec_scaffold/rspec_scaffold_generator.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/runner/formatter/text_mate_formatter.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/lib/spec/rails/example/routing_helpers.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/exception_notification/lib/exception_notifier.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/controllers/render_spec_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/README.rdoc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/interop/test/unit/resources/test_case_that_fails.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/par_mappings.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/products/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/exception_notification/views/exception_notifier/_title.rhtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/report_lines/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/matchers/include_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/homes/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/matchers/eql_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/spec/rails/mocks/ar_classes.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/matchers/respond_to.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/features/support/env.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/init.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/rjs_spec/_replacement_partial.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/spec/rails/example/error_handling_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/spec/rails/example/assigns_hash_proxy_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/spec/rails/matchers/have_text_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/templates/model_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/role_requirement/generators/roles/templates/hijacker.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/runner/drb_command_line.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/lib/spec/rails/extensions/active_support/test_case.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/spec/rails/matchers/render_template_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/matchers/be_close_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/report_lines/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/structures_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/scenario.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/b2_ta_mappings/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/generators/rspec_default_values.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/interop/test/unit/resources/spec_with_options_hash.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/lib/spec/rails/extensions/spec/runner/configuration.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/interop/test/unit/testcase.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/matchers/operator_matcher.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/rjs_spec/visual_toggle_effect.js.rjs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/generators/rspec_controller/templates/helper_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/lib/spec/rails/extensions/action_view/base.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/spec/rails/example/controller_isolation_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/adapters/mock_frameworks/rspec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/report_structures/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/lib/spec/rails/matchers/render_template.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/runner.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/matchers/simple_matcher_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/restful-authentication.gemspec" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/TODO.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/lib/spec/rails/matchers/change.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/autotest/failed_results_re_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/templates/test/unit_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/expectations/errors.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/matchers/be_instance_of.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/passing/mocking_example.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/currencies_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/templates/_model_partial.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/features/pending/pending_examples.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/position_types/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/par_mappings/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/matchers/raise_error.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/report_lines/search.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/tasks/auth.rake" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/passing/partial_mock_example.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/features/matchers/define_matcher_outside_rspec.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/runner/class_and_arguments_parser.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/example/example_matcher.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/b2_ta_mappings.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/blueprint/plugins/fancy-type/screen.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/controllers/example.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/matchers/pretty.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/runner/example_group_runner.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/account_plans/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/spec/rails/example/controller_example_group_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/templates/spec/controllers/sessions_controller_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/mocks.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/position_types.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/runner/formatter/base_formatter.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/product_categories_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/models/animal.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/exception_notification/test/test_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/resources/helpers/cmdline.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/templates/features/step_definitions/ra_resource_steps.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/packages/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/dim_dates/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/report_structures_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/example/pending.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/runner/formatter/specdoc_formatter.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/timebands_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/b2_ta_mappings_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/matchers/compatibility_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/closing_rates_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/failing/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/closing_rates/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/product.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/controller_spec/action_setting_the_assigns_hash.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/autotest/discover.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/rjs_spec/replace_html_with_partial.js.rjs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/features/mock_framework_integration/use_mocha.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/example/example_group_proxy_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/blueprint/plugins/buttons/icons/key.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/open_id_authentication/test/open_id_authentication_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/view_spec/path_params.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/interop/test/unit/resources/spec_that_fails.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/helpers/more_explicit_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/generators/rspec/templates/previous_failures.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/render_spec/some_action.js.rjs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/client_security_positions/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/exception_notification/views/exception_notifier/_request.rhtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/notes/Authorization.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/matchers/matcher.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/report_lines/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/notes/Tradeoffs.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/init.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/account_plans.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/blueprint/src/grid.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/features/example_groups/implicit_docstrings.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/Ruby1.9.rdoc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/passing/file_accessor.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/expectations/fail_with.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/lib/spec/runner/formatter/html_formatter.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/templates/authenticated_system.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/lib/authentication.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/examples/failing/failure_in_before.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/matchers/match_array_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/objects/_object.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/README.jruby" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/spec/resources/views/view_spec/entry_form.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/expectations/differs/default_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/client_security_positions/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec-rails/lib/spec/rails/extensions/spec/matchers/have.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/features/formatters/custom_formatter.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/rspec/spec/spec/matchers/raise_error_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/plugins/restful-authentication/generators/authenticated/templates/mailer.rb" />
+      <change type="DELETED" beforePath="C:\ruby\rails_apps\testsql\vendor\plugins\role_requirement\generators\roles\templates\roles_users.yml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environment.rb" afterPath="$PROJECT_DIR$/config/environment.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/report_lines_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/report_lines_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/testsql.iml" afterPath="$PROJECT_DIR$/.idea/testsql.iml" />
     </list>
-    <ignored path=".idea/workspace.xml" />
     <ignored path="testsql.iws" />
+    <ignored path=".idea/workspace.xml" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
@@ -832,20 +84,6 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="testsql" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="testsql" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="app" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
     </subPane>
   </component>
   <component name="ProjectReloadState">
@@ -869,7 +107,21 @@
     <property name="RunManagerConfig.showSettingsBeforeRunnig" value="true" />
     <property name="last_opened_file_path" value="C:\ruby\rails_apps\testsql\features" />
   </component>
-  <component name="RunManager" selected="Rails.Development: testsql">
+  <component name="RunManager" selected="Ruby.environment">
+    <tempConfiguration default="false" name="environment" type="RubyRunConfigurationType" factoryName="Ruby script">
+      <module name="testsql" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e &quot;STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)&quot;" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$/config" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/config/environment.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </tempConfiguration>
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
       <module name="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e &quot;STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)&quot;" />
@@ -1068,12 +320,13 @@
         <option name="Make" value="true" />
       </method>
     </configuration>
-    <list size="5">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Rails.Production: testsql" />
       <item index="1" class="java.lang.String" itemvalue="Rails.Development: testsql" />
       <item index="2" class="java.lang.String" itemvalue="Rails.Unnamed" />
       <item index="3" class="java.lang.String" itemvalue="Rake.test" />
       <item index="4" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="5" class="java.lang.String" itemvalue="Ruby.environment" />
     </list>
   </component>
   <component name="ScopeViewComponent">
@@ -1136,7 +389,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938644" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35634744" sideWeight="0.5" order="6" side_tool="false" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24920969" sideWeight="0.6630786" order="1" side_tool="false" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4768145" sideWeight="0.6309795" order="0" side_tool="false" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21471775" sideWeight="0.6309795" order="0" side_tool="false" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Web Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" />
@@ -1179,13 +432,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/portals_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="4" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/scenario.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0">
@@ -1287,6 +533,13 @@
     <entry file="file://$PROJECT_DIR$/app/views/layouts/homes.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="0" selection-start="523" selection-end="523" vertical-scroll-proportion="-9.88">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="45" selection-start="411" selection-end="411" vertical-scroll-proportion="0.08898305">
           <folding />
         </state>
       </provider>

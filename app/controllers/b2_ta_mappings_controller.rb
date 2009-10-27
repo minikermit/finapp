@@ -1,4 +1,7 @@
 class B2TaMappingsController < ApplicationController
+
+ before_filter :login_required
+
  # GET /par_mappings
   # GET /par_mappings.xml
   def index

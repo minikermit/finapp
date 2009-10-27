@@ -1,44 +1,44 @@
 ActionController::Routing::Routes.draw do |map|
+  
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.login '/login', :controller => 'sessions', :action => 'new'
   map.register '/register', :controller => 'users', :action => 'create'
   map.signup '/signup', :controller => 'users', :action => 'new'
   map.resources :users
+  	
+  map.resources :validationrules
+  map.resources :validations
 
+  map.resources :b2_ta_mappings
+  map.resources :mortgagescollaterals
+  map.resources :mortgages
+  map.resources :derivatives
+  map.resources :ratings
+  map.resources :loanbooks
+  map.resources :counterparties
+  map.resources :limits
+  map.resources :nostros
+  map.resources :provisions
+
+  map.resources :passwords
   map.resource :session
 
   map.resources :homes
-
   map.resources :portals
   
   map.resources :par_mappings
-
   map.resources :currencies
-
   map.resources :products
-
   map.resources :product_categories
-
   map.resources :position_types
-
   map.resources :dim_dates
-
   map.resources :client_security_positions
-
   map.resources :packages
-
   map.resources :timebands
-
   map.resources :structures
-
   map.resources :sources
-
   map.resources :scenarios
-  
-  map.resources :b2_ta_mappings
-  
   map.resources :closing_rates
-  
   map.resources :account_plans
   
   map.resources :report_structures
@@ -88,4 +88,6 @@ ActionController::Routing::Routes.draw do |map|
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
   map.connect ':controller/:action.:format'
+  
+  map.root :controller => "validations"
 end

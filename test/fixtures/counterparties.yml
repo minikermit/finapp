@@ -1,0 +1,89 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id: 1
+  Group_id: MyString
+  Entity_id: MyString
+  Source_id: MyString
+  DownloadDate: 2009-09-08 22:44:13
+  Record_Creation_Date: 2009-09-08 22:44:13
+  Record_Creator: MyString
+  Record_Application: MyString
+  Value_Month: MyString
+  Value_Date: MyString
+  Executing_Date: MyString
+  Type_of_record: MyString
+  Bank_id: MyString
+  Branch_id: MyString
+  Count_CIF: MyString
+  Count_Group: MyString
+  Count_Group_Code: MyString
+  Count_Name: MyString
+  Count_Segment_BH: MyString
+  Count_Segment_Det: MyString
+  Count_Segment: MyString
+  Count_Legal: MyString
+  Count_Domicile: MyString
+  Count_Risk: MyString
+  Count_Org_BH: MyString
+  Count_Domicile_Dom: MyString
+  Count_Domicile_OECD: MyString
+  Count_Domicile_EEA: MyString
+  Count_Exp_Tot: 9.99
+  Count_Prov: 9.99
+  Count_Ref_Date: MyString
+  Swift_Address: MyString
+  Swift_Address_Branch: MyString
+  Establish_Date: MyString
+  Global_Cif: MyString
+  Count_Segment_Code: MyString
+  Count_Sub_Segment_Code: MyString
+  Count_Sub_Segment_Det: MyString
+  Count_Income_Total_Local: 9.99
+  Count_Income_Total_NIS: 9.99
+  Count_Code: MyString
+  Domicile_Branch_Code: MyString
+
+two:
+  id: 1
+  Group_id: MyString
+  Entity_id: MyString
+  Source_id: MyString
+  DownloadDate: 2009-09-08 22:44:13
+  Record_Creation_Date: 2009-09-08 22:44:13
+  Record_Creator: MyString
+  Record_Application: MyString
+  Value_Month: MyString
+  Value_Date: MyString
+  Executing_Date: MyString
+  Type_of_record: MyString
+  Bank_id: MyString
+  Branch_id: MyString
+  Count_CIF: MyString
+  Count_Group: MyString
+  Count_Group_Code: MyString
+  Count_Name: MyString
+  Count_Segment_BH: MyString
+  Count_Segment_Det: MyString
+  Count_Segment: MyString
+  Count_Legal: MyString
+  Count_Domicile: MyString
+  Count_Risk: MyString
+  Count_Org_BH: MyString
+  Count_Domicile_Dom: MyString
+  Count_Domicile_OECD: MyString
+  Count_Domicile_EEA: MyString
+  Count_Exp_Tot: 9.99
+  Count_Prov: 9.99
+  Count_Ref_Date: MyString
+  Swift_Address: MyString
+  Swift_Address_Branch: MyString
+  Establish_Date: MyString
+  Global_Cif: MyString
+  Count_Segment_Code: MyString
+  Count_Sub_Segment_Code: MyString
+  Count_Sub_Segment_Det: MyString
+  Count_Income_Total_Local: 9.99
+  Count_Income_Total_NIS: 9.99
+  Count_Code: MyString
+  Domicile_Branch_Code: MyString

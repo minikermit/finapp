@@ -2,7 +2,9 @@ class CurrenciesController < ApplicationController
   # GET /currencies
   # GET /currencies.xml
   def index
-    @currencies = Currency.find(:all)
+  	
+  	@search = Currency.search(params[:search])  
+    @currencies = @search.all.paginate(:page => params[:page])  
 
     respond_to do |format|
       format.html # index.html.erb

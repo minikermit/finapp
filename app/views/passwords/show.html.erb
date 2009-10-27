@@ -1,0 +1,33 @@
+<p>
+  <b>Id:</b>
+  <%=h @password.id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%=h @password.user_id %>
+</p>
+
+<p>
+  <b>Reset code:</b>
+  <%=h @password.reset_code %>
+</p>
+
+<p>
+  <b>Expiration date:</b>
+  <%=h @password.expiration_date %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%=h @password.created_at %>
+</p>
+
+<p>
+  <b>Updated at:</b>
+  <%=h @password.updated_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_password_path(@password) %> |
+<%= link_to 'Back', passwords_path %>

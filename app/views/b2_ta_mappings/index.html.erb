@@ -1,4 +1,4 @@
-<h1>Listing B2 TA Mappings </h1>
+<h3>Listing B2 TA Mappings </h3>
 
 <% form_tag request.path, :method => 'get' do %>
 	<% content_tag :label do %>
@@ -9,19 +9,19 @@
 
 
 <table>
-  <tr>
+  <tr class='first'>
     <th>Entity</th>
   	<th>Parameter</th>
-  	<th>Source code</th>
-  	<th>Description</th>
-  	<th>Dimension code</th>
-  	<th>Description</th>
-  	<th>Destination code</th>
-  	<th>Description</th>  	
+  	<th>Source</th>
+  	<th>Descr.</th>
+  	<th>Dimension</th>
+  	<th>Descr.</th>
+  	<th>Destination</th>
+  	<th>Descr.</th>  	
   </tr>
 
 <% for b2_ta_mapping in @b2_ta_mappings %>
-  <tr>
+  <tr class='small'>
     <td><%=h b2_ta_mapping.entity_id %></td>
   	<td><%=h b2_ta_mapping.information_mapped %></td>
   	<td><%=h b2_ta_mapping.source_code %></td>
@@ -36,7 +36,7 @@
   </tr>
 <% end %>
 </table>
-
+ 		
 <div class="digg_pagination">
   <div class="page_info">
     <%= page_entries_info @b2_ta_mappings %>

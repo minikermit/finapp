@@ -1,0 +1,93 @@
+
+<a href="#" onclick="AppearEffect('show_search')" class ='a'>		
+	<span class="ss_sprite ss_add">
+		 		<img src="/images/iconmini/search-icon-blue.gif" />
+	 </span>	
+</a><br />
+
+<div id="show_search" style="display:none"; >
+  <div class="column span-6 append-16 prepend-2 last">
+    
+	<% form_for @search do |f| %>  
+ 
+      <div class="column span-2">
+        <%= f.label :LoadDate_like, "Date" %>  
+      </div>
+      <div class="column span-4 last">
+        <%= f.text_field :LoadDate_like , :class => 'text' %>
+      </div>
+      <div class="column span-2">
+         <%= f.label :OutputFile_equals, "Scope" %> 
+      </div>
+      <div class="column span-4 last">
+        <%= f.text_field :OutputFile_equals , :class => 'text' %> 
+      </div>
+      <div class="column span-2">
+         <%= f.label :ErrorKind_like, "Rule" %> 
+      </div>
+      <div class="column span-4 last">
+      	 <%= f.text_field :ErrorKind_like , :class => 'text' %>
+      </div>
+      <div class="column span-2">
+         <%= f.label :ErrorType_like, "Type" %> 
+      </div>
+      <div class="column span-4 last">
+      	 <%= f.text_field :ErrorType_like , :class => 'text' %>
+      </div>
+
+      <div class="column span-6 prepend-2 last">
+        <%= f.submit "Apply filters" %> 
+      </div>
+    <% end %> 
+	</fieldset>
+  </div>
+</div>
+
+
+
+
+
+<table class = 'container' >
+  <h2 class = 'h2'>Listing validations errors</h2>
+  <tr  class = 'tr'>
+    <th class = 'thead'>Errorkind</th>
+    <th class = 'thead'>Scope</th>
+    <th class = 'thead'>Outputfield</th>
+    <th class = 'thead'>Source</th>
+    <th class = 'thead'>Destination</th>
+    <th class = 'thead'>Client</th>
+    <th class = 'thead'>Key</th>
+    <th class = 'thead'>Errortype</th>
+
+  </tr>
+
+<% @validations.each do |validation| %>
+  <tr>
+    <td class = 'span-1' ><%=h validation.ErrorKind %></td>
+
+    <td class = 'span-1' ><%=h validation.OutputFile %></td>
+    <td class = 'span-1' ><%=h validation.OutputField %></td>
+    <td class = 'span-1' ><%=h validation.Source %></td>
+    <td class = 'span-1' ><%=h validation.Destination %></td>
+    <td class = 'span-1' ><%=h validation.Client_id %></td>
+    <td class = 'span-1' ><%=h validation.Key_id %></td>
+    <td class = 'span-1' ><%=h validation.ErrorType %></td>
+    <td class = 'span-1' ><%= link_to 'Show', validation %></td>
+    <td class = 'span-1' ><%= link_to 'Show2', :controller => 'counterparties' ,:action => "show", :id => validation.Original_id %></td>
+    <% link_to_if(validation.OutputFile < 'LIMIT', 'Show3', :controller => 'limits' ,:action => "show", :id => validation.Original_id) %>
+	<td class = 'span-1' ><%= link_to 'Edit', edit_validation_path(validation) %></td>
+    <td class = 'span-1' ><%= link_to 'Destroy', validation, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<div class="digg_pagination">
+  <div class="page_info">
+    <%= page_entries_info @validations %>
+  </div-->
+    <%= will_paginate @validations, :container => false %>
+</div>
+
+<%= link_to 'New validation', new_validation_path %>

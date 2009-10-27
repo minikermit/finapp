@@ -1,0 +1,105 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id: 1
+  Group_id: MyString
+  Entity_id: MyString
+  Source_id: MyString
+  DownloadDate: 2009-09-08 22:22:20
+  Record_Creation_Date: 2009-09-08 22:22:20
+  Record_Creator: MyString
+  Record_Application: MyString
+  Value_Month: MyString
+  Value_Date: MyString
+  Executing_Date: MyString
+  Type_of_record: MyString
+  Bank_id: MyString
+  Branch_id: MyString
+  Trans_nr: MyString
+  Count_CIF: MyString
+  Prov_Amount: 9.99
+  Prov_Amount_Local: 9.99
+  Prov_Amt_Pincpl: 9.99
+  Prov_Amt_Pincpl_Local: 9.99
+  Prov_Amt_Interest: 9.99
+  Prov_Amt_Interest_Local: 9.99
+  Prov_Curr: MyString
+  Prov_Local_Currency: MyString
+  Prov_FX: 9.99
+  Prov_Amount_NIS: 9.99
+  Prov_Amount_Gross: 9.99
+  Prov_Collateral: 9.99
+  Prov_Amount_Net: 9.99
+  Prov_Date_First: MyString
+  Prov_Date_Last: MyString
+  Prov_Pastdue: MyString
+  Prov_Pastdue_Date: MyString
+  Prov_Bad_Debt: MyString
+  Prov_Doubtful_Debt: MyString
+  Prov_Debt_Restr: MyString
+  Prov_Debt_Restr_WI: MyString
+  Prov_Special_Terms: MyString
+  Prov_Debt_Arrears: MyString
+  Prov_Debt_Temp_Arr: MyString
+  Prov_Debt_Not_Acc_Inc: MyString
+  Prov_Debt_Und_Spec_Sup: MyString
+  Prov_Problem_Debt: MyString
+  Prov_Ref_Date: MyString
+  Prov_Account_id: MyString
+  Prov_SNG: 9.99
+  Prov_SNG_Local: 9.99
+  Prov_SNG_NIS: 9.99
+  Executing_Bank_Id: 1
+  Executing_Branch_Id: 1
+
+two:
+  id: 1
+  Group_id: MyString
+  Entity_id: MyString
+  Source_id: MyString
+  DownloadDate: 2009-09-08 22:22:20
+  Record_Creation_Date: 2009-09-08 22:22:20
+  Record_Creator: MyString
+  Record_Application: MyString
+  Value_Month: MyString
+  Value_Date: MyString
+  Executing_Date: MyString
+  Type_of_record: MyString
+  Bank_id: MyString
+  Branch_id: MyString
+  Trans_nr: MyString
+  Count_CIF: MyString
+  Prov_Amount: 9.99
+  Prov_Amount_Local: 9.99
+  Prov_Amt_Pincpl: 9.99
+  Prov_Amt_Pincpl_Local: 9.99
+  Prov_Amt_Interest: 9.99
+  Prov_Amt_Interest_Local: 9.99
+  Prov_Curr: MyString
+  Prov_Local_Currency: MyString
+  Prov_FX: 9.99
+  Prov_Amount_NIS: 9.99
+  Prov_Amount_Gross: 9.99
+  Prov_Collateral: 9.99
+  Prov_Amount_Net: 9.99
+  Prov_Date_First: MyString
+  Prov_Date_Last: MyString
+  Prov_Pastdue: MyString
+  Prov_Pastdue_Date: MyString
+  Prov_Bad_Debt: MyString
+  Prov_Doubtful_Debt: MyString
+  Prov_Debt_Restr: MyString
+  Prov_Debt_Restr_WI: MyString
+  Prov_Special_Terms: MyString
+  Prov_Debt_Arrears: MyString
+  Prov_Debt_Temp_Arr: MyString
+  Prov_Debt_Not_Acc_Inc: MyString
+  Prov_Debt_Und_Spec_Sup: MyString
+  Prov_Problem_Debt: MyString
+  Prov_Ref_Date: MyString
+  Prov_Account_id: MyString
+  Prov_SNG: 9.99
+  Prov_SNG_Local: 9.99
+  Prov_SNG_NIS: 9.99
+  Executing_Bank_Id: 1
+  Executing_Branch_Id: 1

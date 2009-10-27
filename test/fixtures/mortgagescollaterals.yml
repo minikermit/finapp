@@ -1,0 +1,117 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id: 1
+  Group_id: MyString
+  Entity_id: MyString
+  Source_id: MyString
+  DownloadDate: 2009-09-08 23:26:57
+  Record_Creation_Date: 2009-09-08 23:26:57
+  Record_Creator: MyString
+  Record_Application: MyString
+  Value_Month: MyString
+  Value_Date: MyString
+  Executing_Date: MyString
+  Type_of_record: MyString
+  Bank_id: MyString
+  Branch_id: MyString
+  Callat_mortg_Nr: MyString
+  Limit_nr: MyString
+  Count_Nr: MyString
+  Collateral_Nr: MyString
+  Callat_mortg_Nom: 9.99
+  Callat_mortg_Curr: MyString
+  Callat_mortg_Local_Currency: MyString
+  Callat_mortg_Local_Nom: 9.99
+  Callat_mortg_FX: 9.99
+  Callat_mortg_NIS: 9.99
+  Collat_Mortg_Local: 9.99
+  Collat_Mortg_NIS: 9.99
+  Collat_Mortg_3rd_Indic: MyString
+  Collat_Mortg_3rd_Amt: 9.99
+  Collat_Mortg_3rd_Rank: MyString
+  Collat_Mortg_Prop: MyString
+  Collat_Mortg_Prop_Occ: MyString
+  Collat_Mortg_Enforc: MyString
+  Collat_Mortg_Owner: MyString
+  Collat_Mortg_Own_CIF: MyString
+  Collat_Mortg_LTV_Int: 9.99
+  Callat_Mortg_Prop_Val_Orig: 9.99
+  Callat_Mortg_Prop_Curr: MyString
+  Callat_Mortg_Prop_Val_local: 9.99
+  Callat_Mortg_Prop_FX: 9.99
+  Callat_Mortg_Prop_Val_NIS: 9.99
+  Callat_Mortg_Prop_Dat: 2009-09-08 23:26:57
+  Collat_Mortg_Landreg: MyString
+  Collat_Mortg_Warn: MyString
+  Collat_Mortg_Rights: MyString
+  Collat_Mortg_Other: MyString
+  Collat_Mortg_Ref_Date: 2009-09-08 23:26:57
+  Insurance_Comp_Nr: MyString
+  Insurance_Type_Code: MyString
+  Insurance_Enforc: MyString
+  Insurance_Amount_Local: 9.99
+  Insurance_Amount_NIS: 9.99
+  Insurance_Start: 2009-09-08 23:26:57
+  Insurance_End: 2009-09-08 23:26:57
+  Executing_Bank_Id: 1
+  Second_Lien_Ind: MyString
+  Executing_Branch_Id: 1
+
+two:
+  id: 1
+  Group_id: MyString
+  Entity_id: MyString
+  Source_id: MyString
+  DownloadDate: 2009-09-08 23:26:57
+  Record_Creation_Date: 2009-09-08 23:26:57
+  Record_Creator: MyString
+  Record_Application: MyString
+  Value_Month: MyString
+  Value_Date: MyString
+  Executing_Date: MyString
+  Type_of_record: MyString
+  Bank_id: MyString
+  Branch_id: MyString
+  Callat_mortg_Nr: MyString
+  Limit_nr: MyString
+  Count_Nr: MyString
+  Collateral_Nr: MyString
+  Callat_mortg_Nom: 9.99
+  Callat_mortg_Curr: MyString
+  Callat_mortg_Local_Currency: MyString
+  Callat_mortg_Local_Nom: 9.99
+  Callat_mortg_FX: 9.99
+  Callat_mortg_NIS: 9.99
+  Collat_Mortg_Local: 9.99
+  Collat_Mortg_NIS: 9.99
+  Collat_Mortg_3rd_Indic: MyString
+  Collat_Mortg_3rd_Amt: 9.99
+  Collat_Mortg_3rd_Rank: MyString
+  Collat_Mortg_Prop: MyString
+  Collat_Mortg_Prop_Occ: MyString
+  Collat_Mortg_Enforc: MyString
+  Collat_Mortg_Owner: MyString
+  Collat_Mortg_Own_CIF: MyString
+  Collat_Mortg_LTV_Int: 9.99
+  Callat_Mortg_Prop_Val_Orig: 9.99
+  Callat_Mortg_Prop_Curr: MyString
+  Callat_Mortg_Prop_Val_local: 9.99
+  Callat_Mortg_Prop_FX: 9.99
+  Callat_Mortg_Prop_Val_NIS: 9.99
+  Callat_Mortg_Prop_Dat: 2009-09-08 23:26:57
+  Collat_Mortg_Landreg: MyString
+  Collat_Mortg_Warn: MyString
+  Collat_Mortg_Rights: MyString
+  Collat_Mortg_Other: MyString
+  Collat_Mortg_Ref_Date: 2009-09-08 23:26:57
+  Insurance_Comp_Nr: MyString
+  Insurance_Type_Code: MyString
+  Insurance_Enforc: MyString
+  Insurance_Amount_Local: 9.99
+  Insurance_Amount_NIS: 9.99
+  Insurance_Start: 2009-09-08 23:26:57
+  Insurance_End: 2009-09-08 23:26:57
+  Executing_Bank_Id: 1
+  Second_Lien_Ind: MyString
+  Executing_Branch_Id: 1

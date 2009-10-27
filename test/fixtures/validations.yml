@@ -1,0 +1,37 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id: 1
+  Original_id: 1
+  LoadDate: 2009-10-08 09:19:13
+  Source_id: MyString
+  Entity_id: MyString
+  Client_id: MyString
+  Key_id: MyString
+  OutputFile: MyString
+  OutputField: MyString
+  Source: MyString
+  Destination: MyString
+  ErrorType: MyString
+  ErrorKind: MyString
+  Recommendation: MyString
+  created_at: 2009-10-08 09:19:13
+  updated_at: 2009-10-08 09:19:13
+
+two:
+  id: 1
+  Original_id: 1
+  LoadDate: 2009-10-08 09:19:13
+  Source_id: MyString
+  Entity_id: MyString
+  Client_id: MyString
+  Key_id: MyString
+  OutputFile: MyString
+  OutputField: MyString
+  Source: MyString
+  Destination: MyString
+  ErrorType: MyString
+  ErrorKind: MyString
+  Recommendation: MyString
+  created_at: 2009-10-08 09:19:13
+  updated_at: 2009-10-08 09:19:13

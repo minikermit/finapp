@@ -11,7 +11,7 @@ class ReportLinesController < ApplicationController
       @report_lines = ReportLine.find(:all,:order => "position ASC")
     else
       @report_lines = ReportLine.find(:all,
-                            :conditions => ["report_id = ?", params[:report_id]],:order => "[Order] ASC")
+                            :conditions => ["report_id = ?", params[:report_id]],:order => "[position] ASC")
       params[:report_id] = nil
     end
     
@@ -20,6 +20,17 @@ class ReportLinesController < ApplicationController
       format.xml  { render :xml => @report_lines }
     end
   end
+  
+  def move
+  	if
+  		["move_lower","move_higher","move_to_top","move_to_bottom"].include?
+  		(params[:method]) \
+  						and params[:id] =~ / \d+$/
+  						ReportLine.find(params[:id]).send(params[:method])
+  					end
+  					redirect_to(:action => "index", :id => 1)
+  	 end
+ 
 
   def search
     @report_lines = ReportLine.search(params[:q])

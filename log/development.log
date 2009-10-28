@@ -56161,3 +56161,1193 @@ ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesh
   
 
 Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-27 15:51:57) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (0.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 3937ms (View: 281, DB: 16) | 200 OK [http://localhost/validations]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 15:52:03) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2009-10-27 15:52:06) [GET]
+Redirected to http://localhost:3000/
+Completed in 219ms (DB: 16) | 302 Found [http://localhost/logout]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2009-10-27 15:52:06) [GET]
+Redirected to http://localhost:3000/
+Completed in 218ms | 302 Found [http://localhost/logout]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-27 15:52:07) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 78ms (DB: 16) | 302 Found [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-10-27 15:52:08) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 125ms (View: 109, DB: 32) | 200 OK [http://localhost/session/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 15:52:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 15:52:10) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 15:52:10) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-27 15:53:03) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 78ms (DB: 31) | 302 Found [http://localhost/validations]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-10-27 15:53:04) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (15.0ms)
+Completed in 140ms (View: 94, DB: 31) | 200 OK [http://localhost/session/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 15:53:05) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 15:53:06) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 15:53:06) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-10-27 15:53:16) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"J2exBqqRadFY/lvSpAgUgq6UmL+6pQ9q2upscEoR4tY=", "login"=>"vincent", "password"=>"12345678"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[login] = 'vincent') [0m
+  [4;36;1mEXECUTE (0.0ms)[0m   [0;1mBEGIN TRANSACTION[0m
+  [4;35;1mEXECUTE (0.0ms)[0m   [0mCOMMIT TRANSACTION[0m
+Redirected to http://localhost:3000/validations
+Completed in 250ms (DB: 16) | 302 Found [http://localhost/session]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-27 15:53:17) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (0.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 3140ms (View: 187, DB: 31) | 200 OK [http://localhost/validations]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 15:53:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CounterpartiesController#show (for 127.0.0.1 at 2009-10-27 15:54:32) [GET]
+  Parameters: {"id"=>"14776"}
+  [4;36;1mCounterparty Load (62.0ms)[0m   [0;1mSELECT * FROM [B2TA_XPORT_Counterparty] WHERE ([B2TA_XPORT_Counterparty].[id] = 14776) [0m
+Rendering template within layouts/application
+Rendering counterparties/show
+Rendered shared/_menu (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+Rendered shared/_sidebar (0.0ms)
+Completed in 2547ms (View: 2095, DB: 280) | 200 OK [http://localhost/counterparties/14776]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 15:54:36) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 15:54:37) [GET]
+
+ActionController::RoutingError (No route matches "/counterparties/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 15:54:37) [GET]
+
+ActionController::RoutingError (No route matches "/counterparties/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#show (for 127.0.0.1 at 2009-10-27 15:55:08) [GET]
+  Parameters: {"id"=>"1328"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (219.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE ([B2TA_VAL_Error_Reports].[id] = 1328) [0m
+Rendering template within layouts/application
+Rendering validations/show
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 703ms (View: 125, DB: 250) | 200 OK [http://localhost/validations/1328]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 15:55:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 15:55:11) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 15:55:11) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CounterpartiesController#edit (for 127.0.0.1 at 2009-10-27 15:55:14) [GET]
+  Parameters: {"id"=>"14776"}
+  [4;36;1mCounterparty Load (16.0ms)[0m   [0;1mSELECT * FROM [B2TA_XPORT_Counterparty] WHERE ([B2TA_XPORT_Counterparty].[id] = 14776) [0m
+Rendering template within layouts/application
+Rendering counterparties/edit
+Rendered shared/_menu (0.0ms)
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+Rendered shared/_sidebar (0.0ms)
+Completed in 891ms (View: 703, DB: 47) | 200 OK [http://localhost/counterparties/14776/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 15:55:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 15:55:17) [GET]
+
+ActionController::RoutingError (No route matches "/counterparties/14776/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 15:55:17) [GET]
+
+ActionController::RoutingError (No route matches "/counterparties/14776/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#show (for 127.0.0.1 at 2009-10-27 15:55:58) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 2) [0m
+Rendering template within layouts/applicationnaked
+Rendering validationrules/show
+Completed in 547ms (View: 156, DB: 141) | 200 OK [http://localhost/validationrules/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 15:56:00) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 15:56:00) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#show (for 127.0.0.1 at 2009-10-27 15:56:32) [GET]
+  Parameters: {"id"=>"1349"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (0.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE ([B2TA_VAL_Error_Reports].[id] = 1349) [0m
+Rendering template within layouts/application
+Rendering validations/show
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 407ms (View: 47, DB: 0) | 200 OK [http://localhost/validations/1349]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 15:56:33) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 15:56:34) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 15:56:35) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#show (for 127.0.0.1 at 2009-10-27 15:56:45) [GET]
+  Parameters: {"id"=>"1349"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (0.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE ([B2TA_VAL_Error_Reports].[id] = 1349) [0m
+Rendering template within layouts/application
+Rendering validations/show
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 437ms (View: 78, DB: 16) | 200 OK [http://localhost/validations/1349]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 15:56:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 15:56:47) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 15:56:47) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-10-27 15:56:53) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 453ms (View: 156, DB: 31) | 200 OK [http://localhost/validationrules]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 15:56:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#show (for 127.0.0.1 at 2009-10-27 15:57:11) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (16.0ms)[0m   [0mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 1) [0m
+Rendering template within layouts/applicationnaked
+Rendering validationrules/show
+Completed in 313ms (View: 16, DB: 31) | 200 OK [http://localhost/validationrules/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 15:57:13) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 15:57:13) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-10-27 15:57:39) [GET]
+  Parameters: {"search"=>{"rule_type_like"=>"", "order"=>"", "rule_scope_like"=>"LIMIT", "rule_identification_like"=>""}, "commit"=>"Apply filters"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (31.0ms)[0m   [0mSELECT * FROM [validationrules] WHERE (validationrules.rule_scope LIKE '%LIMIT%') [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 375ms (View: 47, DB: 47) | 200 OK [http://localhost/validationrules?search%5Border%5D=&search%5Brule_identification_like%5D=&search%5Brule_type_like%5D=&search%5Brule_scope_like%5D=LIMIT&commit=Apply+filters]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 15:57:41) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-27 15:57:52) [GET]
+  [4;36;1mUser Load (15.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (16.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 3125ms (View: 188, DB: 46) | 200 OK [http://localhost/validations]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 15:57:56) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-27 15:58:06) [GET]
+  Parameters: {"search"=>{"OutputFile_equals"=>"COUNTER", "LoadDate_like"=>"", "order"=>"", "ErrorKind_like"=>"", "ErrorType_like"=>""}, "commit"=>"Apply filters"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (78.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE (B2TA_VAL_Error_Reports.OutputFile = 'COUNTER') [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 469ms (View: 31, DB: 125) | 200 OK [http://localhost/validations?search%5Border%5D=&search%5BLoadDate_like%5D=&search%5BOutputFile_equals%5D=COUNTER&search%5BErrorKind_like%5D=&search%5BErrorType_like%5D=&commit=Apply+filters]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 15:58:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-27 15:58:19) [GET]
+  Parameters: {"search"=>{"OutputFile_equals"=>"COUNTERPART", "LoadDate_like"=>"", "order"=>"", "ErrorKind_like"=>"", "ErrorType_like"=>""}, "commit"=>"Apply filters"}
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (0.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE (B2TA_VAL_Error_Reports.OutputFile = 'COUNTERPART') [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 1391ms (View: 188, DB: 32) | 200 OK [http://localhost/validations?search%5Border%5D=&search%5BLoadDate_like%5D=&search%5BOutputFile_equals%5D=COUNTERPART&search%5BErrorKind_like%5D=&search%5BErrorType_like%5D=&commit=Apply+filters]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 15:58:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-27 15:58:50) [GET]
+  Parameters: {"search"=>{"OutputFile_equals"=>"", "LoadDate_like"=>"", "order"=>"", "ErrorKind_like"=>"RULE 201", "ErrorType_like"=>""}, "commit"=>"Apply filters"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (16.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE (B2TA_VAL_Error_Reports.ErrorKind LIKE '%RULE 201%') [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 468ms (View: 78, DB: 47) | 200 OK [http://localhost/validations?search%5Border%5D=&search%5BLoadDate_like%5D=&search%5BOutputFile_equals%5D=&search%5BErrorKind_like%5D=RULE+201&search%5BErrorType_like%5D=&commit=Apply+filters]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 15:58:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 16:06:25) [GET]
+
+ActionController::RoutingError (No route matches "/images/L1-left.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 16:06:26) [GET]
+
+ActionController::RoutingError (No route matches "/images/white-highlight.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 16:06:26) [GET]
+
+ActionController::RoutingError (No route matches "/images/L1-center.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 16:06:27) [GET]
+
+ActionController::RoutingError (No route matches "/images/vertical-line.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 16:06:28) [GET]
+
+ActionController::RoutingError (No route matches "/images/L1-right.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-10-27 16:20:24) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_menu (0.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+Rendered shared/_sidebar (0.0ms)
+Completed in 266ms (View: 250, DB: 16) | 200 OK [http://localhost/login]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 16:20:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2009-10-27 16:20:29) [GET]
+Redirected to http://localhost:3000/
+Completed in 219ms (DB: 16) | 302 Found [http://localhost/logout]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-27 16:20:30) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 79ms (DB: 0) | 302 Found [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-10-27 16:20:30) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 125ms (View: 94, DB: 16) | 200 OK [http://localhost/session/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 16:20:32) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 16:20:32) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 16:20:33) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing B2TaMappingsController#index (for 127.0.0.1 at 2009-10-27 16:43:39) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 78ms (DB: 15) | 302 Found [http://localhost/b2_ta_mappings]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-10-27 16:43:39) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 125ms (View: 94, DB: 32) | 200 OK [http://localhost/session/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 16:43:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 16:43:41) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 16:43:42) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-10-27 16:43:49) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"PxwIepJlQOiOBWgfOQls144I0tL95Y31F2Z0nhXbauY=", "login"=>"vincent", "password"=>"12345678"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[login] = 'vincent') [0m
+  [4;36;1mEXECUTE (0.0ms)[0m   [0;1mBEGIN TRANSACTION[0m
+  [4;35;1mEXECUTE (0.0ms)[0m   [0mCOMMIT TRANSACTION[0m
+Redirected to http://localhost:3000/b2_ta_mappings
+Completed in 250ms (DB: 16) | 302 Found [http://localhost/session]
+
+
+Processing B2TaMappingsController#index (for 127.0.0.1 at 2009-10-27 16:43:50) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSELECT count(*) as TotalRows from (SELECT TOP 1000000000 * FROM [b2_ta_mapping] WHERE (information_mapped = NULL) AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) tally[0m
+  [4;36;1mB2TaMapping Load (15.0ms)[0m   [0;1mSELECT * FROM (SELECT TOP 0 * FROM (SELECT TOP 0 * FROM [b2_ta_mapping] WHERE (information_mapped = NULL) AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) AS tmp1 ORDER BY [created_at] ASC) AS tmp2 ORDER BY [created_at] DESC[0m
+Rendering template within layouts/application
+Rendering b2_ta_mappings/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 656ms (View: 110, DB: 202) | 200 OK [http://localhost/b2_ta_mappings]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 16:43:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing B2TaMappingsController#index (for 127.0.0.1 at 2009-10-27 16:43:55) [GET]
+  Parameters: {"search"=>"Country"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mSQL (109.0ms)[0m   [0;1mSELECT count(*) as TotalRows from (SELECT TOP 1000000000 * FROM [b2_ta_mapping] WHERE (information_mapped = 'Country') AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) tally[0m
+  [4;35;1mB2TaMapping Load (31.0ms)[0m   [0mSELECT * FROM (SELECT TOP 30 * FROM (SELECT TOP 30 * FROM [b2_ta_mapping] WHERE (information_mapped = 'Country') AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) AS tmp1 ORDER BY [created_at] ASC) AS tmp2 ORDER BY [created_at] DESC[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM [b2_ta_mapping] WHERE (information_mapped = 'Country') AND ([b2_ta_mapping].[record_validity] = 1) [0m
+Rendering template within layouts/application
+Rendering b2_ta_mappings/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 640ms (View: 156, DB: 186) | 200 OK [http://localhost/b2_ta_mappings?search=Country]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 16:43:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing B2TaMappingsController#index (for 127.0.0.1 at 2009-10-27 16:44:15) [GET]
+  Parameters: {"search"=>"Count_Segment"}
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mSQL (15.0ms)[0m   [0;1mSELECT count(*) as TotalRows from (SELECT TOP 1000000000 * FROM [b2_ta_mapping] WHERE (information_mapped = 'Count_Segment') AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) tally[0m
+  [4;35;1mB2TaMapping Load (16.0ms)[0m   [0mSELECT * FROM (SELECT TOP 0 * FROM (SELECT TOP 0 * FROM [b2_ta_mapping] WHERE (information_mapped = 'Count_Segment') AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) AS tmp1 ORDER BY [created_at] ASC) AS tmp2 ORDER BY [created_at] DESC[0m
+Rendering template within layouts/application
+Rendering b2_ta_mappings/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 328ms (View: 31, DB: 47) | 200 OK [http://localhost/b2_ta_mappings?search=Count_Segment]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 16:44:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing B2TaMappingsController#index (for 127.0.0.1 at 2009-10-27 16:44:19) [GET]
+  Parameters: {"search"=>"SegmentLookup"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSELECT count(*) as TotalRows from (SELECT TOP 1000000000 * FROM [b2_ta_mapping] WHERE (information_mapped = 'SegmentLookup') AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) tally[0m
+  [4;36;1mB2TaMapping Load (16.0ms)[0m   [0;1mSELECT * FROM (SELECT TOP 30 * FROM (SELECT TOP 30 * FROM [b2_ta_mapping] WHERE (information_mapped = 'SegmentLookup') AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) AS tmp1 ORDER BY [created_at] ASC) AS tmp2 ORDER BY [created_at] DESC[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM [b2_ta_mapping] WHERE (information_mapped = 'SegmentLookup') AND ([b2_ta_mapping].[record_validity] = 1) [0m
+Rendering template within layouts/application
+Rendering b2_ta_mappings/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 500ms (View: 141, DB: 78) | 200 OK [http://localhost/b2_ta_mappings?search=SegmentLookup]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 16:44:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing B2TaMappingsController#index (for 127.0.0.1 at 2009-10-27 16:44:32) [GET]
+  Parameters: {"search"=>"Country"}
+  [4;36;1mUser Load (15.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) as TotalRows from (SELECT TOP 1000000000 * FROM [b2_ta_mapping] WHERE (information_mapped = 'Country') AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) tally[0m
+  [4;36;1mB2TaMapping Load (0.0ms)[0m   [0;1mSELECT * FROM (SELECT TOP 30 * FROM (SELECT TOP 30 * FROM [b2_ta_mapping] WHERE (information_mapped = 'Country') AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) AS tmp1 ORDER BY [created_at] ASC) AS tmp2 ORDER BY [created_at] DESC[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM [b2_ta_mapping] WHERE (information_mapped = 'Country') AND ([b2_ta_mapping].[record_validity] = 1) [0m
+Rendering template within layouts/application
+Rendering b2_ta_mappings/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 485ms (View: 141, DB: 31) | 200 OK [http://localhost/b2_ta_mappings?search=Country]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 16:44:34) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing B2TaMappingsController#index (for 127.0.0.1 at 2009-10-27 16:44:46) [GET]
+  Parameters: {"search"=>"Country", "page"=>"8"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) as TotalRows from (SELECT TOP 1000000000 * FROM [b2_ta_mapping] WHERE (information_mapped = 'Country') AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) tally[0m
+  [4;36;1mB2TaMapping Load (15.0ms)[0m   [0;1mSELECT * FROM (SELECT TOP 30 * FROM (SELECT TOP 240 * FROM [b2_ta_mapping] WHERE (information_mapped = 'Country') AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) AS tmp1 ORDER BY [created_at] ASC) AS tmp2 ORDER BY [created_at] DESC[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM [b2_ta_mapping] WHERE (information_mapped = 'Country') AND ([b2_ta_mapping].[record_validity] = 1) [0m
+Rendering template within layouts/application
+Rendering b2_ta_mappings/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 515ms (View: 140, DB: 63) | 200 OK [http://localhost/b2_ta_mappings?page=8&search=Country]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-27 16:44:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2009-10-28 22:10:24) [GET]
+Redirected to http://localhost:3000/
+Completed in 2437ms (DB: 94) | 302 Found [http://localhost/logout]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-28 22:10:28) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 78ms (DB: 31) | 302 Found [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-10-28 22:10:29) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 234ms (View: 202, DB: 16) | 200 OK [http://localhost/session/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 22:10:32) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 22:10:33) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 22:10:33) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-10-28 22:13:12) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 2031ms (View: 266, DB: 1827) | 200 OK [http://localhost/session/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 22:13:19) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 22:13:20) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 22:13:20) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-10-28 22:14:03) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 703ms (View: 187, DB: 468) | 200 OK [http://localhost/session/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 22:14:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 22:14:07) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 22:14:07) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-10-28 22:15:58) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"CKxA8zVscQs7k5bfYkVzmSMAThQuVpHw6Yj/vcpBpQM=", "login"=>"vincent", "password"=>"12345678"}
+  [4;36;1mUser Load (31.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[login] = 'vincent') [0m
+  [4;35;1mEXECUTE (0.0ms)[0m   [0mBEGIN TRANSACTION[0m
+  [4;36;1mEXECUTE (0.0ms)[0m   [0;1mCOMMIT TRANSACTION[0m
+Redirected to http://localhost:3000/
+Completed in 1469ms (DB: 469) | 302 Found [http://localhost/session]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-28 22:16:01) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (79.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 4297ms (View: 203, DB: 674) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 22:16:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2009-10-28 22:24:30) [GET]
+Redirected to http://localhost:3000/
+Completed in 359ms (DB: 125) | 302 Found [http://localhost/logout]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-28 22:24:31) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 93ms (DB: 16) | 302 Found [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-10-28 22:24:31) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 156ms (View: 141, DB: 0) | 200 OK [http://localhost/session/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 22:24:33) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 22:24:33) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 22:24:34) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-10-28 22:24:42) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"Oinxep54p6FI8RnW0ugkBK5nbyWJ/WwRZC+PsXKgMTs=", "login"=>"Vincent", "password"=>"12345678"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[login] = 'vincent') [0m
+  [4;36;1mEXECUTE (0.0ms)[0m   [0;1mBEGIN TRANSACTION[0m
+  [4;35;1mEXECUTE (16.0ms)[0m   [0mCOMMIT TRANSACTION[0m
+Redirected to http://localhost:3000/
+Completed in 328ms (DB: 109) | 302 Found [http://localhost/session]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-28 22:24:43) [GET]
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (0.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 3093ms (View: 187, DB: 94) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 22:24:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-28 22:27:01) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (16.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 3094ms (View: 250, DB: 16) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 22:27:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-28 22:27:23) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (0.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 3265ms (View: 203, DB: 16) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 22:27:29) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-28 22:27:41) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (16.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 3391ms (View: 235, DB: 62) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 22:27:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-28 22:28:07) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (0.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 3375ms (View: 218, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 22:28:12) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-28 22:29:18) [GET]
+  [4;36;1mUser Load (15.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (0.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 3250ms (View: 250, DB: 31) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 22:29:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2009-10-28 22:29:32) [GET]
+Redirected to http://localhost:3000/
+Completed in 203ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-28 22:29:33) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 94ms (DB: 0) | 302 Found [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-10-28 22:29:33) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 125ms (View: 109, DB: 0) | 200 OK [http://localhost/session/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 22:29:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 22:29:35) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 22:29:36) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-10-28 22:29:46) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"o8feo+AwMzUTqm6Fi18Yz9aTvPdp4mu+Lz3k52IDWIQ=", "login"=>"vincent", "password"=>"12345678"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[login] = 'vincent') [0m
+  [4;35;1mEXECUTE (0.0ms)[0m   [0mBEGIN TRANSACTION[0m
+  [4;36;1mEXECUTE (0.0ms)[0m   [0;1mCOMMIT TRANSACTION[0m
+Redirected to http://localhost:3000/
+Completed in 266ms (DB: 15) | 302 Found [http://localhost/session]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-28 22:29:47) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (15.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 3281ms (View: 188, DB: 45) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 22:29:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/stylesheets/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-28 22:33:23) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (0.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (32.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 3625ms (View: 532, DB: 31) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 22:33:29) [GET]
+
+ActionController::RoutingError (No route matches "/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2009-10-28 22:33:34) [GET]
+Redirected to http://localhost:3000/
+Completed in 297ms (DB: 32) | 302 Found [http://localhost/logout]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-28 22:33:36) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 78ms (DB: 0) | 302 Found [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-10-28 22:33:37) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 156ms (View: 140, DB: 0) | 200 OK [http://localhost/session/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 22:33:38) [GET]
+
+ActionController::RoutingError (No route matches "/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 22:33:39) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 22:33:39) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-10-28 22:33:48) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"T+nw9LgbfpqRp41OA3atwoXUxO/O+bs7A0tYlWHwVPc=", "login"=>"vincent", "password"=>"12345678"}
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[login] = 'vincent') [0m
+  [4;35;1mEXECUTE (0.0ms)[0m   [0mBEGIN TRANSACTION[0m
+  [4;36;1mEXECUTE (0.0ms)[0m   [0;1mCOMMIT TRANSACTION[0m
+Redirected to http://localhost:3000/
+Completed in 235ms (DB: 32) | 302 Found [http://localhost/session]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-28 22:33:49) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (0.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 3344ms (View: 188, DB: 16) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-28 22:33:54) [GET]
+
+ActionController::RoutingError (No route matches "/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)

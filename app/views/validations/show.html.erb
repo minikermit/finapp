@@ -1,29 +1,7 @@
 <Div id = 'show'>
 
-<p>
-  <b>Id:</b>
-  <%=h @validation.id %>
-</p>
-
-<p>
-  <b>Original:</b>
-  <%=h @validation.Original_id %>
-</p>
-
-<p>
-  <b>Loaddate:</b>
-  <%=h @validation.LoadDate %>
-</p>
-
-<p class= "text" >
-  <b>Source:</b>
-  <%=h @validation.Source_id %>
-</p>
-
-<p>
-  <b>Entity:</b>
-  <%=h @validation.Entity_id %>
-</p>
+<fieldset id="validation rule">
+ <legend> Validation Rule </legend>
 
 <p>
   <b>Client:</b>
@@ -70,6 +48,40 @@
   <%=h @validation.Recommendation %>
 </p>
 
+</fieldset>
+
+
+<fieldset id="dataset information">
+ <legend> Dataset information </legend>
+<p>
+  <b>Date:</b>
+  <%=h @validation.LoadDate %>
+</p>
+
+<p>
+  <b>Source:</b>
+  <%=h @validation.Source_id %>
+</p>
+
+<p>
+  <b>Entity:</b>
+  <%=h @validation.Entity_id %>
+</p>
+</fieldset>
+
+<fieldset id="audit">
+ <legend> Audit information </legend>
+
+<p>
+  <b>Id:</b>
+  <%=h @validation.id %>
+</p>
+
+<p>
+  <b>Original:</b>
+  <%=h @validation.Original_id %>
+</p>
+
 <p>
   <b>Created at:</b>
   <%=h @validation.created_at %>
@@ -79,6 +91,8 @@
   <b>Updated at:</b>
   <%=h @validation.updated_at %>
 </p>
+
+</fieldset>
 
 <%= link_to 'Edit original record', edit_counterparty_path(@validation.Original_id) %> |
 <%= link_to 'Show rule details', { :controller => "validationrules", :id => 2, :action => "show" }, :popup => ['Help', 'width=800,height=400'] %> |

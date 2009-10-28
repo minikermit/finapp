@@ -6,36 +6,36 @@
 </a><br />
 
 <div id="show_search" style="display:none"; >
-  <div class="column span-6 append-16 prepend-2 last">
-    
+  <div class="column span-10 append-12 prepend-2 last">
+    <fieldset  class="span-8">
 	<% form_for @search do |f| %>  
  
       <div class="column span-2">
         <%= f.label :LoadDate_like, "Date" %>  
       </div>
-      <div class="column span-4 last">
+      <div class="column span-8 last">
         <%= f.text_field :LoadDate_like , :class => 'text' %>
       </div>
       <div class="column span-2">
          <%= f.label :OutputFile_equals, "Scope" %> 
       </div>
-      <div class="column span-4 last">
+      <div class="column span-8 last">
         <%= f.text_field :OutputFile_equals , :class => 'text' %> 
       </div>
       <div class="column span-2">
          <%= f.label :ErrorKind_like, "Rule" %> 
       </div>
-      <div class="column span-4 last">
+      <div class="column span-8 last">
       	 <%= f.text_field :ErrorKind_like , :class => 'text' %>
       </div>
       <div class="column span-2">
          <%= f.label :ErrorType_like, "Type" %> 
       </div>
-      <div class="column span-4 last">
+      <div class="column span-8 last">
       	 <%= f.text_field :ErrorType_like , :class => 'text' %>
       </div>
 
-      <div class="column span-6 prepend-2 last">
+      <div class="column span-8 prepend-2 last">
         <%= f.submit "Apply filters" %> 
       </div>
     <% end %> 

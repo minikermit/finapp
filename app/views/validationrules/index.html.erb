@@ -43,7 +43,6 @@
     <th class = 'th'>Type</th>
     <th class = 'th'>Identification</th>
     <th class = 'th'>Description</th>
-    <th class = 'th'>Hint</th>
   </tr>
 
 <% @validationrules.each do |validationrule| %>
@@ -52,7 +51,6 @@
     <td class = 'span-1'><%=h validationrule.rule_type %></td>  
     <td class = 'span-1'><%=h validationrule.rule_identification %></td>
     <td class= 'span-4'><%=h validationrule.rule_description %></td>
-    <td class= 'span-12'><%=h validationrule.rule_hint %></td>
     <td class = 'span-1'><%= link_to 'More', validationrule %></td>
     <td class = 'span-1'><%= link_to 'Edit', edit_validationrule_path(validationrule) %></td>
     <td class = 'span-1'><%= link_to 'Destroy', validationrule, :confirm => 'Are you sure?', :method => :delete %></td>

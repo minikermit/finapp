@@ -58565,3 +58565,2258 @@ ActionController::RoutingError (No route matches "/validations/images/lightbox/c
   
 
 Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-29 11:40:57) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2157ms (DB: 984) | 302 Found [http://localhost/validations]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-10-29 11:41:00) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_menu (47.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 516ms (View: 470, DB: 15) | 200 OK [http://localhost/session/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 11:41:03) [GET]
+
+ActionController::RoutingError (No route matches "/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 11:41:04) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 11:41:05) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-10-29 11:41:14) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"jBLnFJj1Q55zjzmwAaP8JGloU6V92Dgcx8eqgquXcxM=", "login"=>"vincent", "password"=>"12345678"}
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[login] = 'vincent') [0m
+  [4;35;1mEXECUTE (0.0ms)[0m   [0mBEGIN TRANSACTION[0m
+  [4;36;1mEXECUTE (0.0ms)[0m   [0;1mCOMMIT TRANSACTION[0m
+Redirected to http://localhost:3000/validations
+Completed in 437ms (DB: 157) | 302 Found [http://localhost/session]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-29 11:41:15) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (157.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 4078ms (View: 266, DB: 312) | 200 OK [http://localhost/validations]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 11:41:21) [GET]
+
+ActionController::RoutingError (No route matches "/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#show (for 127.0.0.1 at 2009-10-29 11:41:36) [GET]
+  Parameters: {"id"=>"3453"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (63.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE ([B2TA_VAL_Error_Reports].[id] = 3453) [0m
+Rendering template within layouts/application
+Rendering validations/show
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 2032ms (View: 1594, DB: 79) | 200 OK [http://localhost/validations/3453]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 11:41:39) [GET]
+
+ActionController::RoutingError (No route matches "/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 11:41:39) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 11:41:40) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#show (for 127.0.0.1 at 2009-10-29 11:42:02) [GET]
+  Parameters: {"id"=>"3453"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (0.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE ([B2TA_VAL_Error_Reports].[id] = 3453) [0m
+Rendering template within layouts/application
+Rendering validations/show
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 438ms (View: 47, DB: 0) | 200 OK [http://localhost/validations/3453]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 11:42:03) [GET]
+
+ActionController::RoutingError (No route matches "/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 11:42:04) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 11:42:04) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#show (for 127.0.0.1 at 2009-10-29 11:42:12) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidationrule Load (0.0ms)[0m   [0;1mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 2) [0m
+Rendering template within layouts/applicationnaked
+Rendering validationrules/show
+Completed in 484ms (View: 109, DB: 109) | 200 OK [http://localhost/validationrules/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 11:42:14) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 11:42:14) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#show (for 127.0.0.1 at 2009-10-29 11:57:50) [GET]
+  Parameters: {"id"=>"3453"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (0.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE ([B2TA_VAL_Error_Reports].[id] = 3453) [0m
+Rendering template within layouts/application
+Rendering validations/show
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 391ms (View: 47, DB: 16) | 200 OK [http://localhost/validations/3453]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 11:57:53) [GET]
+
+ActionController::RoutingError (No route matches "/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 11:57:54) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 11:57:54) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#show (for 127.0.0.1 at 2009-10-29 11:58:50) [GET]
+  Parameters: {"id"=>"3453"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (0.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE ([B2TA_VAL_Error_Reports].[id] = 3453) [0m
+Rendering template within layouts/application
+Rendering validations/show
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 406ms (View: 47, DB: 16) | 200 OK [http://localhost/validations/3453]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 11:58:53) [GET]
+
+ActionController::RoutingError (No route matches "/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 11:58:54) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 11:58:54) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#show (for 127.0.0.1 at 2009-10-29 12:03:04) [GET]
+  Parameters: {"id"=>"3453"}
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (0.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE ([B2TA_VAL_Error_Reports].[id] = 3453) [0m
+Rendering template within layouts/application
+Rendering validations/show
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 375ms (View: 47, DB: 48) | 200 OK [http://localhost/validations/3453]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 12:03:07) [GET]
+
+ActionController::RoutingError (No route matches "/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 12:03:07) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 12:03:08) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#show (for 127.0.0.1 at 2009-10-29 12:04:47) [GET]
+  Parameters: {"id"=>"3453"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (16.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE ([B2TA_VAL_Error_Reports].[id] = 3453) [0m
+Rendering template within layouts/application
+Rendering validations/show
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 563ms (View: 47, DB: 32) | 200 OK [http://localhost/validations/3453]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 12:04:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 12:04:51) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 12:04:51) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#show (for 127.0.0.1 at 2009-10-29 12:06:21) [GET]
+  Parameters: {"id"=>"3453"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (0.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE ([B2TA_VAL_Error_Reports].[id] = 3453) [0m
+Rendering template within layouts/application
+Rendering validations/show
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 406ms (View: 78, DB: 16) | 200 OK [http://localhost/validations/3453]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 12:06:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 12:06:24) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 12:06:25) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2009-10-29 12:11:42) [GET]
+Redirected to http://localhost:3000/
+Completed in 203ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-29 12:11:43) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 79ms (DB: 16) | 302 Found [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-10-29 12:11:43) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 125ms (View: 94, DB: 15) | 200 OK [http://localhost/session/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 12:11:45) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 12:11:46) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 12:11:46) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-10-29 12:11:53) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"dMJo2rAuIocdWuJ2uGEJ+C02sGkFW2kjSgCesIN5a+o=", "login"=>"vincent", "password"=>"12345678"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[login] = 'vincent') [0m
+  [4;36;1mEXECUTE (0.0ms)[0m   [0;1mBEGIN TRANSACTION[0m
+  [4;35;1mEXECUTE (0.0ms)[0m   [0mCOMMIT TRANSACTION[0m
+Redirected to http://localhost:3000/
+Completed in 234ms (DB: 15) | 302 Found [http://localhost/session]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-29 12:11:54) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (16.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 3062ms (View: 171, DB: 32) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 12:11:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#show (for 127.0.0.1 at 2009-10-29 12:12:10) [GET]
+  Parameters: {"id"=>"3453"}
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (0.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE ([B2TA_VAL_Error_Reports].[id] = 3453) [0m
+Rendering template within layouts/application
+Rendering validations/show
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 391ms (View: 47, DB: 47) | 200 OK [http://localhost/validations/3453]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 12:12:12) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 12:12:12) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 12:12:13) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-29 17:34:59) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1250ms (DB: 0) | 302 Found [http://localhost/validations]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-10-29 17:35:02) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_menu (31.0ms)
+Rendered shared/_sidebar (16.0ms)
+Completed in 453ms (View: 423, DB: 15) | 200 OK [http://localhost/session/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 17:35:03) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 17:35:04) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 17:35:05) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-10-29 17:35:25) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"wTSJzmKplnFnBPQuZkvGtGd3nsbBQhsQIaVPwqHJyE8=", "login"=>"vincent", "password"=>"12345678"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[login] = 'vincent') [0m
+  [4;35;1mEXECUTE (0.0ms)[0m   [0mBEGIN TRANSACTION[0m
+  [4;36;1mEXECUTE (0.0ms)[0m   [0;1mCOMMIT TRANSACTION[0m
+Redirected to http://localhost:3000/validations
+Completed in 312ms (DB: 46) | 302 Found [http://localhost/session]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-29 17:35:26) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (15.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 3234ms (View: 297, DB: 46) | 200 OK [http://localhost/validations]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 17:35:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#show (for 127.0.0.1 at 2009-10-29 17:35:34) [GET]
+  Parameters: {"id"=>"3453"}
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (15.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE ([B2TA_VAL_Error_Reports].[id] = 3453) [0m
+Rendering template within layouts/application
+Rendering validations/show
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 1765ms (View: 1406, DB: 62) | 200 OK [http://localhost/validations/3453]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 17:35:36) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 17:35:37) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 17:35:37) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#show (for 127.0.0.1 at 2009-10-29 17:35:43) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidationrule Load (0.0ms)[0m   [0;1mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 2) [0m
+Rendering template within layouts/applicationnaked
+Rendering validationrules/show
+Completed in 516ms (View: 235, DB: 0) | 200 OK [http://localhost/validationrules/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 17:35:45) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 17:35:45) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#show (for 127.0.0.1 at 2009-10-29 17:35:46) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Load (15.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidationrule Load (0.0ms)[0m   [0;1mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 2) [0m
+Rendering template within layouts/applicationnaked
+Rendering validationrules/show
+Completed in 391ms (View: 16, DB: 15) | 200 OK [http://localhost/validationrules/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 17:35:47) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 17:35:48) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2009-10-29 17:36:25) [GET]
+Redirected to http://localhost:3000/
+Completed in 188ms (DB: 15) | 302 Found [http://localhost/logout]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-29 17:36:25) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 78ms (DB: 31) | 302 Found [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-10-29 17:36:26) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 125ms (View: 94, DB: 15) | 200 OK [http://localhost/session/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 17:36:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 17:36:28) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 17:36:28) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-10-29 17:36:29) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"5V2vNVfpr/Np3Cmig5vif4atmX2UAQFvZcJazwijGeQ=", "login"=>"vincent", "password"=>"12345678"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[login] = 'vincent') [0m
+  [4;36;1mEXECUTE (0.0ms)[0m   [0;1mBEGIN TRANSACTION[0m
+  [4;35;1mEXECUTE (0.0ms)[0m   [0mCOMMIT TRANSACTION[0m
+Redirected to http://localhost:3000/
+Completed in 328ms (DB: 47) | 302 Found [http://localhost/session]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-29 17:36:30) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (0.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 3156ms (View: 203, DB: 30) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 17:36:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#show (for 127.0.0.1 at 2009-10-29 17:36:49) [GET]
+  Parameters: {"id"=>"3454"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (0.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE ([B2TA_VAL_Error_Reports].[id] = 3454) [0m
+Rendering template within layouts/application
+Rendering validations/show
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 406ms (View: 46, DB: 15) | 200 OK [http://localhost/validations/3454]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 17:36:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 17:36:51) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 17:36:51) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CounterpartiesController#edit (for 127.0.0.1 at 2009-10-29 17:36:55) [GET]
+  Parameters: {"id"=>"300"}
+  [4;36;1mCounterparty Load (32.0ms)[0m   [0;1mSELECT * FROM [B2TA_XPORT_Counterparty] WHERE ([B2TA_XPORT_Counterparty].[id] = 300) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Counterparty with ID=300):
+  app/controllers/counterparties_controller.rb:39:in `edit'
+
+Rendered rescues/_trace (453.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#show (for 127.0.0.1 at 2009-10-29 17:37:14) [GET]
+  Parameters: {"id"=>"1331"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (16.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE ([B2TA_VAL_Error_Reports].[id] = 1331) [0m
+Rendering template within layouts/application
+Rendering validations/show
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 422ms (View: 47, DB: 16) | 200 OK [http://localhost/validations/1331]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 17:37:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 17:37:16) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 17:37:16) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CounterpartiesController#edit (for 127.0.0.1 at 2009-10-29 17:37:19) [GET]
+  Parameters: {"id"=>"14790"}
+  [4;35;1mCounterparty Load (47.0ms)[0m   [0mSELECT * FROM [B2TA_XPORT_Counterparty] WHERE ([B2TA_XPORT_Counterparty].[id] = 14790) [0m
+Rendering template within layouts/application
+Rendering counterparties/edit
+Rendered shared/_menu (0.0ms)
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+Rendered shared/_sidebar (0.0ms)
+Completed in 969ms (View: 734, DB: 79) | 200 OK [http://localhost/counterparties/14790/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 17:37:20) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 17:37:21) [GET]
+
+ActionController::RoutingError (No route matches "/counterparties/14790/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 17:37:22) [GET]
+
+ActionController::RoutingError (No route matches "/counterparties/14790/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#show (for 127.0.0.1 at 2009-10-29 17:37:34) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidationrule Load (0.0ms)[0m   [0;1mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 2) [0m
+Rendering template within layouts/applicationnaked
+Rendering validationrules/show
+Completed in 312ms (View: 31, DB: 31) | 200 OK [http://localhost/validationrules/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 17:37:34) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 17:37:35) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-29 17:38:03) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (0.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 3328ms (View: 187, DB: 47) | 200 OK [http://localhost/validations]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 17:38:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#show (for 127.0.0.1 at 2009-10-29 17:38:13) [GET]
+  Parameters: {"id"=>"1341"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (0.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE ([B2TA_VAL_Error_Reports].[id] = 1341) [0m
+Rendering template within layouts/application
+Rendering validations/show
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 390ms (View: 47, DB: 16) | 200 OK [http://localhost/validations/1341]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 17:38:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 17:38:15) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 17:38:15) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#show (for 127.0.0.1 at 2009-10-29 17:39:18) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidationrule Load (0.0ms)[0m   [0;1mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 2) [0m
+Rendering template within layouts/applicationnaked
+Rendering validationrules/show
+Completed in 328ms (View: 31, DB: 16) | 200 OK [http://localhost/validationrules/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 17:39:19) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 17:39:20) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#show (for 127.0.0.1 at 2009-10-29 19:36:39) [GET]
+  Parameters: {"id"=>"1341"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (0.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE ([B2TA_VAL_Error_Reports].[id] = 1341) [0m
+Rendering template within layouts/application
+Rendering validations/show
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 844ms (View: 79, DB: 31) | 200 OK [http://localhost/validations/1341]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 19:36:43) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 19:36:43) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 19:36:44) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-29 19:37:04) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (16.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 3109ms (View: 250, DB: 47) | 200 OK [http://localhost/validations]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 19:37:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-10-29 20:00:51) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 172ms (DB: 63) | 302 Found [http://localhost/validationrules]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-10-29 20:00:52) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 156ms (View: 140, DB: 0) | 200 OK [http://localhost/session/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:00:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:00:54) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:00:55) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-10-29 20:01:03) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"J/tlXdjC/NnTQv2K4NGftkYz/xR/Edp4p/THepiL4TA=", "login"=>"vincent", "password"=>"12345678"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[login] = 'vincent') [0m
+  [4;36;1mEXECUTE (0.0ms)[0m   [0;1mBEGIN TRANSACTION[0m
+  [4;35;1mEXECUTE (0.0ms)[0m   [0mCOMMIT TRANSACTION[0m
+Redirected to http://localhost:3000/validationrules
+Completed in 500ms (DB: 16) | 302 Found [http://localhost/session]
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-10-29 20:01:04) [GET]
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (15.0ms)[0m   [0mSELECT * FROM [validationrules] [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 672ms (View: 282, DB: 46) | 200 OK [http://localhost/validationrules]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:01:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#destroy (for 127.0.0.1 at 2009-10-29 20:01:55) [DELETE]
+  Parameters: {"authenticity_token"=>"J/tlXdjC/NnTQv2K4NGftkYz/xR/Edp4p/THepiL4TA=", "id"=>"30"}
+  [4;36;1mUser Load (15.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 30) [0m
+  [4;36;1mEXECUTE (0.0ms)[0m   [0;1mBEGIN TRANSACTION[0m
+  [4;35;1mValidationrule Destroy (47.0ms)[0m   [0mDELETE FROM [validationrules] WHERE [id] = 30[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSELECT @@ROWCOUNT AS AffectedRows[0m
+  [4;35;1mEXECUTE (0.0ms)[0m   [0mCOMMIT TRANSACTION[0m
+Redirected to http://localhost:3000/validationrules
+Completed in 375ms (DB: 93) | 302 Found [http://localhost/validationrules/30]
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-10-29 20:01:56) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 531ms (View: 140, DB: 47) | 200 OK [http://localhost/validationrules]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:01:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#destroy (for 127.0.0.1 at 2009-10-29 20:02:10) [DELETE]
+  Parameters: {"authenticity_token"=>"J/tlXdjC/NnTQv2K4NGftkYz/xR/Edp4p/THepiL4TA=", "id"=>"5"}
+  [4;36;1mUser Load (15.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 5) [0m
+  [4;36;1mEXECUTE (0.0ms)[0m   [0;1mBEGIN TRANSACTION[0m
+  [4;35;1mValidationrule Destroy (0.0ms)[0m   [0mDELETE FROM [validationrules] WHERE [id] = 5[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT @@ROWCOUNT AS AffectedRows[0m
+  [4;35;1mEXECUTE (0.0ms)[0m   [0mCOMMIT TRANSACTION[0m
+Redirected to http://localhost:3000/validationrules
+Completed in 312ms (DB: 31) | 302 Found [http://localhost/validationrules/5]
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-10-29 20:02:11) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (16.0ms)[0m   [0mSELECT * FROM [validationrules] [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 515ms (View: 140, DB: 32) | 200 OK [http://localhost/validationrules]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:02:13) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-10-29 20:02:26) [GET]
+  Parameters: {"page"=>"2"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 531ms (View: 141, DB: 63) | 200 OK [http://localhost/validationrules?page=2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:02:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#edit (for 127.0.0.1 at 2009-10-29 20:02:43) [GET]
+  Parameters: {"id"=>"46"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 46) [0m
+Rendering template within layouts/application
+Rendering validationrules/edit
+Rendered validationrules/_form (63.0ms)
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 406ms (View: 109, DB: 31) | 200 OK [http://localhost/validationrules/46/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:02:45) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:02:45) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/46/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:02:46) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/46/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#update (for 127.0.0.1 at 2009-10-29 20:02:58) [PUT]
+  Parameters: {"commit"=>"Save", "validationrule"=>{"rule_hint"=>"Count_CIF exist in Counterparty table for the period\r\n\r\nRule required by Tel Aviv for Identification of the counterparties check- all the CIF identifier numbers in all the tables must be populated also in the Counterparty table.", "rule_description"=>"Count_CIF exist in Counterparty table for the period", "id"=>"46", "rule_identification"=>"Rule 500", "rule_type"=>"LOG", "rule_sql_query"=>"", "rule_scope"=>"OTC"}, "authenticity_token"=>"J/tlXdjC/NnTQv2K4NGftkYz/xR/Edp4p/THepiL4TA=", "id"=>"46"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 46) [0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mEXECUTE (0.0ms)[0m   [0;1mBEGIN TRANSACTION[0m
+  [4;35;1mValidationrule Load (31.0ms)[0m   [0mSELECT TOP 1 [validationrules].id FROM [validationrules] WHERE ([validationrules].[rule_identification] COLLATE Latin1_General_CS_AS = 'Rule 500' AND [validationrules].id <> 46) [0m
+  [4;36;1mEXECUTE (0.0ms)[0m   [0;1mROLLBACK TRANSACTION[0m
+Rendering template within layouts/application
+Rendering validationrules/edit
+Rendered validationrules/_form (16.0ms)
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 500ms (View: 47, DB: 31) | 200 OK [http://localhost/validationrules/46]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:03:00) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:03:00) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:03:01) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#update (for 127.0.0.1 at 2009-10-29 20:03:14) [PUT]
+  Parameters: {"commit"=>"Save", "validationrule"=>{"rule_hint"=>"Count_CIF exist in Counterparty table for the period\r\n\r\nRule required by Tel Aviv for Identification of the counterparties check- all the CIF identifier numbers in all the tables must be populated also in the Counterparty table.", "rule_description"=>"Count_CIF exist in Counterparty table for the period", "id"=>"46", "rule_identification"=>"Rule 500", "rule_type"=>"LOG", "rule_sql_query"=>"to add", "rule_scope"=>"OTC"}, "authenticity_token"=>"J/tlXdjC/NnTQv2K4NGftkYz/xR/Edp4p/THepiL4TA=", "id"=>"46"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidationrule Load (0.0ms)[0m   [0;1mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 46) [0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mEXECUTE (0.0ms)[0m   [0mBEGIN TRANSACTION[0m
+  [4;36;1mValidationrule Load (0.0ms)[0m   [0;1mSELECT TOP 1 [validationrules].id FROM [validationrules] WHERE ([validationrules].[rule_identification] COLLATE Latin1_General_CS_AS = 'Rule 500' AND [validationrules].id <> 46) [0m
+  [4;35;1mValidationrule Update (47.0ms)[0m   [0mUPDATE [validationrules] SET [updated_at] = '2009-10-29 19:03:15.203', [rule_hint] = 'Count_CIF exist in Counterparty table for the period
+
+Rule required by Tel Aviv for Identification of the counterparties check- all the CIF identifier numbers in all the tables must be populated also in the Counterparty table.', [rule_sql_query] = 'to add' WHERE [id] = 46[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT @@ROWCOUNT AS AffectedRows[0m
+  [4;35;1mEXECUTE (15.0ms)[0m   [0mCOMMIT TRANSACTION[0m
+Redirected to http://localhost:3000/validationrules/46
+Completed in 390ms (DB: 77) | 302 Found [http://localhost/validationrules/46]
+
+
+Processing ValidationrulesController#show (for 127.0.0.1 at 2009-10-29 20:03:15) [GET]
+  Parameters: {"id"=>"46"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 46) [0m
+Rendering template within layouts/applicationnaked
+Rendering validationrules/show
+Completed in 328ms (View: 15, DB: 32) | 200 OK [http://localhost/validationrules/46]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:03:17) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:03:18) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#edit (for 127.0.0.1 at 2009-10-29 20:04:06) [GET]
+  Parameters: {"id"=>"42"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 42) [0m
+Rendering template within layouts/application
+Rendering validationrules/edit
+Rendered validationrules/_form (16.0ms)
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (16.0ms)
+Completed in 359ms (View: 47, DB: 30) | 200 OK [http://localhost/validationrules/42/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:04:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:04:08) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/42/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:04:09) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/42/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#update (for 127.0.0.1 at 2009-10-29 20:04:24) [PUT]
+  Parameters: {"commit"=>"Save", "validationrule"=>{"rule_hint"=>"Rule required by Tel Aviv for Cash On Hand check- there should be at least one record of Cash On Hand in the Loanbook table (GL code= 00101).", "rule_description"=>"Cash On Hand check : there should be at least one record of Cash On Hand (GL=00101)", "id"=>"42", "rule_identification"=>"Rule 408", "rule_type"=>"LOG", "rule_sql_query"=>"", "rule_scope"=>"LOANBOOK"}, "authenticity_token"=>"J/tlXdjC/NnTQv2K4NGftkYz/xR/Edp4p/THepiL4TA=", "id"=>"42"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 42) [0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mEXECUTE (0.0ms)[0m   [0;1mBEGIN TRANSACTION[0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT TOP 1 [validationrules].id FROM [validationrules] WHERE ([validationrules].[rule_identification] COLLATE Latin1_General_CS_AS = 'Rule 408' AND [validationrules].id <> 42) [0m
+  [4;36;1mEXECUTE (0.0ms)[0m   [0;1mROLLBACK TRANSACTION[0m
+Rendering template within layouts/application
+Rendering validationrules/edit
+Rendered validationrules/_form (16.0ms)
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 390ms (View: 47, DB: 16) | 200 OK [http://localhost/validationrules/42]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:04:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:04:26) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:04:27) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#update (for 127.0.0.1 at 2009-10-29 20:04:41) [PUT]
+  Parameters: {"commit"=>"Save", "validationrule"=>{"rule_hint"=>"Rule required by Tel Aviv for Cash On Hand check- there should be at least one record of Cash On Hand in the Loanbook table (GL code= 00101).", "rule_description"=>"Cash On Hand check : there should be at least one record of Cash On Hand (GL=00101)", "id"=>"42", "rule_identification"=>"Rule 408", "rule_type"=>"LOG", "rule_sql_query"=>"To add", "rule_scope"=>"LOANBOOK"}, "authenticity_token"=>"J/tlXdjC/NnTQv2K4NGftkYz/xR/Edp4p/THepiL4TA=", "id"=>"42"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidationrule Load (15.0ms)[0m   [0;1mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 42) [0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mEXECUTE (16.0ms)[0m   [0mBEGIN TRANSACTION[0m
+  [4;36;1mValidationrule Load (0.0ms)[0m   [0;1mSELECT TOP 1 [validationrules].id FROM [validationrules] WHERE ([validationrules].[rule_identification] COLLATE Latin1_General_CS_AS = 'Rule 408' AND [validationrules].id <> 42) [0m
+  [4;35;1mValidationrule Update (0.0ms)[0m   [0mUPDATE [validationrules] SET [updated_at] = '2009-10-29 19:04:41.406', [rule_hint] = 'Rule required by Tel Aviv for Cash On Hand check- there should be at least one record of Cash On Hand in the Loanbook table (GL code= 00101).', [rule_sql_query] = 'To add' WHERE [id] = 42[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT @@ROWCOUNT AS AffectedRows[0m
+  [4;35;1mEXECUTE (0.0ms)[0m   [0mCOMMIT TRANSACTION[0m
+Redirected to http://localhost:3000/validationrules/42
+Completed in 390ms (DB: 47) | 302 Found [http://localhost/validationrules/42]
+
+
+Processing ValidationrulesController#show (for 127.0.0.1 at 2009-10-29 20:04:42) [GET]
+  Parameters: {"id"=>"42"}
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 42) [0m
+Rendering template within layouts/applicationnaked
+Rendering validationrules/show
+Completed in 328ms (View: 31, DB: 16) | 200 OK [http://localhost/validationrules/42]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:04:43) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:04:44) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-10-29 20:04:49) [GET]
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (16.0ms)[0m   [0mSELECT * FROM [validationrules] [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 1203ms (View: 391, DB: 109) | 200 OK [http://localhost/validationrules]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:04:51) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#destroy (for 127.0.0.1 at 2009-10-29 20:04:59) [DELETE]
+  Parameters: {"authenticity_token"=>"J/tlXdjC/NnTQv2K4NGftkYz/xR/Edp4p/THepiL4TA=", "id"=>"4"}
+  [4;36;1mUser Load (15.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 4) [0m
+  [4;36;1mEXECUTE (0.0ms)[0m   [0;1mBEGIN TRANSACTION[0m
+  [4;35;1mValidationrule Destroy (0.0ms)[0m   [0mDELETE FROM [validationrules] WHERE [id] = 4[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT @@ROWCOUNT AS AffectedRows[0m
+  [4;35;1mEXECUTE (0.0ms)[0m   [0mCOMMIT TRANSACTION[0m
+Redirected to http://localhost:3000/validationrules
+Completed in 422ms (DB: 31) | 302 Found [http://localhost/validationrules/4]
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-10-29 20:05:00) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 593ms (View: 156, DB: 15) | 200 OK [http://localhost/validationrules]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:05:02) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-10-29 20:05:30) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 656ms (View: 172, DB: 16) | 200 OK [http://localhost/validationrules]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:05:33) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#edit (for 127.0.0.1 at 2009-10-29 20:05:48) [GET]
+  Parameters: {"id"=>"23"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (15.0ms)[0m   [0mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 23) [0m
+Rendering template within layouts/application
+Rendering validationrules/edit
+Rendered validationrules/_form (16.0ms)
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 359ms (View: 47, DB: 61) | 200 OK [http://localhost/validationrules/23/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:05:49) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:05:50) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/23/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:05:51) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/23/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#update (for 127.0.0.1 at 2009-10-29 20:06:21) [PUT]
+  Parameters: {"commit"=>"Save", "validationrule"=>{"rule_hint"=>"Limit_nom + Unused_Credit_limit_Amt = Used_Credit_limit_Amt\r\n\r\nTel Aviv requirement for Credit limit check- the summary of the unused credit limit amount and the used credit limit amount equals the total credit limit amount; unless the used credit limit amount is greater than the total credit limit amount. In this case the unused credit limit amount is zero.", "rule_description"=>"Limit_nom + Unused_Credit_limit_Amt = Used_Credit_limit_Amt", "id"=>"23", "rule_identification"=>"Rule 212", "rule_type"=>"BUS", "rule_sql_query"=>"to add", "rule_scope"=>"LIMIT"}, "authenticity_token"=>"J/tlXdjC/NnTQv2K4NGftkYz/xR/Edp4p/THepiL4TA=", "id"=>"23"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (16.0ms)[0m   [0mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 23) [0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mEXECUTE (0.0ms)[0m   [0;1mBEGIN TRANSACTION[0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT TOP 1 [validationrules].id FROM [validationrules] WHERE ([validationrules].[rule_identification] COLLATE Latin1_General_CS_AS = 'Rule 212' AND [validationrules].id <> 23) [0m
+  [4;36;1mValidationrule Update (0.0ms)[0m   [0;1mUPDATE [validationrules] SET [updated_at] = '2009-10-29 19:06:22.343', [rule_hint] = 'Limit_nom + Unused_Credit_limit_Amt = Used_Credit_limit_Amt
+
+Tel Aviv requirement for Credit limit check- the summary of the unused credit limit amount and the used credit limit amount equals the total credit limit amount; unless the used credit limit amount is greater than the total credit limit amount. In this case the unused credit limit amount is zero.', [rule_sql_query] = 'to add', [rule_description] = 'Limit_nom + Unused_Credit_limit_Amt = Used_Credit_limit_Amt' WHERE [id] = 23[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT @@ROWCOUNT AS AffectedRows[0m
+  [4;36;1mEXECUTE (0.0ms)[0m   [0;1mCOMMIT TRANSACTION[0m
+Redirected to http://localhost:3000/validationrules/23
+Completed in 469ms (DB: 64) | 302 Found [http://localhost/validationrules/23]
+
+
+Processing ValidationrulesController#show (for 127.0.0.1 at 2009-10-29 20:06:22) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidationrule Load (16.0ms)[0m   [0;1mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 23) [0m
+Rendering template within layouts/applicationnaked
+Rendering validationrules/show
+Completed in 312ms (View: 15, DB: 32) | 200 OK [http://localhost/validationrules/23]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:06:24) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:06:25) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#show (for 127.0.0.1 at 2009-10-29 20:07:08) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidationrule Load (16.0ms)[0m   [0;1mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 23) [0m
+Rendering template within layouts/applicationnaked
+Rendering validationrules/show
+Completed in 328ms (View: 15, DB: 47) | 200 OK [http://localhost/validationrules/23]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:07:10) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:07:11) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-10-29 20:07:26) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidationrule Load (0.0ms)[0m   [0;1mSELECT * FROM [validationrules] [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 750ms (View: 375, DB: 15) | 200 OK [http://localhost/validationrules]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:07:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#edit (for 127.0.0.1 at 2009-10-29 20:07:36) [GET]
+  Parameters: {"id"=>"24"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidationrule Load (16.0ms)[0m   [0;1mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 24) [0m
+Rendering template within layouts/application
+Rendering validationrules/edit
+Rendered validationrules/_form (31.0ms)
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 359ms (View: 46, DB: 48) | 200 OK [http://localhost/validationrules/24/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:07:38) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:07:38) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/24/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:07:39) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/24/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#update (for 127.0.0.1 at 2009-10-29 20:07:51) [PUT]
+  Parameters: {"commit"=>"Save", "validationrule"=>{"rule_hint"=>"Limit_local_amount + Unused_Credit_limit_Amt_local = Used_Credit_limit_Amt_local\r\n\r\nTel Aviv requirement for Credit limit check- the summary of the unused credit limit amount and the used credit limit amount equals the total credit limit amount; unless the used credit limit amount is greater than the total credit limit amount. In this case the unused credit limit amount is zero.", "rule_description"=>"Limit_local_amount + Unused_Credit_limit_Amt_local = Used_Credit_limit_Amt_local", "id"=>"24", "rule_identification"=>"Rule 213", "rule_type"=>"BUS", "rule_sql_query"=>"to add", "rule_scope"=>"LIMIT"}, "authenticity_token"=>"J/tlXdjC/NnTQv2K4NGftkYz/xR/Edp4p/THepiL4TA=", "id"=>"24"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidationrule Load (16.0ms)[0m   [0;1mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 24) [0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mEXECUTE (0.0ms)[0m   [0mBEGIN TRANSACTION[0m
+  [4;36;1mValidationrule Load (16.0ms)[0m   [0;1mSELECT TOP 1 [validationrules].id FROM [validationrules] WHERE ([validationrules].[rule_identification] COLLATE Latin1_General_CS_AS = 'Rule 213' AND [validationrules].id <> 24) [0m
+  [4;35;1mValidationrule Update (0.0ms)[0m   [0mUPDATE [validationrules] SET [updated_at] = '2009-10-29 19:07:51.937', [rule_hint] = 'Limit_local_amount + Unused_Credit_limit_Amt_local = Used_Credit_limit_Amt_local
+
+Tel Aviv requirement for Credit limit check- the summary of the unused credit limit amount and the used credit limit amount equals the total credit limit amount; unless the used credit limit amount is greater than the total credit limit amount. In this case the unused credit limit amount is zero.', [rule_sql_query] = 'to add', [rule_description] = 'Limit_local_amount + Unused_Credit_limit_Amt_local = Used_Credit_limit_Amt_local' WHERE [id] = 24[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT @@ROWCOUNT AS AffectedRows[0m
+  [4;35;1mEXECUTE (0.0ms)[0m   [0mCOMMIT TRANSACTION[0m
+Redirected to http://localhost:3000/validationrules/24
+Completed in 390ms (DB: 48) | 302 Found [http://localhost/validationrules/24]
+
+
+Processing ValidationrulesController#show (for 127.0.0.1 at 2009-10-29 20:07:52) [GET]
+  Parameters: {"id"=>"24"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 24) [0m
+Rendering template within layouts/applicationnaked
+Rendering validationrules/show
+Completed in 328ms (View: 15, DB: 48) | 200 OK [http://localhost/validationrules/24]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:07:54) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:07:54) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-10-29 20:08:19) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 828ms (View: 406, DB: 32) | 200 OK [http://localhost/validationrules/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:08:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:08:21) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:08:22) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-10-29 20:08:38) [GET]
+  Parameters: {"page"=>"2"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 797ms (View: 391, DB: 48) | 200 OK [http://localhost/validationrules?page=2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:08:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-10-29 20:08:48) [GET]
+  Parameters: {"page"=>"3"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 469ms (View: 78, DB: 15) | 200 OK [http://localhost/validationrules?page=3]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:08:49) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#show (for 127.0.0.1 at 2009-10-29 20:09:17) [GET]
+  Parameters: {"id"=>"67"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 67) [0m
+Rendering template within layouts/applicationnaked
+Rendering validationrules/show
+Completed in 343ms (View: 15, DB: 15) | 200 OK [http://localhost/validationrules/67]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:09:19) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:09:19) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-10-29 20:10:39) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 812ms (View: 390, DB: 0) | 200 OK [http://localhost/validationrules]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:10:42) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#show (for 127.0.0.1 at 2009-10-29 20:10:59) [GET]
+  Parameters: {"id"=>"13"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (16.0ms)[0m   [0mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 13) [0m
+Rendering template within layouts/applicationnaked
+Rendering validationrules/show
+Completed in 390ms (View: 31, DB: 62) | 200 OK [http://localhost/validationrules/13]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:11:00) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:11:01) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#show (for 127.0.0.1 at 2009-10-29 20:11:27) [GET]
+  Parameters: {"id"=>"13"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 13) [0m
+Rendering template within layouts/applicationnaked
+Rendering validationrules/show
+Completed in 360ms (View: 47, DB: 0) | 200 OK [http://localhost/validationrules/13]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:11:29) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:11:29) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-10-29 20:12:07) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 782ms (View: 141, DB: 16) | 200 OK [http://localhost/validationrules]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:12:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-10-29 20:12:14) [GET]
+  Parameters: {"page"=>"3"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (16.0ms)[0m   [0mSELECT * FROM [validationrules] [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 469ms (View: 78, DB: 16) | 200 OK [http://localhost/validationrules?page=3]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:12:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#new (for 127.0.0.1 at 2009-10-29 20:12:18) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+Rendering template within layouts/application
+Rendering validationrules/new
+Rendered validationrules/_form (16.0ms)
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 344ms (View: 47, DB: 32) | 200 OK [http://localhost/validationrules/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:12:20) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:12:20) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:12:21) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-10-29 20:12:29) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidationrule Load (0.0ms)[0m   [0;1mSELECT * FROM [validationrules] [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 765ms (View: 375, DB: 30) | 200 OK [http://localhost/validationrules]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:12:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-10-29 20:12:36) [GET]
+  Parameters: {"page"=>"3"}
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidationrule Load (16.0ms)[0m   [0;1mSELECT * FROM [validationrules] [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 468ms (View: 78, DB: 47) | 200 OK [http://localhost/validationrules?page=3]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:12:37) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-10-29 20:12:51) [GET]
+  Parameters: {"search"=>{"rule_type_like"=>"", "order"=>"", "rule_scope_like"=>"LOANBOOK", "rule_identification_like"=>""}, "commit"=>"Apply filters"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidationrule Load (0.0ms)[0m   [0;1mSELECT * FROM [validationrules] WHERE (validationrules.rule_scope LIKE '%LOANBOOK%') [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 437ms (View: 109, DB: 31) | 200 OK [http://localhost/validationrules?search%5Border%5D=&search%5Brule_identification_like%5D=&search%5Brule_type_like%5D=&search%5Brule_scope_like%5D=LOANBOOK&commit=Apply+filters]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:12:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#show (for 127.0.0.1 at 2009-10-29 20:12:59) [GET]
+  Parameters: {"id"=>"43"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidationrule Load (0.0ms)[0m   [0;1mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 43) [0m
+Rendering template within layouts/applicationnaked
+Rendering validationrules/show
+Completed in 422ms (View: 16, DB: 46) | 200 OK [http://localhost/validationrules/43]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:13:01) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:13:02) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#show (for 127.0.0.1 at 2009-10-29 20:13:21) [GET]
+  Parameters: {"id"=>"34"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidationrule Load (16.0ms)[0m   [0;1mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 34) [0m
+Rendering template within layouts/applicationnaked
+Rendering validationrules/show
+Completed in 313ms (View: 16, DB: 47) | 200 OK [http://localhost/validationrules/34]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:13:23) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:13:24) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-29 20:13:34) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (16.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 3375ms (View: 187, DB: 46) | 200 OK [http://localhost/validations]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:13:38) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#show (for 127.0.0.1 at 2009-10-29 20:13:44) [GET]
+  Parameters: {"id"=>"1326"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (16.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE ([B2TA_VAL_Error_Reports].[id] = 1326) [0m
+Rendering template within layouts/application
+Rendering validations/show
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 547ms (View: 47, DB: 48) | 200 OK [http://localhost/validations/1326]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:13:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:13:47) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:13:47) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#show (for 127.0.0.1 at 2009-10-29 20:13:54) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidationrule Load (0.0ms)[0m   [0;1mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 2) [0m
+Rendering template within layouts/applicationnaked
+Rendering validationrules/show
+Completed in 313ms (View: 16, DB: 15) | 200 OK [http://localhost/validationrules/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:13:55) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:13:56) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-29 20:14:46) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (16.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 3328ms (View: 203, DB: 47) | 200 OK [http://localhost/validations]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:14:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-29 20:14:56) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (0.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 3469ms (View: 188, DB: 32) | 200 OK [http://localhost/validations]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:15:02) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-29 20:16:13) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (0.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 3296ms (View: 156, DB: 61) | 200 OK [http://localhost/validations]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:16:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-29 20:16:33) [GET]
+  Parameters: {"search"=>{"OutputFile_equals"=>"LIMIT", "LoadDate_like"=>"", "order"=>"", "ErrorKind_like"=>"", "ErrorType_like"=>""}, "commit"=>"Apply filters"}
+  [4;35;1mUser Load (15.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (0.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE (B2TA_VAL_Error_Reports.OutputFile = 'LIMIT') [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 1422ms (View: 141, DB: 46) | 200 OK [http://localhost/validations?search%5Border%5D=&search%5BLoadDate_like%5D=&search%5BOutputFile_equals%5D=LIMIT&search%5BErrorKind_like%5D=&search%5BErrorType_like%5D=&commit=Apply+filters]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:16:36) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-29 20:17:52) [GET]
+  Parameters: {"search"=>{"OutputFile_equals"=>"LIMIT", "LoadDate_like"=>"", "order"=>"", "ErrorKind_like"=>"", "ErrorType_like"=>""}, "commit"=>"Apply filters"}
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (0.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE (B2TA_VAL_Error_Reports.OutputFile = 'LIMIT') [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 1531ms (View: 218, DB: 32) | 200 OK [http://localhost/validations?search%5Border%5D=&search%5BLoadDate_like%5D=&search%5BOutputFile_equals%5D=LIMIT&search%5BErrorKind_like%5D=&search%5BErrorType_like%5D=&commit=Apply+filters]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:17:56) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#show (for 127.0.0.1 at 2009-10-29 20:18:02) [GET]
+  Parameters: {"id"=>"3129"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (0.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE ([B2TA_VAL_Error_Reports].[id] = 3129) [0m
+Rendering template within layouts/application
+Rendering validations/show
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 422ms (View: 31, DB: 31) | 200 OK [http://localhost/validations/3129]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:18:04) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:18:05) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:18:05) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CounterpartiesController#show (for 127.0.0.1 at 2009-10-29 20:18:10) [GET]
+  Parameters: {"id"=>"1396"}
+  [4;35;1mCounterparty Load (0.0ms)[0m   [0mSELECT * FROM [B2TA_XPORT_Counterparty] WHERE ([B2TA_XPORT_Counterparty].[id] = 1396) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Counterparty with ID=1396):
+  app/controllers/counterparties_controller.rb:18:in `show'
+
+Rendered rescues/_trace (390.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-29 20:18:25) [GET]
+  Parameters: {"search"=>{"OutputFile_equals"=>"COUNTERPART", "LoadDate_like"=>"", "order"=>"", "ErrorKind_like"=>"", "ErrorType_like"=>""}, "commit"=>"Apply filters"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (0.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE (B2TA_VAL_Error_Reports.OutputFile = 'COUNTERPART') [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 1343ms (View: 140, DB: 31) | 200 OK [http://localhost/validations?search%5Border%5D=&search%5BLoadDate_like%5D=&search%5BOutputFile_equals%5D=COUNTERPART&search%5BErrorKind_like%5D=&search%5BErrorType_like%5D=&commit=Apply+filters]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:18:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CounterpartiesController#show (for 127.0.0.1 at 2009-10-29 20:18:31) [GET]
+  Parameters: {"id"=>"14196"}
+  [4;36;1mCounterparty Load (16.0ms)[0m   [0;1mSELECT * FROM [B2TA_XPORT_Counterparty] WHERE ([B2TA_XPORT_Counterparty].[id] = 14196) [0m
+Rendering template within layouts/application
+Rendering counterparties/show
+Rendered shared/_menu (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+Rendered shared/_sidebar (0.0ms)
+Completed in 547ms (View: 359, DB: 16) | 200 OK [http://localhost/counterparties/14196]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:18:32) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:18:33) [GET]
+
+ActionController::RoutingError (No route matches "/counterparties/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:18:34) [GET]
+
+ActionController::RoutingError (No route matches "/counterparties/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#show (for 127.0.0.1 at 2009-10-29 20:18:46) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (0.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE ([B2TA_VAL_Error_Reports].[id] = 8) [0m
+Rendering template within layouts/application
+Rendering validations/show
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 438ms (View: 32, DB: 16) | 200 OK [http://localhost/validations/8]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:18:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:18:49) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:18:49) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#show (for 127.0.0.1 at 2009-10-29 20:20:01) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (0.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE ([B2TA_VAL_Error_Reports].[id] = 8) [0m
+Rendering template within layouts/application
+Rendering validations/show
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 422ms (View: 47, DB: 47) | 200 OK [http://localhost/validations/8]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:20:03) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/blueprint/src/grid.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:20:04) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-29 20:20:04) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)

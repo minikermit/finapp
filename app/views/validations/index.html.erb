@@ -72,11 +72,9 @@
     <td class = 'span-1' ><%=h validation.Client_id %></td>
     <td class = 'span-1' ><%=h validation.Key_id %></td>
     <td class = 'span-1' ><%=h validation.ErrorType %></td>
-    <td class = 'span-1' ><%= link_to 'Show', validation %></td>
-    <td class = 'span-1' ><%= link_to 'Show2', :controller => 'counterparties' ,:action => "show", :id => validation.Original_id %></td>
-    <% link_to_if(validation.OutputFile < 'LIMIT', 'Show3', :controller => 'limits' ,:action => "show", :id => validation.Original_id) %>
-	<td class = 'span-1' ><%= link_to 'Edit', edit_validation_path(validation) %></td>
-    <td class = 'span-1' ><%= link_to 'Destroy', validation, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td class = 'span-1' ><%= link_to 'More', validation %></td>
+    <td class = 'span-1' ><%= link_to 'Edit', :controller => 'counterparties' ,:action => "show", :id => validation.Original_id %></td>
+    <% link_to_if(validation.OutputFile = 'LIMIT', 'Show3', :controller => 'limits' ,:action => "show", :id => validation.Original_id) %>
   </tr>
 <% end %>
 </table>

@@ -1,4 +1,6 @@
-body { background-color: rgb(102,102,102) }
+/* Normal HTML */
+
+body { background-color: rgb(139,200,103) }
 
 H1   { color: rgb(0,0,51);
 	   font-size: 24px;
@@ -6,18 +8,75 @@ H1   { color: rgb(0,0,51);
 	   text_align: right;
 }
 
-H2   { color: rgb(76,146,176);
-	   font-size: 18px;
+.myapptitle   { color: rgb(76,146,176);
+	   font-size: 22px;
 	   display: block;
 	   font_weight: bold;
-	   margin: 0px 0px 10px 0px;
+	   margin: 0px 0px 0px 45px;
 	   text_align: right;
 }
 
-.rightH2   { color: rgb(98,153,20);
+.myappsubtitle   { color: rgb(98,153,20);
 	   font-size: 18px;
 	   display: block;
 	   font_weight: bold;
-	   margin: 0px 0px 10px 0px;
+	   margin: 0px 0px 0px 45px;
 	   text_align: right;
+}
+
+a {text-decoration: none; }
+
+/* Header */
+#header {
+  background-image: url(/images/header-back.png);
+
+  padding: 0px 0px 0px 0px;
+  margin-left: 0px;
+}
+
+/* Grid table rounded corner design */
+
+#rounded-corner
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	margin: 45px;
+	width: 800px;
+	text-align: left;
+	border-collapse: collapse;
+}
+#rounded-corner thead th.rounded-company
+{
+	background: #b9c9fe url('/images/table-images/left.png') left -1px no-repeat;
+}
+#rounded-corner thead th.rounded-q4
+{
+	background: #b9c9fe url('/images/table-images/right.png') right -1px no-repeat;
+}
+#rounded-corner th
+{
+	padding: 8px;
+	font-weight: normal;
+	font-size: 13px;
+	color: #039;
+	background: #b9c9fe;
+}
+#rounded-corner td
+{
+	padding: 8px;
+	background: #e8edff;
+	border-top: 1px solid #fff;
+	color: #669;
+}
+#rounded-corner tfoot td.rounded-foot-left
+{
+	background: #e8edff url('/images/table-images/botleft.png') left bottom no-repeat;
+}
+#rounded-corner tfoot td.rounded-foot-right
+{
+	background: #e8edff url('/images/table-images/botright.png') right bottom no-repeat;
+}
+#rounded-corner tbody tr:hover td
+{
+	background: #d0dafd;
 }

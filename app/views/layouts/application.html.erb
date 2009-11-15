@@ -28,7 +28,7 @@
 
 <body>
   	
-	<div id= "container" class = "container showgrid">
+	<div id= "container" class = "container">
 	<!--/header -->
 		
 		<div id = "header" class = "span-24">
@@ -37,14 +37,9 @@
 		    <div id= "menubar" class = "span-24">	
 		 		<%= yield(:menu) || render(:partial => '/shared/menu') %>
 		 	</div>
-		 	
-			<span class="ss_sprite ss_add">
-		 		<img src="/images/icons/application_edit.png" />
-	 		</span>
-	 		
-	 		 		
+		 			 		
 	 		<!-- This is the part for the plugin restful-authentication-->
-			<div id= "login" class = "span-24 prepend-23">
+			<div id= "login" class = "span-24 prepend-22">
 		   		<% if logged_in? %>
 		      		<%= link_to "Log Out", logout_path %>
 		   		<% else %>
@@ -73,7 +68,7 @@
 			<div id= "right" class = "span-2 last">	
 			</div>
 		
-		<hr/>
+
 	
 
 		

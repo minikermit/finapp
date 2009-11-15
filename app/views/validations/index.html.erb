@@ -1,21 +1,25 @@
-
 <a href="#" onclick="AppearEffect('show_search')" class ='a'>		
 	<span class="ss_sprite ss_add">
 		 		<img src="/images/iconmini/search-icon-blue.gif" />
 	 </span>	
-</a><br />
+</a>
+
+<p>Sort by <%= order @search, :by => :Errorkind %> | <%= order @search, :by => :OutputFile %> | <%= order @search, :by => :OutputField %></p>  
+
+<br />
 
 <div id="show_search" style="display:none"; >
-  <div class="column span-10 append-12 prepend-2 last">
+  <div class="column span-10 append-12 prepend-1 last">
     <fieldset  class="span-8">
     	<legend>Search</legend>
 		<% form_for @search do |f| %>  
  
       <div class="column span-2">
-        <%= f.label :LoadDate_like, "Date" %>  
+        <%= f.label :LoadDate_equals, "Date" %>  
       </div>
-      <div class="column span-8 last">
-        <%= f.text_field :LoadDate_like , :class => 'text' %>
+      <div class="column span-8 last">   	      		
+        <!--%= f.text_field :LoadDate_like , :class => 'text' %-->
+        <%= f.collection_select :LoadDate_equals, Validation.all, :LoadDate, :LoadDate, :include_blank => true %>  
       </div>
       <div class="column span-2">
          <%= f.label :OutputFile_equals, "Scope" %> 
@@ -23,6 +27,7 @@
   
       <div class="column span-8 last">
 		<select name="search[OutputFile_equals]">
+		    <option value="" selected="selected">[Select a file]</option>
     		<option value="Limit">Limit</option>
     		<option value="Counterparty">Counterparty</option>
     		<option value="LoanBook">Loan Book</option>
@@ -34,10 +39,90 @@
       </div>
 
       <div class="column span-2">
-         <%= f.label :ErrorKind_like, "Rule" %> 
+         <%= f.label :ErrorKind_equals, "Rule" %> 
       </div>
       <div class="column span-8 last">
-      	 <%= f.text_field :ErrorKind_like , :class => 'text' %>
+      	 <!--%= f.text_field :ErrorKind_like , :class => 'text' %-->
+      	 <select name="search[ErrorKind_equals]">
+      	  	<option value="" selected="selected">[Select a rule]</option>
+      	  <optgroup label="Counterparty">
+      	  	<option label="Rule 101">Rule 101</option>	
+      	 	<option label="Rule 102">Rule 102</option>
+      	 	<option label="Rule 103">Rule 103</option>
+      	 	<option label="Rule 104">Rule 104</option>
+      	 	<option label="Rule 105">Rule 105</option>
+      	 	<option label="Rule 106">Rule 106</option>
+      	 	<option label="Rule 107">Rule 107</option>
+      	 	<option label="Rule 108">Rule 108</option>
+      	 	<option label="Rule 109">Rule 109</option>
+      	 	<option label="Rule 110">Rule 110</option>
+      	 	<option label="Rule 111">Rule 111</option>
+		  <optgroup label="Limit">
+		  	<option label="Rule 200">Rule 200</option>
+      	  	<option label="Rule 201">Rule 201</option>	
+      	 	<option label="Rule 202">Rule 202</option>
+      	 	<option label="Rule 203">Rule 203</option>
+      	 	<option label="Rule 204">Rule 204</option>
+      	 	<option label="Rule 205">Rule 205</option>
+      	 	<option label="Rule 206">Rule 206</option>
+      	 	<option label="Rule 207">Rule 207</option>
+      	 	<option label="Rule 208">Rule 208</option>
+      	 	<option label="Rule 209">Rule 209</option>
+      	 	<option label="Rule 210">Rule 210</option>
+      	 	<option label="Rule 211">Rule 211</option>
+      	  <optgroup label="Nostro">
+		  	<option label="Rule 300">Rule 300</option>
+      	  	<option label="Rule 301">Rule 301</option>	
+      	 	<option label="Rule 302">Rule 302</option>
+      	 	<option label="Rule 303">Rule 303</option>
+      	 	<option label="Rule 304">Rule 304</option>
+      	 	<option label="Rule 305">Rule 305</option>
+      	 	<option label="Rule 306">Rule 306</option>
+      	 	<option label="Rule 307">Rule 307</option>
+      	 	<option label="Rule 308">Rule 308</option>
+      	 	<option label="Rule 309">Rule 309</option>
+      	 	<option label="Rule 310">Rule 310</option>
+      	 	<option label="Rule 311">Rule 311</option>
+      	 <optgroup label="Loan Book">
+		  	<option label="Rule 400">Rule 400</option>
+      	  	<option label="Rule 401">Rule 401</option>	
+      	 	<option label="Rule 402">Rule 402</option>
+      	 	<option label="Rule 403">Rule 403</option>
+      	 	<option label="Rule 404">Rule 404</option>
+      	 	<option label="Rule 405">Rule 405</option>
+      	 	<option label="Rule 406">Rule 406</option>
+      	 	<option label="Rule 407">Rule 407</option>
+      	 	<option label="Rule 408">Rule 408</option>
+      	 	<option label="Rule 409">Rule 409</option>
+      	 	<option label="Rule 410">Rule 410</option>
+      	 	<option label="Rule 411">Rule 411</option>
+      	  <optgroup label="OTC Derivatives">
+		  	<option label="Rule 500">Rule 500</option>
+      	  	<option label="Rule 501">Rule 501</option>	
+      	 	<option label="Rule 502">Rule 502</option>
+      	 	<option label="Rule 503">Rule 503</option>
+      	 	<option label="Rule 504">Rule 504</option>
+      	 	<option label="Rule 505">Rule 505</option>
+      	 	<option label="Rule 506">Rule 506</option>
+      	 	<option label="Rule 507">Rule 507</option>
+      	 	<option label="Rule 508">Rule 508</option>
+      	 	<option label="Rule 509">Rule 509</option>
+      	 	<option label="Rule 510">Rule 510</option>
+      	 	<option label="Rule 511">Rule 511</option>
+      	  <optgroup label="Provisions">
+		  	<option label="Rule 600">Rule 600</option>
+      	  	<option label="Rule 601">Rule 601</option>	
+      	 	<option label="Rule 602">Rule 602</option>
+      	 	<option label="Rule 603">Rule 603</option>
+      	 	<option label="Rule 604">Rule 604</option>
+      	 	<option label="Rule 605">Rule 605</option>
+      	 	<option label="Rule 606">Rule 606</option>
+      	 	<option label="Rule 607">Rule 607</option>
+      	 	<option label="Rule 608">Rule 608</option>
+      	 	<option label="Rule 609">Rule 609</option>
+      	 	<option label="Rule 610">Rule 610</option>
+      	 	<option label="Rule 611">Rule 611</option>
+      	 </select>
       </div>
       <div class="column span-2">
          <%= f.label :ErrorType_like, "Type" %> 
@@ -56,38 +141,49 @@
 
 
 
+<span class="myapptitle">Listing validations errors</span>
 
+<table id="rounded-corner" summary="Validations errors for Basel II" >
+  <thead>
+    	<tr>
+        	<th scope="col" class="rounded-company"><%= order @search, :by => :Errorkind %></th>
+            <th scope="col" class="rounded-q1"><%= order @search, :by => :OutputFile %></th>
+            <th scope="col" class="rounded-q2"><%= order @search, :by => :OutputField %></th>
+            <th scope="col" class="rounded-q2">Source</th>
+            <th scope="col" class="rounded-q2">Destination</th>
+            <th scope="col" class="rounded-q2">Client</th>
+            <th scope="col" class="rounded-q2">Key</th>
+            <th scope="col" class="rounded-q2">Type</th>
+            <th scope="col" class="rounded-q2"></th>
+            <th scope="col" class="rounded-q4"></th>
+        </tr>
+    </thead>
+    <tfoot>
+    	<tr>
+        	<td colspan="9" class="rounded-foot-left"><em>Use the pagination below to see more records if needed</em></td>
+        	<td class="rounded-foot-right">&nbsp;</td>
+        </tr>
+    </tfoot>
+	
 
-<table class = 'container' >
-  <h2 class = 'rightH2'>Listing validations errors</h2>
-  <tr  class = 'tr'>
-    <th class = 'thead'>Errorkind</th>
-    <th class = 'thead'>Scope</th>
-    <th class = 'thead'>Outputfield</th>
-    <th class = 'thead'>Source</th>
-    <th class = 'thead'>Destination</th>
-    <th class = 'thead'>Client</th>
-    <th class = 'thead'>Key</th>
-    <th class = 'thead'>Type</th>
-
-  </tr>
-
+	
+    <tbody>
 <% @validations.each do |validation| %>
   <tr>
-    <td class = 'span-1' ><%=h validation.ErrorKind %></td>
-
-    <td class = 'span-1' ><%=h validation.OutputFile %></td>
-    <td class = 'span-1' ><%=h validation.OutputField %></td>
-    <td class = 'span-1' ><%=h validation.Source %></td>
-    <td class = 'span-1' ><%=h validation.Destination %></td>
-    <td class = 'span-1' ><%=h validation.Client_id %></td>
-    <td class = 'span-1' ><%=h validation.Key_id %></td>
-    <td class = 'span-1' ><%=h validation.ErrorType %></td>
-    <td class = 'span-1' ><%= link_to 'More', validation %></td>
-    <td class = 'span-1' ><%= link_to 'Edit', :controller => 'counterparties' ,:action => "show", :id => validation.Original_id %></td>
-    <% link_to_if(validation.OutputFile = 'LIMIT', 'Show3', :controller => 'limits' ,:action => "show", :id => validation.Original_id) %>
+    <td><%=h validation.ErrorKind %></td>
+    <td><%=h validation.OutputFile %></td>
+    <td><%=h validation.OutputField %></td>
+    <td><%=h validation.Source %></td>
+    <td><%=h validation.Destination %></td>
+    <td><%=h validation.Client_id %></td>
+    <td><%=h validation.Key_id %></td>
+    <td><%=h validation.ErrorType %></td>
+    <td><%= link_to image_tag("icons/add.png") , :controller => 'validations' ,:action => "show", :id => validation.id  %></td>
+    <td><%= link_to image_tag("icons/application_edit.png") , :controller => 'counterparties' ,:action => "show", :id => validation.Original_id %></td>
+<% link_to_if(validation.OutputFile = 'Limit', 'Show3', :controller => 'limits' ,:action => "show", :id => validation.Original_id) %>
   </tr>
 <% end %>
+	</tbody>
 </table>
 
 <br />

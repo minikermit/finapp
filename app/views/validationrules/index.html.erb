@@ -22,7 +22,7 @@
       </div>
       <div class="column span-8 last">
       	 <select name="search[rule_type_like]">
-    		<option value="">Please select</option>
+    		<option value="" selected="selected">Please select</option>
       	 	<option value="ERR">Mapping Error</option>
     		<option value="LOG">Logic Error</option>
     		<option value="COM">Comparison Value</option>
@@ -37,7 +37,7 @@
   
       <div class="column span-8 last">
 		<select name="search[rule_scope_equals]">
-    		<option value="">Please select</option>
+    		<option value="" selected="selected">Please select</option>
 			<option value="Limit">Limit</option>
     		<option value="Counterparty">Counterparty</option>
     		<option value="LoanBook">Loan Book</option>
@@ -56,26 +56,40 @@
   </div>
 </div>
 
-<table>
-	<h2 class = 'theader'>Listing validation rules</h2>
-  <tr class = 'tr' >
-    <th class = 'th' >Scope</th>
-    <th class = 'th'>Type</th>
-    <th class = 'th'>Identification</th>
-    <th class = 'th'>Description</th>
-  </tr>
+<span class="myapptitle">Listing validation rules</span>
+
+<table id="rounded-corner" summary="Validations rules for Basel II" >
+  <thead>
+    	<tr>
+        	<th scope="col" class="rounded-company">Scope</th>
+            <th scope="col" class="rounded-q1">Type</th>
+            <th scope="col" class="rounded-q2">Identification</th>
+            <th scope="col" class="rounded-q2">Description</th>
+            <th scope="col" class="rounded-q2"></th>
+            <th scope="col" class="rounded-q4"></th>
+        </tr>
+    </thead>
+    <tfoot>
+    	<tr>
+        	<td colspan="5" class="rounded-foot-left"><em>Use the pagination below to see more records if needed</em></td>
+        	<td class="rounded-foot-right">&nbsp;</td>
+        </tr>
+    </tfoot>
+     <tbody>
+     	
+
 
 <% @validationrules.each do |validationrule| %>
-  <tr class = 'tr' >
-    <td class = 'span-1'><%=h validationrule.rule_scope %></td>
-    <td class = 'span-1'><%=h validationrule.rule_type %></td>  
-    <td class = 'span-1'><%=h validationrule.rule_identification %></td>
-    <td class= 'span-4'><%=h validationrule.rule_description %></td>
-    <td class = 'span-1'><%= link_to 'More', validationrule %></td>
-    <td class = 'span-1'><%= link_to 'Edit', edit_validationrule_path(validationrule) %></td>
-    <td class = 'span-1'><%= link_to 'Destroy', validationrule, :confirm => 'Are you sure?', :method => :delete %></td>
+  <tr>
+    <td><%=h validationrule.rule_scope %></td>
+    <td><%=h validationrule.rule_type %></td>  
+    <td><%=h validationrule.rule_identification %></td>
+    <td><%=h validationrule.rule_description %></td>
+    <td><%= link_to image_tag("icons/add.png") , :controller => 'validationrules' ,:action => "show", :id => validationrule.id  %></td>
+    <td><%= link_to image_tag("icons/application_edit.png") , edit_validationrule_path(validationrule) %></td>
   </tr>
 <% end %>
+	</tbody>
 </table>
 
 <br />

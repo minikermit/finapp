@@ -28,10 +28,11 @@ config.action_mailer.delivery_method = :test
 # config.active_record.schema_format = :sql
 
 # to install it : rake gems:install RAILS_ENV=test -- #gem install win32console for the coloured output !
-config.gem "rspec", :lib => false, :version => ">=1.2.2"
-config.gem "rspec-rails", :lib => false, :version => ">=1.2.2"
-config.gem "webrat", :lib => false, :version => ">=0.4.3"
-config.gem "cucumber", :lib => false, :version => ">=0.2.2"
+config.gem "rspec", :lib => false, :version => ">=1.2.9"
+config.gem "rspec-rails", :lib => false, :version => ">=1.2.9"
+config.gem "webrat", :lib => false, :version => ">=0.5.3"
+config.gem "cucumber", :lib => false, :version => ">=0.4.3"
+config.gem "pickle", :lib => false, :version => ">=0.1.21"
 
 config.gem "thoughtbot-factory_girl", :lib => "factory_girl", :source => "http://gems.github.com"
 

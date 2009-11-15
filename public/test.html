@@ -1,0 +1,56 @@
+<head>
+	
+<style type="text/css">
+
+body {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:60%;
+	margin:50px;
+	color:#666; }
+.fieldset {
+	width:300px; }
+.fieldset .label {
+	text-align:right;
+	width:70px;
+	float:left;
+	padding:0.2em;
+	margin:0;
+	margin-top:0.3em; }
+.fieldset .nobr {
+	display:none; }  
+.fieldset .textfield {
+	margin:3px;
+	height:20px;
+	width:200px;
+	border:solid 0 #fff;
+	background: transparent 
+	url("graphics/textfield_bg.gif") no-repeat fixed; }
+fieldset>input.textfield {
+	background: transparent 
+	url("graphics/textfield_bg.gif") no-repeat; }
+
+.fieldset .textarea {
+	margin:3px;
+	height:165px;
+	width:200px; }	
+</style>	
+</head>	
+
+<form action="default.asp" method="post">
+<fieldset>
+<legend>Contact form </legend>
+<label for="name">Name:</label><br />
+<input type="text"  id="name" name="name"  />
+<br />
+<label for="email">Email:</label><br />
+<input type="text" id="email" name="email" /><br/>
+<label for="website">Website:</label><br />
+<input type="text" id="website" name="website" value="http://" />
+<br />
+<label for="comment">Comment:</label><br />
+<textarea cols="30" rows="15" name="comment" id="comment">
+</textarea>
+<br /><label for="submit">&nbsp;</label><br />
+<input id="submit" name="submit" type="submit" value="submit" />
+</fieldset>
+</form>

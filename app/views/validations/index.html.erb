@@ -8,7 +8,8 @@
 <div id="show_search" style="display:none"; >
   <div class="column span-10 append-12 prepend-2 last">
     <fieldset  class="span-8">
-	<% form_for @search do |f| %>  
+    	<legend>Search</legend>
+		<% form_for @search do |f| %>  
  
       <div class="column span-2">
         <%= f.label :LoadDate_like, "Date" %>  
@@ -19,9 +20,19 @@
       <div class="column span-2">
          <%= f.label :OutputFile_equals, "Scope" %> 
       </div>
+  
       <div class="column span-8 last">
-        <%= f.text_field :OutputFile_equals , :class => 'text' %> 
+		<select name="search[OutputFile_equals]">
+    		<option value="Limit">Limit</option>
+    		<option value="Counterparty">Counterparty</option>
+    		<option value="LoanBook">Loan Book</option>
+    		<option value="OTC">OTC Derivatives</option>
+    		<option value="Nostro">Nostro</option>
+    		<option value="Provisions">Provisions</option>
+  		</select>
+    
       </div>
+
       <div class="column span-2">
          <%= f.label :ErrorKind_like, "Rule" %> 
       </div>
@@ -48,7 +59,7 @@
 
 
 <table class = 'container' >
-  <h2 class = 'h2'>Listing validations errors</h2>
+  <h2 class = 'rightH2'>Listing validations errors</h2>
   <tr  class = 'tr'>
     <th class = 'thead'>Errorkind</th>
     <th class = 'thead'>Scope</th>
@@ -57,7 +68,7 @@
     <th class = 'thead'>Destination</th>
     <th class = 'thead'>Client</th>
     <th class = 'thead'>Key</th>
-    <th class = 'thead'>Errortype</th>
+    <th class = 'thead'>Type</th>
 
   </tr>
 

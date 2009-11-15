@@ -1,0 +1,23 @@
+body { background-color: rgb(102,102,102) }
+
+H1   { color: rgb(0,0,51);
+	   font-size: 24px;
+	   margin: 0px 0px 15px 0px;
+	   text_align: right;
+}
+
+H2   { color: rgb(76,146,176);
+	   font-size: 18px;
+	   display: block;
+	   font_weight: bold;
+	   margin: 0px 0px 10px 0px;
+	   text_align: right;
+}
+
+.rightH2   { color: rgb(98,153,20);
+	   font-size: 18px;
+	   display: block;
+	   font_weight: bold;
+	   margin: 0px 0px 10px 0px;
+	   text_align: right;
+}

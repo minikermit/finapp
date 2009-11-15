@@ -5,7 +5,9 @@ ActionController::Routing::Routes.draw do |map|
   map.register '/register', :controller => 'users', :action => 'create'
   map.signup '/signup', :controller => 'users', :action => 'new'
   map.resources :users
-  	
+  map.resources :passwords
+  map.resource :session	
+  
   map.resources :validationrules
   map.resources :validations
 
@@ -19,9 +21,6 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :limits
   map.resources :nostros
   map.resources :provisions
-
-  map.resources :passwords
-  map.resource :session
 
   map.resources :homes
   map.resources :portals

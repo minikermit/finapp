@@ -60820,3 +60820,2686 @@ ActionController::RoutingError (No route matches "/validations/images/lightbox/c
   
 
 Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-30 10:18:57) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2860ms (DB: 905) | 302 Found [http://localhost/validations]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-10-30 10:19:02) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_menu (63.0ms)
+Rendered shared/_sidebar (16.0ms)
+Completed in 1078ms (View: 1017, DB: 15) | 200 OK [http://localhost/session/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 10:19:06) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 10:19:07) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-10-30 10:19:44) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"I3STXuqm6pF2wokyOXWnagePwMLnKjKnXhKH6aBpXck=", "login"=>"vincent", "password"=>"12345678"}
+  [4;36;1mUser Load (47.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[login] = 'vincent') [0m
+  [4;35;1mEXECUTE (15.0ms)[0m   [0mBEGIN TRANSACTION[0m
+  [4;36;1mEXECUTE (0.0ms)[0m   [0;1mCOMMIT TRANSACTION[0m
+Redirected to http://localhost:3000/validations
+Completed in 1062ms (DB: 343) | 302 Found [http://localhost/session]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-30 10:19:46) [GET]
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (360.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 9687ms (View: 562, DB: 702) | 200 OK [http://localhost/validations]
+
+
+Processing ValidationsController#show (for 127.0.0.1 at 2009-10-30 10:20:35) [GET]
+  Parameters: {"id"=>"1328"}
+  [4;35;1mUser Load (15.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (125.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE ([B2TA_VAL_Error_Reports].[id] = 1328) [0m
+Rendering template within layouts/application
+Rendering validations/show
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 4641ms (View: 3734, DB: 171) | 200 OK [http://localhost/validations/1328]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 10:20:41) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 10:20:42) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#show (for 127.0.0.1 at 2009-10-30 10:21:26) [GET]
+  Parameters: {"id"=>"1328"}
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (0.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE ([B2TA_VAL_Error_Reports].[id] = 1328) [0m
+Rendering template within layouts/application
+Rendering validations/show
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 954ms (View: 188, DB: 47) | 200 OK [http://localhost/validations/1328]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 10:21:30) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 10:21:31) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#show (for 127.0.0.1 at 2009-10-30 10:21:53) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidationrule Load (79.0ms)[0m   [0;1mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 2) [0m
+Rendering template within layouts/applicationnaked
+Rendering validationrules/show
+Completed in 1000ms (View: 188, DB: 267) | 200 OK [http://localhost/validationrules/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 10:21:55) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 10:21:56) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CounterpartiesController#edit (for 127.0.0.1 at 2009-10-30 10:22:22) [GET]
+  Parameters: {"id"=>"14776"}
+  [4;35;1mCounterparty Load (63.0ms)[0m   [0mSELECT * FROM [B2TA_XPORT_Counterparty] WHERE ([B2TA_XPORT_Counterparty].[id] = 14776) [0m
+Rendering template within layouts/application
+Rendering counterparties/edit
+Rendered shared/_menu (0.0ms)
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+Rendered shared/_sidebar (0.0ms)
+Completed in 1829ms (View: 1125, DB: 407) | 200 OK [http://localhost/counterparties/14776/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 10:22:25) [GET]
+
+ActionController::RoutingError (No route matches "/counterparties/14776/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 10:22:26) [GET]
+
+ActionController::RoutingError (No route matches "/counterparties/14776/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 10:23:02) [GET]
+
+ActionController::RoutingError (No route matches "/images/L1-center.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 10:23:04) [GET]
+
+ActionController::RoutingError (No route matches "/images/L1-left.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 10:23:05) [GET]
+
+ActionController::RoutingError (No route matches "/images/white-highlight.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 10:23:06) [GET]
+
+ActionController::RoutingError (No route matches "/images/vertical-line.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 10:23:07) [GET]
+
+ActionController::RoutingError (No route matches "/images/L1-right.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-10-30 10:23:12) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidationrule Load (16.0ms)[0m   [0;1mSELECT * FROM [validationrules] [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 1578ms (View: 797, DB: 80) | 200 OK [http://localhost/validationrules]
+
+
+Processing ValidationrulesController#show (for 127.0.0.1 at 2009-10-30 10:23:24) [GET]
+  Parameters: {"id"=>"16"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidationrule Load (16.0ms)[0m   [0;1mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 16) [0m
+Rendering template within layouts/applicationnaked
+Rendering validationrules/show
+Completed in 609ms (View: 31, DB: 48) | 200 OK [http://localhost/validationrules/16]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 10:23:26) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 10:23:27) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#edit (for 127.0.0.1 at 2009-10-30 10:23:32) [GET]
+  Parameters: {"id"=>"16"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidationrule Load (15.0ms)[0m   [0;1mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 16) [0m
+Rendering template within layouts/application
+Rendering validationrules/edit
+Rendered validationrules/_form (94.0ms)
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 750ms (View: 188, DB: 61) | 200 OK [http://localhost/validationrules/16/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 10:23:34) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/16/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 10:23:36) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/16/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#update (for 127.0.0.1 at 2009-10-30 10:23:49) [PUT]
+  Parameters: {"commit"=>"Save", "validationrule"=>{"rule_hint"=>"Limit_Start is a valid date\r\n\r\nDates check required by Tel Aviv - since we report only on existing exposures, following test must be done in all the tables: Starting date is before ending , Reporting date is between starting date and ending date. ", "rule_description"=>"Limit_Start is a valid date", "id"=>"16", "rule_identification"=>"Rule 215", "rule_type"=>"LOG", "rule_sql_query"=>"to add", "rule_scope"=>"LIMIT"}, "authenticity_token"=>"I3STXuqm6pF2wokyOXWnagePwMLnKjKnXhKH6aBpXck=", "id"=>"16"}
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidationrule Load (0.0ms)[0m   [0;1mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 16) [0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mEXECUTE (0.0ms)[0m   [0mBEGIN TRANSACTION[0m
+  [4;36;1mValidationrule Load (94.0ms)[0m   [0;1mSELECT TOP 1 [validationrules].id FROM [validationrules] WHERE ([validationrules].[rule_identification] COLLATE Latin1_General_CS_AS = 'Rule 215' AND [validationrules].id <> 16) [0m
+  [4;35;1mValidationrule Update (62.0ms)[0m   [0mUPDATE [validationrules] SET [updated_at] = '2009-10-30 09:23:49.750', [rule_hint] = 'Limit_Start is a valid date
+
+Dates check required by Tel Aviv - since we report only on existing exposures, following test must be done in all the tables: Starting date is before ending , Reporting date is between starting date and ending date. ', [rule_sql_query] = 'to add' WHERE [id] = 16[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT @@ROWCOUNT AS AffectedRows[0m
+  [4;35;1mEXECUTE (0.0ms)[0m   [0mCOMMIT TRANSACTION[0m
+Redirected to http://localhost:3000/validationrules/16
+Completed in 812ms (DB: 172) | 302 Found [http://localhost/validationrules/16]
+
+
+Processing ValidationrulesController#show (for 127.0.0.1 at 2009-10-30 10:23:50) [GET]
+  Parameters: {"id"=>"16"}
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 16) [0m
+Rendering template within layouts/applicationnaked
+Rendering validationrules/show
+Completed in 609ms (View: 46, DB: 47) | 200 OK [http://localhost/validationrules/16]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 10:23:53) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 10:23:54) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 14:10:22) [GET]
+
+ActionController::RoutingError (No route matches "/images/L1-left.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 14:10:23) [GET]
+
+ActionController::RoutingError (No route matches "/images/white-highlight.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 14:10:24) [GET]
+
+ActionController::RoutingError (No route matches "/images/L1-center.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 14:10:25) [GET]
+
+ActionController::RoutingError (No route matches "/images/vertical-line.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 14:10:26) [GET]
+
+ActionController::RoutingError (No route matches "/images/L1-right.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-30 14:10:56) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 3031ms (DB: 969) | 302 Found [http://localhost/validations]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-10-30 14:11:01) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_menu (31.0ms)
+Rendered shared/_sidebar (15.0ms)
+Completed in 672ms (View: 608, DB: 32) | 200 OK [http://localhost/session/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 14:11:04) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 14:11:05) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-10-30 14:11:21) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"TjqNywjCMbMQCcUZpADPm6ppJLHxgV1ZrXgeqj7PzPM=", "login"=>"vincent", "password"=>"12345678"}
+  [4;36;1mUser Load (31.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[login] = 'vincent') [0m
+  [4;35;1mEXECUTE (0.0ms)[0m   [0mBEGIN TRANSACTION[0m
+  [4;36;1mEXECUTE (16.0ms)[0m   [0;1mCOMMIT TRANSACTION[0m
+Redirected to http://localhost:3000/validations
+Completed in 735ms (DB: 250) | 302 Found [http://localhost/session]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-30 14:11:22) [GET]
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (172.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 6610ms (View: 422, DB: 483) | 200 OK [http://localhost/validations]
+
+
+Processing ValidationsController#show (for 127.0.0.1 at 2009-10-30 14:12:13) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (47.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE ([B2TA_VAL_Error_Reports].[id] = 8) [0m
+Rendering template within layouts/application
+Rendering validations/show
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 3953ms (View: 3187, DB: 94) | 200 OK [http://localhost/validations/8]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 14:12:19) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 14:12:20) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#show (for 127.0.0.1 at 2009-10-30 14:12:51) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidationrule Load (16.0ms)[0m   [0;1mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 2) [0m
+Rendering template within layouts/applicationnaked
+Rendering validationrules/show
+Completed in 1079ms (View: 235, DB: 265) | 200 OK [http://localhost/validationrules/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 14:12:54) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 14:12:55) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CounterpartiesController#edit (for 127.0.0.1 at 2009-10-30 14:14:02) [GET]
+  Parameters: {"id"=>"14196"}
+  [4;35;1mCounterparty Load (46.0ms)[0m   [0mSELECT * FROM [B2TA_XPORT_Counterparty] WHERE ([B2TA_XPORT_Counterparty].[id] = 14196) [0m
+Rendering template within layouts/application
+Rendering counterparties/edit
+Rendered shared/_menu (0.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+Rendered shared/_sidebar (0.0ms)
+Completed in 1906ms (View: 1219, DB: 312) | 200 OK [http://localhost/counterparties/14196/edit]
+
+
+Processing CounterpartiesController#edit (for 127.0.0.1 at 2009-10-30 14:14:04) [GET]
+  Parameters: {"id"=>"14196"}
+
+ArgumentError (A copy of CounterpartiesController has been removed from the module tree but is still active!):
+  app/controllers/counterparties_controller.rb:39:in `edit'
+
+Rendered rescues/_trace (500.0ms)
+Rendered rescues/_request_and_response (15.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CounterpartiesController#edit (for 127.0.0.1 at 2009-10-30 14:14:31) [GET]
+  Parameters: {"id"=>"14196"}
+  [4;35;1mCounterparty Load (15.0ms)[0m   [0mSELECT * FROM [B2TA_XPORT_Counterparty] WHERE ([B2TA_XPORT_Counterparty].[id] = 14196) [0m
+Rendering template within layouts/application
+Rendering counterparties/edit
+Rendered shared/_menu (0.0ms)
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+Rendered shared/_sidebar (0.0ms)
+Completed in 1110ms (View: 735, DB: 108) | 200 OK [http://localhost/counterparties/14196/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 14:14:35) [GET]
+
+ActionController::RoutingError (No route matches "/counterparties/14196/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 14:14:36) [GET]
+
+ActionController::RoutingError (No route matches "/counterparties/14196/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-30 14:15:11) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (0.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 6312ms (View: 250, DB: 46) | 200 OK [http://localhost/validations]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-10-30 14:15:31) [GET]
+  Parameters: {"search"=>{"OutputFile_equals"=>"LIMIT", "LoadDate_like"=>"", "order"=>"", "ErrorKind_like"=>"", "ErrorType_like"=>""}, "commit"=>"Apply filters"}
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (16.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE (B2TA_VAL_Error_Reports.OutputFile = 'LIMIT') [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (16.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 2750ms (View: 266, DB: 95) | 200 OK [http://localhost/validations?search%5Border%5D=&search%5BLoadDate_like%5D=&search%5BOutputFile_equals%5D=LIMIT&search%5BErrorKind_like%5D=&search%5BErrorType_like%5D=&commit=Apply+filters]
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-10-30 14:16:11) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidationrule Load (15.0ms)[0m   [0;1mSELECT * FROM [validationrules] [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 1312ms (View: 609, DB: 31) | 200 OK [http://localhost/validationrules]
+
+
+Processing ValidationrulesController#show (for 127.0.0.1 at 2009-10-30 14:17:08) [GET]
+  Parameters: {"id"=>"16"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidationrule Load (0.0ms)[0m   [0;1mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 16) [0m
+Rendering template within layouts/applicationnaked
+Rendering validationrules/show
+Completed in 625ms (View: 47, DB: 31) | 200 OK [http://localhost/validationrules/16]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 14:17:11) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 14:17:12) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#edit (for 127.0.0.1 at 2009-10-30 14:17:21) [GET]
+  Parameters: {"id"=>"16"}
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidationrule Load (16.0ms)[0m   [0;1mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 16) [0m
+Rendering template within layouts/application
+Rendering validationrules/edit
+Rendered validationrules/_form (78.0ms)
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 750ms (View: 203, DB: 47) | 200 OK [http://localhost/validationrules/16/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 14:17:24) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/16/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 14:17:25) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/16/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#update (for 127.0.0.1 at 2009-10-30 14:17:46) [PUT]
+  Parameters: {"commit"=>"Save", "validationrule"=>{"rule_hint"=>"Limit_Start is a valid date\r\n\r\nDates check required by Tel Aviv - since we report only on existing exposures, following test must be done in all the tables: Starting date is before ending , Reporting date is between starting date and ending date. ! Beware of NULLS", "rule_description"=>"Limit_Start is a valid date", "id"=>"16", "rule_identification"=>"Rule 215", "rule_type"=>"LOG", "rule_sql_query"=>"to add", "rule_scope"=>"LIMIT"}, "authenticity_token"=>"TjqNywjCMbMQCcUZpADPm6ppJLHxgV1ZrXgeqj7PzPM=", "id"=>"16"}
+  [4;35;1mUser Load (15.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidationrule Load (0.0ms)[0m   [0;1mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 16) [0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mEXECUTE (16.0ms)[0m   [0mBEGIN TRANSACTION[0m
+  [4;36;1mValidationrule Load (47.0ms)[0m   [0;1mSELECT TOP 1 [validationrules].id FROM [validationrules] WHERE ([validationrules].[rule_identification] COLLATE Latin1_General_CS_AS = 'Rule 215' AND [validationrules].id <> 16) [0m
+  [4;35;1mValidationrule Update (62.0ms)[0m   [0mUPDATE [validationrules] SET [updated_at] = '2009-10-30 13:17:47.375', [rule_hint] = 'Limit_Start is a valid date
+
+Dates check required by Tel Aviv - since we report only on existing exposures, following test must be done in all the tables: Starting date is before ending , Reporting date is between starting date and ending date. ! Beware of NULLS' WHERE [id] = 16[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT @@ROWCOUNT AS AffectedRows[0m
+  [4;35;1mEXECUTE (0.0ms)[0m   [0mCOMMIT TRANSACTION[0m
+Redirected to http://localhost:3000/validationrules/16
+Completed in 703ms (DB: 186) | 302 Found [http://localhost/validationrules/16]
+
+
+Processing ValidationrulesController#show (for 127.0.0.1 at 2009-10-30 14:17:48) [GET]
+  Parameters: {"id"=>"16"}
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (16.0ms)[0m   [0mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 16) [0m
+Rendering template within layouts/applicationnaked
+Rendering validationrules/show
+Completed in 812ms (View: 62, DB: 95) | 200 OK [http://localhost/validationrules/16]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 14:17:51) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-30 14:17:52) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-02 15:44:52) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 3438ms (DB: 1375) | 302 Found [http://localhost/validations]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-11-02 15:44:58) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_menu (78.0ms)
+Rendered shared/_sidebar (16.0ms)
+Completed in 1000ms (View: 953, DB: 16) | 200 OK [http://localhost/session/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-02 15:45:05) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-02 15:45:07) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-11-02 15:45:15) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"2MM3MxKPLIS1rPXFlnmi8jZuxAfp4f/BpuGP6WxLgpI=", "login"=>"vincent", "password"=>"12345678"}
+  [4;36;1mUser Load (31.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[login] = 'vincent') [0m
+  [4;35;1mEXECUTE (0.0ms)[0m   [0mBEGIN TRANSACTION[0m
+  [4;36;1mEXECUTE (0.0ms)[0m   [0;1mCOMMIT TRANSACTION[0m
+Redirected to http://localhost:3000/validations
+Completed in 766ms (DB: 250) | 302 Found [http://localhost/session]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-02 15:45:16) [GET]
+  [4;35;1mUser Load (15.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (188.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 7797ms (View: 891, DB: 421) | 200 OK [http://localhost/validations]
+
+
+Processing ValidationsController#show (for 127.0.0.1 at 2009-11-02 15:46:05) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (281.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE ([B2TA_VAL_Error_Reports].[id] = 8) [0m
+Rendering template within layouts/application
+Rendering validations/show
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 4000ms (View: 3063, DB: 343) | 200 OK [http://localhost/validations/8]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-02 15:46:11) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-02 15:46:13) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CounterpartiesController#edit (for 127.0.0.1 at 2009-11-02 15:46:36) [GET]
+  Parameters: {"id"=>"14196"}
+  [4;35;1mCounterparty Load (78.0ms)[0m   [0mSELECT * FROM [B2TA_XPORT_Counterparty] WHERE ([B2TA_XPORT_Counterparty].[id] = 14196) [0m
+Rendering template within layouts/application
+Rendering counterparties/edit
+Rendered shared/_menu (0.0ms)
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+Rendered shared/_sidebar (0.0ms)
+Completed in 1938ms (View: 1219, DB: 375) | 200 OK [http://localhost/counterparties/14196/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-02 15:46:40) [GET]
+
+ActionController::RoutingError (No route matches "/counterparties/14196/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-02 15:46:42) [GET]
+
+ActionController::RoutingError (No route matches "/counterparties/14196/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-02 15:47:43) [GET]
+  Parameters: {"search"=>{"OutputFile_equals"=>"", "LoadDate_like"=>"", "order"=>"", "ErrorKind_like"=>"Rule 104", "ErrorType_like"=>""}, "commit"=>"Apply filters"}
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (31.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE (B2TA_VAL_Error_Reports.ErrorKind LIKE '%Rule 104%') [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 828ms (View: 125, DB: 62) | 200 OK [http://localhost/validations?search%5Border%5D=&search%5BLoadDate_like%5D=&search%5BOutputFile_equals%5D=&search%5BErrorKind_like%5D=Rule+104&search%5BErrorType_like%5D=&commit=Apply+filters]
+
+
+Processing ValidationsController#show (for 127.0.0.1 at 2009-11-02 15:48:18) [GET]
+  Parameters: {"id"=>"653"}
+  [4;35;1mUser Load (15.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (16.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE ([B2TA_VAL_Error_Reports].[id] = 653) [0m
+Rendering template within layouts/application
+Rendering validations/show
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (16.0ms)
+Completed in 766ms (View: 78, DB: 61) | 200 OK [http://localhost/validations/653]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-02 15:48:21) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-02 15:48:23) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#show (for 127.0.0.1 at 2009-11-02 15:48:37) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidationrule Load (47.0ms)[0m   [0;1mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 2) [0m
+Rendering template within layouts/applicationnaked
+Rendering validationrules/show
+Completed in 1032ms (View: 266, DB: 283) | 200 OK [http://localhost/validationrules/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-02 15:48:40) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-02 15:48:41) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#edit (for 127.0.0.1 at 2009-11-02 15:48:56) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidationrule Load (16.0ms)[0m   [0;1mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 2) [0m
+Rendering template within layouts/application
+Rendering validationrules/edit
+Rendered validationrules/_form (125.0ms)
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 797ms (View: 250, DB: 78) | 200 OK [http://localhost/validationrules/2/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-02 15:49:00) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/2/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-02 15:49:01) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/2/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#update (for 127.0.0.1 at 2009-11-02 15:49:21) [PUT]
+  Parameters: {"commit"=>"Save", "validationrule"=>{"rule_hint"=>"The count_CIF must be also present in the scrambling table. If not, the csv file cannot be delivered to Tel Aviv due to the banking secrecy due to the clients by law.\r\n\r\nValerio est là !", "rule_description"=>"Count_CIF is scrambled", "id"=>"2", "rule_identification"=>"Rule 001", "rule_type"=>"Logic", "rule_sql_query"=>"select", "rule_scope"=>"COUNTERPART"}, "authenticity_token"=>"2MM3MxKPLIS1rPXFlnmi8jZuxAfp4f/BpuGP6WxLgpI=", "id"=>"2"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidationrule Load (0.0ms)[0m   [0;1mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 2) [0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mEXECUTE (0.0ms)[0m   [0mBEGIN TRANSACTION[0m
+  [4;36;1mValidationrule Load (47.0ms)[0m   [0;1mSELECT TOP 1 [validationrules].id FROM [validationrules] WHERE ([validationrules].[rule_identification] COLLATE Latin1_General_CS_AS = 'Rule 001' AND [validationrules].id <> 2) [0m
+  [4;35;1mValidationrule Update (47.0ms)[0m   [0mUPDATE [validationrules] SET [updated_at] = '2009-11-02 14:49:22.343', [rule_hint] = 'The count_CIF must be also present in the scrambling table. If not, the csv file cannot be delivered to Tel Aviv due to the banking secrecy due to the clients by law.
+
+Valerio est là !' WHERE [id] = 2[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT @@ROWCOUNT AS AffectedRows[0m
+  [4;35;1mEXECUTE (15.0ms)[0m   [0mCOMMIT TRANSACTION[0m
+Redirected to http://localhost:3000/validationrules/2
+Completed in 687ms (DB: 140) | 302 Found [http://localhost/validationrules/2]
+
+
+Processing ValidationrulesController#show (for 127.0.0.1 at 2009-11-02 15:49:23) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 2) [0m
+Rendering template within layouts/applicationnaked
+Rendering validationrules/show
+Completed in 562ms (View: 47, DB: 32) | 200 OK [http://localhost/validationrules/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-02 15:49:26) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-02 15:49:26) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-11-02 15:49:58) [GET]
+  [4;36;1mUser Load (15.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (15.0ms)[0m   [0mSELECT * FROM [validationrules] [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 2047ms (View: 516, DB: 77) | 200 OK [http://localhost/validationrules]
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-11-02 15:50:10) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (15.0ms)[0m   [0mSELECT * FROM [validationrules] [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 922ms (View: 235, DB: 61) | 200 OK [http://localhost/validationrules]
+
+
+Processing ValidationrulesController#show (for 127.0.0.1 at 2009-11-02 15:50:23) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 10) [0m
+Rendering template within layouts/applicationnaked
+Rendering validationrules/show
+Completed in 593ms (View: 31, DB: 31) | 200 OK [http://localhost/validationrules/10]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-02 15:50:26) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-02 15:50:27) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#show (for 127.0.0.1 at 2009-11-02 15:50:37) [GET]
+  Parameters: {"id"=>"13"}
+  [4;36;1mUser Load (15.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 13) [0m
+Rendering template within layouts/applicationnaked
+Rendering validationrules/show
+Completed in 578ms (View: 47, DB: 46) | 200 OK [http://localhost/validationrules/13]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-02 15:50:40) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-02 15:50:41) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-02 15:52:25) [GET]
+
+ActionController::RoutingError (No route matches "/validationrsitemap" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-02 15:52:33) [GET]
+
+ActionController::RoutingError (No route matches "/images/L1-left.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-02 15:52:34) [GET]
+
+ActionController::RoutingError (No route matches "/images/white-highlight.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-02 15:52:35) [GET]
+
+ActionController::RoutingError (No route matches "/images/L1-center.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-02 15:52:36) [GET]
+
+ActionController::RoutingError (No route matches "/images/vertical-line.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-02 15:52:38) [GET]
+
+ActionController::RoutingError (No route matches "/images/L1-right.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing B2TaMappingsController#index (for 127.0.0.1 at 2009-11-02 15:58:26) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mSQL (15.0ms)[0m   [0mSELECT count(*) as TotalRows from (SELECT TOP 1000000000 * FROM [b2_ta_mapping] WHERE (information_mapped = NULL) AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) tally[0m
+  [4;36;1mB2TaMapping Load (0.0ms)[0m   [0;1mSELECT * FROM (SELECT TOP 0 * FROM (SELECT TOP 0 * FROM [b2_ta_mapping] WHERE (information_mapped = NULL) AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) AS tmp1 ORDER BY [created_at] ASC) AS tmp2 ORDER BY [created_at] DESC[0m
+Rendering template within layouts/application
+Rendering b2_ta_mappings/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 687ms (View: 156, DB: 201) | 200 OK [http://localhost/b2_ta_mappings]
+
+
+Processing B2TaMappingsController#index (for 127.0.0.1 at 2009-11-02 15:58:30) [GET]
+  Parameters: {"search"=>"Country"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mSQL (79.0ms)[0m   [0;1mSELECT count(*) as TotalRows from (SELECT TOP 1000000000 * FROM [b2_ta_mapping] WHERE (information_mapped = 'Country') AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) tally[0m
+  [4;35;1mB2TaMapping Load (31.0ms)[0m   [0mSELECT * FROM (SELECT TOP 30 * FROM (SELECT TOP 30 * FROM [b2_ta_mapping] WHERE (information_mapped = 'Country') AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) AS tmp1 ORDER BY [created_at] ASC) AS tmp2 ORDER BY [created_at] DESC[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM [b2_ta_mapping] WHERE (information_mapped = 'Country') AND ([b2_ta_mapping].[record_validity] = 1) [0m
+Rendering template within layouts/application
+Rendering b2_ta_mappings/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 656ms (View: 172, DB: 126) | 200 OK [http://localhost/b2_ta_mappings?search=Country]
+
+
+Processing B2TaMappingsController#index (for 127.0.0.1 at 2009-11-02 15:59:11) [GET]
+  Parameters: {"search"=>"Currency"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSELECT count(*) as TotalRows from (SELECT TOP 1000000000 * FROM [b2_ta_mapping] WHERE (information_mapped = 'Currency') AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) tally[0m
+  [4;35;1mB2TaMapping Load (15.0ms)[0m   [0mSELECT * FROM (SELECT TOP 30 * FROM (SELECT TOP 30 * FROM [b2_ta_mapping] WHERE (information_mapped = 'Currency') AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) AS tmp1 ORDER BY [created_at] ASC) AS tmp2 ORDER BY [created_at] DESC[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM [b2_ta_mapping] WHERE (information_mapped = 'Currency') AND ([b2_ta_mapping].[record_validity] = 1) [0m
+Rendering template within layouts/application
+Rendering b2_ta_mappings/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 516ms (View: 141, DB: 63) | 200 OK [http://localhost/b2_ta_mappings?search=Currency]
+
+
+Processing B2TaMappingsController#show (for 127.0.0.1 at 2009-11-02 16:00:08) [GET]
+  Parameters: {"id"=>"307"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mB2TaMapping Load (16.0ms)[0m   [0;1mSELECT * FROM [b2_ta_mapping] WHERE ([b2_ta_mapping].[id] = 307) [0m
+Rendering template within layouts/application
+Rendering b2_ta_mappings/show
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 406ms (View: 109, DB: 32) | 200 OK [http://localhost/b2_ta_mappings/307]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-02 16:00:09) [GET]
+
+ActionController::RoutingError (No route matches "/b2_ta_mappings/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-02 16:00:10) [GET]
+
+ActionController::RoutingError (No route matches "/b2_ta_mappings/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing B2TaMappingsController#index (for 127.0.0.1 at 2009-11-02 16:00:22) [GET]
+  Parameters: {"search"=>"HOGLCode"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mSQL (15.0ms)[0m   [0;1mSELECT count(*) as TotalRows from (SELECT TOP 1000000000 * FROM [b2_ta_mapping] WHERE (information_mapped = 'HOGLCode') AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) tally[0m
+  [4;35;1mB2TaMapping Load (32.0ms)[0m   [0mSELECT * FROM (SELECT TOP 30 * FROM (SELECT TOP 30 * FROM [b2_ta_mapping] WHERE (information_mapped = 'HOGLCode') AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) AS tmp1 ORDER BY [created_at] ASC) AS tmp2 ORDER BY [created_at] DESC[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM [b2_ta_mapping] WHERE (information_mapped = 'HOGLCode') AND ([b2_ta_mapping].[record_validity] = 1) [0m
+Rendering template within layouts/application
+Rendering b2_ta_mappings/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 921ms (View: 390, DB: 79) | 200 OK [http://localhost/b2_ta_mappings?search=HOGLCode]
+
+
+Processing B2TaMappingsController#index (for 127.0.0.1 at 2009-11-03 21:17:14) [GET]
+  Parameters: {"search"=>"OTC"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mSQL (15.0ms)[0m   [0;1mSELECT count(*) as TotalRows from (SELECT TOP 1000000000 * FROM [b2_ta_mapping] WHERE (information_mapped = 'OTC') AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) tally[0m
+  [4;35;1mB2TaMapping Load (16.0ms)[0m   [0mSELECT * FROM (SELECT TOP 5 * FROM (SELECT TOP 5 * FROM [b2_ta_mapping] WHERE (information_mapped = 'OTC') AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) AS tmp1 ORDER BY [created_at] ASC) AS tmp2 ORDER BY [created_at] DESC[0m
+Rendering template within layouts/application
+Rendering b2_ta_mappings/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 531ms (View: 62, DB: 62) | 200 OK [http://localhost/b2_ta_mappings?search=OTC]
+
+
+Processing B2TaMappingsController#index (for 127.0.0.1 at 2009-11-03 21:22:49) [GET]
+  Parameters: {"search"=>"OTC"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSELECT count(*) as TotalRows from (SELECT TOP 1000000000 * FROM [b2_ta_mapping] WHERE (information_mapped = 'OTC') AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) tally[0m
+  [4;36;1mB2TaMapping Load (0.0ms)[0m   [0;1mSELECT * FROM (SELECT TOP 5 * FROM (SELECT TOP 5 * FROM [b2_ta_mapping] WHERE (information_mapped = 'OTC') AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) AS tmp1 ORDER BY [created_at] ASC) AS tmp2 ORDER BY [created_at] DESC[0m
+Rendering template within layouts/application
+Rendering b2_ta_mappings/index
+Rendered shared/_menu (0.0ms)
+Rendered shared/_sidebar (0.0ms)
+Completed in 516ms (View: 110, DB: 47) | 200 OK [http://localhost/b2_ta_mappings?search=OTC]
+
+
+Processing B2TaMappingsController#index (for 127.0.0.1 at 2009-11-03 21:25:05) [GET]
+  Parameters: {"search"=>"OTC"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) as TotalRows from (SELECT TOP 1000000000 * FROM [b2_ta_mapping] WHERE (information_mapped = 'OTC') AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) tally[0m
+  [4;35;1mB2TaMapping Load (0.0ms)[0m   [0mSELECT * FROM (SELECT TOP 5 * FROM (SELECT TOP 5 * FROM [b2_ta_mapping] WHERE (information_mapped = 'OTC') AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) AS tmp1 ORDER BY [created_at] ASC) AS tmp2 ORDER BY [created_at] DESC[0m
+Rendering template within layouts/application
+Rendering b2_ta_mappings/index
+Rendered shared/_menu (0.0ms)
+Completed in 406ms (View: 78, DB: 46) | 200 OK [http://localhost/b2_ta_mappings?search=OTC]
+
+
+Processing B2TaMappingsController#index (for 127.0.0.1 at 2009-11-03 21:25:12) [GET]
+  Parameters: {"search"=>"EEACountry"}
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) as TotalRows from (SELECT TOP 1000000000 * FROM [b2_ta_mapping] WHERE (information_mapped = 'EEACountry') AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) tally[0m
+  [4;36;1mB2TaMapping Load (16.0ms)[0m   [0;1mSELECT * FROM (SELECT TOP 30 * FROM (SELECT TOP 30 * FROM [b2_ta_mapping] WHERE (information_mapped = 'EEACountry') AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) AS tmp1 ORDER BY [created_at] ASC) AS tmp2 ORDER BY [created_at] DESC[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM [b2_ta_mapping] WHERE (information_mapped = 'EEACountry') AND ([b2_ta_mapping].[record_validity] = 1) [0m
+Rendering template within layouts/application
+Rendering b2_ta_mappings/index
+Rendered shared/_menu (0.0ms)
+Completed in 532ms (View: 141, DB: 64) | 200 OK [http://localhost/b2_ta_mappings?search=EEACountry]
+
+
+Processing B2TaMappingsController#index (for 127.0.0.1 at 2009-11-03 21:26:57) [GET]
+  Parameters: {"search"=>"EEACountry"}
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) as TotalRows from (SELECT TOP 1000000000 * FROM [b2_ta_mapping] WHERE (information_mapped = 'EEACountry') AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) tally[0m
+  [4;36;1mB2TaMapping Load (15.0ms)[0m   [0;1mSELECT * FROM (SELECT TOP 30 * FROM (SELECT TOP 30 * FROM [b2_ta_mapping] WHERE (information_mapped = 'EEACountry') AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) AS tmp1 ORDER BY [created_at] ASC) AS tmp2 ORDER BY [created_at] DESC[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM [b2_ta_mapping] WHERE (information_mapped = 'EEACountry') AND ([b2_ta_mapping].[record_validity] = 1) [0m
+Rendering template within layouts/application
+Rendering b2_ta_mappings/index
+Rendered shared/_menu (16.0ms)
+Completed in 609ms (View: 172, DB: 77) | 200 OK [http://localhost/b2_ta_mappings?search=EEACountry]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-03 21:27:04) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (0.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 3375ms (View: 188, DB: 15) | 200 OK [http://localhost/validations]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-03 21:27:14) [GET]
+
+ActionController::RoutingError (No route matches "/images/L1-left.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-03 21:27:15) [GET]
+
+ActionController::RoutingError (No route matches "/images/white-highlight.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-03 21:27:15) [GET]
+
+ActionController::RoutingError (No route matches "/images/L1-center.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-03 21:27:16) [GET]
+
+ActionController::RoutingError (No route matches "/images/vertical-line.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-03 21:27:17) [GET]
+
+ActionController::RoutingError (No route matches "/images/L1-right.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-03 21:27:25) [GET]
+
+ActionController::RoutingError (No route matches "/images/L1-left.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-03 21:27:25) [GET]
+
+ActionController::RoutingError (No route matches "/images/white-highlight.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-03 21:27:26) [GET]
+
+ActionController::RoutingError (No route matches "/images/L1-center.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-03 21:27:27) [GET]
+
+ActionController::RoutingError (No route matches "/images/vertical-line.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-03 21:27:27) [GET]
+
+ActionController::RoutingError (No route matches "/images/L1-right.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-03 21:29:12) [GET]
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (0.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 3828ms (View: 172, DB: 47) | 200 OK [http://localhost/validations]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-03 21:29:21) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (0.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 3890ms (View: 156, DB: 31) | 200 OK [http://localhost/validations]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-03 21:29:26) [GET]
+  [4;36;1mUser Load (15.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (0.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 3828ms (View: 125, DB: 46) | 200 OK [http://localhost/]
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2009-11-03 21:29:35) [GET]
+  [4;36;1mReport Load (31.0ms)[0m   [0;1mSELECT * FROM [DIM_Reports] ORDER BY [Order] ASC[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;35;1mReportCategory Load (31.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;36;1mReportCategory Load (16.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 1) [0m
+  [4;35;1mReportCategory Load (16.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 3) [0m
+Rendered shared/_menu (0.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+Completed in 1203ms (View: 688, DB: 359) | 200 OK [http://localhost/reports]
+
+
+Processing ReportLinesController#index (for 127.0.0.1 at 2009-11-03 21:29:57) [GET]
+  Parameters: {"report_id"=>"1"}
+  [4;35;1mReportLine Load (62.0ms)[0m   [0mSELECT * FROM [DIM_ReportLines] WHERE (report_id = '1') ORDER BY [position] ASC[0m
+Rendering template within layouts/application
+Rendering report_lines/index
+Rendered shared/_menu (15.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+Completed in 657ms (View: 313, DB: 172) | 200 OK [http://localhost/report_lines?report_id=1]
+
+
+Processing ReportCategoriesController#index (for 127.0.0.1 at 2009-11-03 21:30:01) [GET]
+  [4;35;1mReportCategory Load (16.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] ORDER BY position ASC[0m
+Rendering template within layouts/application
+Rendering report_categories/index
+Rendered shared/_menu (0.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+Completed in 563ms (View: 375, DB: 31) | 200 OK [http://localhost/report_categories]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-03 21:30:13) [GET]
+
+ActionController::RoutingError (No route matches "/images/L1-left.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-03 21:30:14) [GET]
+
+ActionController::RoutingError (No route matches "/images/white-highlight.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-03 21:30:14) [GET]
+
+ActionController::RoutingError (No route matches "/images/L1-center.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-03 21:30:15) [GET]
+
+ActionController::RoutingError (No route matches "/images/vertical-line.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-03 21:30:16) [GET]
+
+ActionController::RoutingError (No route matches "/images/L1-right.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ReportCategoriesController#index (for 127.0.0.1 at 2009-11-03 21:30:47) [GET]
+  [4;35;1mReportCategory Load (0.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] ORDER BY position ASC[0m
+Rendering template within layouts/application
+Rendering report_categories/index
+Rendered shared/_menu (0.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+Completed in 485ms (View: 313, DB: 30) | 200 OK [http://localhost/report_categories]
+
+
+Processing ReportCategoriesController#index (for 127.0.0.1 at 2009-11-03 21:30:53) [GET]
+  [4;35;1mReportCategory Load (0.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] ORDER BY position ASC[0m
+Rendering template within layouts/application
+Rendering report_categories/index
+Rendered shared/_menu (0.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+Completed in 406ms (View: 219, DB: 31) | 200 OK [http://localhost/report_categories]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2009-11-03 21:31:18) [GET]
+Redirected to http://localhost:3000/
+Completed in 234ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-03 21:31:19) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 94ms (DB: 32) | 302 Found [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-11-03 21:31:19) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_menu (0.0ms)
+Completed in 141ms (View: 109, DB: 16) | 200 OK [http://localhost/session/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-03 21:31:21) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-03 21:31:21) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-11-03 21:31:35) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"6kls9smk4NguQYz6KBlNcHK5VMQLrv4oUQcSSVvorvA=", "login"=>"vincent", "password"=>"12345678"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[login] = 'vincent') [0m
+  [4;36;1mEXECUTE (0.0ms)[0m   [0;1mBEGIN TRANSACTION[0m
+  [4;35;1mEXECUTE (0.0ms)[0m   [0mCOMMIT TRANSACTION[0m
+Redirected to http://localhost:3000/
+Completed in 312ms (DB: 15) | 302 Found [http://localhost/session]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-03 21:31:36) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (0.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 3625ms (View: 125, DB: 15) | 200 OK [http://localhost/]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-03 21:31:45) [GET]
+  Parameters: {"page"=>"3"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (0.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 3687ms (View: 140, DB: 16) | 200 OK [http://localhost/validations?page=3]
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-11-03 21:35:05) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Completed in 531ms (View: 141, DB: 15) | 200 OK [http://localhost/validationrules]
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-11-03 21:36:07) [GET]
+  [4;36;1mUser Load (15.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Completed in 594ms (View: 157, DB: 30) | 200 OK [http://localhost/validationrules]
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-11-03 22:20:39) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (15.0ms)
+Completed in 2234ms (View: 453, DB: 795) | 200 OK [http://localhost/validationrules]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-03 22:20:54) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (15.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 4672ms (View: 485, DB: 108) | 200 OK [http://localhost/validations]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-03 22:21:14) [GET]
+  Parameters: {"search"=>{"OutputFile_equals"=>"", "LoadDate_like"=>"", "order"=>"", "ErrorKind_like"=>"", "ErrorType_like"=>""}, "commit"=>"Apply filters", "validations"=>{"OutputFile"=>"LoanBook"}}
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (16.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 5578ms (View: 188, DB: 500) | 200 OK [http://localhost/validations?search%5Border%5D=&search%5BLoadDate_like%5D=&validations%5BOutputFile%5D=LoanBook&search%5BOutputFile_equals%5D=&search%5BErrorKind_like%5D=&search%5BErrorType_like%5D=&commit=Apply+filters]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-03 22:22:29) [GET]
+  Parameters: {"search"=>{"OutputFile_equals"=>"", "LoadDate_like"=>"", "order"=>"", "ErrorKind_like"=>"", "ErrorType_like"=>""}, "commit"=>"Apply filters", "validations"=>{"OutputFile"=>"Counterparty"}}
+  [4;36;1mUser Load (15.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (0.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 4766ms (View: 204, DB: 437) | 200 OK [http://localhost/validations?search%5Border%5D=&search%5BLoadDate_like%5D=&validations%5BOutputFile%5D=Counterparty&search%5BOutputFile_equals%5D=&search%5BErrorKind_like%5D=&search%5BErrorType_like%5D=&commit=Apply+filters]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-03 22:23:07) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1594ms (DB: 156) | 302 Found [http://localhost/validations]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-11-03 22:23:09) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_menu (0.0ms)
+Completed in 250ms (View: 203, DB: 31) | 200 OK [http://localhost/session/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-03 22:23:11) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-03 22:23:12) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-03 22:23:15) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 94ms (DB: 16) | 302 Found [http://localhost/validations]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-11-03 22:23:16) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_menu (0.0ms)
+Completed in 187ms (View: 156, DB: 16) | 200 OK [http://localhost/session/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-03 22:23:17) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-03 22:23:17) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-11-03 22:23:18) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"cPyHPRjA78lxpSotArl6rX+lcCOF3/V3h1oXSbBr0Jg=", "login"=>"vincent", "password"=>"12345678"}
+  [4;36;1mUser Load (32.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[login] = 'vincent') [0m
+  [4;35;1mEXECUTE (0.0ms)[0m   [0mBEGIN TRANSACTION[0m
+  [4;36;1mEXECUTE (16.0ms)[0m   [0;1mCOMMIT TRANSACTION[0m
+Redirected to http://localhost:3000/validations
+Completed in 406ms (DB: 141) | 302 Found [http://localhost/session]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-03 22:23:19) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (15.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 3781ms (View: 141, DB: 124) | 200 OK [http://localhost/validations]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-03 22:23:37) [GET]
+  Parameters: {"search"=>{"OutputFile_equals"=>"", "LoadDate_like"=>"", "order"=>"", "ErrorKind_like"=>"", "ErrorType_like"=>""}, "OutputFile_equals"=>"Counterparty", "commit"=>"Apply filters"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (0.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 3641ms (View: 141, DB: 32) | 200 OK [http://localhost/validations?search%5Border%5D=&search%5BLoadDate_like%5D=&OutputFile_equals=Counterparty&search%5BOutputFile_equals%5D=&search%5BErrorKind_like%5D=&search%5BErrorType_like%5D=&commit=Apply+filters]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-03 22:24:25) [GET]
+  Parameters: {"search"=>{"OutputFile_equals"=>"", "LoadDate_like"=>"", "order"=>"", "ErrorKind_like"=>"", "ErrorType_like"=>""}, "OutputFile_equals"=>"Counterparty", "commit"=>"Apply filters"}
+  [4;35;1mUser Load (15.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (16.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 4203ms (View: 172, DB: 452) | 200 OK [http://localhost/validations?search%5Border%5D=&search%5BLoadDate_like%5D=&OutputFile_equals=Counterparty&search%5BOutputFile_equals%5D=&search%5BErrorKind_like%5D=&search%5BErrorType_like%5D=&commit=Apply+filters]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-03 22:24:39) [GET]
+  Parameters: {"search"=>{"OutputFile_equals"=>"", "LoadDate_like"=>"", "order"=>"", "ErrorKind_like"=>"", "ErrorType_like"=>""}, "commit"=>"Apply filters"}
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (15.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 3890ms (View: 140, DB: 390) | 200 OK [http://localhost/validations?search%5Border%5D=&search%5BLoadDate_like%5D=&search%5BOutputFile_equals%5D=LoanBook&search%5BOutputFile_equals%5D=&search%5BErrorKind_like%5D=&search%5BErrorType_like%5D=&commit=Apply+filters]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-03 22:25:28) [GET]
+  Parameters: {"search"=>{"OutputFile_equals"=>"", "LoadDate_like"=>"", "order"=>"", "ErrorKind_like"=>"", "ErrorType_like"=>""}, "commit"=>"Apply filters"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (0.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 5656ms (View: 234, DB: 640) | 200 OK [http://localhost/validations?search%5Border%5D=&search%5BLoadDate_like%5D=&search%5BOutputFile_equals%5D=LoanBook&search%5BOutputFile_equals%5D=&search%5BErrorKind_like%5D=&search%5BErrorType_like%5D=&commit=Apply+filters]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-03 22:25:42) [GET]
+  Parameters: {"search"=>{"OutputFile_equals"=>"Limit", "LoadDate_like"=>"", "order"=>"", "ErrorKind_like"=>"", "ErrorType_like"=>""}, "commit"=>"Apply filters"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (109.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE (B2TA_VAL_Error_Reports.OutputFile = 'Limit') [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 4344ms (View: 219, DB: 1374) | 200 OK [http://localhost/validations?search%5Border%5D=&search%5BLoadDate_like%5D=&search%5BOutputFile_equals%5D=Limit&search%5BErrorKind_like%5D=&search%5BErrorType_like%5D=&commit=Apply+filters]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-03 22:25:55) [GET]
+  Parameters: {"search"=>{"OutputFile_equals"=>"Provisions", "LoadDate_like"=>"", "order"=>"", "ErrorKind_like"=>"", "ErrorType_like"=>""}, "commit"=>"Apply filters"}
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (15.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE (B2TA_VAL_Error_Reports.OutputFile = 'Provisions') [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 782ms (View: 32, DB: 391) | 200 OK [http://localhost/validations?search%5Border%5D=&search%5BLoadDate_like%5D=&search%5BOutputFile_equals%5D=Provisions&search%5BErrorKind_like%5D=&search%5BErrorType_like%5D=&commit=Apply+filters]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-03 22:26:03) [GET]
+  Parameters: {"search"=>{"OutputFile_equals"=>"Nostro", "LoadDate_like"=>"", "order"=>"", "ErrorKind_like"=>"", "ErrorType_like"=>""}, "commit"=>"Apply filters"}
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (16.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE (B2TA_VAL_Error_Reports.OutputFile = 'Nostro') [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 2281ms (View: 141, DB: 437) | 200 OK [http://localhost/validations?search%5Border%5D=&search%5BLoadDate_like%5D=&search%5BOutputFile_equals%5D=Nostro&search%5BErrorKind_like%5D=&search%5BErrorType_like%5D=&commit=Apply+filters]
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-11-03 22:27:50) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidationrule Load (0.0ms)[0m   [0;1mSELECT * FROM [validationrules] [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Completed in 922ms (View: 156, DB: 375) | 200 OK [http://localhost/validationrules]
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-11-03 22:28:04) [GET]
+  Parameters: {"search"=>{"OutputFile_equals"=>"Counterparty", "rule_type_like"=>"", "order"=>"", "rule_identification_like"=>""}, "commit"=>"Apply filters"}
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+
+Searchlogic::Search::UnknownConditionError (The OutputFile_equals is not a valid condition. You may only use conditions that map to a named scope):
+  searchlogic (2.3.5) lib/searchlogic/search.rb:89:in `method_missing'
+  searchlogic (2.3.5) lib/searchlogic/search.rb:67:in `send'
+  searchlogic (2.3.5) lib/searchlogic/search.rb:67:in `conditions='
+  searchlogic (2.3.5) lib/searchlogic/search.rb:64:in `each'
+  searchlogic (2.3.5) lib/searchlogic/search.rb:64:in `conditions='
+  searchlogic (2.3.5) lib/searchlogic/search.rb:50:in `initialize'
+  searchlogic (2.3.5) lib/searchlogic/search.rb:25:in `new'
+  searchlogic (2.3.5) lib/searchlogic/search.rb:25:in `search'
+  app/controllers/validationrules_controller.rb:9:in `index'
+
+Rendered rescues/_trace (234.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-11-03 22:28:28) [GET]
+  Parameters: {"search"=>{"OutputFile_equals"=>"Counterparty", "rule_type_like"=>"", "order"=>"", "rule_identification_like"=>""}, "commit"=>"Apply filters"}
+  [4;36;1mUser Load (15.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+
+Searchlogic::Search::UnknownConditionError (The OutputFile_equals is not a valid condition. You may only use conditions that map to a named scope):
+  searchlogic (2.3.5) lib/searchlogic/search.rb:89:in `method_missing'
+  searchlogic (2.3.5) lib/searchlogic/search.rb:67:in `send'
+  searchlogic (2.3.5) lib/searchlogic/search.rb:67:in `conditions='
+  searchlogic (2.3.5) lib/searchlogic/search.rb:64:in `each'
+  searchlogic (2.3.5) lib/searchlogic/search.rb:64:in `conditions='
+  searchlogic (2.3.5) lib/searchlogic/search.rb:50:in `initialize'
+  searchlogic (2.3.5) lib/searchlogic/search.rb:25:in `new'
+  searchlogic (2.3.5) lib/searchlogic/search.rb:25:in `search'
+  app/controllers/validationrules_controller.rb:9:in `index'
+
+Rendered rescues/_trace (250.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing B2TaMappingsController#index (for 127.0.0.1 at 2009-11-03 22:29:07) [GET]
+  [4;35;1mUser Load (15.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) as TotalRows from (SELECT TOP 1000000000 * FROM [b2_ta_mapping] WHERE (information_mapped = NULL) AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) tally[0m
+  [4;35;1mB2TaMapping Load (15.0ms)[0m   [0mSELECT * FROM (SELECT TOP 0 * FROM (SELECT TOP 0 * FROM [b2_ta_mapping] WHERE (information_mapped = NULL) AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) AS tmp1 ORDER BY [created_at] ASC) AS tmp2 ORDER BY [created_at] DESC[0m
+Rendering template within layouts/application
+Rendering b2_ta_mappings/index
+Rendered shared/_menu (0.0ms)
+Completed in 938ms (View: 141, DB: 356) | 200 OK [http://localhost/b2_ta_mappings]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-03 22:29:13) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (0.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 4813ms (View: 219, DB: 109) | 200 OK [http://localhost/validations]
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-11-03 22:29:26) [GET]
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Completed in 656ms (View: 187, DB: 63) | 200 OK [http://localhost/validationrules]
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-11-03 22:29:40) [GET]
+  Parameters: {"search"=>{"rule_type_like"=>"", "order"=>"", "rule_scope_like"=>"Counterparty", "rule_identification_like"=>""}, "commit"=>"Apply filters"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] WHERE (validationrules.rule_scope LIKE '%Counterparty%') [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Completed in 469ms (View: 109, DB: 15) | 200 OK [http://localhost/validationrules?search%5Border%5D=&search%5Brule_identification_like%5D=&search%5Brule_type_like%5D=&search%5Brule_scope_like%5D=Counterparty&commit=Apply+filters]
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-11-03 22:29:51) [GET]
+  Parameters: {"search"=>{"rule_type_like"=>"", "order"=>"", "rule_scope_like"=>"Limit", "rule_identification_like"=>""}, "commit"=>"Apply filters"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] WHERE (validationrules.rule_scope LIKE '%Limit%') [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Completed in 546ms (View: 140, DB: 15) | 200 OK [http://localhost/validationrules?search%5Border%5D=&search%5Brule_identification_like%5D=&search%5Brule_type_like%5D=&search%5Brule_scope_like%5D=Limit&commit=Apply+filters]
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-11-03 22:30:07) [GET]
+  Parameters: {"search"=>{"rule_type_like"=>"", "order"=>"", "rule_scope_like"=>"Nostro", "rule_identification_like"=>""}, "commit"=>"Apply filters"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] WHERE (validationrules.rule_scope LIKE '%Nostro%') [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Completed in 438ms (View: 63, DB: 15) | 200 OK [http://localhost/validationrules?search%5Border%5D=&search%5Brule_identification_like%5D=&search%5Brule_type_like%5D=&search%5Brule_scope_like%5D=Nostro&commit=Apply+filters]
+
+
+Processing ValidationrulesController#show (for 127.0.0.1 at 2009-11-03 22:30:18) [GET]
+  Parameters: {"id"=>"72"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 72) [0m
+Rendering template within layouts/applicationnaked
+Rendering validationrules/show
+Completed in 485ms (View: 110, DB: 16) | 200 OK [http://localhost/validationrules/72]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-03 22:30:20) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-03 22:30:21) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-11-03 22:33:10) [GET]
+  Parameters: {"search"=>{"rule_type_like"=>"", "order"=>"", "rule_scope_like"=>"Nostro", "rule_identification_like"=>""}, "commit"=>"Apply filters"}
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] WHERE (validationrules.rule_scope LIKE '%Nostro%') [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Completed in 907ms (View: 94, DB: 423) | 200 OK [http://localhost/validationrules?search%5Border%5D=&search%5Brule_identification_like%5D=&search%5Brule_type_like%5D=&search%5Brule_scope_like%5D=Nostro&commit=Apply+filters]
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-11-03 22:35:48) [GET]
+  Parameters: {"search"=>{"rule_type_like"=>"", "order"=>"", "rule_scope_like"=>"Nostro", "rule_identification_like"=>""}, "commit"=>"Apply filters"}
+  [4;36;1mUser Load (15.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] WHERE (validationrules.rule_scope LIKE '%Nostro%') [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Completed in 562ms (View: 109, DB: 47) | 200 OK [http://localhost/validationrules?search%5Border%5D=&search%5Brule_identification_like%5D=&search%5Brule_type_like%5D=&search%5Brule_scope_like%5D=Nostro&commit=Apply+filters]
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-11-03 22:36:37) [GET]
+  Parameters: {"search"=>{"rule_type_like"=>"", "order"=>"", "rule_scope_like"=>"Nostro", "rule_identification_like"=>""}, "commit"=>"Apply filters"}
+  [4;36;1mUser Load (15.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (16.0ms)[0m   [0mSELECT * FROM [validationrules] WHERE (validationrules.rule_scope LIKE '%Nostro%') [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Completed in 1296ms (View: 93, DB: 624) | 200 OK [http://localhost/validationrules?search%5Border%5D=&search%5Brule_identification_like%5D=&search%5Brule_type_like%5D=&search%5Brule_scope_like%5D=Nostro&commit=Apply+filters]
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-11-03 22:36:50) [GET]
+  Parameters: {"search"=>{"rule_type_like"=>"ERR", "order"=>"", "rule_scope_equals"=>"LoanBook", "rule_identification_like"=>""}, "commit"=>"Apply filters"}
+  [4;36;1mUser Load (15.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] WHERE ((validationrules.rule_scope = 'LoanBook') AND (validationrules.rule_type LIKE '%ERR%')) [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Completed in 735ms (View: 47, DB: 405) | 200 OK [http://localhost/validationrules?search%5Border%5D=&search%5Brule_identification_like%5D=&search%5Brule_type_like%5D=ERR&search%5Brule_scope_equals%5D=LoanBook&commit=Apply+filters]
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-11-03 22:38:15) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (16.0ms)[0m   [0mSELECT * FROM [validationrules] [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Completed in 984ms (View: 187, DB: 359) | 200 OK [http://localhost/validationrules]
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-11-03 22:38:27) [GET]
+  Parameters: {"search"=>{"rule_type_like"=>"", "order"=>"", "rule_scope_equals"=>"", "rule_identification_like"=>""}, "commit"=>"Apply filters"}
+  [4;36;1mUser Load (15.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Completed in 984ms (View: 172, DB: 358) | 200 OK [http://localhost/validationrules?search%5Border%5D=&search%5Brule_identification_like%5D=&search%5Brule_type_like%5D=&search%5Brule_scope_equals%5D=&commit=Apply+filters]
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-11-03 22:38:37) [GET]
+  Parameters: {"search"=>{"rule_type_like"=>"ERR", "order"=>"", "rule_scope_equals"=>"", "rule_identification_like"=>""}, "commit"=>"Apply filters"}
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] WHERE (validationrules.rule_type LIKE '%ERR%') [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Completed in 937ms (View: 109, DB: 438) | 200 OK [http://localhost/validationrules?search%5Border%5D=&search%5Brule_identification_like%5D=&search%5Brule_type_like%5D=ERR&search%5Brule_scope_equals%5D=&commit=Apply+filters]
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-11-03 22:38:48) [GET]
+  Parameters: {"search"=>{"rule_type_like"=>"", "order"=>"", "rule_scope_equals"=>"Counterparty", "rule_identification_like"=>""}, "commit"=>"Apply filters"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] WHERE (validationrules.rule_scope = 'Counterparty') [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Completed in 906ms (View: 109, DB: 422) | 200 OK [http://localhost/validationrules?search%5Border%5D=&search%5Brule_identification_like%5D=&search%5Brule_type_like%5D=&search%5Brule_scope_equals%5D=Counterparty&commit=Apply+filters]
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-11-03 22:39:50) [GET]
+  Parameters: {"search"=>{"rule_type_like"=>"", "order"=>"", "rule_scope_equals"=>"Counterparty", "rule_identification_like"=>""}, "commit"=>"Apply filters"}
+  [4;36;1mUser Load (15.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (16.0ms)[0m   [0mSELECT * FROM [validationrules] WHERE (validationrules.rule_scope = 'Counterparty') [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Completed in 985ms (View: 156, DB: 468) | 200 OK [http://localhost/validationrules?search%5Border%5D=&search%5Brule_identification_like%5D=&search%5Brule_type_like%5D=&search%5Brule_scope_equals%5D=Counterparty&commit=Apply+filters]
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-11-03 22:42:14) [GET]
+  Parameters: {"search"=>{"rule_type_like"=>"", "order"=>"", "rule_scope_equals"=>"Counterparty", "rule_identification_like"=>""}, "commit"=>"Apply filters"}
+  [4;36;1mUser Load (15.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (15.0ms)[0m   [0mSELECT * FROM [validationrules] WHERE (validationrules.rule_scope = 'Counterparty') [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Completed in 1063ms (View: 157, DB: 560) | 200 OK [http://localhost/validationrules?search%5Border%5D=&search%5Brule_identification_like%5D=&search%5Brule_type_like%5D=&search%5Brule_scope_equals%5D=Counterparty&commit=Apply+filters]
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-11-03 22:43:00) [GET]
+  Parameters: {"search"=>{"rule_type_like"=>"", "order"=>"", "rule_scope_equals"=>"Counterparty", "rule_identification_like"=>""}, "commit"=>"Apply filters"}
+  [4;36;1mUser Load (15.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] WHERE (validationrules.rule_scope = 'Counterparty') [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Completed in 844ms (View: 141, DB: 326) | 200 OK [http://localhost/validationrules?search%5Border%5D=&search%5Brule_identification_like%5D=&search%5Brule_type_like%5D=&search%5Brule_scope_equals%5D=Counterparty&commit=Apply+filters]
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-11-03 22:44:04) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Completed in 937ms (View: 187, DB: 357) | 200 OK [http://localhost/validationrules]
+
+
+Processing ValidationrulesController#index (for 127.0.0.1 at 2009-11-03 22:44:54) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidationrule Load (0.0ms)[0m   [0mSELECT * FROM [validationrules] [0m
+Rendering template within layouts/application
+Rendering validationrules/index
+Rendered shared/_menu (0.0ms)
+Completed in 562ms (View: 156, DB: 31) | 200 OK [http://localhost/validationrules]
+
+
+Processing B2TaMappingsController#index (for 127.0.0.1 at 2009-11-14 19:29:26) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2391ms (DB: 1016) | 302 Found [http://localhost/b2_ta_mappings]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-11-14 19:29:30) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_menu (31.0ms)
+Completed in 562ms (View: 562, DB: 0) | 200 OK [http://localhost/session/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-14 19:29:34) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-14 19:29:35) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-11-14 19:30:32) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"NOo8XeBeIdzK4QlHi5zybmAf0ZT7bcYjgGEIVtFV8dw=", "login"=>"vincent", "password"=>"12345678"}
+  [4;36;1mUser Load (15.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[login] = 'vincent') [0m
+  [4;35;1mEXECUTE (0.0ms)[0m   [0mBEGIN TRANSACTION[0m
+  [4;36;1mEXECUTE (0.0ms)[0m   [0;1mCOMMIT TRANSACTION[0m
+Redirected to http://localhost:3000/b2_ta_mappings
+Completed in 438ms (DB: 172) | 302 Found [http://localhost/session]
+
+
+Processing B2TaMappingsController#index (for 127.0.0.1 at 2009-11-14 19:30:34) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mSELECT count(*) as TotalRows from (SELECT TOP 1000000000 * FROM [b2_ta_mapping] WHERE (information_mapped = NULL) AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) tally[0m
+  [4;35;1mB2TaMapping Load (16.0ms)[0m   [0mSELECT * FROM (SELECT TOP 0 * FROM (SELECT TOP 0 * FROM [b2_ta_mapping] WHERE (information_mapped = NULL) AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) AS tmp1 ORDER BY [created_at] ASC) AS tmp2 ORDER BY [created_at] DESC[0m
+Rendering template within layouts/application
+Rendering b2_ta_mappings/index
+Rendered shared/_menu (0.0ms)
+Completed in 672ms (View: 140, DB: 188) | 200 OK [http://localhost/b2_ta_mappings]
+
+
+Processing B2TaMappingsController#index (for 127.0.0.1 at 2009-11-14 19:30:40) [GET]
+  Parameters: {"search"=>"Country"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mSQL (94.0ms)[0m   [0mSELECT count(*) as TotalRows from (SELECT TOP 1000000000 * FROM [b2_ta_mapping] WHERE (information_mapped = 'Country') AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) tally[0m
+  [4;36;1mB2TaMapping Load (32.0ms)[0m   [0;1mSELECT * FROM (SELECT TOP 30 * FROM (SELECT TOP 30 * FROM [b2_ta_mapping] WHERE (information_mapped = 'Country') AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) AS tmp1 ORDER BY [created_at] ASC) AS tmp2 ORDER BY [created_at] DESC[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSELECT count(*) AS count_all FROM [b2_ta_mapping] WHERE (information_mapped = 'Country') AND ([b2_ta_mapping].[record_validity] = 1) [0m
+Rendering template within layouts/application
+Rendering b2_ta_mappings/index
+Rendered shared/_menu (0.0ms)
+Completed in 750ms (View: 188, DB: 203) | 200 OK [http://localhost/b2_ta_mappings?search=Country]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-14 19:34:58) [GET]
+
+ActionController::RoutingError (No route matches "/images/L1-left.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-14 19:34:58) [GET]
+
+ActionController::RoutingError (No route matches "/images/white-highlight.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-14 19:34:59) [GET]
+
+ActionController::RoutingError (No route matches "/images/L1-center.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-14 19:34:59) [GET]
+
+ActionController::RoutingError (No route matches "/images/vertical-line.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-14 19:35:00) [GET]
+
+ActionController::RoutingError (No route matches "/images/L1-right.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-14 19:48:33) [GET]
+
+ActionController::RoutingError (No route matches "/images/L1-left.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-14 19:48:34) [GET]
+
+ActionController::RoutingError (No route matches "/images/white-highlight.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-14 19:48:34) [GET]
+
+ActionController::RoutingError (No route matches "/images/L1-center.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-14 19:48:35) [GET]
+
+ActionController::RoutingError (No route matches "/images/vertical-line.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-14 19:48:36) [GET]
+
+ActionController::RoutingError (No route matches "/images/L1-right.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-11-14 19:49:31) [GET]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Completed in 719ms (View: 47, DB: 79) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing B2TaMappingsController#index (for 127.0.0.1 at 2009-11-14 20:09:56) [GET]
+  [4;35;1mUser Load (15.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) as TotalRows from (SELECT TOP 1000000000 * FROM [b2_ta_mapping] WHERE (information_mapped = NULL) AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) tally[0m
+  [4;35;1mB2TaMapping Load (15.0ms)[0m   [0mSELECT * FROM (SELECT TOP 0 * FROM (SELECT TOP 0 * FROM [b2_ta_mapping] WHERE (information_mapped = NULL) AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) AS tmp1 ORDER BY [created_at] ASC) AS tmp2 ORDER BY [created_at] DESC[0m
+Rendering template within layouts/application
+Rendering b2_ta_mappings/index
+Rendered shared/_menu (0.0ms)
+Completed in 516ms (View: 63, DB: 108) | 200 OK [http://localhost/b2_ta_mappings]
+
+
+Processing B2TaMappingsController#index (for 127.0.0.1 at 2009-11-14 20:11:27) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) as TotalRows from (SELECT TOP 1000000000 * FROM [b2_ta_mapping] WHERE (information_mapped = NULL) AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) tally[0m
+  [4;36;1mB2TaMapping Load (0.0ms)[0m   [0;1mSELECT * FROM (SELECT TOP 0 * FROM (SELECT TOP 0 * FROM [b2_ta_mapping] WHERE (information_mapped = NULL) AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) AS tmp1 ORDER BY [created_at] ASC) AS tmp2 ORDER BY [created_at] DESC[0m
+Rendering template within layouts/application
+Rendering b2_ta_mappings/index
+Rendered shared/_menu (0.0ms)
+Completed in 375ms (View: 63, DB: 47) | 200 OK [http://localhost/b2_ta_mappings]
+
+
+Processing B2TaMappingsController#index (for 127.0.0.1 at 2009-11-14 20:12:00) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) as TotalRows from (SELECT TOP 1000000000 * FROM [b2_ta_mapping] WHERE (information_mapped = NULL) AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) tally[0m
+  [4;35;1mB2TaMapping Load (15.0ms)[0m   [0mSELECT * FROM (SELECT TOP 0 * FROM (SELECT TOP 0 * FROM [b2_ta_mapping] WHERE (information_mapped = NULL) AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) AS tmp1 ORDER BY [created_at] ASC) AS tmp2 ORDER BY [created_at] DESC[0m
+Rendering template within layouts/application
+Rendering b2_ta_mappings/index
+Rendered shared/_menu (0.0ms)
+Completed in 375ms (View: 63, DB: 47) | 200 OK [http://localhost/b2_ta_mappings]
+
+
+Processing B2TaMappingsController#index (for 127.0.0.1 at 2009-11-14 20:12:14) [GET]
+  Parameters: {"search"=>"Currency"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) as TotalRows from (SELECT TOP 1000000000 * FROM [b2_ta_mapping] WHERE (information_mapped = 'Currency') AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) tally[0m
+  [4;36;1mB2TaMapping Load (0.0ms)[0m   [0;1mSELECT * FROM (SELECT TOP 30 * FROM (SELECT TOP 30 * FROM [b2_ta_mapping] WHERE (information_mapped = 'Currency') AND ([b2_ta_mapping].[record_validity] = 1) ORDER BY created_at DESC) AS tmp1 ORDER BY [created_at] ASC) AS tmp2 ORDER BY [created_at] DESC[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM [b2_ta_mapping] WHERE (information_mapped = 'Currency') AND ([b2_ta_mapping].[record_validity] = 1) [0m
+Rendering template within layouts/application
+Rendering b2_ta_mappings/index
+Rendered shared/_menu (0.0ms)
+Completed in 531ms (View: 140, DB: 16) | 200 OK [http://localhost/b2_ta_mappings?search=Currency]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2009-11-14 20:12:39) [GET]
+Redirected to http://localhost:3000/
+Completed in 203ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-11-14 20:30:12) [GET]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Completed in 719ms (View: 0, DB: 187) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-14 20:41:48) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 406ms (DB: 328) | 302 Found [http://localhost/validations]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-11-14 20:41:49) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_menu (0.0ms)
+Completed in 187ms (View: 172, DB: 0) | 200 OK [http://localhost/session/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-14 20:41:51) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-14 20:41:52) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-11-14 20:52:36) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"sUpMWEeZY/bqHS3GQlmC9Q4rtq1gAcZVX7q6rT58Y24=", "login"=>"vincent", "password"=>""}
+Failed login for 'vincent' from 127.0.0.1 at Sat Nov 14 19:52:36 UTC 2009
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_menu (0.0ms)
+Completed in 562ms (View: 31, DB: 124) | 200 OK [http://localhost/session]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-11-14 20:52:58) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"sUpMWEeZY/bqHS3GQlmC9Q4rtq1gAcZVX7q6rT58Y24=", "login"=>"vincent", "password"=>"12345678"}
+  [4;35;1mUser Load (31.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[login] = 'vincent') [0m
+  [4;36;1mEXECUTE (0.0ms)[0m   [0;1mBEGIN TRANSACTION[0m
+  [4;35;1mEXECUTE (0.0ms)[0m   [0mCOMMIT TRANSACTION[0m
+Redirected to http://localhost:3000/validations
+Completed in 375ms (DB: 125) | 302 Found [http://localhost/session]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-14 20:52:59) [GET]
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (141.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 3859ms (View: 281, DB: 298) | 200 OK [http://localhost/validations]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-14 20:53:16) [GET]
+  Parameters: {"search"=>{"OutputFile_equals"=>"LoanBook", "LoadDate_like"=>"", "order"=>"", "ErrorKind_like"=>"", "ErrorType_like"=>""}, "commit"=>"Apply filters"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (0.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE (B2TA_VAL_Error_Reports.OutputFile = 'LoanBook') [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 500ms (View: 78, DB: 47) | 200 OK [http://localhost/validations?search%5Border%5D=&search%5BLoadDate_like%5D=&search%5BOutputFile_equals%5D=LoanBook&search%5BErrorKind_like%5D=&search%5BErrorType_like%5D=&commit=Apply+filters]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-14 20:53:29) [GET]
+  Parameters: {"search"=>{"OutputFile_equals"=>"Counterparty", "LoadDate_like"=>"", "order"=>"", "ErrorKind_like"=>"", "ErrorType_like"=>""}, "commit"=>"Apply filters"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (0.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE (B2TA_VAL_Error_Reports.OutputFile = 'Counterparty') [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 500ms (View: 47, DB: 31) | 200 OK [http://localhost/validations?search%5Border%5D=&search%5BLoadDate_like%5D=&search%5BOutputFile_equals%5D=Counterparty&search%5BErrorKind_like%5D=&search%5BErrorType_like%5D=&commit=Apply+filters]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-14 20:55:12) [GET]
+  Parameters: {"search"=>{"OutputFile_equals"=>"Limit", "LoadDate_like"=>"", "order"=>"", "ErrorKind_like"=>"", "ErrorType_like"=>""}, "commit"=>"Apply filters"}
+  [4;36;1mUser Load (15.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (15.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE (B2TA_VAL_Error_Reports.OutputFile = 'Limit') [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 2891ms (View: 313, DB: 77) | 200 OK [http://localhost/validations?search%5Border%5D=&search%5BLoadDate_like%5D=&search%5BOutputFile_equals%5D=Limit&search%5BErrorKind_like%5D=&search%5BErrorType_like%5D=&commit=Apply+filters]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-14 20:59:20) [GET]
+  Parameters: {"search"=>{"OutputFile_equals"=>"OTC", "LoadDate_like"=>"", "order"=>"", "ErrorKind_like"=>"", "ErrorType_like"=>""}, "commit"=>"Apply filters"}
+  [4;36;1mUser Load (15.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (16.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE (B2TA_VAL_Error_Reports.OutputFile = 'OTC') [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 593ms (View: 62, DB: 77) | 200 OK [http://localhost/validations?search%5Border%5D=&search%5BLoadDate_like%5D=&search%5BOutputFile_equals%5D=OTC&search%5BErrorKind_like%5D=&search%5BErrorType_like%5D=&commit=Apply+filters]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-14 20:59:34) [GET]
+  Parameters: {"search"=>{"OutputFile_equals"=>"Nostro", "LoadDate_like"=>"", "order"=>"", "ErrorKind_like"=>"", "ErrorType_like"=>""}, "commit"=>"Apply filters"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (0.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE (B2TA_VAL_Error_Reports.OutputFile = 'Nostro') [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 1921ms (View: 125, DB: 16) | 200 OK [http://localhost/validations?search%5Border%5D=&search%5BLoadDate_like%5D=&search%5BOutputFile_equals%5D=Nostro&search%5BErrorKind_like%5D=&search%5BErrorType_like%5D=&commit=Apply+filters]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-14 21:00:13) [GET]
+  Parameters: {"search"=>{"OutputFile_equals"=>"Provisions", "LoadDate_like"=>"", "order"=>"", "ErrorKind_like"=>"", "ErrorType_like"=>""}, "commit"=>"Apply filters"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (0.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE (B2TA_VAL_Error_Reports.OutputFile = 'Provisions') [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 437ms (View: 46, DB: 48) | 200 OK [http://localhost/validations?search%5Border%5D=&search%5BLoadDate_like%5D=&search%5BOutputFile_equals%5D=Provisions&search%5BErrorKind_like%5D=&search%5BErrorType_like%5D=&commit=Apply+filters]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-14 21:00:57) [GET]
+  [4;36;1mUser Load (15.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (16.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 3766ms (View: 141, DB: 62) | 200 OK [http://localhost/validations]
+
+
+Processing ValidationsController#show (for 127.0.0.1 at 2009-11-14 21:05:27) [GET]
+  Parameters: {"id"=>"3453"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (47.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE ([B2TA_VAL_Error_Reports].[id] = 3453) [0m
+Rendering template within layouts/application
+Rendering validations/show
+Rendered shared/_menu (0.0ms)
+Completed in 2125ms (View: 1719, DB: 78) | 200 OK [http://localhost/validations/3453]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-14 21:05:31) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-14 21:05:31) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CounterpartiesController#edit (for 127.0.0.1 at 2009-11-14 21:06:06) [GET]
+  Parameters: {"id"=>"299"}
+  [4;36;1mCounterparty Load (62.0ms)[0m   [0;1mSELECT * FROM [B2TA_XPORT_Counterparty] WHERE ([B2TA_XPORT_Counterparty].[id] = 299) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Counterparty with ID=299):
+  app/controllers/counterparties_controller.rb:39:in `edit'
+
+Rendered rescues/_trace (421.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#show (for 127.0.0.1 at 2009-11-14 21:06:26) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidationrule Load (63.0ms)[0m   [0;1mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 2) [0m
+Rendering template within layouts/applicationnaked
+Rendering validationrules/show
+Completed in 641ms (View: 125, DB: 188) | 200 OK [http://localhost/validationrules/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-14 21:06:28) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-14 21:06:28) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#edit (for 127.0.0.1 at 2009-11-14 21:12:01) [GET]
+  Parameters: {"id"=>"3453"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (0.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE ([B2TA_VAL_Error_Reports].[id] = 3453) [0m
+Rendering template within layouts/application
+Rendering validations/edit
+Rendered shared/_menu (0.0ms)
+Completed in 797ms (View: 407, DB: 31) | 200 OK [http://localhost/validations/3453/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-14 21:12:03) [GET]
+
+ActionController::RoutingError (No route matches "/validations/3453/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-14 21:12:04) [GET]
+
+ActionController::RoutingError (No route matches "/validations/3453/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-14 21:12:09) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (0.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 3641ms (View: 141, DB: 0) | 200 OK [http://localhost/validations]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-14 22:14:12) [GET]
+
+ActionController::RoutingError (No route matches "/test1" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-14 22:19:28) [GET]
+
+ActionController::RoutingError (No route matches "/URL%20" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-14 22:43:37) [GET]
+  Parameters: {"page"=>"5"}
+  [4;35;1mUser Load (15.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (16.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 6000ms (View: 188, DB: 593) | 200 OK [http://localhost/validations?page=5]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-14 22:47:52) [GET]
+  Parameters: {"page"=>"5"}
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (0.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 5765ms (View: 234, DB: 625) | 200 OK [http://localhost/validations?page=5]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-14 23:27:52) [GET]
+
+ActionController::RoutingError (No route matches "/URL" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-11-14 23:34:22) [GET]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Completed in 812ms (View: 62, DB: 266) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-11-14 23:34:37) [GET]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Completed in 391ms (View: 0, DB: 0) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-15 10:52:53) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 2484ms (DB: 984) | 302 Found [http://localhost/validations]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-11-15 10:52:58) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_menu (32.0ms)
+Completed in 454ms (View: 407, DB: 15) | 200 OK [http://localhost/session/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-15 10:53:01) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-15 10:53:02) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-11-15 10:53:25) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"PamqogVhHnSN5EEygvFJsC1gmKxeb9l8zh8vXjxvqmM=", "login"=>"vincent", "password"=>"12345678"}
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[login] = 'vincent') [0m
+  [4;35;1mEXECUTE (0.0ms)[0m   [0mBEGIN TRANSACTION[0m
+  [4;36;1mEXECUTE (0.0ms)[0m   [0;1mCOMMIT TRANSACTION[0m
+Redirected to http://localhost:3000/validations
+Completed in 547ms (DB: 189) | 302 Found [http://localhost/session]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-15 10:53:26) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (141.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 4812ms (View: 468, DB: 282) | 200 OK [http://localhost/validations]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-15 10:55:24) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (15.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 4750ms (View: 360, DB: 30) | 200 OK [http://localhost/validations]
+
+
+Processing ValidationsController#show (for 127.0.0.1 at 2009-11-15 10:56:34) [GET]
+  Parameters: {"id"=>"3453"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (63.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] WHERE ([B2TA_VAL_Error_Reports].[id] = 3453) [0m
+Rendering template within layouts/application
+Rendering validations/show
+Rendered shared/_menu (0.0ms)
+Completed in 3547ms (View: 2922, DB: 94) | 200 OK [http://localhost/validations/3453]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-15 10:56:39) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-15 10:56:40) [GET]
+
+ActionController::RoutingError (No route matches "/validations/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationrulesController#show (for 127.0.0.1 at 2009-11-15 10:56:46) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidationrule Load (62.0ms)[0m   [0;1mSELECT * FROM [validationrules] WHERE ([validationrules].[id] = 2) [0m
+Rendering template within layouts/applicationnaked
+Rendering validationrules/show
+Completed in 656ms (View: 125, DB: 202) | 200 OK [http://localhost/validationrules/2]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-15 10:56:48) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-15 10:56:48) [GET]
+
+ActionController::RoutingError (No route matches "/validationrules/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-15 10:57:00) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (0.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 5000ms (View: 266, DB: 31) | 200 OK [http://localhost/validations]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-15 11:02:36) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (0.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 4891ms (View: 313, DB: 0) | 200 OK [http://localhost/validations]
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2009-11-15 11:02:53) [GET]
+  [4;35;1mReport Load (47.0ms)[0m   [0mSELECT * FROM [DIM_Reports] ORDER BY [Order] ASC[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;36;1mReportCategory Load (47.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;35;1mReportCategory Load (16.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 1) [0m
+  [4;36;1mReportCategory Load (15.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 3) [0m
+Rendered shared/_menu (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+Completed in 2265ms (View: 1500, DB: 499) | 200 OK [http://localhost/reports]
+
+
+Processing ReportLinesController#index (for 127.0.0.1 at 2009-11-15 11:03:09) [GET]
+  Parameters: {"report_id"=>"1"}
+  [4;36;1mReportLine Load (63.0ms)[0m   [0;1mSELECT * FROM [DIM_ReportLines] WHERE (report_id = '1') ORDER BY [position] ASC[0m
+Rendering template within layouts/application
+Rendering report_lines/index
+Rendered shared/_menu (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+Completed in 750ms (View: 392, DB: 187) | 200 OK [http://localhost/report_lines?report_id=1]
+
+
+Processing ReportCategoriesController#index (for 127.0.0.1 at 2009-11-15 11:03:14) [GET]
+  [4;36;1mReportCategory Load (0.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] ORDER BY position ASC[0m
+Rendering template within layouts/application
+Rendering report_categories/index
+Rendered shared/_menu (0.0ms)
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+Completed in 782ms (View: 532, DB: 47) | 200 OK [http://localhost/report_categories]
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2009-11-15 11:03:22) [GET]
+  Parameters: {"report_category_id"=>"3"}
+  [4;36;1mReport Load (15.0ms)[0m   [0;1mSELECT * FROM [DIM_Reports] WHERE (report_category_id = '3') ORDER BY [Order] ASC[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;35;1mReportCategory Load (16.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 3) [0m
+Rendered shared/_menu (0.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+Completed in 797ms (View: 515, DB: 94) | 200 OK [http://localhost/reports?report_category_id=3]
+
+
+Processing ReportLinesController#index (for 127.0.0.1 at 2009-11-15 11:03:37) [GET]
+  Parameters: {"report_id"=>"18"}
+  [4;35;1mReportLine Load (16.0ms)[0m   [0mSELECT * FROM [DIM_ReportLines] WHERE (report_id = '18') ORDER BY [position] ASC[0m
+Rendering template within layouts/application
+Rendering report_lines/index
+Rendered shared/_menu (0.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+Completed in 547ms (View: 297, DB: 32) | 200 OK [http://localhost/report_lines?report_id=18]
+
+
+Processing ReportsController#index (for 127.0.0.1 at 2009-11-15 11:03:43) [GET]
+  [4;35;1mReport Load (0.0ms)[0m   [0mSELECT * FROM [DIM_Reports] ORDER BY [Order] ASC[0m
+Rendering template within layouts/application
+Rendering reports/index
+  [4;36;1mReportCategory Load (0.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;35;1mReportCategory Load (16.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 1) [0m
+  [4;36;1mReportCategory Load (16.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM [DIM_Report_Categories] WHERE ([DIM_Report_Categories].[Report_Category_ID] = 3) [0m
+Rendered shared/_menu (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+Completed in 1531ms (View: 1187, DB: 95) | 200 OK [http://localhost/reports]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-15 11:04:06) [GET]
+  [4;36;1mUser Load (15.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (0.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 4406ms (View: 234, DB: 31) | 200 OK [http://localhost/validations]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-15 11:04:41) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 94ms (DB: 16) | 302 Found [http://localhost/validations]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-11-15 11:04:42) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_menu (0.0ms)
+Completed in 156ms (View: 125, DB: 16) | 200 OK [http://localhost/session/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-15 11:04:43) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-15 11:04:44) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-11-15 11:04:48) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"ZTMicWGnRbvZdvOUvL55htVHVpv+zyfVxxY+QpGfHB8=", "login"=>"vincent", "password"=>"12345678"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[login] = 'vincent') [0m
+  [4;35;1mEXECUTE (0.0ms)[0m   [0mBEGIN TRANSACTION[0m
+  [4;36;1mEXECUTE (0.0ms)[0m   [0;1mCOMMIT TRANSACTION[0m
+Redirected to http://localhost:3000/validations
+Completed in 313ms (DB: 0) | 302 Found [http://localhost/session]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-15 11:04:49) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (0.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 3672ms (View: 188, DB: 30) | 200 OK [http://localhost/validations]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-15 11:06:24) [GET]
+  [4;35;1mUser Load (16.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;36;1mValidation Load (0.0ms)[0m   [0;1mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 3688ms (View: 266, DB: 16) | 200 OK [http://localhost/validations]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-15 11:06:58) [GET]
+Redirected to http://localhost:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 93ms (DB: 31) | 302 Found [http://localhost/validations]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-11-15 11:06:59) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_menu (0.0ms)
+Completed in 141ms (View: 125, DB: 0) | 200 OK [http://localhost/session/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-15 11:07:00) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/loading.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-15 11:07:01) [GET]
+
+ActionController::RoutingError (No route matches "/session/images/lightbox/closelabel.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-11-15 11:07:10) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"fjIoA89MZj9YuwknnJTRNoOBejDAb7rpwitq7B6TC1U=", "login"=>"vincent", "password"=>"12345678"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT TOP 1 * FROM [users] WHERE ([users].[login] = 'vincent') [0m
+  [4;36;1mEXECUTE (16.0ms)[0m   [0;1mBEGIN TRANSACTION[0m
+  [4;35;1mEXECUTE (0.0ms)[0m   [0mCOMMIT TRANSACTION[0m
+Redirected to http://localhost:3000/validations
+Completed in 266ms (DB: 16) | 302 Found [http://localhost/session]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-15 11:07:11) [GET]
+  [4;36;1mUser Load (16.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (0.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (0.0ms)
+Completed in 3547ms (View: 187, DB: 47) | 200 OK [http://localhost/validations]
+
+
+Processing ValidationsController#index (for 127.0.0.1 at 2009-11-15 11:08:12) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT TOP 1 * FROM [users] WHERE ([users].[id] = 2) [0m
+  [4;35;1mValidation Load (16.0ms)[0m   [0mSELECT * FROM [B2TA_VAL_Error_Reports] [0m
+Rendering template within layouts/application
+Rendering validations/index
+Rendered shared/_menu (15.0ms)
+Completed in 3890ms (View: 500, DB: 32) | 200 OK [http://localhost/validations]

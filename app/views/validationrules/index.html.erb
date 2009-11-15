@@ -4,28 +4,48 @@
 	 </span>	
 </a><br />	
 
+  
 <div id="show_search" style="display:none"; >
-  <div class="column span-6 append-16 prepend-2 last">
-    
+   <div class="column span-10 append-12 prepend-2 last">
+	<fieldset  class="span-8">
+		<legend>Search</legend> 
 	<% form_for @search do |f| %>  
  
       <div class="column span-2">
         <%= f.label :rule_identification_like, "Rule" %>  
       </div>
-      <div class="column span-4 last">
+      <div class="column span-8 last">
         <%= f.text_field :rule_identification_like , :class => 'text' %>
       </div>
       <div class="column span-2">
          <%= f.label :rule_type_like, "Type" %> 
       </div>
-      <div class="column span-4 last">
-        <%= f.text_field :rule_type_like , :class => 'text' %> 
+      <div class="column span-8 last">
+      	 <select name="search[rule_type_like]">
+    		<option value="">Please select</option>
+      	 	<option value="ERR">Mapping Error</option>
+    		<option value="LOG">Logic Error</option>
+    		<option value="COM">Comparison Value</option>
+    		<option value="VAL">Validation Error</option>
+  		 </select> 
+      	<!--%= f.text_field :rule_scope_like , :class => 'text' %-->
       </div>
-      <div class="column span-2">
-         <%= f.label :rule_scope_like, "Scope" %> 
+
+	  <div class="column span-2">
+         <%= f.label :rule_scope_equals, "Scope" %> 
       </div>
-      <div class="column span-4 last">
-      	 <%= f.text_field :rule_scope_like , :class => 'text' %>
+  
+      <div class="column span-8 last">
+		<select name="search[rule_scope_equals]">
+    		<option value="">Please select</option>
+			<option value="Limit">Limit</option>
+    		<option value="Counterparty">Counterparty</option>
+    		<option value="LoanBook">Loan Book</option>
+    		<option value="OTC">OTC Derivatives</option>
+    		<option value="Nostro">Nostro</option>
+    		<option value="Provisions">Provisions</option>
+  		</select>
+        <!--%= f.text_field :OutputFile_equals , :class => 'text' %--> 
       </div>
 
       <div class="column span-6 prepend-2 last">
@@ -37,7 +57,7 @@
 </div>
 
 <table>
-	<h4 class = 'theader'>Listing validation rules</h4>
+	<h2 class = 'theader'>Listing validation rules</h2>
   <tr class = 'tr' >
     <th class = 'th' >Scope</th>
     <th class = 'th'>Type</th>

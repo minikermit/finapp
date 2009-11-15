@@ -1,0 +1,29 @@
+<head>
+	
+<style type="text/css">
+
+input.red {background-color: #cc0000; font-weight: bold; font-size: 12px; color: white;}
+input.pink {background-color: #ffcccc;}
+textarea.violet {background-color: #ccccff; font-size: 10px;}
+option.red {background-color: #cc0000; font-weight: bold; font-size: 12px; color: white;}
+option.pink {background-color: #ffcccc;}
+</style>	
+</head>	
+
+<form name="AutoListBox">
+<p><select name="ListBoxURL" size="1" language="javascript" onchange="gotoLink(this.form);">
+<option class="red" value="URL#1.htm">Place 1 </option>
+<option class="pink" value="URL #2.htm">Place 2 </option>
+<option value="URL#3.htm">Place 3 </option>
+<option selected> -- Select to Jump -- </option>
+</select></p>
+
+<script language="JavaScript">
+<!--
+function gotoLink(form) {
+   var OptionIndex=form.ListBoxURL.selectedIndex;
+  parent.location = form.ListBoxURL.options[OptionIndex].value;}
+//-->
+</script>
+
+</form>

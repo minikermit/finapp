@@ -1,0 +1,26 @@
+mainmenu
+	Home|/|_self
+	Reports|#|_self
+		Basel II|#|_self
+			Validations|#|
+				Report1|#|
+				Report2|#|
+				Report3|#|
+			Statistics|#|
+		Greenbook|#|_self
+		Management Reporting|#|_self
+	Accounts|#|_self
+		Account plan|#|_self
+		Accounts|#|_self
+		Hierarchy|#|_self
+		Triplet finder|#|_self
+		Account finder|#|_self
+	Positions|#|_self
+	Clients|#|_self
+	Settings|#|_self
+	Validations|#|_self
+	Documentation|#|_self
+	Olympic tables|#|_self
+		Nomenclature|/fdbtabs|_self
+		Clients|/fdbclis|_self
+	Sitemap|/sitemap|_self

@@ -1,41 +1,51 @@
-<h1>Listing reports</h1>
-
 <h6><%= link_to  "> Back to report categories" , report_categories_path %></h6>
 
-<table>
-  <tr>
-    <th>Position</th>    
-    <th>Name</th>
-    <th>Report Category</th>
-    <th> </th>
-    <th>Created at</th>
-  </tr>
+<span class="myapptitle">Listing reports</span>
 
-<% for report in @reports %>
+<table id="rounded-corner" summary="Validations errors for Basel II" >
+  <thead>
+    	<tr>
+        	<th scope="col" class="rounded-company"><%= order @search, :by => :Order %></th>
+            <th scope="col" class="rounded-q1"><%= order @search, :by => :Comment  %></th>
+            <th scope="col" class="rounded-q2"><%= order @search, :by => :Report_Category_ID %></th>
+            <th scope="col" class="rounded-q2"> </th>
+            <th scope="col" class="rounded-q4">Created at</th>
+        </tr>
+    </thead>
+    <tfoot>
+    	<tr>
+        	<td colspan="4" class="rounded-foot-left"><em>Use the pagination below to see more records if needed</em></td>
+        	<td class="rounded-foot-right">&nbsp;</td>
+        </tr>
+    </tfoot>
+	
+
+	
+    <tbody>
+<% @reports.each do |report| %>
   <tr>
-    <td>
-       <%= report.Order %>
-    </td>
-    <td>
-       <%= link_to "#{report.Report_Name}", :controller => "report_lines" ,:action => "index", :report_id => report.id %>
-    </td>
-         <!--%= link_to "#{report.name}", report %-->
-    <td>
-       <%= report.report_category.Category_Type_Description %> 
-       <!--%= link_to "#{report.report_category.Category_Kind_Description}", :controller => "report_categories" , :action => 'index', :Report_Category_ID => report.report_category.Report_Category_ID  %-->
-    </td>
-    <td>
-	<%= link_to image_tag('iconmini/delete-page-blue.gif'),  report, :confirm => 'Are you sure?', :method => :delete  %>
-    </td>
-    <td>
-  <%= h report.Record_Creation_Date %>
-    </td>
+    <td><%=h report.Order %></td>
+    <td><%=h report.Comment %></td>
+    <td><%=h report.report_category.Category_Type_Description %></td><!--report.Category_Type_Description-->
+	 <td><%= link_to image_tag('iconmini/delete-page-blue.gif'),  report, :confirm => 'Are you sure?', :method => :delete  %></td>
+  	 <td><%= h report.Record_Creation_Date %></td>
   </tr>
 <% end %>
+	</tbody>
 </table>
 
 
+
+
+
 <br />
+
+<div class="digg_pagination">
+  <div class="page_info">
+    <%= page_entries_info @reports %>
+  </div-->
+    <%= will_paginate @reports, :container => false %>
+</div>
 
 <%= link_to 'New report', new_report_path %>
 

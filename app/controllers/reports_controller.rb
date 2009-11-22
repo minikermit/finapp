@@ -1,21 +1,16 @@
 class ReportsController < ApplicationController
  
- # before_filter :login_required
+ before_filter :login_required
 
   # GET /reports
   # GET /reports.xml
   
   
   def index
-      if params[:report_category_id].nil?
-      @reports = Report.find(:all,:order => "[Order] ASC")
-    else
-      @reports = Report.find(:all,
-                            :conditions => ["report_category_id = ?", params[:report_category_id]],
-                            :order => "[Order] ASC")
-      params[:report_category_id] = nil
-    end
-
+  	
+    @search = Report.search(params[:search])  
+    @reports = @search.all.paginate(:page => params[:page])  
+   
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @reports }

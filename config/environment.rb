@@ -11,10 +11,13 @@ Rails::Initializer.run do |config|
   #config.gem 'rubyist-aasm'
   config.gem "capistrano-ext", :lib => "capistrano"
   config.gem 'mislav-will_paginate', :lib => 'will_paginate', :source => 'http://gems.github.com', :version => '~> 2.2.3'
-  config.gem 'searchlogic'
+  config.gem 'searchlogic', :source => "http://gemcutter.org"
   config.gem 'justinfrench-formtastic', :lib => 'formtastic', :source => 'http://gems.github.com' 
+  config.gem 'fastercsv', :source => "http://gemcutter.org"
   config.gem 'crafterm-comma', :lib => 'comma', :source => 'http://gems.github.com' 
   config.gem 'ziya', :source => 'http://gems.rubyforge.com'
+  config.gem 'declarative_authorization', :source => "http://gemcutter.org"
+  config.gem 'db-charmer', :lib => 'db_charmer', :source => 'http://gemcutter.org'
   # Settings in config/environments/* take precedence over those specified here.
   # Application configuration should go into files in config/initializers
   # -- all .rb files in that directory are automatically loaded.

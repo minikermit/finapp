@@ -1,78 +1,155 @@
-/*- Menu Tabs C--------------------------- */
+@charset "utf-8";
+/* CSS Document */
 
-#tabsC {
- float:left;
- width:100%;
- background:#EDF7E7;
- font-size:93%;
- line-height:normal;
- }
-#tabsC ul {
- margin:0;
- padding:10px 10px 0 50px;
- list-style:none;
- }
-#tabsC li {
- display:inline;
- margin:0;
- padding:0;
- }
-#tabsC a {
- float:left;
- background:url("/images/menus/tableftC.gif") no-repeat left top;
- margin:0;
- padding:0 0 0 4px;
- text-decoration:none;
- }
-#tabsC a span {menu11
- float:left;
- display:block;
- background:url("/images/menus/tabrightC.gif") no-repeat right top;
- padding:5px 15px 4px 6px;
- color:#464E42;
- }
-/* Commented Backslash Hack hides rule from IE5-Mac \*/
-#tabsC a span {float:none;}
- /* End IE5-Mac hack */
-#tabsC a:hover span {
- color:#FFF;
- }
- #tabsC a:hover {
- background-position:0% -42px;
- }
- #tabsC a:hover span {
- background-position:100% -42px;
- }
 
-/*- Menu 11--------------------------- */
-	
-#menu11 {
-	width: 140px;
-	margin: 10px;
-	border-style: solid solid none solid;
-	border-color: #889944;
-	border-size: 1px;
-	border-width: 1px;
-	}
-	
-#menu11 li a {
-	height: 32px;
-  	voice-family: "\"}\""; 
-  	voice-family: inherit;
-  	height: 24px;
-	text-decoration: none;
-	}	
-	
-#menu11 li a:link, #menu11 li a:visited {
-	color: #889944;
+body {
+	background-color: #ffffff;
+
+/* for pull-down menu to work in IE6*/
+behavior:url("csshover2.htc");
+
+}
+
+/* pull-down mainmenu css */
+.mainmenu{
+	float: left;
+	width: 100%;
+	padding: 10;
+}
+.mainmenu ul {
+	float: left;
+	width: 100%;
+	list-style: none;
+	line-height: 1;
+	color:#008000;
+	background: #8BC867;
+	padding: 0;
+	border: solid #A0A0A4;
+	border-width: 1px 0;
+	margin: 0 0 1em 0;
+}
+
+.mainmenu a, .mainmenu a:visited {
 	display: block;
-	background:  url("/images/menus/menu11.gif");
-	padding: 8px 0 0 25px;
-	}
+font-family:Geneva, Arial, Helvetica, sans-serif;font-size:12px;font-weight:bold;font-style:normal;text-decoration:underline;
+	color: #008000;
+	text-decoration: none;
+	padding: 1em 1em;
+}
+.mainmenu ul ul a{
+	width:100%;
+	height:100%;
+}
+.mainmenu ul a{
+	width:1%;
+}
+
+
+.mainmenu li  {
+	float: left;
+	margin:0;
+	padding:0;
+}
+
+.mainmenu ul li {float:left; position:relative;  }
+.mainmenu ul li a {white-space:nowrap;}
 	
-#menu11 li a:hover {
-	color: #889944;
-	background:  url("/images/menus/menu11.gif") 0 -32px;
-	padding: 8px 0 0 27px;
-	}
+.mainmenu li ul {
+	position: absolute;
+	left: -999em;
+	height: auto;
+	width:15em;	
 	
+	background: #8BC867;
+	font-weight: normal;
+	border-width: 1px;
+	margin: 0;
+}
+
+.mainmenu li li {
+	width:15em ;
+}
+
+.mainmenu li li a{
+	width:13em ;
+}
+
+.mainmenu li ul  {
+	margin: 0;
+}
+.mainmenu li ul ul {
+	margin: -2.8em 0 0 13.5em;
+}
+.ul_ch, 
+.mainmenu li:hover ul ul,
+.mainmenu li li:hover ul ul,
+.mainmenu li li li:hover ul ul,
+.mainmenu li li li li:hover ul ul,
+.mainmenu li li li li li:hover ul ul
+{
+	left: -999em;
+}
+.mainmenu li:hover ul,
+.mainmenu li li:hover ul,
+.mainmenu li li li:hover ul,
+.mainmenu li li li li:hover ul,
+.mainmenu li li li li li:hover ul
+{
+	left: auto;
+}
+.mainmenu li:hover>ul.ul_ch   
+{
+	left: auto;
+}
+
+.mainmenu li:hover{
+	background: #008080;
+}
+
+.mainmenu li:hover a,.mainmenu li:hover a:visited,.mainmenu li:hover a:hover,.mainmenu li a:hover{
+	color:#FFFF80;
+}
+.mainmenu li:hover li a, .mainmenu li li:hover li a, 
+.mainmenu li li li:hover li a, .mainmenu li li li li:hover li a,
+.mainmenu li:hover li a:visited, .mainmenu li li:hover li a:visited, 
+.mainmenu li li li:hover li a:visited, .mainmenu li li li li:hover li a:visited
+{
+	color:#008000;
+}
+.mainmenu li li:hover, .mainmenu li li li:hover, 
+.mainmenu li li li li:hover , .mainmenu li li li li li:hover , .mainmenu li li li li li li:hover 
+{
+	background: #008080;
+	z-index:9999;
+}
+.mainmenu li li:hover a,.mainmenu li li li:hover a, 
+.mainmenu li li li li:hover a, .mainmenu li li li li li:hover a
+{
+	color: #FFFF80; 
+}
+
+.mainmenu ul ul a, .mainmenu ul ul a:visited,
+.mainmenu li li a, .mainmenu li li a:visited
+{
+	color: #008000;
+}
+.mainmenu ul ul a:hover,
+.mainmenu li:hover li:hover a,.mainmenu li:hover li:hover a:visited ,
+.mainmenu li:hover li:hover li:hover a,.mainmenu li:hover li:hover li:hover a:visited,
+.mainmenu li:hover li:hover li:hover li:hover a,.mainmenu li:hover li:hover li:hover li:hover a:visited ,
+.mainmenu li:hover li:hover li:hover li:hover li:hover a,.mainmenu li:hover li:hover li:hover li:hover li:hover a:visited,
+.mainmenu li:hover li:hover li:hover li:hover li:hover li:hover a,.mainmenu li:hover li:hover li:hover li:hover li:hover li:hover a:visited{
+	color: #FFFF80;
+}
+.mainmenu li:hover li:hover li a,.mainmenu li:hover li:hover li a:visited ,
+.mainmenu li:hover li:hover li:hover li a,.mainmenu li:hover li:hover li:hover li a:visited,
+.mainmenu li:hover li:hover li:hover li:hover li a,.mainmenu li:hover li:hover li:hover li:hover li a:visited,
+.mainmenu li:hover li:hover li:hover li:hover li:hover li a,.mainmenu li:hover li:hover li:hover li:hover li:hover li a:visited{
+	color: #008000;
+}
+
+
+/* end of mainmenu css */
+
+
+

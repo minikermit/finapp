@@ -19,7 +19,16 @@
       </div>
       <div class="column span-8 last">   	      		
         <!--%= f.text_field :LoadDate_like , :class => 'text' %-->
-        <%= f.collection_select :LoadDate_equals, Validation.all, :LoadDate, :LoadDate, :include_blank => true %>  
+        <!--%= f.collection_select :LoadDate_equals, Validation.all, :LoadDate, :LoadDate, :include_blank => true %-->
+        <select name="search[LoadDate_equals]">
+		    <option value="" selected="selected">[Select a date]</option>
+    		<option value="2008-12-31">2008-12-31</option>
+    		<option value="2009-03-31">2009-03-31</option>
+    		<option value="2009-06-30">2009-06-30</option>
+    		<option value="2009-09-30">2009-09-30</option>
+    		<option value="2009-12-31">2009-12-31</option>
+    		<option value="2010-03-31">2010-03-31</option>
+  		</select>  
       </div>
       <div class="column span-2">
          <%= f.label :OutputFile_equals, "Scope" %> 
@@ -127,12 +136,12 @@
       <div class="column span-2">
          <%= f.label :ErrorType_like, "Type" %> 
       </div>
-      <div class="column span-8 last">
-      	 <%= f.text_field :ErrorType_like , :class => 'text' %>
+      <div class="column span-1 last">
+      	 <%= f.text_field :ErrorType_like , :class => 'text' , :size => 10 %>
       </div>
 
       <div class="column span-8 prepend-2 last">
-        <%= f.submit "Apply filters" %> 
+        <%= f.submit "Apply filters", :class => "button" %> 
       </div>
     <% end %> 
 	</fieldset>

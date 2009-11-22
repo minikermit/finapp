@@ -1,6 +1,6 @@
 /* Normal HTML */
 
-body { background-color: rgb(139,200,103) }
+body { background-color: rgb(231,229,222) }
 
 H1   { color: rgb(0,0,51);
 	   font-size: 24px;
@@ -25,6 +25,40 @@ H1   { color: rgb(0,0,51);
 }
 
 a {text-decoration: none; }
+
+fieldset {
+border: 1px solid #B9C9FE;
+width: 50%;
+background: #D0DAFD;
+padding: 3px;
+}
+fieldset legend {
+background: #8BC867;
+padding: 6px;
+font-weight: bold;
+}
+
+label{
+	font-size:80%;
+	
+	display:block;
+	float:left;
+	width:100px;
+	text-align:left;
+	margin:6px 5px 0px 0px;
+}
+
+.button{
+	background-color:#fff9e7;
+	
+	border-width:1px;
+	border-style:solid;
+	border-color:#7c5b47;
+	
+	font-weight:normal;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+
+}
 
 /* Header */
 #header {

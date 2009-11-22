@@ -1,0 +1,55 @@
+
+
+<% form_for(@report) do |f| %>
+  <%= f.error_messages :class => 'error' %>
+  
+<fieldset class= 'fieldset'>
+	<Legend class = 'legend'> Editing report </Legend>
+
+  <p>
+    <%= f.label :Fimis_Identifier  %><br />
+    <%= f.text_field :Fimis_Identifier, :class => 'text'  %>
+  </p>
+  <p>
+    <%= f.label :Report_ID  %><br />
+    <%= f.text_field :Report_ID, :class => 'text'  %>
+  </p>
+   <p>
+    <%= f.label :Report_Name %><br />
+    <%= f.text_field :Report_Name, :class => 'text'  %>
+  </p>
+   <p>
+    <%= f.label :Report_Category_ID %><br />
+    <%= f.text_field :Report_Category_ID, :class => 'text'  %>
+  </p>
+  <p>
+    <%= f.label :Comment %><br />
+    <%= f.text_field :Comment, :class => 'text' %>
+  </p>
+  <p>
+    <%= f.label :Order %><br />
+    <%= f.text_field :Order, :size => 5, :class => 'text'  %>
+  </p>
+  <p>
+    <%= f.label :Record_Creation_Date %><br />
+    <%= f.text_field :Record_Creation_Date , :class => 'text'  %>
+  </p>
+   <p>
+    <%= f.label :Record_Creator %><br />
+    <%= f.text_field :Record_Creator , :class => 'text'  %>
+  </p>
+  
+  <p>
+    <span class="span-2 append-2"><%= f.label :Record_Validity %></span><span class="span-4 append-4"><%= f.label :Record_Visibility %></span><br />
+   <span class="span-2 append-2"> <%= f.check_box :Record_Validity, :class => 'textarea'  %></span>
+   <span class="span-4 append-4 last"> <%= f.check_box :Record_Visibility, :class => 'textarea' %></span><br />
+  </p>
+
+
+  <p>
+    <%= f.submit 'Save' %>
+  </p>
+
+</fieldset> 
+  
+<% end %>

@@ -1,7 +1,7 @@
 authorization do
 	role :standard do
 		has_permission_on :fdbtabs, :to => [:index,:show]
-		 if_attribute :user => is (user)
+		 #if_attribute :user => is (user)
 	 end
 
  	role :admin do

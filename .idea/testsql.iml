@@ -3,12 +3,195 @@
   <component name="FacetManager">
     <facet type="RailsFacetType" name="Ruby on Rails">
       <configuration>
-        <RAILS_FACET_CONFIG_ID NAME="SHOULD_USE_RSPEC_PLUGIN" VALUE="false" />
         <RAILS_FACET_CONFIG_ID NAME="RAILS_FACET_SUPPORT_REMOVED" VALUE="false" />
         <RAILS_FACET_CONFIG_ID NAME="RAILS_TESTS_SOURCES_PATCHED" VALUE="true" />
         <RAILS_FACET_CONFIG_ID NAME="RAILS_FACET_APPLICATION_ROOT" VALUE="$MODULE_DIR$" />
       </configuration>
     </facet>
+  </component>
+  <component name="GemRequirementsHolder" version="2">
+    <requirement>
+      <requirement>
+        <dependency name="actionpack" version="0" bound="GREATER_OR_EQUAL" />
+      </requirement>
+      <source from="vendor/plugins/open_id_authentication/test/test_helper.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="activerecord" version="1.15.4.7794" bound="GREATER_OR_EQUAL" />
+      </requirement>
+      <source from="vendor/plugins/acts_as_list/test/list_test.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="activerecord-sqlserver-adapter" version="0" bound="GREATER_OR_EQUAL" />
+      </requirement>
+      <source from="config/database.yml" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="activesupport" version="0" bound="GREATER_OR_EQUAL" />
+      </requirement>
+      <source from="vendor/plugins/open_id_authentication/test/test_helper.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="capistrano-ext" version="0" bound="GREATER_OR_EQUAL" />
+      </requirement>
+      <source from="config/environment.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="crafterm-comma" version="0" bound="GREATER_OR_EQUAL" url="'http://gems.github.com'" />
+      </requirement>
+      <source from="config/environment.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="cucumber" version="0.4.3" bound="GREATER_OR_EQUAL" />
+      </requirement>
+      <source from="config/environments/test.rb" />
+      <source from="config/environments/cucumber.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="db-charmer" version="0" bound="GREATER_OR_EQUAL" url="'http://gemcutter.org'" />
+      </requirement>
+      <source from="config/environment.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="declarative_authorization" version="0" bound="GREATER_OR_EQUAL" url="&quot;http://gemcutter.org&quot;" />
+      </requirement>
+      <source from="config/environment.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="fastercsv" version="0" bound="GREATER_OR_EQUAL" url="&quot;http://gemcutter.org&quot;" />
+      </requirement>
+      <source from="config/environment.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="hoe" version="1.9.0" bound="GREATER_OR_EQUAL" />
+      </requirement>
+      <source from="vendor/plugins/rspec/Rakefile" />
+      <source from="vendor/plugins/rspec-rails/Rakefile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="justinfrench-formtastic" version="0" bound="GREATER_OR_EQUAL" url="'http://gems.github.com'" />
+      </requirement>
+      <source from="config/environment.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="mislav-will_paginate" version="2.2.3" bound="LATEST_IN_BRANCH" url="http://gems.github.com" />
+      </requirement>
+      <source from="config/environment.rb" />
+      <source from="bort.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="mocha" version="0" bound="GREATER_OR_EQUAL" />
+      </requirement>
+      <source from="vendor/plugins/open_id_authentication/test/test_helper.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="pickle" version="0.1.21" bound="GREATER_OR_EQUAL" />
+      </requirement>
+      <source from="config/environments/test.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="rails" version="0" bound="GREATER_OR_EQUAL" />
+      </requirement>
+      <source from="config/boot.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="rspec" version="1.2.9" bound="GREATER_OR_EQUAL" />
+      </requirement>
+      <source from="config/environments/test.rb" />
+      <source from="config/environments/cucumber.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="rspec-rails" version="1.2.9" bound="GREATER_OR_EQUAL" />
+      </requirement>
+      <source from="config/environments/test.rb" />
+      <source from="config/environments/cucumber.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="ruby-openid" version="2.0.4" bound="GREATER_OR_EQUAL" />
+      </requirement>
+      <source from="vendor/plugins/open_id_authentication/init.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="ruby-openid" version="0" bound="GREATER_OR_EQUAL" />
+      </requirement>
+      <source from="vendor/plugins/open_id_authentication/test/test_helper.rb" />
+      <source from="bort.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="rubyist-aasm" version="0" bound="GREATER_OR_EQUAL" />
+      </requirement>
+      <source from="bort.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="searchlogic" version="0" bound="GREATER_OR_EQUAL" url="&quot;http://gemcutter.org&quot;" />
+      </requirement>
+      <source from="config/environment.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="sqlite3-ruby" version="0" bound="GREATER_OR_EQUAL" />
+      </requirement>
+      <source from="config/database.yml" />
+      <source from="vendor/plugins/paperclip/test/helper.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="thoughtbot-factory_girl" version="0" bound="GREATER_OR_EQUAL" url="&quot;http://gems.github.com&quot;" />
+      </requirement>
+      <source from="config/environments/test.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="thoughtbot-factory_girl" version="0" bound="GREATER_OR_EQUAL" url="'http://gems.github.com'" />
+      </requirement>
+      <source from="bort.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="thoughtbot-shoulda" version="2.9.0" bound="GREATER_OR_EQUAL" />
+      </requirement>
+      <source from="vendor/plugins/paperclip/test/helper.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="webrat" version="0.5.3" bound="GREATER_OR_EQUAL" />
+      </requirement>
+      <source from="config/environments/test.rb" />
+      <source from="config/environments/cucumber.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="win32console" version="1.2.0" bound="GREATER_OR_EQUAL" />
+      </requirement>
+      <source from="config/environments/test.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="ziya" version="0" bound="GREATER_OR_EQUAL" url="'http://gems.rubyforge.com'" />
+      </requirement>
+      <source from="config/environment.rb" />
+    </requirement>
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
@@ -16,9 +199,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="[gem] activerecord-sqlserver-adapter (v1.0.0.9250, C:/ruby/lib/ruby/gems/1.8/gems/activerecord-sqlserver-adapter-1.0.0.9250)" level="application" />
     <orderEntry type="library" name="[gem] mislav-will_paginate (v2.2.3, C:/ruby/lib/ruby/gems/1.8/gems/mislav-will_paginate-2.2.3)" level="application" />
-    <orderEntry type="library" name="[gem] sqlite3-ruby (v1.2.3, C:/ruby/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.2.3-x86-mswin32)" level="application" />
     <orderEntry type="library" name="[gem] rspec-rails (v1.2.7.1, C:/ruby/lib/ruby/gems/1.8/gems/rspec-rails-1.2.7.1)" level="application" />
     <orderEntry type="library" name="[gem] rspec (v1.2.8, C:/ruby/lib/ruby/gems/1.8/gems/rspec-1.2.8)" level="application" />
     <orderEntry type="library" name="[gem] rack (v1.0.0, C:/ruby/lib/ruby/gems/1.8/gems/rack-1.0.0)" level="application" />
@@ -30,6 +211,14 @@
     <orderEntry type="library" name="[gem] actionmailer (v2.3.3, C:/ruby/lib/ruby/gems/1.8/gems/actionmailer-2.3.3)" level="application" />
     <orderEntry type="library" name="[gem] actionpack (v2.3.3, C:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.3)" level="application" />
     <orderEntry type="library" name="[gem] activeresource (v2.3.3, C:/ruby/lib/ruby/gems/1.8/gems/activeresource-2.3.3)" level="application" />
+    <orderEntry type="library" name="[gem] sqlite3-ruby (v1.2.5, C:/ruby/lib/ruby/gems/1.8/gems/sqlite3-ruby-1.2.5-x86-mswin32)" level="application" />
+    <orderEntry type="library" name="[gem] activerecord-sqlserver-adapter (v2.2.22, C:/ruby/lib/ruby/gems/1.8/gems/activerecord-sqlserver-adapter-2.2.22)" level="application" />
+    <orderEntry type="library" name="[gem] deprecated (v2.0.1, C:/ruby/lib/ruby/gems/1.8/gems/deprecated-2.0.1)" level="application" />
+    <orderEntry type="library" name="[gem] dbi (v0.4.1, C:/ruby/lib/ruby/gems/1.8/gems/dbi-0.4.1)" level="application" />
+    <orderEntry type="library" name="[gem] dbd-odbc (v0.2.4, C:/ruby/lib/ruby/gems/1.8/gems/dbd-odbc-0.2.4)" level="application" />
+    <orderEntry type="library" name="[gem] activerecord-sqlserver-adapter (v1.0.0.9250, null)" level="application" />
+    <orderEntry type="library" name="[gem] sqlite3-ruby (v1.2.3, null)" level="application" />
+    <orderEntry type="library" name="[gem] cucumber (v0.4.4, C:/ruby/lib/ruby/gems/1.8/gems/cucumber-0.4.4)" level="application" />
   </component>
   <component name="RModuleSettingsStorage">
     <RMODULE_SETTINGS_STORAGE_ID NAME="NUMBER" VALUE="0" />

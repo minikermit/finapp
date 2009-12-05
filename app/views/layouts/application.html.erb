@@ -39,10 +39,10 @@
 		 	</div>
 		 			 		
 	 		<!-- This is the part for the plugin restful-authentication-->
-			<div id= "login" class = "span-24 prepend-22">
+			<div id= "login" class = "span-24 prepend-21">
 		   		<% if logged_in? %>
-		      		<%= link_to "Log Out", logout_path%> <%= Authorization.current_user  %>
-		   		<% else %>
+		      		<%= link_to "Log Out", logout_path%> <%= current_user.login %>  
+		      	 		<% else %>
 		     	 	<%= link_to "Log In", login_path %>
 		   		<% end %>
 			</div>

@@ -8,6 +8,15 @@ class UsersController < ApplicationController
     @user = User.new
   end
  
+    # render new.rhtml
+  def index
+    @users = User.find(:all)
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @users }
+    end
+  end
+  
   def create
     logout_keeping_session!
     @user = User.new(params[:user])

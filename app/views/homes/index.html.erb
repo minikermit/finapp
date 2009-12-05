@@ -1,11 +1,15 @@
-<h1>Listing homes</h1>
+<span class="myapptitle">Finance application</span>
 
+<p class="SPAN-12 quiet">	This application is reserved for the sole use of the finance department of the bank Hapoalim. 
+	If you think you have the right to get a login, please contact your administrator.
+</p>
+ 
 
 
  <table>
   <tr>
   </tr>
-<%= current_user %>
+
 <% @homes.each do |home| %>
   <tr>
     <td><%= link_to 'Show', home %></td>
@@ -16,6 +20,3 @@
 </table>
 
 <br />
-
-<%= link_to 'New home', new_home_path %>
-<br/>

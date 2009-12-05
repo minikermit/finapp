@@ -5,44 +5,36 @@
   
 <fieldset class= 'fieldset'>
 	<Legend class = 'legend'> Editing report </Legend>
-
-  <p>
+  <p  class="input.title span-4 append-4">
     <%= f.label :Fimis_Identifier  %><br />
     <%= f.text_field :Fimis_Identifier, :class => 'text'  %>
   </p>
-  <p>
+  <p  class="input.title append-2">
     <%= f.label :Report_ID  %><br />
     <%= f.text_field :Report_ID, :class => 'text'  %>
   </p>
-   <p>
+  <p  class="input.title append-2">
     <%= f.label :Report_Name %><br />
     <%= f.text_field :Report_Name, :class => 'text'  %>
   </p>
-   <p>
+  <p  class="input.title append-2">
     <%= f.label :Report_Category_ID %><br />
     <%= f.text_field :Report_Category_ID, :class => 'text'  %>
   </p>
-  <p>
+  <p  class="input.title append-2">
     <%= f.label :Comment %><br />
     <%= f.text_field :Comment, :class => 'text' %>
   </p>
-  <p>
-    <%= f.label :Order %><br />
+  <p  class="input.title append-2">
+  	<%= f.label :Order %><br />
     <%= f.text_field :Order, :size => 5, :class => 'text'  %>
   </p>
-  <p>
-    <%= f.label :Record_Creation_Date %><br />
-    <%= f.text_field :Record_Creation_Date , :class => 'text'  %>
-  </p>
-   <p>
-    <%= f.label :Record_Creator %><br />
-    <%= f.text_field :Record_Creator , :class => 'text'  %>
-  </p>
   
-  <p>
-    <span class="span-2 append-2"><%= f.label :Record_Validity %></span><span class="span-4 append-4"><%= f.label :Record_Visibility %></span><br />
-   <span class="span-2 append-2"> <%= f.check_box :Record_Validity, :class => 'textarea'  %></span>
-   <span class="span-4 append-4 last"> <%= f.check_box :Record_Visibility, :class => 'textarea' %></span><br />
+  <p  class="input.title">
+    <span> <%= f.label :Record_Validity %></span>
+    <span> <%= f.check_box :Record_Validity, :class => 'checkbox'  %></span><br />
+    <span> <%= f.label :Record_Visibility %></span>
+    <span> <%= f.check_box :Record_Visibility, :class => 'checkbox' %></span><br />
   </p>
 
 

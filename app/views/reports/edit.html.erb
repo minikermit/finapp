@@ -1,33 +1,3 @@
-<h1>Editing report</h1>
+<%= render :partial => 'form' %>
 
-<%= error_messages_for :report %>
-
-<% form_for(@report) do |f| %>
-  <p>
-    <b>Name</b><br />
-    <%= f.text_field :name %>
-  </p>
-
-  <p>
-    <b>Report category</b><br />
-    <!--%= f.text_field :report_category_id %-->
-    <%= select("report", "report_category_id", ReportCategory.find(:all).collect{ |c| [ c.name, c.id] }) %>
-  </p>
-
-  <p>
-    <b>Description</b><br />
-    <%= f.text_area :description %>
-  </p>
-
-  <p>
-    <b>Position</b><br />
-    <%= f.text_field :position %>
-  </p>
-
-  <p>
-    <%= f.submit "Update" %>
-  </p>
-<% end %>
-
-<%= link_to 'Show', @report %> |
 <%= link_to 'Back', reports_path %>

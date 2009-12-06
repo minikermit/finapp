@@ -3,5 +3,6 @@ class ReportCategory < ActiveRecord::Base
   	set_primary_key "Report_Category_ID"
   	#set_primary_key "Report_Category_ID"
 	has_many :reports
+	acts_as_list
 	searchable_by :name
 end

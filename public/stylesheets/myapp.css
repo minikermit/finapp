@@ -8,6 +8,17 @@ H1   { color: rgb(0,0,51);
 	   text_align: right;
 }
 
+li .handle { color: #777 ; cursor: move ; font-size: 12px ; }
+
+.myappfooter {background:url(../images/header_backdrop.png);}
+
+.footer { 
+	text-align: center; 
+	}
+.footer a:link, #footer a:visited { 
+	margin-right: 20px; 
+	}
+
 .myapptitle   { color: rgb(76,146,176);
 	   font-size: 22px;
 	   display: block;

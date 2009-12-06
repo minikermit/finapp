@@ -13,8 +13,10 @@ class CommandsController < ApplicationController
   # GET /commands/1
   # GET /commands/1.xml
   def show
-    @command = Command.find(params[:id])
-
+ 
+  	@command = Command.find(params[:id])
+    @command_result = %x[#{@command.execute.to_s}]
+    
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @command }

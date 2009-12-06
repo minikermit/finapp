@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090623205835) do
+ActiveRecord::Schema.define(:version => 20091205201040) do
 
   create_table "B2TA_ClosingRates", :force => true do |t|
     t.string   "Group_id",        :limit => 50
@@ -54,6 +54,45 @@ ActiveRecord::Schema.define(:version => 20090623205835) do
     t.string "entity_id",    :limit => 50
   end
 
+  create_table "B2TA_VAL_Error_Reports", :force => true do |t|
+    t.integer  "Original_id",    :limit => 8,   :null => false
+    t.string   "LoadDate",       :limit => 10,  :null => false
+    t.string   "Source_id",      :limit => 50,  :null => false
+    t.string   "Entity_id",      :limit => 50,  :null => false
+    t.string   "Client_id",      :limit => 50,  :null => false
+    t.string   "Key_id",         :limit => 100, :null => false
+    t.string   "OutputFile",     :limit => 50,  :null => false
+    t.string   "OutputField",    :limit => 50,  :null => false
+    t.string   "Source",         :limit => 50,  :null => false
+    t.string   "Destination",    :limit => 50,  :null => false
+    t.string   "ErrorType",      :limit => 50,  :null => false
+    t.string   "ErrorKind",      :limit => 50,  :null => false
+    t.string   "Recommendation", :limit => 100, :null => false
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
+  end
+
+  create_table "B2TA_XPORT_Accounts", :force => true do |t|
+    t.string   "Group_id",              :limit => 50, :null => false
+    t.string   "Entity_id",             :limit => 50, :null => false
+    t.string   "Source_id",             :limit => 50, :null => false
+    t.datetime "DownloadDate",                        :null => false
+    t.datetime "Record_Creation_Date",                :null => false
+    t.string   "Record_Creator",        :limit => 50
+    t.string   "Record_Application",    :limit => 50
+    t.string   "Value_Month",           :limit => 7,  :null => false
+    t.string   "Value_Date",            :limit => 10, :null => false
+    t.string   "Executing_Date",        :limit => 10, :null => false
+    t.string   "Type_of_record",        :limit => 10, :null => false
+    t.string   "Bank_id",               :limit => 4,  :null => false
+    t.string   "Branch_id",             :limit => 3,  :null => false
+    t.string   "Account_id",            :limit => 50
+    t.string   "Account_start_date",    :limit => 50
+    t.string   "Account_address",       :limit => 50
+    t.string   "Swift_address_account", :limit => 50
+    t.string   "Domicile_code_account", :limit => 50
+  end
+
   create_table "B2TA_XPORT_Counterparty", :force => true do |t|
     t.string   "Group_id",                 :limit => 50,                                                 :null => false
     t.string   "Entity_id",                :limit => 50,                                                 :null => false
@@ -96,6 +135,27 @@ ActiveRecord::Schema.define(:version => 20090623205835) do
     t.decimal  "Count_Income_Total_NIS",                 :precision => 13, :scale => 2, :default => 0.0
     t.string   "Count_Code",               :limit => 2
     t.string   "Domicile_Branch_Code",     :limit => 3
+  end
+
+  create_table "B2TA_XPORT_Customer_Account", :force => true do |t|
+    t.string   "Group_id",                      :limit => 50, :null => false
+    t.string   "Entity_id",                     :limit => 50, :null => false
+    t.string   "Source_id",                     :limit => 50, :null => false
+    t.datetime "DownloadDate",                                :null => false
+    t.datetime "created_at",                                  :null => false
+    t.datetime "updated_at",                                  :null => false
+    t.string   "Record_Creator",                :limit => 50
+    t.string   "Record_Application",            :limit => 50
+    t.string   "Value_Month",                   :limit => 7,  :null => false
+    t.string   "Value_Date",                    :limit => 10, :null => false
+    t.string   "Executing_Date",                :limit => 10, :null => false
+    t.string   "Type_of_record",                :limit => 10, :null => false
+    t.string   "Bank_id",                       :limit => 4,  :null => false
+    t.string   "Branch_id",                     :limit => 3,  :null => false
+    t.string   "Count_CIF",                     :limit => 15
+    t.string   "Account_id",                    :limit => 10
+    t.string   "Customer_account_legal_status", :limit => 1
+    t.string   "Customer_account_start_date",   :limit => 10
   end
 
   create_table "B2TA_XPORT_External_Ratings", :force => true do |t|
@@ -229,6 +289,90 @@ ActiveRecord::Schema.define(:version => 20090623205835) do
     t.decimal  "Total_Exposure_NIS",                            :precision => 13, :scale => 2
     t.decimal  "Prov_Amount",                                   :precision => 13, :scale => 2
     t.integer  "Trans_Tenure_Left"
+    t.string   "Interest_Account_id",            :limit => 10
+    t.string   "Linked_Princpl_Account_id",      :limit => 10
+    t.string   "Linked_Interest_Account_id",     :limit => 10
+    t.string   "Dlnqnt_Linked_Account_id",       :limit => 10
+    t.decimal  "Linked_Princpl_Diff_Amt",                       :precision => 13, :scale => 2
+    t.decimal  "Linked_Interest_Diff_Amt",                      :precision => 13, :scale => 2
+    t.string   "Linkage_Base_Type_Code",         :limit => 2
+    t.string   "Bal_Sheet_Major_Item_Code",      :limit => 3
+    t.string   "Sec_Bal_Sheet_Item_Code",        :limit => 2
+    t.string   "Major_Yield_Category",           :limit => 1
+    t.string   "Sec_Yield_Category",             :limit => 1
+    t.string   "Instrument_Responsibility_Code", :limit => 1
+    t.string   "Detail_Type_Code",               :limit => 2
+    t.string   "Sec_Linkage_Base_Type_Code",     :limit => 2
+    t.string   "GI_Item_Type_Code",              :limit => 1
+    t.string   "Balance_Sheet_Position_Code",    :limit => 1
+    t.decimal  "Other_Amt",                                     :precision => 13, :scale => 2
+    t.integer  "Executing_Bank_Id",              :limit => 2
+    t.string   "Trans_Segment_Code",             :limit => 3
+    t.string   "Trans_Segment_Det",              :limit => 40
+    t.string   "Trans_Sub_Segment_code",         :limit => 3
+    t.string   "Trans_Sub_Segment_Det",          :limit => 40
+    t.string   "Trans_Marking_Past_Due_Code",    :limit => 3
+    t.string   "Trans_Marking_Past_Due_Det",     :limit => 100
+    t.string   "Trans_Markings_Other_code",      :limit => 3
+    t.string   "Trans_Markings_Other_Det",       :limit => 100
+    t.integer  "Executing_Branch_Id",            :limit => 2
+  end
+
+  create_table "B2TA_XPORT_Loan_Book_CashOnHand", :force => true do |t|
+    t.string   "Group_id",                       :limit => 50,                                                           :null => false
+    t.string   "Entity_id",                      :limit => 50,                                                           :null => false
+    t.string   "Source_id",                      :limit => 50,                                                           :null => false
+    t.datetime "DownloadDate",                                                                                           :null => false
+    t.datetime "Record_Creation_Date",                                                                                   :null => false
+    t.string   "Record_Creator",                 :limit => 50
+    t.string   "Record_Application",             :limit => 50
+    t.string   "Value_Month",                    :limit => 7,                                                            :null => false
+    t.string   "Value_Date",                     :limit => 10,                                                           :null => false
+    t.string   "Executing_Date",                 :limit => 10,                                                           :null => false
+    t.string   "Type_of_record",                 :limit => 10,                                  :default => "LOAN-BOOK", :null => false
+    t.string   "Bank_id",                        :limit => 4,                                                            :null => false
+    t.string   "Branch_id",                      :limit => 3,                                                            :null => false
+    t.string   "Trans_nr",                       :limit => 25
+    t.string   "Count_CIF",                      :limit => 50
+    t.string   "Legacy_System_Code",             :limit => 15
+    t.string   "OnCall_Ind",                     :limit => 1
+    t.string   "Legacy_Acc_Subtype_Code",        :limit => 3
+    t.string   "Account_id",                     :limit => 50
+    t.string   "Limit_Nr",                       :limit => 15
+    t.string   "Trans_Code",                     :limit => 10
+    t.string   "Trans_Text",                     :limit => 40
+    t.string   "Trans_Balance_Sheet",            :limit => 3
+    t.string   "Trans_Repo",                     :limit => 4
+    t.decimal  "Trans_Nom",                                     :precision => 13, :scale => 2,  :default => 0.0
+    t.string   "Trans_Cur",                      :limit => 3
+    t.string   "Trans_Local_Currency",           :limit => 3
+    t.decimal  "Trans_Local_Nom",                               :precision => 13, :scale => 2,  :default => 0.0
+    t.decimal  "Trans_FX",                                      :precision => 18, :scale => 10, :default => 0.0
+    t.decimal  "Trans_NIS",                                     :precision => 13, :scale => 2,  :default => 0.0
+    t.string   "Trans_CCF_B1",                   :limit => 4,                                   :default => "0"
+    t.string   "Trans_CCF_B2",                   :limit => 4,                                   :default => "0"
+    t.decimal  "Trans_Credit_Equiv_B1",                         :precision => 13, :scale => 2,  :default => 0.0
+    t.decimal  "Trans_Credit_Equiv_B2",                         :precision => 13, :scale => 2,  :default => 0.0
+    t.string   "Trans_Start",                    :limit => 10,                                                           :null => false
+    t.string   "Trans_End",                      :limit => 10,                                                           :null => false
+    t.string   "Trans_Tenure",                   :limit => 5,                                                            :null => false
+    t.string   "Trans_Tenure_ST",                :limit => 1,                                                            :null => false
+    t.string   "Trans_Pastdue",                  :limit => 1,                                                            :null => false
+    t.string   "Trans_Pastdue_date",             :limit => 10,                                                           :null => false
+    t.string   "Trans_Ref_date",                 :limit => 10,                                                           :null => false
+    t.string   "Gen_Ledger_Shekel_Item_Code",    :limit => 1,                                                            :null => false
+    t.string   "Gen_Ledger_Item_Code",           :limit => 5,                                                            :null => false
+    t.string   "Gen_Ledger_Item_Type",           :limit => 1,                                                            :null => false
+    t.decimal  "Dlnqnt_Princpl",                                :precision => 13, :scale => 2
+    t.decimal  "Dlnqnt_Interest_Amt",                           :precision => 13, :scale => 2
+    t.decimal  "Dlnqnt_Linked_Amt",                             :precision => 13, :scale => 2
+    t.decimal  "Dlnqnt_Linked_Interest_Amt",                    :precision => 13, :scale => 2
+    t.decimal  "Accrued_Interest_Amt",                          :precision => 13, :scale => 2
+    t.decimal  "Trans_Pastdue_amount",                          :precision => 13, :scale => 2
+    t.decimal  "Total_Exposure",                                :precision => 13, :scale => 2
+    t.decimal  "Total_Exposure_NIS",                            :precision => 13, :scale => 2
+    t.decimal  "Prov_Amount",                                   :precision => 13, :scale => 2
+    t.string   "Trans_Tenure_Left",              :limit => 10
     t.string   "Interest_Account_id",            :limit => 10
     t.string   "Linked_Princpl_Account_id",      :limit => 10
     t.string   "Linked_Interest_Account_id",     :limit => 10
@@ -898,6 +1042,7 @@ ActiveRecord::Schema.define(:version => 20090623205835) do
     t.string   "Record_Modification_Application", :limit => 100
     t.string   "Line_Morphing",                   :limit => 50
     t.integer  "Line_Style"
+    t.integer  "position"
   end
 
   create_table "DIM_ReportStructure", :primary_key => "Fimis_Identifier", :force => true do |t|
@@ -962,11 +1107,10 @@ ActiveRecord::Schema.define(:version => 20090623205835) do
     t.string   "Record_Modifier",          :limit => 50
   end
 
-  create_table "DIM_Source", :id => false, :force => true do |t|
-    t.integer "Fimis_Identifier",   :limit => 8,  :null => false
-    t.string  "Source_Name",        :limit => 50, :null => false
-    t.string  "Source_Description", :limit => 50, :null => false
-    t.string  "Source_Frequency",   :limit => 50, :null => false
+  create_table "DIM_Source", :primary_key => "Fimis_Identifier", :force => true do |t|
+    t.string "Source_Name",        :limit => 50, :null => false
+    t.string "Source_Description", :limit => 50, :null => false
+    t.string "Source_Frequency",   :limit => 50, :null => false
   end
 
   create_table "DIM_Source_Package", :primary_key => "Fimis_Identifier", :force => true do |t|
@@ -1156,7 +1300,7 @@ ActiveRecord::Schema.define(:version => 20090623205835) do
     t.string   "Source_Package",       :limit => 50
   end
 
-  create_table "FIMIS_TA_SRC_OLY_0_Nomenclatures_FDBTAB", :id => false, :force => true do |t|
+  create_table "FIMIS_TA_SRC_OLY_0_Nomenclatures_FDBTAB", :force => true do |t|
     t.string   "TBID",                 :limit => 3,                                 :null => false
     t.string   "TBCODE",               :limit => 14,                                :null => false
     t.string   "TBETAT",               :limit => 1,                                 :null => false
@@ -1177,7 +1321,7 @@ ActiveRecord::Schema.define(:version => 20090623205835) do
     t.string   "Source_Package",       :limit => 50
   end
 
-  create_table "FIMIS_TA_SRC_OLY_A_Clients_FDBCLI", :id => false, :force => true do |t|
+  create_table "FIMIS_TA_SRC_OLY_C_Clients_FDBCLI", :force => true do |t|
     t.string   "CLRACI",               :limit => 7
     t.string   "CLETAT",               :limit => 1
     t.string   "CLDTOU",               :limit => 8
@@ -3275,26 +3419,26 @@ ActiveRecord::Schema.define(:version => 20090623205835) do
   end
 
   create_table "PAR_Mapping", :force => true do |t|
-    t.string   "Group_Identifier",         :limit => 50
-    t.string   "Entity_Identifier",        :limit => 50
-    t.string   "Information_Mapped",       :limit => 50
-    t.string   "Source_code",              :limit => 50
-    t.string   "Dimension_Code",           :limit => 50
-    t.string   "Dimension_description_1",  :limit => 100
-    t.string   "Group_1",                  :limit => 50
-    t.string   "Group_description_1",      :limit => 100
-    t.string   "Group_2",                  :limit => 50
-    t.string   "Group_description_2",      :limit => 100
-    t.string   "Group_3",                  :limit => 50
-    t.string   "Group_description_3",      :limit => 100
-    t.datetime "Validity_Start",                          :null => false
-    t.datetime "Validity_End",                            :null => false
-    t.boolean  "Do_Not_Update",                           :null => false
+    t.string   "Group_Identifier",        :limit => 50
+    t.string   "Entity_Identifier",       :limit => 50
+    t.string   "Information_Mapped",      :limit => 50
+    t.string   "Source_code",             :limit => 50
+    t.string   "Dimension_Code",          :limit => 50
+    t.string   "Dimension_description_1", :limit => 100
+    t.string   "Group_1",                 :limit => 50
+    t.string   "Group_description_1",     :limit => 100
+    t.string   "Group_2",                 :limit => 50
+    t.string   "Group_description_2",     :limit => 100
+    t.string   "Group_3",                 :limit => 50
+    t.string   "Group_description_3",     :limit => 100
+    t.datetime "Validity_Start",                         :null => false
+    t.datetime "Validity_End",                           :null => false
+    t.boolean  "Do_Not_Update",                          :null => false
     t.boolean  "Record_Validity"
-    t.datetime "Record_Creation_Date",                    :null => false
-    t.string   "Record_Creator",           :limit => 50,  :null => false
-    t.datetime "Record_Modification_Date"
-    t.string   "Record_Modifier",          :limit => 50
+    t.datetime "created_at",                             :null => false
+    t.string   "Record_Creator",          :limit => 50,  :null => false
+    t.datetime "updated_at"
+    t.string   "Record_Modifier",         :limit => 50
   end
 
   create_table "ReportLines$", :id => false, :force => true do |t|
@@ -3357,6 +3501,11 @@ ActiveRecord::Schema.define(:version => 20090623205835) do
     t.datetime "updated_at"
   end
 
+  create_table "assignments", :id => false, :force => true do |t|
+    t.integer "role_id"
+    t.integer "user_id"
+  end
+
   create_table "b2_ta_mapping", :force => true do |t|
     t.string   "information_mapped",      :limit => 50,  :null => false
     t.string   "group_id",                :limit => 50,  :null => false
@@ -3374,6 +3523,12 @@ ActiveRecord::Schema.define(:version => 20090623205835) do
     t.string   "updated_by",              :limit => 50
     t.string   "created_using",           :limit => 50
     t.string   "updated_using",           :limit => 50
+  end
+
+  create_table "commands", :force => true do |t|
+    t.string   "execute"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "exchange_rates", :force => true do |t|
@@ -3460,7 +3615,7 @@ ActiveRecord::Schema.define(:version => 20090623205835) do
 
   create_table "portals", :force => true do |t|
     t.string   "title"
-    t.text     "description"
+    t.text     "description2"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "logo_file_name"
@@ -3549,11 +3704,6 @@ ActiveRecord::Schema.define(:version => 20090623205835) do
     t.string "name"
   end
 
-  create_table "roles_users", :id => false, :force => true do |t|
-    t.integer "role_id"
-    t.integer "user_id"
-  end
-
   create_table "sessions", :force => true do |t|
     t.string   "session_id", :null => false
     t.text     "data"
@@ -3577,5 +3727,16 @@ ActiveRecord::Schema.define(:version => 20090623205835) do
   end
 
   add_index "users", ["login"], :name => "index_users_on_login", :unique => true
+
+  create_table "validationrules", :force => true do |t|
+    t.string   "rule_identification", :limit => 20,   :null => false
+    t.string   "rule_description",    :limit => 200,  :null => false
+    t.string   "rule_scope",          :limit => 15,   :null => false
+    t.string   "rule_hint",           :limit => 500
+    t.string   "rule_sql_query",      :limit => 1000
+    t.datetime "created_at",                          :null => false
+    t.datetime "updated_at"
+    t.string   "rule_type",           :limit => 20,   :null => false
+  end
 
 end

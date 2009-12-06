@@ -46,6 +46,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :report_lines
   map.resources :reports
   map.resources :report_categories
+  map.resources :report_categories, :collection => { :sort => :post}
   
   map.resources :fdbtabs
   map.resources :fdbclis

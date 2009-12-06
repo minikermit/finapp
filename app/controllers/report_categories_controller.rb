@@ -24,6 +24,13 @@ class ReportCategoriesController < ApplicationController
     @report_categories = ReportCategory.search(params[:q])
   end
   
+  def sort
+  	params[:report_categories].each_with_index do |id, index|
+  		ReportCategory.update_all(['position=?', index+1],['id=?', id])
+  	end
+  	render :nothing => true
+  end
+  
   
   # GET /report_categories/1
   # GET /report_categories/1.xml

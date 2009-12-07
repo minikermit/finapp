@@ -188,8 +188,27 @@
     <td><%=h validation.Key_id %></td>
     <td><%=h validation.ErrorType %></td>
     <td><%= link_to image_tag("icons/add.png") , :controller => 'validations' ,:action => "show", :id => validation.id  %></td>
-    <td><%= link_to image_tag("icons/application_edit.png") , :controller => 'counterparties' ,:action => "show", :id => validation.Original_id %></td>
-<% link_to_if(validation.OutputFile = 'Limit', 'Show3', :controller => 'limits' ,:action => "show", :id => validation.Original_id) %>
+    <td>	
+		   		<% case  validation.OutputFile 
+		   			when "LIMIT" %>
+		     	 		<%= link_to image_tag("icons/application_edit.png") , :controller => 'limits' ,:action => "show", :id => validation.Original_id %>
+		   			<% when "COUNTERPART" %>
+		      			<%= link_to image_tag("icons/application_edit.png") , :controller => 'counterparties' ,:action => "show", :id => validation.Original_id %>
+	   				<% when "PROVISIONS" %>
+		      			<%= link_to image_tag("icons/application_edit.png") , :controller => 'provisions' ,:action => "show", :id => validation.Original_id %>
+	   				<% when "NOSTROS" %>
+		      			<%= link_to image_tag("icons/application_edit.png") , :controller => 'nostros' ,:action => "show", :id => validation.Original_id %>
+		      		<% when "OTC" %>
+		      			<%= link_to image_tag("icons/application_edit.png") , :controller => 'derivatives' ,:action => "show", :id => validation.Original_id %>
+		      		<% when "LOANBOOK" %>
+    					<%= link_to image_tag("icons/application_edit.png") , :controller => 'loanbooks' ,:action => "show", :id => validation.Original_id %>
+	   				<% else %>
+		   				<%=h "-" %>
+		        <% end %>
+		</td>
+		 	
+		
+  
   </tr>
 <% end %>
 	</tbody>

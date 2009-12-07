@@ -53,11 +53,11 @@
   </p>
   <p>
     <%= f.label :ErrorKind %><br />
-    <%= f.text_field :ErrorKind %>
+    <%= collection_select(:validation, :validationrule_id, @validationrules, :id, :ErrorKind, {:prompt => true}) %>
   </p>
   <p>
     <%= f.label :Recommendation %><br />
-    <%= f.text_field :Recommendation %>
+    <%= f.text_area :Recommendation , :size => "50x2" %>
   </p>
   <p>
     <%= f.label :created_at %><br />

@@ -10,6 +10,4 @@ class Validationrule < ActiveRecord::Base
   validates_length_of       :rule_sql_query,    :within => 1..1000 
   validates_presence_of     :rule_identification
 
-
-	
 end

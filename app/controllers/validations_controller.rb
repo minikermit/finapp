@@ -39,7 +39,8 @@ class ValidationsController < ApplicationController
 
   # GET /validations/1/edit
   def edit
-    @validation = Validation.find(params[:id])
+  	@validation = Validation.find(params[:id])
+    @validationrules = Validationrule.find(:all)
   end
 
   # POST /validations

@@ -179,7 +179,7 @@
     <tbody>
 <% @validations.each do |validation| %>
   <tr>
-    <td><%=h validation.ErrorKind %></td>
+    <td><%=h validation.validationrule.ErrorKind %></td>
     <td><%=h validation.OutputFile %></td>
     <td><%=h validation.OutputField %></td>
     <td><%=h validation.Source %></td>

@@ -80,24 +80,24 @@
       <h3 class="section-bar">Methods</h3>
 
       <div class="name-list">
-      <a href="#M000289">access_denied</a>&nbsp;&nbsp;
-      <a href="#M000287">authorized?</a>&nbsp;&nbsp;
-      <a href="#M000285">current_user</a>&nbsp;&nbsp;
-      <a href="#M000286">current_user=</a>&nbsp;&nbsp;
-      <a href="#M000299">handle_remember_cookie!</a>&nbsp;&nbsp;
-      <a href="#M000292">included</a>&nbsp;&nbsp;
-      <a href="#M000300">kill_remember_cookie!</a>&nbsp;&nbsp;
-      <a href="#M000284">logged_in?</a>&nbsp;&nbsp;
-      <a href="#M000294">login_from_basic_auth</a>&nbsp;&nbsp;
-      <a href="#M000295">login_from_cookie</a>&nbsp;&nbsp;
-      <a href="#M000293">login_from_session</a>&nbsp;&nbsp;
-      <a href="#M000288">login_required</a>&nbsp;&nbsp;
-      <a href="#M000296">logout_keeping_session!</a>&nbsp;&nbsp;
-      <a href="#M000297">logout_killing_session!</a>&nbsp;&nbsp;
-      <a href="#M000291">redirect_back_or_default</a>&nbsp;&nbsp;
-      <a href="#M000301">send_remember_cookie!</a>&nbsp;&nbsp;
-      <a href="#M000290">store_location</a>&nbsp;&nbsp;
-      <a href="#M000298">valid_remember_cookie?</a>&nbsp;&nbsp;
+      <a href="#M000298">access_denied</a>&nbsp;&nbsp;
+      <a href="#M000296">authorized?</a>&nbsp;&nbsp;
+      <a href="#M000294">current_user</a>&nbsp;&nbsp;
+      <a href="#M000295">current_user=</a>&nbsp;&nbsp;
+      <a href="#M000308">handle_remember_cookie!</a>&nbsp;&nbsp;
+      <a href="#M000301">included</a>&nbsp;&nbsp;
+      <a href="#M000309">kill_remember_cookie!</a>&nbsp;&nbsp;
+      <a href="#M000293">logged_in?</a>&nbsp;&nbsp;
+      <a href="#M000303">login_from_basic_auth</a>&nbsp;&nbsp;
+      <a href="#M000304">login_from_cookie</a>&nbsp;&nbsp;
+      <a href="#M000302">login_from_session</a>&nbsp;&nbsp;
+      <a href="#M000297">login_required</a>&nbsp;&nbsp;
+      <a href="#M000305">logout_keeping_session!</a>&nbsp;&nbsp;
+      <a href="#M000306">logout_killing_session!</a>&nbsp;&nbsp;
+      <a href="#M000300">redirect_back_or_default</a>&nbsp;&nbsp;
+      <a href="#M000310">send_remember_cookie!</a>&nbsp;&nbsp;
+      <a href="#M000299">store_location</a>&nbsp;&nbsp;
+      <a href="#M000307">valid_remember_cookie?</a>&nbsp;&nbsp;
       </div>
     </div>
 
@@ -119,11 +119,11 @@
     <div id="methods">
       <h3 class="section-bar">Protected Class methods</h3>
 
-      <div id="method-M000292" class="method-detail">
-        <a name="M000292"></a>
+      <div id="method-M000301" class="method-detail">
+        <a name="M000301"></a>
 
         <div class="method-heading">
-          <a href="#M000292" class="method-signature">
+          <a href="#M000301" class="method-signature">
           <span class="method-name">included</span><span class="method-args">(base)</span>
           </a>
         </div>
@@ -131,12 +131,12 @@
         <div class="method-description">
           <p>
 Inclusion hook to make <a
-href="AuthenticatedSystem.html#M000285">current_user</a> and logged_in?
+href="AuthenticatedSystem.html#M000294">current_user</a> and logged_in?
 available as ActionView helper methods.
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000292-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000292-source">
+            onclick="toggleCode('M000301-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000301-source">
 <pre>
      <span class="ruby-comment cmt"># File lib/authenticated_system.rb, line 98</span>
  98:     <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">included</span>(<span class="ruby-identifier">base</span>)
@@ -149,11 +149,11 @@ available as ActionView helper methods.
 
       <h3 class="section-bar">Protected Instance methods</h3>
 
-      <div id="method-M000289" class="method-detail">
-        <a name="M000289"></a>
+      <div id="method-M000298" class="method-detail">
+        <a name="M000298"></a>
 
         <div class="method-heading">
-          <a href="#M000289" class="method-signature">
+          <a href="#M000298" class="method-signature">
           <span class="method-name">access_denied</span><span class="method-args">()</span>
           </a>
         </div>
@@ -171,8 +171,8 @@ behavior in case the user is not authorized to access the requested action.
 For example, a popup window might simply close itself.
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000289-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000289-source">
+            onclick="toggleCode('M000298-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000298-source">
 <pre>
     <span class="ruby-comment cmt"># File lib/authenticated_system.rb, line 64</span>
 64:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">access_denied</span>
@@ -195,11 +195,11 @@ For example, a popup window might simply close itself.
         </div>
       </div>
 
-      <div id="method-M000287" class="method-detail">
-        <a name="M000287"></a>
+      <div id="method-M000296" class="method-detail">
+        <a name="M000296"></a>
 
         <div class="method-heading">
-          <a href="#M000287" class="method-signature">
+          <a href="#M000296" class="method-signature">
           <span class="method-name">authorized?</span><span class="method-args">(action = action_name, resource = nil)</span>
           </a>
         </div>
@@ -223,8 +223,8 @@ Example:
  end
 </pre>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000287-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000287-source">
+            onclick="toggleCode('M000296-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000296-source">
 <pre>
     <span class="ruby-comment cmt"># File lib/authenticated_system.rb, line 34</span>
 34:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">authorized?</span>(<span class="ruby-identifier">action</span> = <span class="ruby-identifier">action_name</span>, <span class="ruby-identifier">resource</span> = <span class="ruby-keyword kw">nil</span>)
@@ -235,11 +235,11 @@ Example:
         </div>
       </div>
 
-      <div id="method-M000285" class="method-detail">
-        <a name="M000285"></a>
+      <div id="method-M000294" class="method-detail">
+        <a name="M000294"></a>
 
         <div class="method-heading">
-          <a href="#M000285" class="method-signature">
+          <a href="#M000294" class="method-signature">
           <span class="method-name">current_user</span><span class="method-args">()</span>
           </a>
         </div>
@@ -250,8 +250,8 @@ Accesses the current user from the session. Future calls avoid the database
 because nil is not equal to false.
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000285-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000285-source">
+            onclick="toggleCode('M000294-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000294-source">
 <pre>
     <span class="ruby-comment cmt"># File lib/authenticated_system.rb, line 11</span>
 11:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">current_user</span>
@@ -262,11 +262,11 @@ because nil is not equal to false.
         </div>
       </div>
 
-      <div id="method-M000286" class="method-detail">
-        <a name="M000286"></a>
+      <div id="method-M000295" class="method-detail">
+        <a name="M000295"></a>
 
         <div class="method-heading">
-          <a href="#M000286" class="method-signature">
+          <a href="#M000295" class="method-signature">
           <span class="method-name">current_user=</span><span class="method-args">(new_user)</span>
           </a>
         </div>
@@ -276,8 +276,8 @@ because nil is not equal to false.
 Store the given user id in the session.
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000286-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000286-source">
+            onclick="toggleCode('M000295-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000295-source">
 <pre>
     <span class="ruby-comment cmt"># File lib/authenticated_system.rb, line 16</span>
 16:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">current_user=</span>(<span class="ruby-identifier">new_user</span>)
@@ -289,11 +289,11 @@ Store the given user id in the session.
         </div>
       </div>
 
-      <div id="method-M000299" class="method-detail">
-        <a name="M000299"></a>
+      <div id="method-M000308" class="method-detail">
+        <a name="M000308"></a>
 
         <div class="method-heading">
-          <a href="#M000299" class="method-signature">
+          <a href="#M000308" class="method-signature">
           <span class="method-name">handle_remember_cookie!</span><span class="method-args">(new_cookie_flag)</span>
           </a>
         </div>
@@ -303,8 +303,8 @@ Store the given user id in the session.
 Refresh the cookie auth token if it exists, create it otherwise
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000299-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000299-source">
+            onclick="toggleCode('M000308-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000308-source">
 <pre>
      <span class="ruby-comment cmt"># File lib/authenticated_system.rb, line 169</span>
 169:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">handle_remember_cookie!</span>(<span class="ruby-identifier">new_cookie_flag</span>)
@@ -321,19 +321,19 @@ Refresh the cookie auth token if it exists, create it otherwise
         </div>
       </div>
 
-      <div id="method-M000300" class="method-detail">
-        <a name="M000300"></a>
+      <div id="method-M000309" class="method-detail">
+        <a name="M000309"></a>
 
         <div class="method-heading">
-          <a href="#M000300" class="method-signature">
+          <a href="#M000309" class="method-signature">
           <span class="method-name">kill_remember_cookie!</span><span class="method-args">()</span>
           </a>
         </div>
       
         <div class="method-description">
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000300-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000300-source">
+            onclick="toggleCode('M000309-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000309-source">
 <pre>
      <span class="ruby-comment cmt"># File lib/authenticated_system.rb, line 179</span>
 179:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">kill_remember_cookie!</span>
@@ -344,11 +344,11 @@ Refresh the cookie auth token if it exists, create it otherwise
         </div>
       </div>
 
-      <div id="method-M000284" class="method-detail">
-        <a name="M000284"></a>
+      <div id="method-M000293" class="method-detail">
+        <a name="M000293"></a>
 
         <div class="method-heading">
-          <a href="#M000284" class="method-signature">
+          <a href="#M000293" class="method-signature">
           <span class="method-name">logged_in?</span><span class="method-args">()</span>
           </a>
         </div>
@@ -356,12 +356,12 @@ Refresh the cookie auth token if it exists, create it otherwise
         <div class="method-description">
           <p>
 Returns true or false if the user is logged in. Preloads @<a
-href="AuthenticatedSystem.html#M000285">current_user</a> with the user
+href="AuthenticatedSystem.html#M000294">current_user</a> with the user
 model if they&#8216;re logged in.
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000284-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000284-source">
+            onclick="toggleCode('M000293-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000293-source">
 <pre>
    <span class="ruby-comment cmt"># File lib/authenticated_system.rb, line 5</span>
 5:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">logged_in?</span>
@@ -372,23 +372,23 @@ model if they&#8216;re logged in.
         </div>
       </div>
 
-      <div id="method-M000294" class="method-detail">
-        <a name="M000294"></a>
+      <div id="method-M000303" class="method-detail">
+        <a name="M000303"></a>
 
         <div class="method-heading">
-          <a href="#M000294" class="method-signature">
+          <a href="#M000303" class="method-signature">
           <span class="method-name">login_from_basic_auth</span><span class="method-args">()</span>
           </a>
         </div>
       
         <div class="method-description">
           <p>
-Called from <a href="AuthenticatedSystem.html#M000285">current_user</a>.
+Called from <a href="AuthenticatedSystem.html#M000294">current_user</a>.
 Now, attempt to login by basic authentication information.
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000294-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000294-source">
+            onclick="toggleCode('M000303-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000303-source">
 <pre>
      <span class="ruby-comment cmt"># File lib/authenticated_system.rb, line 112</span>
 112:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">login_from_basic_auth</span>
@@ -401,25 +401,25 @@ Now, attempt to login by basic authentication information.
         </div>
       </div>
 
-      <div id="method-M000295" class="method-detail">
-        <a name="M000295"></a>
+      <div id="method-M000304" class="method-detail">
+        <a name="M000304"></a>
 
         <div class="method-heading">
-          <a href="#M000295" class="method-signature">
+          <a href="#M000304" class="method-signature">
           <span class="method-name">login_from_cookie</span><span class="method-args">()</span>
           </a>
         </div>
       
         <div class="method-description">
           <p>
-Called from <a href="AuthenticatedSystem.html#M000285">current_user</a>.
+Called from <a href="AuthenticatedSystem.html#M000294">current_user</a>.
 Finaly, attempt to login by an expiring token in the cookie. for the
 paranoid: we <em>should</em> be storing user_token = hash(cookie_token,
 request IP)
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000295-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000295-source">
+            onclick="toggleCode('M000304-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000304-source">
 <pre>
      <span class="ruby-comment cmt"># File lib/authenticated_system.rb, line 124</span>
 124:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">login_from_cookie</span>
@@ -435,23 +435,23 @@ request IP)
         </div>
       </div>
 
-      <div id="method-M000293" class="method-detail">
-        <a name="M000293"></a>
+      <div id="method-M000302" class="method-detail">
+        <a name="M000302"></a>
 
         <div class="method-heading">
-          <a href="#M000293" class="method-signature">
+          <a href="#M000302" class="method-signature">
           <span class="method-name">login_from_session</span><span class="method-args">()</span>
           </a>
         </div>
       
         <div class="method-description">
           <p>
-Called from <a href="AuthenticatedSystem.html#M000285">current_user</a>.
+Called from <a href="AuthenticatedSystem.html#M000294">current_user</a>.
 First attempt to login by the user id stored in the session.
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000293-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000293-source">
+            onclick="toggleCode('M000302-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000302-source">
 <pre>
      <span class="ruby-comment cmt"># File lib/authenticated_system.rb, line 107</span>
 107:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">login_from_session</span>
@@ -462,11 +462,11 @@ First attempt to login by the user id stored in the session.
         </div>
       </div>
 
-      <div id="method-M000288" class="method-detail">
-        <a name="M000288"></a>
+      <div id="method-M000297" class="method-detail">
+        <a name="M000297"></a>
 
         <div class="method-heading">
-          <a href="#M000288" class="method-signature">
+          <a href="#M000297" class="method-signature">
           <span class="method-name">login_required</span><span class="method-args">()</span>
           </a>
         </div>
@@ -494,8 +494,8 @@ To skip this in a subclassed controller:
   skip_before_filter :login_required
 </pre>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000288-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000288-source">
+            onclick="toggleCode('M000297-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000297-source">
 <pre>
     <span class="ruby-comment cmt"># File lib/authenticated_system.rb, line 52</span>
 52:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">login_required</span>
@@ -506,11 +506,11 @@ To skip this in a subclassed controller:
         </div>
       </div>
 
-      <div id="method-M000296" class="method-detail">
-        <a name="M000296"></a>
+      <div id="method-M000305" class="method-detail">
+        <a name="M000305"></a>
 
         <div class="method-heading">
-          <a href="#M000296" class="method-signature">
+          <a href="#M000305" class="method-signature">
           <span class="method-name">logout_keeping_session!</span><span class="method-args">()</span>
           </a>
         </div>
@@ -522,8 +522,8 @@ havoc with forgery protection, and is only strictly necessary on login.
 However, **all session state variables should be unset here**.
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000296-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000296-source">
+            onclick="toggleCode('M000305-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000305-source">
 <pre>
      <span class="ruby-comment cmt"># File lib/authenticated_system.rb, line 136</span>
 136:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">logout_keeping_session!</span>
@@ -539,11 +539,11 @@ However, **all session state variables should be unset here**.
         </div>
       </div>
 
-      <div id="method-M000297" class="method-detail">
-        <a name="M000297"></a>
+      <div id="method-M000306" class="method-detail">
+        <a name="M000306"></a>
 
         <div class="method-heading">
-          <a href="#M000297" class="method-signature">
+          <a href="#M000306" class="method-signature">
           <span class="method-name">logout_killing_session!</span><span class="method-args">()</span>
           </a>
         </div>
@@ -555,8 +555,8 @@ otherwise the request forgery protection fails. It&#8216;s only really
 necessary when you cross quarantine (logged-out to logged-in).
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000297-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000297-source">
+            onclick="toggleCode('M000306-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000306-source">
 <pre>
      <span class="ruby-comment cmt"># File lib/authenticated_system.rb, line 148</span>
 148:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">logout_killing_session!</span>
@@ -568,11 +568,11 @@ necessary when you cross quarantine (logged-out to logged-in).
         </div>
       </div>
 
-      <div id="method-M000291" class="method-detail">
-        <a name="M000291"></a>
+      <div id="method-M000300" class="method-detail">
+        <a name="M000300"></a>
 
         <div class="method-heading">
-          <a href="#M000291" class="method-signature">
+          <a href="#M000300" class="method-signature">
           <span class="method-name">redirect_back_or_default</span><span class="method-args">(default)</span>
           </a>
         </div>
@@ -580,7 +580,7 @@ necessary when you cross quarantine (logged-out to logged-in).
         <div class="method-description">
           <p>
 Redirect to the URI stored by the most recent <a
-href="AuthenticatedSystem.html#M000290">store_location</a> call or to the
+href="AuthenticatedSystem.html#M000299">store_location</a> call or to the
 passed default. Set an appropriately modified
 </p>
 <pre>
@@ -590,8 +590,8 @@ passed default. Set an appropriately modified
 for any controller you want to be bounce-backable.
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000291-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000291-source">
+            onclick="toggleCode('M000300-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000300-source">
 <pre>
     <span class="ruby-comment cmt"># File lib/authenticated_system.rb, line 91</span>
 91:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">redirect_back_or_default</span>(<span class="ruby-identifier">default</span>)
@@ -603,19 +603,19 @@ for any controller you want to be bounce-backable.
         </div>
       </div>
 
-      <div id="method-M000301" class="method-detail">
-        <a name="M000301"></a>
+      <div id="method-M000310" class="method-detail">
+        <a name="M000310"></a>
 
         <div class="method-heading">
-          <a href="#M000301" class="method-signature">
+          <a href="#M000310" class="method-signature">
           <span class="method-name">send_remember_cookie!</span><span class="method-args">()</span>
           </a>
         </div>
       
         <div class="method-description">
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000301-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000301-source">
+            onclick="toggleCode('M000310-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000310-source">
 <pre>
      <span class="ruby-comment cmt"># File lib/authenticated_system.rb, line 183</span>
 183:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">send_remember_cookie!</span>
@@ -628,11 +628,11 @@ for any controller you want to be bounce-backable.
         </div>
       </div>
 
-      <div id="method-M000290" class="method-detail">
-        <a name="M000290"></a>
+      <div id="method-M000299" class="method-detail">
+        <a name="M000299"></a>
 
         <div class="method-heading">
-          <a href="#M000290" class="method-signature">
+          <a href="#M000299" class="method-signature">
           <span class="method-name">store_location</span><span class="method-args">()</span>
           </a>
         </div>
@@ -643,11 +643,11 @@ Store the URI of the current request in the session.
 </p>
 <p>
 We can return to this location by calling <a
-href="AuthenticatedSystem.html#M000291">redirect_back_or_default</a>.
+href="AuthenticatedSystem.html#M000300">redirect_back_or_default</a>.
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000290-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000290-source">
+            onclick="toggleCode('M000299-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000299-source">
 <pre>
     <span class="ruby-comment cmt"># File lib/authenticated_system.rb, line 83</span>
 83:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">store_location</span>
@@ -658,11 +658,11 @@ href="AuthenticatedSystem.html#M000291">redirect_back_or_default</a>.
         </div>
       </div>
 
-      <div id="method-M000298" class="method-detail">
-        <a name="M000298"></a>
+      <div id="method-M000307" class="method-detail">
+        <a name="M000307"></a>
 
         <div class="method-heading">
-          <a href="#M000298" class="method-signature">
+          <a href="#M000307" class="method-signature">
           <span class="method-name">valid_remember_cookie?</span><span class="method-args">()</span>
           </a>
         </div>
@@ -673,8 +673,8 @@ Cookies shouldn&#8216;t be allowed to persist past their freshness date,
 and they should be changed at each login
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000298-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000298-source">
+            onclick="toggleCode('M000307-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000307-source">
 <pre>
      <span class="ruby-comment cmt"># File lib/authenticated_system.rb, line 162</span>
 162:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">valid_remember_cookie?</span>

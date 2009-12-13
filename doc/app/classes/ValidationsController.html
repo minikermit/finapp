@@ -88,13 +88,13 @@
       <h3 class="section-bar">Methods</h3>
 
       <div class="name-list">
-      <a href="#M000178">create</a>&nbsp;&nbsp;
-      <a href="#M000180">destroy</a>&nbsp;&nbsp;
-      <a href="#M000177">edit</a>&nbsp;&nbsp;
-      <a href="#M000174">index</a>&nbsp;&nbsp;
-      <a href="#M000176">new</a>&nbsp;&nbsp;
-      <a href="#M000175">show</a>&nbsp;&nbsp;
-      <a href="#M000179">update</a>&nbsp;&nbsp;
+      <a href="#M000186">create</a>&nbsp;&nbsp;
+      <a href="#M000188">destroy</a>&nbsp;&nbsp;
+      <a href="#M000185">edit</a>&nbsp;&nbsp;
+      <a href="#M000182">index</a>&nbsp;&nbsp;
+      <a href="#M000184">new</a>&nbsp;&nbsp;
+      <a href="#M000183">show</a>&nbsp;&nbsp;
+      <a href="#M000187">update</a>&nbsp;&nbsp;
       </div>
     </div>
 
@@ -116,11 +116,11 @@
     <div id="methods">
       <h3 class="section-bar">Public Instance methods</h3>
 
-      <div id="method-M000178" class="method-detail">
-        <a name="M000178"></a>
+      <div id="method-M000186" class="method-detail">
+        <a name="M000186"></a>
 
         <div class="method-heading">
-          <a href="#M000178" class="method-signature">
+          <a href="#M000186" class="method-signature">
           <span class="method-name">create</span><span class="method-args">()</span>
           </a>
         </div>
@@ -130,34 +130,34 @@
 POST /validations POST /validations.xml
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000178-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000178-source">
+            onclick="toggleCode('M000186-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000186-source">
 <pre>
-    <span class="ruby-comment cmt"># File app/controllers/validations_controller.rb, line 47</span>
-47:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">create</span>
-48:     <span class="ruby-ivar">@validation</span> = <span class="ruby-constant">Validation</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:validation</span>])
-49: 
-50:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
-51:       <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@validation</span>.<span class="ruby-identifier">save</span>
-52:         <span class="ruby-identifier">flash</span>[<span class="ruby-identifier">:notice</span>] = <span class="ruby-value str">'Validation was successfully created.'</span>
-53:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span>(<span class="ruby-ivar">@validation</span>) }
-54:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@validation</span>, <span class="ruby-identifier">:status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">:created</span>, <span class="ruby-identifier">:location</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@validation</span> }
-55:       <span class="ruby-keyword kw">else</span>
-56:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;new&quot;</span> }
-57:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@validation</span>.<span class="ruby-identifier">errors</span>, <span class="ruby-identifier">:status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">:unprocessable_entity</span> }
-58:       <span class="ruby-keyword kw">end</span>
-59:     <span class="ruby-keyword kw">end</span>
-60:   <span class="ruby-keyword kw">end</span>
+    <span class="ruby-comment cmt"># File app/controllers/validations_controller.rb, line 48</span>
+48:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">create</span>
+49:     <span class="ruby-ivar">@validation</span> = <span class="ruby-constant">Validation</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:validation</span>])
+50: 
+51:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+52:       <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@validation</span>.<span class="ruby-identifier">save</span>
+53:         <span class="ruby-identifier">flash</span>[<span class="ruby-identifier">:notice</span>] = <span class="ruby-value str">'Validation was successfully created.'</span>
+54:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span>(<span class="ruby-ivar">@validation</span>) }
+55:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@validation</span>, <span class="ruby-identifier">:status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">:created</span>, <span class="ruby-identifier">:location</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@validation</span> }
+56:       <span class="ruby-keyword kw">else</span>
+57:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;new&quot;</span> }
+58:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@validation</span>.<span class="ruby-identifier">errors</span>, <span class="ruby-identifier">:status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">:unprocessable_entity</span> }
+59:       <span class="ruby-keyword kw">end</span>
+60:     <span class="ruby-keyword kw">end</span>
+61:   <span class="ruby-keyword kw">end</span>
 </pre>
           </div>
         </div>
       </div>
 
-      <div id="method-M000180" class="method-detail">
-        <a name="M000180"></a>
+      <div id="method-M000188" class="method-detail">
+        <a name="M000188"></a>
 
         <div class="method-heading">
-          <a href="#M000180" class="method-signature">
+          <a href="#M000188" class="method-signature">
           <span class="method-name">destroy</span><span class="method-args">()</span>
           </a>
         </div>
@@ -167,29 +167,29 @@ POST /validations POST /validations.xml
 DELETE /validations/1 DELETE /validations/1.xml
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000180-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000180-source">
+            onclick="toggleCode('M000188-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000188-source">
 <pre>
-    <span class="ruby-comment cmt"># File app/controllers/validations_controller.rb, line 81</span>
-81:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">destroy</span>
-82:     <span class="ruby-ivar">@validation</span> = <span class="ruby-constant">Validation</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:id</span>])
-83:     <span class="ruby-ivar">@validation</span>.<span class="ruby-identifier">destroy</span>
-84: 
-85:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
-86:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span>(<span class="ruby-identifier">validations_url</span>) }
-87:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">head</span> <span class="ruby-identifier">:ok</span> }
-88:     <span class="ruby-keyword kw">end</span>
-89:   <span class="ruby-keyword kw">end</span>
+    <span class="ruby-comment cmt"># File app/controllers/validations_controller.rb, line 82</span>
+82:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">destroy</span>
+83:     <span class="ruby-ivar">@validation</span> = <span class="ruby-constant">Validation</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:id</span>])
+84:     <span class="ruby-ivar">@validation</span>.<span class="ruby-identifier">destroy</span>
+85: 
+86:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+87:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span>(<span class="ruby-identifier">validations_url</span>) }
+88:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">head</span> <span class="ruby-identifier">:ok</span> }
+89:     <span class="ruby-keyword kw">end</span>
+90:   <span class="ruby-keyword kw">end</span>
 </pre>
           </div>
         </div>
       </div>
 
-      <div id="method-M000177" class="method-detail">
-        <a name="M000177"></a>
+      <div id="method-M000185" class="method-detail">
+        <a name="M000185"></a>
 
         <div class="method-heading">
-          <a href="#M000177" class="method-signature">
+          <a href="#M000185" class="method-signature">
           <span class="method-name">edit</span><span class="method-args">()</span>
           </a>
         </div>
@@ -199,31 +199,32 @@ DELETE /validations/1 DELETE /validations/1.xml
 GET /validations/1/edit
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000177-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000177-source">
+            onclick="toggleCode('M000185-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000185-source">
 <pre>
     <span class="ruby-comment cmt"># File app/controllers/validations_controller.rb, line 41</span>
 41:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">edit</span>
-42:     <span class="ruby-ivar">@validation</span> = <span class="ruby-constant">Validation</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:id</span>])
-43:   <span class="ruby-keyword kw">end</span>
+42:         <span class="ruby-ivar">@validation</span> = <span class="ruby-constant">Validation</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:id</span>])
+43:     <span class="ruby-ivar">@validationrules</span> = <span class="ruby-constant">Validationrule</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">:all</span>)
+44:   <span class="ruby-keyword kw">end</span>
 </pre>
           </div>
         </div>
       </div>
 
-      <div id="method-M000174" class="method-detail">
-        <a name="M000174"></a>
+      <div id="method-M000182" class="method-detail">
+        <a name="M000182"></a>
 
         <div class="method-heading">
-          <a href="#M000174" class="method-signature">
+          <a href="#M000182" class="method-signature">
           <span class="method-name">index</span><span class="method-args">()</span>
           </a>
         </div>
       
         <div class="method-description">
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000174-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000174-source">
+            onclick="toggleCode('M000182-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000182-source">
 <pre>
     <span class="ruby-comment cmt"># File app/controllers/validations_controller.rb, line 7</span>
  7:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">index</span>
@@ -241,11 +242,11 @@ GET /validations/1/edit
         </div>
       </div>
 
-      <div id="method-M000176" class="method-detail">
-        <a name="M000176"></a>
+      <div id="method-M000184" class="method-detail">
+        <a name="M000184"></a>
 
         <div class="method-heading">
-          <a href="#M000176" class="method-signature">
+          <a href="#M000184" class="method-signature">
           <span class="method-name">new</span><span class="method-args">()</span>
           </a>
         </div>
@@ -255,8 +256,8 @@ GET /validations/1/edit
 GET /validations/new GET /validations/new.xml
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000176-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000176-source">
+            onclick="toggleCode('M000184-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000184-source">
 <pre>
     <span class="ruby-comment cmt"># File app/controllers/validations_controller.rb, line 31</span>
 31:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">new</span>
@@ -272,11 +273,11 @@ GET /validations/new GET /validations/new.xml
         </div>
       </div>
 
-      <div id="method-M000175" class="method-detail">
-        <a name="M000175"></a>
+      <div id="method-M000183" class="method-detail">
+        <a name="M000183"></a>
 
         <div class="method-heading">
-          <a href="#M000175" class="method-signature">
+          <a href="#M000183" class="method-signature">
           <span class="method-name">show</span><span class="method-args">()</span>
           </a>
         </div>
@@ -286,8 +287,8 @@ GET /validations/new GET /validations/new.xml
 GET /validations/1 GET /validations/1.xml
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000175-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000175-source">
+            onclick="toggleCode('M000183-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000183-source">
 <pre>
     <span class="ruby-comment cmt"># File app/controllers/validations_controller.rb, line 20</span>
 20:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">show</span>
@@ -303,11 +304,11 @@ GET /validations/1 GET /validations/1.xml
         </div>
       </div>
 
-      <div id="method-M000179" class="method-detail">
-        <a name="M000179"></a>
+      <div id="method-M000187" class="method-detail">
+        <a name="M000187"></a>
 
         <div class="method-heading">
-          <a href="#M000179" class="method-signature">
+          <a href="#M000187" class="method-signature">
           <span class="method-name">update</span><span class="method-args">()</span>
           </a>
         </div>
@@ -317,24 +318,24 @@ GET /validations/1 GET /validations/1.xml
 PUT /validations/1 PUT /validations/1.xml
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000179-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000179-source">
+            onclick="toggleCode('M000187-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000187-source">
 <pre>
-    <span class="ruby-comment cmt"># File app/controllers/validations_controller.rb, line 64</span>
-64:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">update</span>
-65:     <span class="ruby-ivar">@validation</span> = <span class="ruby-constant">Validation</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:id</span>])
-66: 
-67:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
-68:       <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@validation</span>.<span class="ruby-identifier">update_attributes</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:validation</span>])
-69:         <span class="ruby-identifier">flash</span>[<span class="ruby-identifier">:notice</span>] = <span class="ruby-value str">'Validation was successfully updated.'</span>
-70:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span>(<span class="ruby-ivar">@validation</span>) }
-71:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">head</span> <span class="ruby-identifier">:ok</span> }
-72:       <span class="ruby-keyword kw">else</span>
-73:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;edit&quot;</span> }
-74:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@validation</span>.<span class="ruby-identifier">errors</span>, <span class="ruby-identifier">:status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">:unprocessable_entity</span> }
-75:       <span class="ruby-keyword kw">end</span>
-76:     <span class="ruby-keyword kw">end</span>
-77:   <span class="ruby-keyword kw">end</span>
+    <span class="ruby-comment cmt"># File app/controllers/validations_controller.rb, line 65</span>
+65:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">update</span>
+66:     <span class="ruby-ivar">@validation</span> = <span class="ruby-constant">Validation</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:id</span>])
+67: 
+68:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+69:       <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@validation</span>.<span class="ruby-identifier">update_attributes</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:validation</span>])
+70:         <span class="ruby-identifier">flash</span>[<span class="ruby-identifier">:notice</span>] = <span class="ruby-value str">'Validation was successfully updated.'</span>
+71:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span>(<span class="ruby-ivar">@validation</span>) }
+72:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">head</span> <span class="ruby-identifier">:ok</span> }
+73:       <span class="ruby-keyword kw">else</span>
+74:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;edit&quot;</span> }
+75:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@validation</span>.<span class="ruby-identifier">errors</span>, <span class="ruby-identifier">:status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">:unprocessable_entity</span> }
+76:       <span class="ruby-keyword kw">end</span>
+77:     <span class="ruby-keyword kw">end</span>
+78:   <span class="ruby-keyword kw">end</span>
 </pre>
           </div>
         </div>

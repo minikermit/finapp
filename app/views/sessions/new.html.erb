@@ -1,10 +1,10 @@
-<h4>Log In</h4>
+<span class="myapptitle">Log In</span>
 
 <% form_tag session_path do -%>
-<p><%= label_tag 'login' %><br />
-<%= text_field_tag 'login', @login %></p>
+<p class="notice span-5 prepend-1" align="left"><%= label_tag 'login' %>
+<%= text_field_tag 'login', @login %><br>
 
-<p><%= label_tag 'password' %><br/>
+<%= label_tag 'password' %>
 <%= password_field_tag 'password', nil %></p>
 
 <!-- Uncomment this if you want this functionality

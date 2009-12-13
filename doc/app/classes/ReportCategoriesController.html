@@ -88,15 +88,16 @@
       <h3 class="section-bar">Methods</h3>
 
       <div class="name-list">
-      <a href="#M000063">create</a>&nbsp;&nbsp;
-      <a href="#M000065">destroy</a>&nbsp;&nbsp;
-      <a href="#M000062">edit</a>&nbsp;&nbsp;
-      <a href="#M000057">index</a>&nbsp;&nbsp;
-      <a href="#M000061">new</a>&nbsp;&nbsp;
-      <a href="#M000058">search</a>&nbsp;&nbsp;
-      <a href="#M000059">show</a>&nbsp;&nbsp;
-      <a href="#M000060">show2</a>&nbsp;&nbsp;
-      <a href="#M000064">update</a>&nbsp;&nbsp;
+      <a href="#M000071">create</a>&nbsp;&nbsp;
+      <a href="#M000073">destroy</a>&nbsp;&nbsp;
+      <a href="#M000070">edit</a>&nbsp;&nbsp;
+      <a href="#M000064">index</a>&nbsp;&nbsp;
+      <a href="#M000069">new</a>&nbsp;&nbsp;
+      <a href="#M000065">search</a>&nbsp;&nbsp;
+      <a href="#M000067">show</a>&nbsp;&nbsp;
+      <a href="#M000068">show2</a>&nbsp;&nbsp;
+      <a href="#M000066">sort</a>&nbsp;&nbsp;
+      <a href="#M000072">update</a>&nbsp;&nbsp;
       </div>
     </div>
 
@@ -118,11 +119,11 @@
     <div id="methods">
       <h3 class="section-bar">Public Instance methods</h3>
 
-      <div id="method-M000063" class="method-detail">
-        <a name="M000063"></a>
+      <div id="method-M000071" class="method-detail">
+        <a name="M000071"></a>
 
         <div class="method-heading">
-          <a href="#M000063" class="method-signature">
+          <a href="#M000071" class="method-signature">
           <span class="method-name">create</span><span class="method-args">()</span>
           </a>
         </div>
@@ -132,34 +133,34 @@
 POST /report_categories POST /report_categories.xml
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000063-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000063-source">
+            onclick="toggleCode('M000071-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000071-source">
 <pre>
-    <span class="ruby-comment cmt"># File app/controllers/report_categories_controller.rb, line 70</span>
-70:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">create</span>
-71:     <span class="ruby-ivar">@report_category</span> = <span class="ruby-constant">ReportCategory</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:report_category</span>])
-72: 
-73:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
-74:       <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@report_category</span>.<span class="ruby-identifier">save</span>
-75:         <span class="ruby-identifier">flash</span>[<span class="ruby-identifier">:notice</span>] = <span class="ruby-value str">'ReportCategory was successfully created.'</span>
-76:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span>(<span class="ruby-ivar">@report_category</span>) }
-77:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@report_category</span>, <span class="ruby-identifier">:status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">:created</span>, <span class="ruby-identifier">:location</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@report_category</span> }
-78:       <span class="ruby-keyword kw">else</span>
-79:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;new&quot;</span> }
-80:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@report_category</span>.<span class="ruby-identifier">errors</span>, <span class="ruby-identifier">:status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">:unprocessable_entity</span> }
-81:       <span class="ruby-keyword kw">end</span>
-82:     <span class="ruby-keyword kw">end</span>
-83:   <span class="ruby-keyword kw">end</span>
+    <span class="ruby-comment cmt"># File app/controllers/report_categories_controller.rb, line 77</span>
+77:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">create</span>
+78:     <span class="ruby-ivar">@report_category</span> = <span class="ruby-constant">ReportCategory</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:report_category</span>])
+79: 
+80:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+81:       <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@report_category</span>.<span class="ruby-identifier">save</span>
+82:         <span class="ruby-identifier">flash</span>[<span class="ruby-identifier">:notice</span>] = <span class="ruby-value str">'ReportCategory was successfully created.'</span>
+83:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span>(<span class="ruby-ivar">@report_category</span>) }
+84:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@report_category</span>, <span class="ruby-identifier">:status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">:created</span>, <span class="ruby-identifier">:location</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@report_category</span> }
+85:       <span class="ruby-keyword kw">else</span>
+86:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;new&quot;</span> }
+87:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@report_category</span>.<span class="ruby-identifier">errors</span>, <span class="ruby-identifier">:status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">:unprocessable_entity</span> }
+88:       <span class="ruby-keyword kw">end</span>
+89:     <span class="ruby-keyword kw">end</span>
+90:   <span class="ruby-keyword kw">end</span>
 </pre>
           </div>
         </div>
       </div>
 
-      <div id="method-M000065" class="method-detail">
-        <a name="M000065"></a>
+      <div id="method-M000073" class="method-detail">
+        <a name="M000073"></a>
 
         <div class="method-heading">
-          <a href="#M000065" class="method-signature">
+          <a href="#M000073" class="method-signature">
           <span class="method-name">destroy</span><span class="method-args">()</span>
           </a>
         </div>
@@ -169,29 +170,29 @@ POST /report_categories POST /report_categories.xml
 DELETE /report_categories/1 DELETE /report_categories/1.xml
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000065-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000065-source">
+            onclick="toggleCode('M000073-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000073-source">
 <pre>
-     <span class="ruby-comment cmt"># File app/controllers/report_categories_controller.rb, line 104</span>
-104:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">destroy</span>
-105:     <span class="ruby-ivar">@report_category</span> = <span class="ruby-constant">ReportCategory</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:id</span>])
-106:     <span class="ruby-ivar">@report_category</span>.<span class="ruby-identifier">destroy</span>
-107: 
-108:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
-109:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span>(<span class="ruby-identifier">report_categories_url</span>) }
-110:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">head</span> <span class="ruby-identifier">:ok</span> }
-111:     <span class="ruby-keyword kw">end</span>
-112:   <span class="ruby-keyword kw">end</span>
+     <span class="ruby-comment cmt"># File app/controllers/report_categories_controller.rb, line 111</span>
+111:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">destroy</span>
+112:     <span class="ruby-ivar">@report_category</span> = <span class="ruby-constant">ReportCategory</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:id</span>])
+113:     <span class="ruby-ivar">@report_category</span>.<span class="ruby-identifier">destroy</span>
+114: 
+115:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+116:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span>(<span class="ruby-identifier">report_categories_url</span>) }
+117:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">head</span> <span class="ruby-identifier">:ok</span> }
+118:     <span class="ruby-keyword kw">end</span>
+119:   <span class="ruby-keyword kw">end</span>
 </pre>
           </div>
         </div>
       </div>
 
-      <div id="method-M000062" class="method-detail">
-        <a name="M000062"></a>
+      <div id="method-M000070" class="method-detail">
+        <a name="M000070"></a>
 
         <div class="method-heading">
-          <a href="#M000062" class="method-signature">
+          <a href="#M000070" class="method-signature">
           <span class="method-name">edit</span><span class="method-args">()</span>
           </a>
         </div>
@@ -201,23 +202,23 @@ DELETE /report_categories/1 DELETE /report_categories/1.xml
 GET /report_categories/1/edit
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000062-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000062-source">
+            onclick="toggleCode('M000070-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000070-source">
 <pre>
-    <span class="ruby-comment cmt"># File app/controllers/report_categories_controller.rb, line 64</span>
-64:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">edit</span>
-65:     <span class="ruby-ivar">@report_category</span> = <span class="ruby-constant">ReportCategory</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:id</span>])
-66:   <span class="ruby-keyword kw">end</span>
+    <span class="ruby-comment cmt"># File app/controllers/report_categories_controller.rb, line 71</span>
+71:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">edit</span>
+72:     <span class="ruby-ivar">@report_category</span> = <span class="ruby-constant">ReportCategory</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:id</span>])
+73:   <span class="ruby-keyword kw">end</span>
 </pre>
           </div>
         </div>
       </div>
 
-      <div id="method-M000057" class="method-detail">
-        <a name="M000057"></a>
+      <div id="method-M000064" class="method-detail">
+        <a name="M000064"></a>
 
         <div class="method-heading">
-          <a href="#M000057" class="method-signature">
+          <a href="#M000064" class="method-signature">
           <span class="method-name">index</span><span class="method-args">()</span>
           </a>
         </div>
@@ -227,8 +228,8 @@ GET /report_categories/1/edit
 GET /report_categories GET /report_categories.xml
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000057-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000057-source">
+            onclick="toggleCode('M000064-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000064-source">
 <pre>
     <span class="ruby-comment cmt"># File app/controllers/report_categories_controller.rb, line 7</span>
  7:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">index</span>
@@ -251,11 +252,11 @@ GET /report_categories GET /report_categories.xml
         </div>
       </div>
 
-      <div id="method-M000061" class="method-detail">
-        <a name="M000061"></a>
+      <div id="method-M000069" class="method-detail">
+        <a name="M000069"></a>
 
         <div class="method-heading">
-          <a href="#M000061" class="method-signature">
+          <a href="#M000069" class="method-signature">
           <span class="method-name">new</span><span class="method-args">()</span>
           </a>
         </div>
@@ -265,37 +266,37 @@ GET /report_categories GET /report_categories.xml
 GET /report_categories/new GET /report_categories/new.xml
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000061-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000061-source">
+            onclick="toggleCode('M000069-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000069-source">
 <pre>
-    <span class="ruby-comment cmt"># File app/controllers/report_categories_controller.rb, line 53</span>
-53:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">new</span>
-54:         <span class="ruby-ivar">@report_category</span> = <span class="ruby-constant">ReportCategory</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">:Record_Creation_Date</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">Date</span>.<span class="ruby-identifier">today</span>)
-55:     <span class="ruby-comment cmt">#@report_category = ReportCategory.new</span>
-56: 
-57:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
-58:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> <span class="ruby-comment cmt"># new.html.erb</span>
-59:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@report_category</span> }
-60:     <span class="ruby-keyword kw">end</span>
-61:   <span class="ruby-keyword kw">end</span>
+    <span class="ruby-comment cmt"># File app/controllers/report_categories_controller.rb, line 60</span>
+60:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">new</span>
+61:         <span class="ruby-ivar">@report_category</span> = <span class="ruby-constant">ReportCategory</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">:Record_Creation_Date</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">Date</span>.<span class="ruby-identifier">today</span>)
+62:     <span class="ruby-comment cmt">#@report_category = ReportCategory.new</span>
+63: 
+64:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+65:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> <span class="ruby-comment cmt"># new.html.erb</span>
+66:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@report_category</span> }
+67:     <span class="ruby-keyword kw">end</span>
+68:   <span class="ruby-keyword kw">end</span>
 </pre>
           </div>
         </div>
       </div>
 
-      <div id="method-M000058" class="method-detail">
-        <a name="M000058"></a>
+      <div id="method-M000065" class="method-detail">
+        <a name="M000065"></a>
 
         <div class="method-heading">
-          <a href="#M000058" class="method-signature">
+          <a href="#M000065" class="method-signature">
           <span class="method-name">search</span><span class="method-args">()</span>
           </a>
         </div>
       
         <div class="method-description">
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000058-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000058-source">
+            onclick="toggleCode('M000065-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000065-source">
 <pre>
     <span class="ruby-comment cmt"># File app/controllers/report_categories_controller.rb, line 23</span>
 23:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">search</span>
@@ -306,11 +307,11 @@ GET /report_categories/new GET /report_categories/new.xml
         </div>
       </div>
 
-      <div id="method-M000059" class="method-detail">
-        <a name="M000059"></a>
+      <div id="method-M000067" class="method-detail">
+        <a name="M000067"></a>
 
         <div class="method-heading">
-          <a href="#M000059" class="method-signature">
+          <a href="#M000067" class="method-signature">
           <span class="method-name">show</span><span class="method-args">()</span>
           </a>
         </div>
@@ -320,28 +321,28 @@ GET /report_categories/new GET /report_categories/new.xml
 GET /report_categories/1 GET /report_categories/1.xml
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000059-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000059-source">
+            onclick="toggleCode('M000067-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000067-source">
 <pre>
-    <span class="ruby-comment cmt"># File app/controllers/report_categories_controller.rb, line 30</span>
-30:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">show</span>
-31:     <span class="ruby-ivar">@report_category</span> = <span class="ruby-constant">ReportCategory</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:id</span>])
-32: 
-33:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
-34:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> <span class="ruby-comment cmt"># show.html.erb</span>
-35:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@report_category</span> }
-36:     <span class="ruby-keyword kw">end</span>
-37:   <span class="ruby-keyword kw">end</span>
+    <span class="ruby-comment cmt"># File app/controllers/report_categories_controller.rb, line 37</span>
+37:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">show</span>
+38:     <span class="ruby-ivar">@report_category</span> = <span class="ruby-constant">ReportCategory</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:id</span>])
+39: 
+40:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+41:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> <span class="ruby-comment cmt"># show.html.erb</span>
+42:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@report_category</span> }
+43:     <span class="ruby-keyword kw">end</span>
+44:   <span class="ruby-keyword kw">end</span>
 </pre>
           </div>
         </div>
       </div>
 
-      <div id="method-M000060" class="method-detail">
-        <a name="M000060"></a>
+      <div id="method-M000068" class="method-detail">
+        <a name="M000068"></a>
 
         <div class="method-heading">
-          <a href="#M000060" class="method-signature">
+          <a href="#M000068" class="method-signature">
           <span class="method-name">show2</span><span class="method-args">()</span>
           </a>
         </div>
@@ -351,28 +352,54 @@ GET /report_categories/1 GET /report_categories/1.xml
 GET /report_categories/1 GET /report_categories/1.xml
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000060-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000060-source">
+            onclick="toggleCode('M000068-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000068-source">
 <pre>
-    <span class="ruby-comment cmt"># File app/controllers/report_categories_controller.rb, line 42</span>
-42:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">show2</span>
-43:     
-44: 
-45:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
-46:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> <span class="ruby-comment cmt"># show.html.erb</span>
-47:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@report_category</span> }
-48:     <span class="ruby-keyword kw">end</span>
-49:   <span class="ruby-keyword kw">end</span>
+    <span class="ruby-comment cmt"># File app/controllers/report_categories_controller.rb, line 49</span>
+49:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">show2</span>
+50:     
+51: 
+52:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+53:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> <span class="ruby-comment cmt"># show.html.erb</span>
+54:       <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@report_category</span> }
+55:     <span class="ruby-keyword kw">end</span>
+56:   <span class="ruby-keyword kw">end</span>
 </pre>
           </div>
         </div>
       </div>
 
-      <div id="method-M000064" class="method-detail">
-        <a name="M000064"></a>
+      <div id="method-M000066" class="method-detail">
+        <a name="M000066"></a>
 
         <div class="method-heading">
-          <a href="#M000064" class="method-signature">
+          <a href="#M000066" class="method-signature">
+          <span class="method-name">sort</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000066-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000066-source">
+<pre>
+    <span class="ruby-comment cmt"># File app/controllers/report_categories_controller.rb, line 27</span>
+27:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">sort</span>
+28:         <span class="ruby-identifier">params</span>[<span class="ruby-identifier">:report_categories</span>].<span class="ruby-identifier">each_with_index</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">id</span>, <span class="ruby-identifier">index</span><span class="ruby-operator">|</span>
+29:                 <span class="ruby-constant">ReportCategory</span>.<span class="ruby-identifier">update_all</span>([<span class="ruby-value str">'position=?'</span>, <span class="ruby-identifier">index</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>],[<span class="ruby-value str">'id=?'</span>, <span class="ruby-identifier">id</span>])
+30:         <span class="ruby-keyword kw">end</span>
+31:         <span class="ruby-identifier">render</span> <span class="ruby-identifier">:nothing</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword kw">true</span>
+32:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000072" class="method-detail">
+        <a name="M000072"></a>
+
+        <div class="method-heading">
+          <a href="#M000072" class="method-signature">
           <span class="method-name">update</span><span class="method-args">()</span>
           </a>
         </div>
@@ -382,24 +409,24 @@ GET /report_categories/1 GET /report_categories/1.xml
 PUT /report_categories/1 PUT /report_categories/1.xml
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000064-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000064-source">
+            onclick="toggleCode('M000072-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000072-source">
 <pre>
-     <span class="ruby-comment cmt"># File app/controllers/report_categories_controller.rb, line 87</span>
- 87:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">update</span>
- 88:     <span class="ruby-ivar">@report_category</span> = <span class="ruby-constant">ReportCategory</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:id</span>])
- 89: 
- 90:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
- 91:       <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@report_category</span>.<span class="ruby-identifier">update_attributes</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:report_category</span>])
- 92:         <span class="ruby-identifier">flash</span>[<span class="ruby-identifier">:notice</span>] = <span class="ruby-value str">'ReportCategory was successfully updated.'</span>
- 93:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span>(<span class="ruby-ivar">@report_category</span>) }
- 94:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">head</span> <span class="ruby-identifier">:ok</span> }
- 95:       <span class="ruby-keyword kw">else</span>
- 96:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;edit&quot;</span> }
- 97:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@report_category</span>.<span class="ruby-identifier">errors</span>, <span class="ruby-identifier">:status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">:unprocessable_entity</span> }
- 98:       <span class="ruby-keyword kw">end</span>
- 99:     <span class="ruby-keyword kw">end</span>
-100:   <span class="ruby-keyword kw">end</span>
+     <span class="ruby-comment cmt"># File app/controllers/report_categories_controller.rb, line 94</span>
+ 94:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">update</span>
+ 95:     <span class="ruby-ivar">@report_category</span> = <span class="ruby-constant">ReportCategory</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:id</span>])
+ 96: 
+ 97:     <span class="ruby-identifier">respond_to</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">format</span><span class="ruby-operator">|</span>
+ 98:       <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@report_category</span>.<span class="ruby-identifier">update_attributes</span>(<span class="ruby-identifier">params</span>[<span class="ruby-identifier">:report_category</span>])
+ 99:         <span class="ruby-identifier">flash</span>[<span class="ruby-identifier">:notice</span>] = <span class="ruby-value str">'ReportCategory was successfully updated.'</span>
+100:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">redirect_to</span>(<span class="ruby-ivar">@report_category</span>) }
+101:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">head</span> <span class="ruby-identifier">:ok</span> }
+102:       <span class="ruby-keyword kw">else</span>
+103:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">html</span> { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:action</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">&quot;edit&quot;</span> }
+104:         <span class="ruby-identifier">format</span>.<span class="ruby-identifier">xml</span>  { <span class="ruby-identifier">render</span> <span class="ruby-identifier">:xml</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-ivar">@report_category</span>.<span class="ruby-identifier">errors</span>, <span class="ruby-identifier">:status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">:unprocessable_entity</span> }
+105:       <span class="ruby-keyword kw">end</span>
+106:     <span class="ruby-keyword kw">end</span>
+107:   <span class="ruby-keyword kw">end</span>
 </pre>
           </div>
         </div>

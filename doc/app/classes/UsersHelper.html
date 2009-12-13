@@ -80,10 +80,10 @@
       <h3 class="section-bar">Methods</h3>
 
       <div class="name-list">
-      <a href="#M000271">if_authorized?</a>&nbsp;&nbsp;
-      <a href="#M000274">link_to_current_user</a>&nbsp;&nbsp;
-      <a href="#M000273">link_to_login_with_IP</a>&nbsp;&nbsp;
-      <a href="#M000272">link_to_user</a>&nbsp;&nbsp;
+      <a href="#M000280">if_authorized?</a>&nbsp;&nbsp;
+      <a href="#M000283">link_to_current_user</a>&nbsp;&nbsp;
+      <a href="#M000282">link_to_login_with_IP</a>&nbsp;&nbsp;
+      <a href="#M000281">link_to_user</a>&nbsp;&nbsp;
       </div>
     </div>
 
@@ -105,11 +105,11 @@
     <div id="methods">
       <h3 class="section-bar">Public Instance methods</h3>
 
-      <div id="method-M000271" class="method-detail">
-        <a name="M000271"></a>
+      <div id="method-M000280" class="method-detail">
+        <a name="M000280"></a>
 
         <div class="method-heading">
-          <a href="#M000271" class="method-signature">
+          <a href="#M000280" class="method-signature">
           <span class="method-name">if_authorized?</span><span class="method-args">(action, resource) {|action, resource| ...}</span>
           </a>
         </div>
@@ -122,18 +122,18 @@ all access control at the controller level.
 </p>
 <p>
 Example: &lt;%= <a
-href="UsersHelper.html#M000271">if_authorized?</a>(:index, <a
+href="UsersHelper.html#M000280">if_authorized?</a>(:index, <a
 href="User.html">User</a>) do link_to(&#8216;List all users&#8217;,
 users_path) end %&gt; | &lt;%= <a
-href="UsersHelper.html#M000271">if_authorized?</a>(:edit, @user) do
+href="UsersHelper.html#M000280">if_authorized?</a>(:edit, @user) do
 link_to(&#8216;Edit this user&#8217;, edit_user_path) end %&gt; | &lt;%= <a
-href="UsersHelper.html#M000271">if_authorized?</a>(:destroy, @user) do
+href="UsersHelper.html#M000280">if_authorized?</a>(:destroy, @user) do
 link_to &#8216;Destroy&#8217;, @user, :confirm =&gt; &#8216;Are you
 sure?&#8217;, :method =&gt; :delete end %&gt;
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000271-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000271-source">
+            onclick="toggleCode('M000280-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000280-source">
 <pre>
     <span class="ruby-comment cmt"># File app/helpers/users_helper.rb, line 14</span>
 14:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">if_authorized?</span>(<span class="ruby-identifier">action</span>, <span class="ruby-identifier">resource</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>)
@@ -146,11 +146,11 @@ sure?&#8217;, :method =&gt; :delete end %&gt;
         </div>
       </div>
 
-      <div id="method-M000274" class="method-detail">
-        <a name="M000274"></a>
+      <div id="method-M000283" class="method-detail">
+        <a name="M000283"></a>
 
         <div class="method-heading">
-          <a href="#M000274" class="method-signature">
+          <a href="#M000283" class="method-signature">
           <span class="method-name">link_to_current_user</span><span class="method-args">(options={})</span>
           </a>
         </div>
@@ -158,12 +158,12 @@ sure?&#8217;, :method =&gt; :delete end %&gt;
         <div class="method-description">
           <p>
 Link to the current user&#8216;s page (using <a
-href="UsersHelper.html#M000272">link_to_user</a>) or to the login page
-(using <a href="UsersHelper.html#M000273">link_to_login_with_IP</a>).
+href="UsersHelper.html#M000281">link_to_user</a>) or to the login page
+(using <a href="UsersHelper.html#M000282">link_to_login_with_IP</a>).
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000274-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000274-source">
+            onclick="toggleCode('M000283-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000283-source">
 <pre>
     <span class="ruby-comment cmt"># File app/helpers/users_helper.rb, line 82</span>
 82:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">link_to_current_user</span>(<span class="ruby-identifier">options</span>={})
@@ -181,11 +181,11 @@ href="UsersHelper.html#M000272">link_to_user</a>) or to the login page
         </div>
       </div>
 
-      <div id="method-M000273" class="method-detail">
-        <a name="M000273"></a>
+      <div id="method-M000282" class="method-detail">
+        <a name="M000282"></a>
 
         <div class="method-heading">
-          <a href="#M000273" class="method-signature">
+          <a href="#M000282" class="method-signature">
           <span class="method-name">link_to_login_with_IP</span><span class="method-args">(content_text=nil, options={})</span>
           </a>
         </div>
@@ -208,8 +208,8 @@ Examples:
   # =&gt; &lt;a href=&quot;/login&quot; title=&quot;169.69.69.69&quot;&gt;not signed in&lt;/a&gt;
 </pre>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000273-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000273-source">
+            onclick="toggleCode('M000282-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000282-source">
 <pre>
     <span class="ruby-comment cmt"># File app/helpers/users_helper.rb, line 67</span>
 67:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">link_to_login_with_IP</span> <span class="ruby-identifier">content_text</span>=<span class="ruby-keyword kw">nil</span>, <span class="ruby-identifier">options</span>={}
@@ -227,11 +227,11 @@ Examples:
         </div>
       </div>
 
-      <div id="method-M000272" class="method-detail">
-        <a name="M000272"></a>
+      <div id="method-M000281" class="method-detail">
+        <a name="M000281"></a>
 
         <div class="method-heading">
-          <a href="#M000272" class="method-signature">
+          <a href="#M000281" class="method-signature">
           <span class="method-name">link_to_user</span><span class="method-args">(user, options={})</span>
           </a>
         </div>
@@ -279,8 +279,8 @@ Examples:
   # =&gt; &lt;a href=&quot;/users/3&quot; title=&quot;barmy&quot; class=&quot;nickname&quot;&gt;Your user page&lt;/a&gt;
 </pre>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000272-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000272-source">
+            onclick="toggleCode('M000281-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000281-source">
 <pre>
     <span class="ruby-comment cmt"># File app/helpers/users_helper.rb, line 46</span>
 46:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">link_to_user</span>(<span class="ruby-identifier">user</span>, <span class="ruby-identifier">options</span>={})

@@ -80,9 +80,9 @@
       <h3 class="section-bar">Methods</h3>
 
       <div class="name-list">
-      <a href="#M000307">require_role</a>&nbsp;&nbsp;
-      <a href="#M000306">reset_role_requirements!</a>&nbsp;&nbsp;
-      <a href="#M000308">user_authorized_for?</a>&nbsp;&nbsp;
+      <a href="#M000316">require_role</a>&nbsp;&nbsp;
+      <a href="#M000315">reset_role_requirements!</a>&nbsp;&nbsp;
+      <a href="#M000317">user_authorized_for?</a>&nbsp;&nbsp;
       </div>
     </div>
 
@@ -104,11 +104,11 @@
     <div id="methods">
       <h3 class="section-bar">Public Instance methods</h3>
 
-      <div id="method-M000307" class="method-detail">
-        <a name="M000307"></a>
+      <div id="method-M000316" class="method-detail">
+        <a name="M000316"></a>
 
         <div class="method-heading">
-          <a href="#M000307" class="method-signature">
+          <a href="#M000316" class="method-signature">
           <span class="method-name">require_role</span><span class="method-args">(roles, options = {})</span>
           </a>
         </div>
@@ -133,8 +133,8 @@ Valid options
  * :unless - The inverse of :if
 </pre>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000307-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000307-source">
+            onclick="toggleCode('M000316-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000316-source">
 <pre>
     <span class="ruby-comment cmt"># File lib/role_requirement_system.rb, line 36</span>
 36:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">require_role</span>(<span class="ruby-identifier">roles</span>, <span class="ruby-identifier">options</span> = {})
@@ -171,19 +171,19 @@ Valid options
         </div>
       </div>
 
-      <div id="method-M000306" class="method-detail">
-        <a name="M000306"></a>
+      <div id="method-M000315" class="method-detail">
+        <a name="M000315"></a>
 
         <div class="method-heading">
-          <a href="#M000306" class="method-signature">
+          <a href="#M000315" class="method-signature">
           <span class="method-name">reset_role_requirements!</span><span class="method-args">()</span>
           </a>
         </div>
       
         <div class="method-description">
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000306-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000306-source">
+            onclick="toggleCode('M000315-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000315-source">
 <pre>
     <span class="ruby-comment cmt"># File lib/role_requirement_system.rb, line 18</span>
 18:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">reset_role_requirements!</span>
@@ -194,11 +194,11 @@ Valid options
         </div>
       </div>
 
-      <div id="method-M000308" class="method-detail">
-        <a name="M000308"></a>
+      <div id="method-M000317" class="method-detail">
+        <a name="M000317"></a>
 
         <div class="method-heading">
-          <a href="#M000308" class="method-signature">
+          <a href="#M000317" class="method-signature">
           <span class="method-name">user_authorized_for?</span><span class="method-args">(user, params = {}, binding = self.binding)</span>
           </a>
         </div>
@@ -209,8 +209,8 @@ This is the core of RoleRequirement. Here is where it discerns if a user
 can access a controller or not./
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000308-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000308-source">
+            onclick="toggleCode('M000317-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000317-source">
 <pre>
      <span class="ruby-comment cmt"># File lib/role_requirement_system.rb, line 67</span>
  67:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">user_authorized_for?</span>(<span class="ruby-identifier">user</span>, <span class="ruby-identifier">params</span> = {}, <span class="ruby-identifier">binding</span> = <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">binding</span>)

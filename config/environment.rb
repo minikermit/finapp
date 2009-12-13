@@ -17,6 +17,9 @@ Rails::Initializer.run do |config|
   config.gem 'crafterm-comma', :lib => 'comma', :source => 'http://gems.github.com' 
   #config.gem 'ziya', :source => 'http://gems.rubyforge.com'
   config.gem 'declarative_authorization', :source => "http://gemcutter.org"
+  #config.gem 'win32-service' #only on Windows
+  #config.gem 'daemons' # only on UNIX
+  
   # config.gem 'db-charmer', :lib => 'db_charmer', :source => 'http://gemcutter.org'
   # Settings in config/environments/* take precedence over those specified here.
   # Application configuration should go into files in config/initializers

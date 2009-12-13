@@ -1,48 +1,55 @@
 <span class="myapptitle">Listing Basel II Mappings</span>
 
-<% form_tag request.path, :method => 'get' do %>
-	<% content_tag :label do %>
-	 Search Term:
-	 <%= text_field_tag :search, params[:search] %>
-	<% end %>
-<% end %>
+<table id="rounded-corner" summary="Validations rules for Basel II" >
+  <thead>
+    	<tr>
+        	<th scope="col" class="rounded-company">Entity</th>
+            <th scope="col" class="rounded-q1">Parameter</th>
+            <th scope="col" class="rounded-q2">Source</th>
+            <th scope="col" class="rounded-q2">Descr.</th>
+            <th scope="col" class="rounded-q2">Dimension</th>
+            <th scope="col" class="rounded-q2">Descr.</th>
+            <th scope="col" class="rounded-q2">Destination</th>
+            <th scope="col" class="rounded-q2">Descr.</th>
+            <th scope="col" class="rounded-q2"></th>
+            <th scope="col" class="rounded-q4"></th>
+        </tr>
+    </thead>
+    <tfoot>
+    	<tr>
+        	<td colspan="9" class="rounded-foot-left"><em>Use the pagination below to see more records if needed</em></td>
+        	<td class="rounded-foot-right">&nbsp;</td>
+        </tr>
+    </tfoot>
+     <tbody>
 
-
-<table>
-  <tr class='first'>
-    <th>Entity</th>
-  	<th>Parameter</th>
-  	<th>Source</th>
-  	<th>Descr.</th>
-  	<th>Dimension</th>
-  	<th>Descr.</th>
-  	<th>Destination</th>
-  	<th>Descr.</th>  	
-  </tr>
-
-<% for b2_ta_mapping in @b2_ta_mappings %>
-  <tr class='small'>
+<% @b2_ta_mappings.each do |b2_ta_mapping| %>
+  <tr>
     <td><%=h b2_ta_mapping.entity_id %></td>
-  	<td><%=h b2_ta_mapping.information_mapped %></td>
-  	<td><%=h b2_ta_mapping.source_code %></td>
-    <td><%=h b2_ta_mapping.description %></td>
+    <td><%=h b2_ta_mapping.information_mapped %></td>  
+    <td><%=h b2_ta_mapping.source_code %></td>
+    <td><%=h b2_ta_mapping.description  %></td>
     <td><%=h b2_ta_mapping.dimension_code %></td>
-	<td><%=h b2_ta_mapping.dimension_description %></td>
+    <td><%=h b2_ta_mapping.dimension_description %></td>
     <td><%=h b2_ta_mapping.destination_code %></td>
     <td><%=h b2_ta_mapping.destination_description %></td>
-    <td><%= link_to 'Show', b2_ta_mapping %></td>
-    <td><%= link_to 'Edit', edit_b2_ta_mapping_path(b2_ta_mapping) %></td>
-    <td><%= link_to 'Destroy', b2_ta_mapping, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to image_tag("icons/add.png") , :controller => 'b2_ta_mappings' ,:action => "show", :id => b2_ta_mapping.id  %></td>
+    <td><%= link_to image_tag("icons/application_edit.png") , edit_b2_ta_mapping_path(b2_ta_mapping) %></td>
   </tr>
 <% end %>
+	</tbody>
 </table>
- 		
+
+<br />
+
 <div class="digg_pagination">
   <div class="page_info">
     <%= page_entries_info @b2_ta_mappings %>
   </div-->
     <%= will_paginate @b2_ta_mappings, :container => false %>
 </div>
+
+<%= link_to 'New b2_ta_mapping', new_b2_ta_mapping_path %>
 
 <br />
 
@@ -65,3 +72,10 @@
 <%= link_to 'Segment',  :controller => "b2_ta_mappings" ,:action => "index" ,:search=> "SegmentLookup"  %>
 <%= link_to 'Count Segment',  :controller => "b2_ta_mappings" ,:action => "index" ,:search=> "Count_Segment"  %>
 <%= link_to 'Count Segment Det',  :controller => "b2_ta_mappings" ,:action => "index" ,:search=> "Count_Segment_Det"  %>
+
+<% form_tag request.path, :method => 'get' do %>
+	<% content_tag :label do %>
+	 Search Term:
+	 <%= text_field_tag :search, params[:search] %>
+	<% end %>
+<% end %>

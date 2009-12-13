@@ -106,12 +106,12 @@ Example usage:
       <h3 class="section-bar">Methods</h3>
 
       <div class="name-list">
-      <a href="#M000201">class_self_instance</a>&nbsp;&nbsp;
-      <a href="#M000198">hijack_class_method</a>&nbsp;&nbsp;
-      <a href="#M000199">hijack_instance_method</a>&nbsp;&nbsp;
-      <a href="#M000202">hijack_method</a>&nbsp;&nbsp;
-      <a href="#M000197">new</a>&nbsp;&nbsp;
-      <a href="#M000200">restore</a>&nbsp;&nbsp;
+      <a href="#M000209">class_self_instance</a>&nbsp;&nbsp;
+      <a href="#M000206">hijack_class_method</a>&nbsp;&nbsp;
+      <a href="#M000207">hijack_instance_method</a>&nbsp;&nbsp;
+      <a href="#M000210">hijack_method</a>&nbsp;&nbsp;
+      <a href="#M000205">new</a>&nbsp;&nbsp;
+      <a href="#M000208">restore</a>&nbsp;&nbsp;
       </div>
     </div>
 
@@ -133,19 +133,19 @@ Example usage:
     <div id="methods">
       <h3 class="section-bar">Public Class methods</h3>
 
-      <div id="method-M000197" class="method-detail">
-        <a name="M000197"></a>
+      <div id="method-M000205" class="method-detail">
+        <a name="M000205"></a>
 
         <div class="method-heading">
-          <a href="#M000197" class="method-signature">
+          <a href="#M000205" class="method-signature">
           <span class="method-name">new</span><span class="method-args">(klass)</span>
           </a>
         </div>
       
         <div class="method-description">
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000197-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000197-source">
+            onclick="toggleCode('M000205-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000205-source">
 <pre>
     <span class="ruby-comment cmt"># File lib/hijacker.rb, line 12</span>
 12:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">klass</span>)
@@ -159,19 +159,19 @@ Example usage:
 
       <h3 class="section-bar">Public Instance methods</h3>
 
-      <div id="method-M000198" class="method-detail">
-        <a name="M000198"></a>
+      <div id="method-M000206" class="method-detail">
+        <a name="M000206"></a>
 
         <div class="method-heading">
-          <a href="#M000198" class="method-signature">
+          <a href="#M000206" class="method-signature">
           <span class="method-name">hijack_class_method</span><span class="method-args">(method_name, eval_string = nil, arg_names = [], &amp;block)</span>
           </a>
         </div>
       
         <div class="method-description">
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000198-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000198-source">
+            onclick="toggleCode('M000206-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000206-source">
 <pre>
     <span class="ruby-comment cmt"># File lib/hijacker.rb, line 17</span>
 17:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">hijack_class_method</span>(<span class="ruby-identifier">method_name</span>, <span class="ruby-identifier">eval_string</span> = <span class="ruby-keyword kw">nil</span>, <span class="ruby-identifier">arg_names</span> = [], <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>)
@@ -182,19 +182,19 @@ Example usage:
         </div>
       </div>
 
-      <div id="method-M000199" class="method-detail">
-        <a name="M000199"></a>
+      <div id="method-M000207" class="method-detail">
+        <a name="M000207"></a>
 
         <div class="method-heading">
-          <a href="#M000199" class="method-signature">
+          <a href="#M000207" class="method-signature">
           <span class="method-name">hijack_instance_method</span><span class="method-args">(method_name, eval_string = nil, arg_names = [], &amp;block)</span>
           </a>
         </div>
       
         <div class="method-description">
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000199-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000199-source">
+            onclick="toggleCode('M000207-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000207-source">
 <pre>
     <span class="ruby-comment cmt"># File lib/hijacker.rb, line 21</span>
 21:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">hijack_instance_method</span>(<span class="ruby-identifier">method_name</span>, <span class="ruby-identifier">eval_string</span> = <span class="ruby-keyword kw">nil</span>, <span class="ruby-identifier">arg_names</span> = [], <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>)
@@ -205,22 +205,22 @@ Example usage:
         </div>
       </div>
 
-      <div id="method-M000200" class="method-detail">
-        <a name="M000200"></a>
+      <div id="method-M000208" class="method-detail">
+        <a name="M000208"></a>
 
         <div class="method-heading">
-          <a href="#M000200" class="method-signature">
+          <a href="#M000208" class="method-signature">
           <span class="method-name">restore</span><span class="method-args">()</span>
           </a>
         </div>
       
         <div class="method-description">
           <p>
-<a href="Hijacker.html#M000200">restore</a> all
+<a href="Hijacker.html#M000208">restore</a> all
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000200-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000200-source">
+            onclick="toggleCode('M000208-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000208-source">
 <pre>
     <span class="ruby-comment cmt"># File lib/hijacker.rb, line 26</span>
 26:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">restore</span>
@@ -242,19 +242,19 @@ Example usage:
 
       <h3 class="section-bar">Protected Instance methods</h3>
 
-      <div id="method-M000201" class="method-detail">
-        <a name="M000201"></a>
+      <div id="method-M000209" class="method-detail">
+        <a name="M000209"></a>
 
         <div class="method-heading">
-          <a href="#M000201" class="method-signature">
+          <a href="#M000209" class="method-signature">
           <span class="method-name">class_self_instance</span><span class="method-args">()</span>
           </a>
         </div>
       
         <div class="method-description">
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000201-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000201-source">
+            onclick="toggleCode('M000209-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000209-source">
 <pre>
     <span class="ruby-comment cmt"># File lib/hijacker.rb, line 41</span>
 41:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">class_self_instance</span>
@@ -265,19 +265,19 @@ Example usage:
         </div>
       </div>
 
-      <div id="method-M000202" class="method-detail">
-        <a name="M000202"></a>
+      <div id="method-M000210" class="method-detail">
+        <a name="M000210"></a>
 
         <div class="method-heading">
-          <a href="#M000202" class="method-signature">
+          <a href="#M000210" class="method-signature">
           <span class="method-name">hijack_method</span><span class="method-args">(klass, method_name, eval_string = nil, arg_names = [], &amp;block)</span>
           </a>
         </div>
       
         <div class="method-description">
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000202-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000202-source">
+            onclick="toggleCode('M000210-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000210-source">
 <pre>
     <span class="ruby-comment cmt"># File lib/hijacker.rb, line 45</span>
 45:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">hijack_method</span>(<span class="ruby-identifier">klass</span>, <span class="ruby-identifier">method_name</span>, <span class="ruby-identifier">eval_string</span> = <span class="ruby-keyword kw">nil</span>, <span class="ruby-identifier">arg_names</span> = [], <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>)

@@ -1,8 +1,14 @@
-<h6><%= link_to  "> Back to report categories" , report_categories_path %></h6>
+<ul id="crumbs">
+ <li><%= link_to  "Home" , homes_path %></li>
+ <li><a href="#">Main section</a></li>
+ <li><a href="#">Sub section</a></li>
+ <li><%= link_to  "Report categories" , report_categories_path %></li>
+ <li>You are on the reports page</li>
+</ul>
 
 <span class="myapptitle">Listing reports</span>
 
-<table id="rounded-corner" summary="Validations errors for Basel II" >
+<table id="rounded-corner" summary="Reports" >
   <thead>
     	<tr>
         	<th scope="col" class="rounded-company"><%= order @search, :by => :Order %></th>

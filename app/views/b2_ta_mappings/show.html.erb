@@ -1,46 +1,49 @@
-<Div id= "view" class = "span-16">
-<p>
-  <b>Group:</b> <%=h @b2_ta_mappings.group_id %> 
-  <b>Entity:</b> <%=h @b2_ta_mappings.entity_id %>
-  <b>Parameter:</b>
-  <%=h @b2_ta_mappings.information_mapped %>
-</p>
-<br />
-<p>
-  <b>Source code:</b>
-  <%=h @b2_ta_mappings.source_code %>
-  <b>Description:</b>
-  <%=h @b2_ta_mappings.description %>
-</p>
+<div id = "view" class="span-24 prepend-1 last">
+  <div class="span-11">
+    <fieldset>
+    	<legend>Parameter</legend>
+  		<b>Group:</b> <%=h @b2_ta_mappings.group_id %><br />
+  		<b>Entity:</b> <%=h @b2_ta_mappings.entity_id %><br />
+  		<b>Parameter:</b><%=h @b2_ta_mappings.information_mapped %>
+	</fieldset>
+  </div>
+  <div class="span-11 last">
+    <fieldset>
+    	<legend>Source</legend>
+  		<b>Source code:</b><%=h @b2_ta_mappings.source_code %><br />
+  		<b>Description:</b><%=h @b2_ta_mappings.description %><br />
+		<br />
+	</fieldset>
+  </div>
+</div>
+<div class="span-24 prepend-1 last">
+  <div class="span-11">
+    <fieldset>
+    	<legend>Dimension 2</legend>
+  		<b>Dimension code:</b><%=h @b2_ta_mappings.dimension_code %><br />
+  		<b>Description:</b><%=h @b2_ta_mappings.dimension_description %><br />
+	</fieldset>
+  </div>
+  <div class="span-11 last">
+    <fieldset>
+    	<legend>Destination</legend>
+  		<b>Destination code:</b><%=h @b2_ta_mappings.destination_code %><br />
+  		<b>Description:</b><%=h @b2_ta_mappings.destination_description %><br />
+	</fieldset>
+  </div>
+</div>
+<div class="span-22 prepend-1 last">
+    <fieldset>
+    	<legend>Audit</legend>
+    	<b>Validity:</b> <%=h @b2_ta_mappings.record_validity %><br />
+  		<b>Created on:</b> <%=h @b2_ta_mappings.created_at %> <b>by:</b> <%=h @b2_ta_mappings.created_by %><br /> <b>Using:</b> <%=h @b2_ta_mappings.created_using %> <br />
+  		<b>Updated on:</b> <%=h @b2_ta_mappings.updated_at %> <b>by:</b> <%=h @b2_ta_mappings.updated_by %> <b>with:</b> <%=h @b2_ta_mappings.updated_using %>
+	</fieldset>
+</div>
+</div>
 
-<p>
-  <b>Dimension code:</b>
-  <%=h @b2_ta_mappings.dimension_code %>
-  <b>Description:</b>
-  <%=h @b2_ta_mappings.dimension_description %>
-</p>
 
-<p>
-  <b>Destination code:</b>
-  <%=h @b2_ta_mappings.destination_code %>
-  <b>Description:</b>
-  <%=h @b2_ta_mappings.destination_description %>
-</p>
-
-<br />
-<p>
-  <b>Validity:</b>
-  <%=h @b2_ta_mappings.record_validity %>
-</p>
-<br />
-<p>
-  <b>Created on:</b> <%=h @b2_ta_mappings.created_at %> <b>by:</b> <%=h @b2_ta_mappings.created_by %><br /> <b>Using:</b> <%=h @b2_ta_mappings.created_using %> <br />
-  <b>Updated on:</b> <%=h @b2_ta_mappings.updated_at %> <b>by:</b> <%=h @b2_ta_mappings.updated_by %> <b>with:</b> <%=h @b2_ta_mappings.updated_using %>
-</p>
-<br />
 <br />
 
 <%= link_to 'Edit', edit_b2_ta_mapping_path(@b2_ta_mappings) %> |
 <%= link_to 'Back', b2_ta_mapping_path %>
-
-</div>

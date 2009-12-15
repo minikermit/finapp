@@ -16,7 +16,8 @@ class PackagesController < ApplicationController
     @package = Package.find(params[:id])
 
     respond_to do |format|
-      format.html # show.html.erb
+      #format.html # show.html.erb
+      format.html {render(:layout => "layouts/applicationjquery") }
       format.xml  { render :xml => @package }
     end
   end

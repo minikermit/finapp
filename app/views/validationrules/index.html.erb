@@ -12,10 +12,10 @@
 	<% form_for @search do |f| %>  
  
       <div class="column span-2">
-        <%= f.label :rule_identification_like, "Rule" %>  
+        <%= f.label :ErrorKind_like, "Rule" %>  
       </div>
       <div class="column span-8 last">
-        <%= f.text_field :rule_identification_like , :class => 'text' %>
+        <%= f.text_field :ErrorKind_like , :class => 'text' %>
       </div>
       <div class="column span-2">
          <%= f.label :rule_type_like, "Type" %> 
@@ -83,7 +83,7 @@
   <tr>
     <td><%=h validationrule.rule_scope %></td>
     <td><%=h validationrule.rule_type %></td>  
-    <td><%=h validationrule.rule_identification %></td>
+    <td><%=h validationrule.ErrorKind %></td>
     <td><%=h validationrule.rule_description %></td>
     <td><%= link_to image_tag("icons/add.png") , :controller => 'validationrules' ,:action => "show", :id => validationrule.id  %></td>
     <td><%= link_to image_tag("icons/application_edit.png") , edit_validationrule_path(validationrule) %></td>

@@ -1,7 +1,7 @@
 <Div id = 'show'>
 
 <fieldset id="validation rule">
- <legend> Validation Rule </legend>
+ <legend> Validation <%=h @validation.validationrule.ErrorKind %> </legend>
 
 <p>
   <b>Client:</b>
@@ -36,11 +36,6 @@
 <p>
   <b>Errortype:</b>
   <%=h @validation.ErrorType %>
-</p>
-
-<p>
-  <b>Errorkind:</b>
-  <%=h @validation.validationrule.ErrorKind %>
 </p>
 
 <p>
@@ -95,7 +90,7 @@
 </fieldset>
 
 <%= link_to 'Edit original record', edit_counterparty_path(@validation.Original_id) %> |
-<%= link_to 'Show rule details', { :controller => "validationrules", :id => 2, :action => "show" }, :popup => ['Help', 'width=800,height=400'] %> |
+<%= link_to 'Show rule details', { :controller => "validationrules", :id => @validation.validationrule_id, :action => "show" }, :popup => ['Help', 'width=800,height=400'] %> |
 <%= link_to 'Edit validation error', edit_validation_path(@validation) %> |
 <%= link_to 'Back', validations_path %>
 

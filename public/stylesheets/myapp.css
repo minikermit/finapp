@@ -79,6 +79,32 @@ label{
   margin-left: 0px;
 }
 
+/* Rounded corners by http://www.roundedcornr.com/rc1.php
+------------------------------------------------------------------*/
+
+.roundedcornr_box_101757 {
+   background: #f8e7a2;
+}
+.roundedcornr_top_101757 div {
+   background: url(/images/rounded/roundedcornr_101757_tl.png) no-repeat top left;
+}
+.roundedcornr_top_101757 {
+   background: url(/images/rounded/roundedcornr_101757_tr.png) no-repeat top right;
+}
+.roundedcornr_bottom_101757 div {
+   background: url(/images/rounded/roundedcornr_101757_bl.png) no-repeat bottom left;
+}
+.roundedcornr_bottom_101757 {
+   background: url(/images/rounded/roundedcornr_101757_br.png) no-repeat bottom right;
+}
+
+.roundedcornr_top_101757 div, .roundedcornr_top_101757, 
+.roundedcornr_bottom_101757 div, .roundedcornr_bottom_101757 {
+   width: 100%;
+   height: 30px;
+   font-size: 1px;
+}
+.roundedcornr_content_101757 { margin: 0 30px; }
 
 /* Simple scalable breadcrumb by Veerle Pieters
 ------------------------------------------------------------------*/

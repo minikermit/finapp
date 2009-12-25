@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id: 1
+  ClearID: MyString
+  EncryptedID1: MyString
+  EncryptedID2: MyString
+  EncryptedID3: MyString
+  EncryptedID4: MyString
+  entity_id: MyString
+
+two:
+  id: 1
+  ClearID: MyString
+  EncryptedID1: MyString
+  EncryptedID2: MyString
+  EncryptedID3: MyString
+  EncryptedID4: MyString
+  entity_id: MyString

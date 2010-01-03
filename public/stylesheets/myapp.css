@@ -1,6 +1,31 @@
 /* Normal HTML */
 
-body { background-color:  #D6D9DE }
+/* Slide-out tab
+------------------------------------------------------------------*/
+.slide-out-div {
+    padding: 20px;
+    width: 250px;
+    background: #ccc;
+    border: 1px solid #29216d;
+}
+
+body { 
+		margin: 0 auto;
+		padding: 0;
+		background-color: #F1EFE4; 
+	}
+/*#D6D9DE*/
+
+#art-page-background-simple-gradient
+{
+		position: absolute;
+		background-image: url('../images/Page-BgSimpleGradient.jpg');
+		background-repeat: repeat-x;
+		top:0;
+		width:100%;
+		height: 900px;
+}
+/*Page-BgSimpleGradient2.jpg*/		
 
 H1   { color: rgb(0,0,51);
 	   font-size: 24px;
@@ -10,7 +35,7 @@ H1   { color: rgb(0,0,51);
 
 li .handle { color: #777 ; cursor: move ; font-size: 12px ; }
 
-.myappfooter {background:url(../images/header_backdrop.png);}
+/*.myappfooter {background:url(../images/header_backdrop.png);}*/
 
 .footer { 
 	text-align: center; 
@@ -39,9 +64,10 @@ a {text-decoration: none; }
 
 fieldset {
 border: 1px solid #B9C9FE;
-width: 100%;
+width: 95%;
 background: #D0DAFD;
 padding: 3px;
+margin:1.5em 1.5em 1.5em 1.5em ;
 }
 fieldset legend {
 background: #8BC867;
@@ -73,38 +99,383 @@ label{
 
 /* Header */
 #header {
-  background-image: url(/images/header_backdrop.png);
-
+  background-image: url(/images/Header.jpg);
   padding: 0px 0px 0px 0px;
   margin-left: 0px;
+  height: 225px;
 }
 
-/* Rounded corners by http://www.roundedcornr.com/rc1.php
-------------------------------------------------------------------*/
-
-.roundedcornr_box_101757 {
-   background: #f8e7a2;
-}
-.roundedcornr_top_101757 div {
-   background: url(/images/rounded/roundedcornr_101757_tl.png) no-repeat top left;
-}
-.roundedcornr_top_101757 {
-   background: url(/images/rounded/roundedcornr_101757_tr.png) no-repeat top right;
-}
-.roundedcornr_bottom_101757 div {
-   background: url(/images/rounded/roundedcornr_101757_bl.png) no-repeat bottom left;
-}
-.roundedcornr_bottom_101757 {
-   background: url(/images/rounded/roundedcornr_101757_br.png) no-repeat bottom right;
+.cleared
+{
+	float: none;
+	clear: both;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size:1px;
 }
 
-.roundedcornr_top_101757 div, .roundedcornr_top_101757, 
-.roundedcornr_bottom_101757 div, .roundedcornr_bottom_101757 {
-   width: 100%;
-   height: 30px;
-   font-size: 1px;
+
+/* Start Content link style */
+/*
+The right order of link pseudo-classes: Link-Visited-Hover-Focus-Active.
+http://www.w3schools.com/CSS/css_pseudo_classes.asp
+http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states/
+*/
+a
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #8B7D46;
 }
-.roundedcornr_content_101757 { margin: 0 30px; }
+
+/* Adds special style to an unvisited link. */
+a:link
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #8B7D46;
+}
+
+/* Adds special style to a visited link. */
+a:visited, a.visited
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+  color: #323630;
+}
+
+/* :hover - adds special style to an element when you mouse over it. */
+a:hover, a.hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+  color: #B7951A;
+}
+
+/* Finish Content link style */
+
+/* Resert some headings default style & links default style for links in headings*/
+h1, h2, h3, h4, h5, h6,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover
+h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited
+{
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+/* Start Content headings Fonts & Colors  */
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 28px;
+font-style: normal;
+font-weight: bold;
+text-align: left;
+  color: #4D544A;
+}
+
+h2, h2 a, h2 a:link, h2 a:visited, h2 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 22px;
+font-style: normal;
+font-weight: bold;
+text-align: left;
+  color: #666F62;
+}
+
+h3, h3 a, h3 a:link, h3 a:visited, h3 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 18px;
+font-style: normal;
+font-weight: bold;
+text-align: left;
+  color: #8B7D46;
+}
+
+h4, h4 a, h4 a:link, h4 a:visited, h4 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 16px;
+font-style: normal;
+font-weight: bold;
+text-align: left;
+  color: #575F54;
+}
+
+h5, h5 a, h5 a:link, h5 a:visited, h5 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: bold;
+text-align: left;
+  color: #575F54;
+}
+
+h6, h6 a, h6 a:link, h6 a:visited, h6 a:hover
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 14px;
+font-style: normal;
+font-weight: bold;
+text-align: left;
+  color: #575F54;
+}
+/* Finish Content headings Fonts & Colors  */
+/* end PostContent */
+
+/* begin PostBullets */
+/* Start Content list */
+ol, ul
+{
+	color: #343932;
+	margin:1em 0 1em 2em;
+	padding:0;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+}
+
+li ol, li ul
+{
+	margin:0.5em 0 0.5em 2em;
+	padding:0;
+}
+
+li 
+{
+	margin:0.2em 0;
+	padding:0;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+ol
+{
+	list-style-position:inside;
+	
+}
+
+/* begin Button */
+.art-button-wrapper .art-button
+{
+	display:inline-block;
+	width: auto;
+	outline:none;
+	border:none;
+	background:none;
+	line-height:27px;
+	margin:0 !important;
+	padding:0 !important;
+	overflow: visible;
+	cursor: default;
+	text-decoration: none !important;
+	z-index:0;
+}
+
+.art-button-wrapper
+{
+	display:inline-block;
+	position:relative;
+	height: 27px;
+	overflow:hidden;
+	white-space: nowrap;
+	width: auto;
+	z-index:0;
+}
+
+.firefox2 .art-button-wrapper
+{
+	display:block;
+	float:left;
+}
+
+.art-button-wrapper .art-button
+{
+	display:block;
+	height: 27px;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+	white-space: nowrap;
+	text-align: left;
+	padding: 0 11px !important;
+	line-height: 27px;
+	text-decoration: none !important;
+	color: #000000 !important;
+}
+
+input, select
+{
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+}
+
+.art-button-wrapper.hover .art-button, .art-button:hover
+{
+	color: #000000 !important;
+	text-decoration: none !important;
+}
+
+.art-button-wrapper.active .art-button
+{
+	color: #FCF9ED !important;
+}
+
+.art-button-wrapper .l, .art-button-wrapper .r
+{
+	display:block;
+	position:absolute;
+	z-index:-1;
+	height: 81px;
+	background-image: url('images/Button.png');
+}
+
+.art-button-wrapper .l
+{
+	left:0;
+	right:14px;
+}
+
+.art-button-wrapper .r
+{
+	width:421px;
+	right:0;
+	clip: rect(auto, auto, auto, 407px);
+}
+
+.art-button-wrapper.hover .l, .art-button-wrapper.hover .r
+{
+	top: -27px;
+}
+
+.art-button-wrapper.active .l, .art-button-wrapper.active .r
+{
+	top: -54px;
+}
+
+
+/* end Button */
+
+
+/* begin Footer */
+.art-Footer
+{
+	position:relative;
+	z-index:0;
+	overflow:hidden;
+	width: 944px;
+	margin: 5px auto 0px auto;
+}
+
+.art-Footer .art-Footer-inner
+{
+	height:1%;
+	position: relative;
+	z-index: 0;
+	padding: 10px;
+	text-align: center;
+}
+
+.art-Footer .art-Footer-background
+{
+	position:absolute;
+	z-index:-1;
+	background-repeat:no-repeat;
+	background-image: url('/images/Footer.png');
+	width: 944px;
+	height: 150px;
+	bottom:0;
+	left:0;
+}
+
+
+.art-rss-tag-icon
+{
+	position: relative;
+	display:block;
+	float:left;
+	background-image: url('/images/rssIcon.png');
+	background-position: center right;
+	background-repeat: no-repeat;
+	margin: 0 5px 0 0;
+	height: 32px;
+	width: 32px;
+    cursor: default;
+}
+
+
+
+
+.art-Footer .art-Footer-text p
+{
+	margin: 0;
+}
+
+.art-Footer .art-Footer-text
+{
+	display:inline-block;
+	color:#221F11;
+font-family: Arial, Helvetica, Sans-Serif;
+font-size: 11px;
+}
+
+.art-Footer .art-Footer-text a:link
+{
+	text-decoration: none;
+	color: #665C33;
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+}
+
+.art-Footer .art-Footer-text a:visited
+{
+	text-decoration: none;
+	color: #191B18;
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: underline;
+}
+
+.art-Footer .art-Footer-text a:hover
+{
+	text-decoration: none;
+	color: #866D13;
+font-family: Arial, Helvetica, Sans-Serif;
+text-decoration: none;
+}
+/* end Footer */
+
+/* begin PageFooter */
+.art-page-footer, .art-page-footer a, .art-page-footer a:link, .art-page-footer a:visited, .art-page-footer a:hover
+{
+	font-family:Arial;
+	font-size:10px;
+	letter-spacing:normal;
+	word-spacing:normal;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:underline;
+	color:#B3911A;
+}
+
+.art-page-footer
+{
+	margin:1em;
+	text-align:center;
+	text-decoration:none;
+	color:#887A44;
+}
+/* end PageFooter */
 
 /* Simple scalable breadcrumb by Veerle Pieters
 ------------------------------------------------------------------*/

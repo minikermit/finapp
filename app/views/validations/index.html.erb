@@ -1,9 +1,13 @@
-<ul id="crumbs">
- <li><%= link_to  "Home" , homes_path %></li>
- <li><a href="#">Basel II</a></li>
- <li>You are on the list of validation page</li>
-</ul>
 
+<% content_for :breadcrumb do %>
+
+	<ul id="crumbs">
+ 		<li><%= link_to  "Home" , homes_path %></li>
+ 		<li><a href="#">Basel II</a></li>
+ 		<li>You are on the list of validation page</li>
+	</ul>
+	
+<% end %>
 
 <a href="#" onclick="AppearEffect('show_search')" class ='a'>		
 	<span class="ss_sprite ss_add">
@@ -17,7 +21,7 @@
 
 <div id="show_search" style="display:none"; >
   <div class="column span-10 append-12 prepend-1 last">
-    <fieldset  class="span-8">
+    <fieldset  class="span-10">
     	<legend>Search</legend>
 		<% form_for @search do |f| %>  
  

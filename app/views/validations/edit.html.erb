@@ -53,7 +53,8 @@
   </p>
   <p>
     <%= f.label :ErrorKind %><br />
-    <%= collection_select(:validation, :validationrule_id, @validationrules, :id, :ErrorKind, {:prompt => true}) %>
+    <!--%= collection_select(:validation, :validationrule_id, @validationrules, :id, :ErrorKind, {:prompt => true}) %-->
+    <%= f.collection_select :validationrule_id, Validationrule.all, :id, :ErrorKind %>
   </p>
   <p>
     <%= f.label :Recommendation %><br />

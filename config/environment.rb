@@ -17,6 +17,7 @@ Rails::Initializer.run do |config|
   config.gem 'crafterm-comma', :lib => 'comma', :source => 'http://gems.github.com' 
   #config.gem 'ziya', :source => 'http://gems.rubyforge.com'
   config.gem 'declarative_authorization', :source => "http://gemcutter.org"
+  config.gem 'ancestry'
   #config.gem 'win32-service' #only on Windows
   #config.gem 'daemons' # only on UNIX
   

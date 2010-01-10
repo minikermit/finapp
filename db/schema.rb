@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091205201040) do
+ActiveRecord::Schema.define(:version => 20100104121514) do
 
   create_table "B2TA_ClosingRates", :force => true do |t|
     t.string   "Group_id",        :limit => 50
@@ -55,21 +55,21 @@ ActiveRecord::Schema.define(:version => 20091205201040) do
   end
 
   create_table "B2TA_VAL_Error_Reports", :force => true do |t|
-    t.integer  "Original_id",    :limit => 8,   :null => false
-    t.string   "LoadDate",       :limit => 10,  :null => false
-    t.string   "Source_id",      :limit => 50,  :null => false
-    t.string   "Entity_id",      :limit => 50,  :null => false
-    t.string   "Client_id",      :limit => 50,  :null => false
-    t.string   "Key_id",         :limit => 100, :null => false
-    t.string   "OutputFile",     :limit => 50,  :null => false
-    t.string   "OutputField",    :limit => 50,  :null => false
-    t.string   "Source",         :limit => 50,  :null => false
-    t.string   "Destination",    :limit => 50,  :null => false
-    t.string   "ErrorType",      :limit => 50,  :null => false
-    t.string   "ErrorKind",      :limit => 50,  :null => false
-    t.string   "Recommendation", :limit => 100, :null => false
-    t.datetime "created_at",                    :null => false
-    t.datetime "updated_at",                    :null => false
+    t.integer  "Original_id",       :limit => 8,   :null => false
+    t.string   "LoadDate",          :limit => 10,  :null => false
+    t.string   "Source_id",         :limit => 50,  :null => false
+    t.string   "Entity_id",         :limit => 50,  :null => false
+    t.string   "Client_id",         :limit => 50,  :null => false
+    t.string   "Key_id",            :limit => 100, :null => false
+    t.string   "OutputFile",        :limit => 50,  :null => false
+    t.string   "OutputField",       :limit => 50,  :null => false
+    t.string   "Source",            :limit => 50,  :null => false
+    t.string   "Destination",       :limit => 50,  :null => false
+    t.string   "ErrorType",         :limit => 50,  :null => false
+    t.integer  "validationrule_id", :limit => 8,   :null => false
+    t.string   "Recommendation",    :limit => 100, :null => false
+    t.datetime "created_at",                       :null => false
+    t.datetime "updated_at",                       :null => false
   end
 
   create_table "B2TA_XPORT_Accounts", :force => true do |t|
@@ -756,7 +756,10 @@ ActiveRecord::Schema.define(:version => 20091205201040) do
     t.string   "Group_Identifier",          :limit => 50
     t.string   "Entity_Identifier",         :limit => 50
     t.string   "Account_UO",                :limit => 50
+    t.string   "ancestry"
   end
+
+  add_index "DIM_AccountPlan", ["ancestry"], :name => "index_DIM_AccountPlan_on_ancestry"
 
   create_table "DIM_AccountPlanType", :id => false, :force => true do |t|
     t.integer "Account_Plan_Type_Identifier",    :limit => 8,   :null => false
@@ -3729,14 +3732,14 @@ ActiveRecord::Schema.define(:version => 20091205201040) do
   add_index "users", ["login"], :name => "index_users_on_login", :unique => true
 
   create_table "validationrules", :force => true do |t|
-    t.string   "rule_identification", :limit => 20,   :null => false
-    t.string   "rule_description",    :limit => 200,  :null => false
-    t.string   "rule_scope",          :limit => 15,   :null => false
-    t.string   "rule_hint",           :limit => 500
-    t.string   "rule_sql_query",      :limit => 1000
-    t.datetime "created_at",                          :null => false
+    t.string   "ErrorKind",        :limit => 20,   :null => false
+    t.string   "rule_description", :limit => 200,  :null => false
+    t.string   "rule_scope",       :limit => 15,   :null => false
+    t.string   "rule_hint",        :limit => 500
+    t.string   "rule_sql_query",   :limit => 1000
+    t.datetime "created_at",                       :null => false
     t.datetime "updated_at"
-    t.string   "rule_type",           :limit => 20,   :null => false
+    t.string   "rule_type",        :limit => 20,   :null => false
   end
 
 end

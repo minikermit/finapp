@@ -11,7 +11,8 @@ class HomesController < ApplicationController
     @homes = Home.all
 
     respond_to do |format|
-      format.html # index.html.erb
+      # format.html # index.html.erb
+      format.html {render(:layout => "layouts/application2") }
       format.xml  { render :xml => @homes }
     end
   end

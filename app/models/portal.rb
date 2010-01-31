@@ -7,3 +7,19 @@ class Portal < ActiveRecord::Base
   validates_attachment_content_type :logo, :content_type => ['image/jpeg', 'image/png', 'image/gif']
 
 end
+
+# == Schema Information
+#
+# Table name: portals
+#
+#  id                :integer(4)      not null, primary key
+#  title             :string(255)
+#  description2      :text
+#  created_at        :datetime
+#  updated_at        :datetime
+#  logo_file_name    :string(255)
+#  logo_content_type :string(255)
+#  logo_file_size    :integer(4)
+#  logo_updated_at   :datetime
+#
+

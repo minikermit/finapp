@@ -9,3 +9,27 @@ class ReportLine < ActiveRecord::Base
 		
 	searchable_by :report_id , :line_id , :name
 end
+
+# == Schema Information
+#
+# Table name: DIM_ReportLines
+#
+#  Fimis_Identifier                :integer(8)      not null
+#  Report_Id                       :integer(4)      not null
+#  Line_Id                         :string(50)      not null, primary key
+#  Parent_Line_Id                  :string(50)
+#  Line_Caption                    :string(50)
+#  UO                              :string(1)
+#  Order                           :integer(2)
+#  Record_Validity                 :boolean         not null
+#  Record_Visibility               :boolean         not null
+#  Record_Creation_Date            :datetime        not null
+#  Record_Creator                  :string(50)      default("Toto"), not null
+#  Record_Modification_Date        :datetime
+#  Record_Modifier                 :string(50)
+#  Record_Modification_Application :string(100)
+#  Line_Morphing                   :string(50)
+#  Line_Style                      :integer(4)
+#  position                        :integer(4)
+#
+

@@ -9,3 +9,17 @@ class Scenario < ActiveRecord::Base
 end
 
 
+
+# == Schema Information
+#
+# Table name: DIM_Scenario
+#
+#  Fimis_Identifier         :integer(8)      not null, primary key
+#  Category_Code            :string(50)      not null
+#  Category_Name            :string(100)     not null
+#  Record_Creation_Date     :datetime        not null
+#  Record_Creator           :string(50)      default("Vincent"), not null
+#  Record_Modification_Date :datetime
+#  Record_Modifier          :string(50)
+#
+

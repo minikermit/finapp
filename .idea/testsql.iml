@@ -157,15 +157,15 @@
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="thoughtbot-factory_girl" version="0" bound="GREATER_OR_EQUAL" url="'http://gems.github.com'" />
-      </requirement>
-      <source from="bort.rb" />
-    </requirement>
-    <requirement>
-      <requirement>
         <dependency name="thoughtbot-factory_girl" version="0" bound="GREATER_OR_EQUAL" url="&quot;http://gems.github.com&quot;" />
       </requirement>
       <source from="config/environments/test.rb" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="thoughtbot-factory_girl" version="0" bound="GREATER_OR_EQUAL" url="'http://gems.github.com'" />
+      </requirement>
+      <source from="bort.rb" />
     </requirement>
     <requirement>
       <requirement>
